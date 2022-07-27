@@ -22,11 +22,13 @@ class Peminjam extends BaseController
 
         $getPeminjam = $this->PeminjamModel->findAll();
         $resultPeminjam = $this->PeminjamModel->get()->resultID->num_rows;
+        $getPeminjaman = $this->PeminjamModel->getPeminjaman();
 
         $data = [
             'title' => 'Peminjam | Aplikasi Peminjaman BPKB',
             'results' => $resultPeminjam,
             'getPeminjam' => $getPeminjam,
+            'getPeminjaman' => $getPeminjaman,
             'page_title' => 'Dashboard Peminjam',
         ];
 
@@ -58,12 +60,16 @@ class Peminjam extends BaseController
     {
         $getBpkb = $this->BpkbModel->where('status', 'Tidak Dipinjam')->findAll();
         $getModelKendaraan = $this->BpkbModel->getModelKendaraan();
+        $getLokasiKendaraan = $this->PeminjamModel->getLokasiKendaraan();
+        $getStatuskendaraan = $this->PeminjamModel->getStatuskendaraan();
 
         $data = [
             'title' => 'Tambah Data Peminjam BPKB',
             'page_title' => 'Tambah Data Peminjam BPKB',
             'getBpkb' => $getBpkb,
             'model' => $getModelKendaraan,
+            'lokasi_kendaraan' => $getLokasiKendaraan,
+            'status_kendaraan' => $getStatuskendaraan,
             'validation' => \Config\Services::validation()
         ];
 
@@ -98,6 +104,18 @@ class Peminjam extends BaseController
                     'required' => 'NIP Petugas tidak boleh kosong!'
                 ]
             ],
+            'lokasi_kendaraan' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Lokasi Kendaraan tidak boleh kosong',
+                ]
+            ],
+            'status_kendaraan' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Status Kendaraan tidak boleh kosong',
+                ]
+            ],
             'tgl_pinjam' => [
                 'rules' => 'required',
                 'errors' => [
@@ -108,6 +126,12 @@ class Peminjam extends BaseController
                 'rules' => 'required',
                 'errors' => [
                     'required' => 'Tanggal Kembali tidak boleh kosong',
+                ]
+            ],
+            'ket_lokasi' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'keterangan Lokasi tidak boleh kosong!'
                 ]
             ],
 
@@ -149,11 +173,15 @@ class Peminjam extends BaseController
     public function edit($id)
     {
         $dataPeminjam = $this->PeminjamModel->find($id);
+        $getLokasiKendaraan = $this->PeminjamModel->getLokasiKendaraan($id);
+        $getStatuskendaraan = $this->PeminjamModel->getStatuskendaraan();
 
         $dataPeminjam = [
             'title' => 'Pengembalian BPKB',
             'page_title' => 'Pengembalian BPKB',
             'peminjam' => $dataPeminjam,
+            'lokasi_kendaraan' => $getLokasiKendaraan,
+            'status_kendaraan' => $getStatuskendaraan,
             'validation' => \Config\Services::validation()
 
         ];

@@ -10,8 +10,15 @@ class PeminjamModel extends Model
     protected $primaryKey = 'id_peminjam';
     protected $useTimestamps = true;
     protected $dateformat = 'date';
-    protected $allowedFields = ['nama_lengkap', 'nik', 'id_bpkb', 'nama_petugas_pinjam', 'nip_petugas_pinjam', 'nama_petugas_kembali', 'nip_petugas_kembali', 'tgl_pinjam', 'tgl_kembali', 'status'];
+    protected $allowedFields = ['nama_lengkap', 'nik', 'id_bpkb', 'nama_petugas_pinjam', 'nip_petugas_pinjam', 'nama_petugas_kembali', 'nip_petugas_kembali', 'lokasi_kendaraan', 'status_kendaraan', 'tgl_pinjam', 'tgl_kembali', 'status'];
 
+    public function getPeminjaman()
+    {
+        return $this->db->table('data_peminjam')
+            ->join('peminjam_lokasi', 'peminjam_lokasi.id_lokasi = data_peminjam.lokasi_kendaraan')
+            ->join('peminjam_status_kendaraan', 'peminjam_status_kendaraan.id_kendaraan = data_peminjam.status_kendaraan')
+            ->get()->getResultArray();
+    }
     public function tambahData($data_peminjam, $data_gambar)
     {
 
@@ -49,11 +56,14 @@ class PeminjamModel extends Model
             ->update();
     }
 
-    public function getDetail($id){
+    public function getDetail($id)
+    {
         return $this->db
             ->table('data_peminjam')
+            ->join('peminjam_lokasi', 'peminjam_lokasi.id_lokasi = data_peminjam.lokasi_kendaraan')
+            ->join('peminjam_status_kendaraan', 'peminjam_status_kendaraan.id_kendaraan = data_peminjam.status_kendaraan')
             ->join('data_bpkb', 'data_bpkb.id_bpkb = data_peminjam.id_bpkb')
-            ->select('nama_lengkap, nik, data_bpkb.id_bpkb, data_bpkb.nomor_bpkb, nama_petugas_pinjam, nip_petugas_pinjam, nama_petugas_kembali, nip_petugas_kembali, tgl_pinjam, tgl_kembali, data_peminjam.status')
+            ->select('nama_lengkap, nik, data_bpkb.id_bpkb, data_bpkb.nomor_bpkb, nama_petugas_pinjam, nip_petugas_pinjam, nama_petugas_kembali, nip_petugas_kembali, peminjam_lokasi.lokasi_kendaraan, peminjam_status_kendaraan.status_kendaraan, tgl_pinjam, tgl_kembali, data_peminjam.status')
             ->where('id_peminjam', $id)
             ->get()->getRowArray();
     }
@@ -65,5 +75,15 @@ class PeminjamModel extends Model
             ->where('nik', $nik)
             ->get()
             ->getResultArray();
+    }
+
+    public function getLokasiKendaraan()
+    {
+        return $this->db->table('peminjam_lokasi')->get()->getResultArray();
+    }
+
+    public function getStatusKendaraan()
+    {
+        return $this->db->table('peminjam_status_kendaraan')->get()->getResultArray();
     }
 }

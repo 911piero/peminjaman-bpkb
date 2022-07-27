@@ -40,6 +40,13 @@
                                     <?= $validation->getError('nip_petugas_pinjam'); ?>
                                 </div>
                             </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Keterangan Lokasi</label>
+                                <input type="text" class="form-control <?= ($validation->hasError('ket_lokasi')) ? 'is-invalid' : ' '; ?>" id="ket_lokasi" name="ket_lokasi" placeholder="Masukan Keterangan Lokasi">
+                                <div class="invalid-feedback">
+                                    <?= $validation->getError('ket_lokasi'); ?>
+                                </div>
+                            </div>
                         </div>
                         <div class="col">
                             <div class="form-group">
@@ -53,6 +60,34 @@
                                     </select>
                                     <div class="invalid-feedback">
                                         <?= $validation->getError('model'); ?>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Lokasi Kendaraan</label>
+                                <div class="input-group mb-3">
+                                    <select name="lokasi_kendaraan" class="custom-select <?= ($validation->hasError('lokasi_kendaraan')) ? 'is-invalid' : ' '; ?>" id="inputGroupSelect01">
+                                        <option selected value="">Pilih Lokasi Kendaraan</option>
+                                        <?php foreach ($lokasi_kendaraan as $key) : ?>
+                                            <option value="<?= $key['id_lokasi']; ?>"><?= $key['lokasi_kendaraan']; ?></option>
+                                        <?php endforeach; ?>
+                                    </select>
+                                    <div class="invalid-feedback d-block">
+                                        <?= $validation->getError('lokasi_kendaraan'); ?>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Status Kendaraan</label>
+                                <div class="input-group mb-3">
+                                    <select name="status_kendaraan" class="custom-select <?= ($validation->hasError('status_kendaraan')) ? 'is-invalid' : ' '; ?>" id="inputGroupSelect01">
+                                        <option selected value="">Pilih Status Kendaraan</option>
+                                        <?php foreach ($status_kendaraan as $key) : ?>
+                                            <option value="<?= $key['id_kendaraan']; ?>"><?= $key['status_kendaraan']; ?></option>
+                                        <?php endforeach; ?>
+                                    </select>
+                                    <div class="invalid-feedback d-block">
+                                        <?= $validation->getError('status_kendaraan'); ?>
                                     </div>
                                 </div>
                             </div>
