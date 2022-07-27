@@ -43,12 +43,12 @@
                         </div>
                         <div class="col">
                             <div class="form-group">
-                                <label for="exampleInputEmail1">BPKB</label>
+                                <label for="exampleInputEmail1">Plat Nomer</label>
                                 <div class="input-group mb-3">
                                     <select name="id_bpkb" class="custom-select form-control <?= ($validation->hasError('id_bpkb')) ? 'is-invalid' : ' '; ?>" autocomplete="on">
                                         <option selected value=" ">Pilih Kendaraan</option>
                                         <?php foreach ($getBpkb as $b) : ?>
-                                            <option value="<?= $b['id_bpkb']; ?>"><?= $b['nomor_bpkb']; ?></option>
+                                            <option value="<?= $b['id_bpkb']; ?>"><?= $b['nomor_registrasi']; ?></option>
                                         <?php endforeach; ?>
                                     </select>
                                     <div class="invalid-feedback">

@@ -2,7 +2,9 @@
 
 <?= $this->section('content'); ?>
 
-<?php use app\Models\BpkbModel; ?>
+<?php
+
+use app\Models\BpkbModel; ?>
 <!-- Main content -->
 <section class="content">
   <div class="container-fluid">
@@ -18,7 +20,7 @@
 
               <?php
 
-use CodeIgniter\Controller;
+              use CodeIgniter\Controller;
 
               echo $results; ?>
             </span>
