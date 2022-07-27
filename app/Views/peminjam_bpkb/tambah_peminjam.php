@@ -7,7 +7,7 @@
             <?= csrf_field(); ?>
             <div class="card card-primary">
                 <div class="card-header">
-                    <h3 class="card-title">Form Tambah Data Peminjam BPKB</h3>
+                    <h3 class="card-title">Form Tambah Data Peminjam</h3>
                 </div>
                 <div class="card-body">
                     <div class="row cols-3">
@@ -45,7 +45,7 @@
                             <div class="form-group">
                                 <label for="exampleInputEmail1">BPKB</label>
                                 <div class="input-group mb-3">
-                                    <select name="id_bpkb" class="custom-select form-control <?= ($validation->hasError('id_bpkb')) ? 'is-invalid' : ' '; ?>" autocomplete="on" >
+                                    <select name="id_bpkb" class="custom-select form-control <?= ($validation->hasError('id_bpkb')) ? 'is-invalid' : ' '; ?>" autocomplete="on">
                                         <option selected value=" ">Pilih Kendaraan</option>
                                         <?php foreach ($getBpkb as $b) : ?>
                                             <option value="<?= $b['id_bpkb']; ?>"><?= $b['nomor_bpkb']; ?></option>
@@ -60,7 +60,7 @@
                                 <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker" inline="true">
                                     <label for="example">Tanggal Pinjam</label>
                                     <input type="date" class="form-control <?= ($validation->hasError('tgl_pinjam')) ? 'is-invalid' : ' '; ?>" name="tgl_pinjam">
-                                </div>  
+                                </div>
                                 <div class="invalid-feedback">
                                     <?= $validation->getError('tgl_pinjam'); ?>
                                 </div>
@@ -69,7 +69,7 @@
                                 <div class="md-form md-outline input-with-post-icon datepicker" inline="true">
                                     <label for="example">Tanggal Kembali</label>
                                     <input type="date" class="form-control <?= ($validation->hasError('tgl_kembali')) ? 'is-invalid' : ' '; ?>" name="tgl_kembali">
-                                </div>        
+                                </div>
                                 <div class="invalid-feedback">
                                     <?= $validation->getError('tgl_kembali'); ?>
                                 </div>
@@ -78,7 +78,7 @@
                                 <div class="md-form md-outline" inline="true">
                                     <label for="example">Foto KTP</label>
                                     <input type="file" class="form-control <?= ($validation->hasError('foto_ktp')) ? 'is-invalid' : ' '; ?>" name="foto_ktp">
-                                </div>        
+                                </div>
                                 <div class="invalid-feedback">
                                     <?= $validation->getError('foto_ktp'); ?>
                                 </div>
