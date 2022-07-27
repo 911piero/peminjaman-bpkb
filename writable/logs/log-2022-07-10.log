@@ -1,0 +1,372 @@
+CRITICAL - 2022-07-10 04:50:48 --> Too few arguments to function App\Controllers\Bpkb::update(), 0 passed in C:\xampp\htdocs\peminjaman_bpkb\vendor\codeigniter4\framework\system\CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH\Controllers\Bpkb.php on line 97.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->update()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-10 04:51:14 --> Too few arguments to function App\Controllers\Bpkb::update(), 0 passed in C:\xampp\htdocs\peminjaman_bpkb\vendor\codeigniter4\framework\system\CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH\Controllers\Bpkb.php on line 97.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->update()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-10 04:58:29 --> syntax error, unexpected '?>'
+in APPPATH\Views\master_bpkb\edit_bpkb.php on line 55.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/edit_bpkb', [], true)
+ 3 APPPATH\Controllers\Bpkb.php(92): view('master_bpkb/edit_bpkb', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->edit('22')
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-10 04:58:36 --> Undefined variable: key
+in APPPATH\Views\master_bpkb\edit_bpkb.php on line 51.
+ 1 APPPATH\Views\master_bpkb\edit_bpkb.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: key', 'APPPATH\\Views\\master_bpkb\\edit_bpkb.php', 51, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\edit_bpkb.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/edit_bpkb', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(92): view('master_bpkb/edit_bpkb', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->edit('22')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-10 05:24:17 --> Too few arguments to function App\Controllers\Bpkb::detail(), 0 passed in C:\xampp\htdocs\peminjaman_bpkb\vendor\codeigniter4\framework\system\CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH\Controllers\Bpkb.php on line 32.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-10 05:25:07 --> Trying to access array offset on value of type null
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 12.
+ 1 APPPATH\Views\master_bpkb\detail_bpkb.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\master_bpkb\\detail_bpkb.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\detail_bpkb.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(40): view('master_bpkb/detail_bpkb', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('...')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-10 05:25:24 --> Trying to access array offset on value of type null
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 12.
+ 1 APPPATH\Views\master_bpkb\detail_bpkb.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\master_bpkb\\detail_bpkb.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\detail_bpkb.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(40): view('master_bpkb/detail_bpkb', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('...')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-10 05:25:39 --> Trying to access array offset on value of type null
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 12.
+ 1 APPPATH\Views\master_bpkb\detail_bpkb.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\master_bpkb\\detail_bpkb.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\detail_bpkb.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(40): view('master_bpkb/detail_bpkb', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('...')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-10 05:25:52 --> Trying to access array offset on value of type null
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 12.
+ 1 APPPATH\Views\master_bpkb\detail_bpkb.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\master_bpkb\\detail_bpkb.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\detail_bpkb.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(40): view('master_bpkb/detail_bpkb', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('...')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-10 05:26:38 --> Trying to access array offset on value of type null
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 12.
+ 1 APPPATH\Views\master_bpkb\detail_bpkb.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\master_bpkb\\detail_bpkb.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\detail_bpkb.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(40): view('master_bpkb/detail_bpkb', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('...')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-10 05:26:48 --> Trying to access array offset on value of type null
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 12.
+ 1 APPPATH\Views\master_bpkb\detail_bpkb.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\master_bpkb\\detail_bpkb.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\detail_bpkb.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(40): view('master_bpkb/detail_bpkb', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('...')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-10 05:27:00 --> Trying to access array offset on value of type null
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 11.
+ 1 APPPATH\Views\master_bpkb\detail_bpkb.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\master_bpkb\\detail_bpkb.php', 11, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\detail_bpkb.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(40): view('master_bpkb/detail_bpkb', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('...')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-10 05:27:21 --> Trying to access array offset on value of type null
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 12.
+ 1 APPPATH\Views\master_bpkb\detail_bpkb.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\master_bpkb\\detail_bpkb.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\detail_bpkb.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(40): view('master_bpkb/detail_bpkb', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('...')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-10 05:27:26 --> Trying to access array offset on value of type null
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 12.
+ 1 APPPATH\Views\master_bpkb\detail_bpkb.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\master_bpkb\\detail_bpkb.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\detail_bpkb.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(40): view('master_bpkb/detail_bpkb', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('...')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-10 05:27:31 --> Trying to access array offset on value of type null
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 12.
+ 1 APPPATH\Views\master_bpkb\detail_bpkb.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\master_bpkb\\detail_bpkb.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\detail_bpkb.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(40): view('master_bpkb/detail_bpkb', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('...')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-10 05:27:58 --> Trying to access array offset on value of type null
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 13.
+ 1 APPPATH\Views\master_bpkb\detail_bpkb.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\master_bpkb\\detail_bpkb.php', 13, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\detail_bpkb.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(40): view('master_bpkb/detail_bpkb', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('...')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-10 05:28:13 --> Trying to access array offset on value of type null
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 13.
+ 1 APPPATH\Views\master_bpkb\detail_bpkb.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\master_bpkb\\detail_bpkb.php', 13, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\detail_bpkb.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(40): view('master_bpkb/detail_bpkb', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('...')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-10 05:28:23 --> Trying to access array offset on value of type null
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 13.
+ 1 APPPATH\Views\master_bpkb\detail_bpkb.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\master_bpkb\\detail_bpkb.php', 13, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\detail_bpkb.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(40): view('master_bpkb/detail_bpkb', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('...')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-10 05:29:02 --> Trying to access array offset on value of type null
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 13.
+ 1 APPPATH\Views\master_bpkb\detail_bpkb.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\master_bpkb\\detail_bpkb.php', 13, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\detail_bpkb.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(40): view('master_bpkb/detail_bpkb', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('...')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-10 13:04:40 --> Class 'App\Controllers\Spreadsheet' not found
+in APPPATH\Controllers\Bpkb.php on line 147.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->bpkbExport()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-10 13:07:07 --> Undefined property: PhpOffice\PhpSpreadsheet\Worksheet\Worksheet::$2
+in APPPATH\Controllers\Bpkb.php on line 194.
+ 1 APPPATH\Controllers\Bpkb.php(194): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet::$2', 'APPPATH\\Controllers\\Bpkb.php', 194, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->bpkbExport()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-10 13:11:21 --> Undefined property: PhpOffice\PhpSpreadsheet\Worksheet\Worksheet::$2
+in APPPATH\Controllers\Bpkb.php on line 194.
+ 1 APPPATH\Controllers\Bpkb.php(194): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet::$2', 'APPPATH\\Controllers\\Bpkb.php', 194, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->bpkbExport()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-10 13:16:07 --> require(vendor/autoload.php): failed to open stream: No such file or directory
+in APPPATH\Controllers\Bpkb.php on line 5.
+ 1 APPPATH\Controllers\Bpkb.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(vendor/autoload.php): failed to open stream: No such file or directory', 'APPPATH\\Controllers\\Bpkb.php', 5, [...])
+ 2 APPPATH\Controllers\Bpkb.php(5): require()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(284): include_once('APPPATH\\Controllers\\Bpkb.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Bpkb.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Bpkb')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Bpkb')
+ 7 [internal function]: spl_autoload_call('App\\Controllers\\Bpkb')
+ 8 SYSTEMPATH\CodeIgniter.php(846): class_exists('\\App\\Controllers\\Bpkb', true)
+ 9 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\CodeIgniter->startController()
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-10 13:16:08 --> require(vendor/autoload.php): failed to open stream: No such file or directory
+in APPPATH\Controllers\Bpkb.php on line 5.
+ 1 APPPATH\Controllers\Bpkb.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(vendor/autoload.php): failed to open stream: No such file or directory', 'APPPATH\\Controllers\\Bpkb.php', 5, [...])
+ 2 APPPATH\Controllers\Bpkb.php(5): require()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(284): include_once('APPPATH\\Controllers\\Bpkb.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Bpkb.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Bpkb')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Bpkb')
+ 7 [internal function]: spl_autoload_call('App\\Controllers\\Bpkb')
+ 8 SYSTEMPATH\CodeIgniter.php(846): class_exists('\\App\\Controllers\\Bpkb', true)
+ 9 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\CodeIgniter->startController()
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-10 13:16:28 --> Undefined property: PhpOffice\PhpSpreadsheet\Worksheet\Worksheet::$2
+in APPPATH\Controllers\Bpkb.php on line 194.
+ 1 APPPATH\Controllers\Bpkb.php(194): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet::$2', 'APPPATH\\Controllers\\Bpkb.php', 194, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->bpkbExport()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-10 13:18:41 --> syntax error, unexpected '.', expecting ';' or ','
+in APPPATH\Controllers\Bpkb.php on line 6.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('bpkb/bpkbExport')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('bpkb/bpkbExport')
+ 3 SYSTEMPATH\CodeIgniter.php(771): CodeIgniter\Router\Router->handle('bpkb/bpkbExport')
+ 4 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-10 13:18:47 --> Class 'App\Controllers\Spreadsheet' not found
+in APPPATH\Controllers\Bpkb.php on line 149.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->bpkbExport()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-10 13:18:54 --> Undefined property: PhpOffice\PhpSpreadsheet\Worksheet\Worksheet::$2
+in APPPATH\Controllers\Bpkb.php on line 194.
+ 1 APPPATH\Controllers\Bpkb.php(194): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet::$2', 'APPPATH\\Controllers\\Bpkb.php', 194, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->bpkbExport()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-10 13:19:33 --> Undefined variable: spreadsheet
+in APPPATH\Controllers\Bpkb.php on line 150.
+ 1 APPPATH\Controllers\Bpkb.php(150): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: spreadsheet', 'APPPATH\\Controllers\\Bpkb.php', 150, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->bpkbExport()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-10 13:19:40 --> Class 'App\Controllers\Spreadsheet' not found
+in APPPATH\Controllers\Bpkb.php on line 149.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->bpkbExport()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-10 13:20:03 --> Undefined property: PhpOffice\PhpSpreadsheet\Worksheet\Worksheet::$2
+in APPPATH\Controllers\Bpkb.php on line 194.
+ 1 APPPATH\Controllers\Bpkb.php(194): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet::$2', 'APPPATH\\Controllers\\Bpkb.php', 194, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->bpkbExport()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-10 13:20:56 --> Undefined property: PhpOffice\PhpSpreadsheet\Worksheet\Worksheet::$2
+in APPPATH\Controllers\Bpkb.php on line 194.
+ 1 APPPATH\Controllers\Bpkb.php(194): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet::$2', 'APPPATH\\Controllers\\Bpkb.php', 194, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->bpkbExport()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-10 13:20:59 --> Undefined property: PhpOffice\PhpSpreadsheet\Worksheet\Worksheet::$2
+in APPPATH\Controllers\Bpkb.php on line 194.
+ 1 APPPATH\Controllers\Bpkb.php(194): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet::$2', 'APPPATH\\Controllers\\Bpkb.php', 194, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->bpkbExport()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-10 13:21:02 --> Undefined property: PhpOffice\PhpSpreadsheet\Worksheet\Worksheet::$2
+in APPPATH\Controllers\Bpkb.php on line 194.
+ 1 APPPATH\Controllers\Bpkb.php(194): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet::$2', 'APPPATH\\Controllers\\Bpkb.php', 194, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->bpkbExport()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-10 13:59:58 --> Undefined property: PhpOffice\PhpSpreadsheet\Worksheet\Worksheet::$2
+in APPPATH\Controllers\Bpkb.php on line 190.
+ 1 APPPATH\Controllers\Bpkb.php(190): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet::$2', 'APPPATH\\Controllers\\Bpkb.php', 190, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->bpkbExport()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-10 14:00:14 --> Class 'App\Controllers\Spreadsheet' not found
+in APPPATH\Controllers\Bpkb.php on line 149.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->bpkbExport()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-10 14:00:23 --> Undefined property: PhpOffice\PhpSpreadsheet\Worksheet\Worksheet::$2
+in APPPATH\Controllers\Bpkb.php on line 191.
+ 1 APPPATH\Controllers\Bpkb.php(191): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet::$2', 'APPPATH\\Controllers\\Bpkb.php', 191, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->bpkbExport()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-10 14:01:05 --> Undefined property: PhpOffice\PhpSpreadsheet\Worksheet\Worksheet::$2
+in APPPATH\Controllers\Bpkb.php on line 191.
+ 1 APPPATH\Controllers\Bpkb.php(191): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet::$2', 'APPPATH\\Controllers\\Bpkb.php', 191, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->bpkbExport()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

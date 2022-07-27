@@ -1,0 +1,48 @@
+CRITICAL - 2022-07-05 23:47:06 --> Invalid file: master_bpkb/tambah_bpkp.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('master_bpkb/tambah_bpkp.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/tambah_bpkp', [], true)
+ 3 APPPATH\Controllers\Bpkb.php(36): view('master_bpkb/tambah_bpkp')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->tambah_bpkb()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-05 23:48:39 --> Invalid file: master_bpkb/tambah_bpkp.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('master_bpkb/tambah_bpkp.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/tambah_bpkp', [], true)
+ 3 APPPATH\Controllers\Bpkb.php(36): view('master_bpkb/tambah_bpkp', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->create()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-05 23:48:41 --> Invalid file: master_bpkb/tambah_bpkp.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('master_bpkb/tambah_bpkp.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/tambah_bpkp', [], true)
+ 3 APPPATH\Controllers\Bpkb.php(36): view('master_bpkb/tambah_bpkp', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->create()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-05 23:51:44 --> Undefined variable $route
+in APPPATH\Config\Routes.php on line 39.
+ 1 APPPATH\Config\Routes.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $route', 'APPPATH\\Config\\Routes.php', 39)
+ 2 SYSTEMPATH\CodeIgniter.php(758): require('APPPATH\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-05 23:51:53 --> Invalid file: master_bpkb/tambah_bpkp.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('master_bpkb/tambah_bpkp.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/tambah_bpkp', [], true)
+ 3 APPPATH\Controllers\Bpkb.php(36): view('master_bpkb/tambah_bpkp', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->create()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

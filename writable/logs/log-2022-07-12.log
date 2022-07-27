@@ -1,0 +1,413 @@
+CRITICAL - 2022-07-12 00:17:06 --> Trying to access array offset on value of type null
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 26.
+ 1 APPPATH\Views\master_bpkb\detail_bpkb.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\master_bpkb\\detail_bpkb.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\detail_bpkb.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(42): view('master_bpkb/detail_bpkb', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('...')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-12 00:17:45 --> Trying to access array offset on value of type null
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 26.
+ 1 APPPATH\Views\master_bpkb\detail_bpkb.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\master_bpkb\\detail_bpkb.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\detail_bpkb.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(42): view('master_bpkb/detail_bpkb', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('...')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-12 00:17:51 --> Trying to access array offset on value of type null
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 26.
+ 1 APPPATH\Views\master_bpkb\detail_bpkb.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\master_bpkb\\detail_bpkb.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\detail_bpkb.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(42): view('master_bpkb/detail_bpkb', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('...')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-12 00:18:18 --> Trying to access array offset on value of type null
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 26.
+ 1 APPPATH\Views\master_bpkb\detail_bpkb.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\master_bpkb\\detail_bpkb.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\detail_bpkb.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(42): view('master_bpkb/detail_bpkb', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('...')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-12 00:18:43 --> Trying to access array offset on value of type null
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 26.
+ 1 APPPATH\Views\master_bpkb\detail_bpkb.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\master_bpkb\\detail_bpkb.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\detail_bpkb.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(42): view('master_bpkb/detail_bpkb', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('...')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-12 00:26:23 --> Trying to access array offset on value of type null
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 26.
+ 1 APPPATH\Views\master_bpkb\detail_bpkb.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\master_bpkb\\detail_bpkb.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\detail_bpkb.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(42): view('master_bpkb/detail_bpkb', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('...')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-12 00:26:28 --> Trying to access array offset on value of type null
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 26.
+ 1 APPPATH\Views\master_bpkb\detail_bpkb.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\master_bpkb\\detail_bpkb.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\detail_bpkb.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(42): view('master_bpkb/detail_bpkb', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('...')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-12 00:26:33 --> Trying to access array offset on value of type null
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 26.
+ 1 APPPATH\Views\master_bpkb\detail_bpkb.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\master_bpkb\\detail_bpkb.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\detail_bpkb.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(42): view('master_bpkb/detail_bpkb', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('...')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-12 00:26:49 --> Trying to access array offset on value of type null
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 26.
+ 1 APPPATH\Views\master_bpkb\detail_bpkb.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\master_bpkb\\detail_bpkb.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\detail_bpkb.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(42): view('master_bpkb/detail_bpkb', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('...')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-12 00:28:17 --> Trying to access array offset on value of type null
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 26.
+ 1 APPPATH\Views\master_bpkb\detail_bpkb.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\master_bpkb\\detail_bpkb.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\detail_bpkb.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(42): view('master_bpkb/detail_bpkb', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('...')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-12 00:28:44 --> Trying to access array offset on value of type null
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 26.
+ 1 APPPATH\Views\master_bpkb\detail_bpkb.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\master_bpkb\\detail_bpkb.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\detail_bpkb.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(42): view('master_bpkb/detail_bpkb', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('...')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-12 00:28:55 --> Trying to access array offset on value of type null
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 26.
+ 1 APPPATH\Views\master_bpkb\detail_bpkb.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\master_bpkb\\detail_bpkb.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\detail_bpkb.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(42): view('master_bpkb/detail_bpkb', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('...')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-12 00:29:12 --> Trying to access array offset on value of type null
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 26.
+ 1 APPPATH\Views\master_bpkb\detail_bpkb.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\master_bpkb\\detail_bpkb.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\detail_bpkb.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(42): view('master_bpkb/detail_bpkb', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('...')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-12 00:29:12 --> Trying to access array offset on value of type null
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 26.
+ 1 APPPATH\Views\master_bpkb\detail_bpkb.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\master_bpkb\\detail_bpkb.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\detail_bpkb.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(42): view('master_bpkb/detail_bpkb', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('public', 'foto_aaaabpkb', 'bpkb1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-12 00:29:26 --> Trying to access array offset on value of type null
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 26.
+ 1 APPPATH\Views\master_bpkb\detail_bpkb.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\master_bpkb\\detail_bpkb.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\detail_bpkb.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(42): view('master_bpkb/detail_bpkb', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('...')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-12 00:29:38 --> Trying to access array offset on value of type null
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 26.
+ 1 APPPATH\Views\master_bpkb\detail_bpkb.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\master_bpkb\\detail_bpkb.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\detail_bpkb.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(42): view('master_bpkb/detail_bpkb', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('...')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-12 00:29:57 --> Trying to access array offset on value of type null
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 26.
+ 1 APPPATH\Views\master_bpkb\detail_bpkb.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\master_bpkb\\detail_bpkb.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\detail_bpkb.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(42): view('master_bpkb/detail_bpkb', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('...')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-12 00:34:48 --> Trying to access array offset on value of type null
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 26.
+ 1 APPPATH\Views\master_bpkb\detail_bpkb.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\master_bpkb\\detail_bpkb.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\detail_bpkb.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(42): view('master_bpkb/detail_bpkb', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('...')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-12 00:35:10 --> Trying to access array offset on value of type null
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 26.
+ 1 APPPATH\Views\master_bpkb\detail_bpkb.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\master_bpkb\\detail_bpkb.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\detail_bpkb.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(42): view('master_bpkb/detail_bpkb', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('...')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-12 00:35:20 --> Trying to access array offset on value of type null
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 26.
+ 1 APPPATH\Views\master_bpkb\detail_bpkb.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\master_bpkb\\detail_bpkb.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\detail_bpkb.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(42): view('master_bpkb/detail_bpkb', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('...')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-12 00:55:10 --> Too few arguments to function CodeIgniter\Database\BaseBuilder::where(), 0 passed in C:\xampp\htdocs\peminjaman_bpkb\app\Models\BpkbModel.php on line 41 and at least 1 expected
+in SYSTEMPATH\Database\BaseBuilder.php on line 672.
+ 1 APPPATH\Models\BpkbModel.php(41): CodeIgniter\Database\BaseBuilder->where()
+ 2 APPPATH\Controllers\Bpkb.php(37): App\Models\BpkbModel->getImg('23')
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('23')
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-12 01:58:58 --> Unknown column 'id_bpkb' in 'where clause'
+CRITICAL - 2022-07-12 01:58:59 --> Unknown column 'id_bpkb' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `bpkb_gambar`
+WHERE `id_bpkb` = \'292381238123\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `bpkb_gambar`
+WHERE `id_bpkb` = \'292381238123\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `bpkb_gambar`
+WHERE `id_bpkb` = \'292381238123\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `bpkb_gambar`
+WHERE `id_bpkb` = :id_bpkb:', [...], false)
+ 5 APPPATH\Models\BpkbModel.php(41): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Bpkb.php(39): App\Models\BpkbModel->getImg('292381238123')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('23')
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-12 01:59:29 --> Unknown column 'id_bpkb' in 'where clause'
+CRITICAL - 2022-07-12 01:59:29 --> Unknown column 'id_bpkb' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `bpkb_gambar`
+WHERE `id_bpkb` = \'292381238123\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `bpkb_gambar`
+WHERE `id_bpkb` = \'292381238123\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `bpkb_gambar`
+WHERE `id_bpkb` = \'292381238123\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `bpkb_gambar`
+WHERE `id_bpkb` = :id_bpkb:', [...], false)
+ 5 APPPATH\Models\BpkbModel.php(41): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Bpkb.php(39): App\Models\BpkbModel->getImg('23', '292381238123')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('23')
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-12 01:59:31 --> Unknown column 'id_bpkb' in 'where clause'
+CRITICAL - 2022-07-12 01:59:31 --> Unknown column 'id_bpkb' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `bpkb_gambar`
+WHERE `id_bpkb` = \'292381238123\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `bpkb_gambar`
+WHERE `id_bpkb` = \'292381238123\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `bpkb_gambar`
+WHERE `id_bpkb` = \'292381238123\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `bpkb_gambar`
+WHERE `id_bpkb` = :id_bpkb:', [...], false)
+ 5 APPPATH\Models\BpkbModel.php(41): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Bpkb.php(39): App\Models\BpkbModel->getImg('23', '292381238123')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('23')
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-12 03:48:49 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Bpkb.php on line 38.
+ 1 APPPATH\Controllers\Bpkb.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Bpkb.php', 38, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('1657615691_697e049911d77dab4444.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-12 03:49:56 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Bpkb.php on line 38.
+ 1 APPPATH\Controllers\Bpkb.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Bpkb.php', 38, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('FCPATH\\foto_bpkb', '1657615691_697e049911d77dab4444.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-12 03:50:25 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Bpkb.php on line 38.
+ 1 APPPATH\Controllers\Bpkb.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Bpkb.php', 38, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('FCPATH\\foto_bpkb', '1657615691_697e049911d77dab4444.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-12 03:51:36 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Bpkb.php on line 38.
+ 1 APPPATH\Controllers\Bpkb.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Bpkb.php', 38, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('FCPATH\\foto_bpkb', '1657615691_697e049911d77dab4444.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-12 03:52:49 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Bpkb.php on line 38.
+ 1 APPPATH\Controllers\Bpkb.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Bpkb.php', 38, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('FCPATH\\foto_bpkb', '1657615691_697e049911d77dab4444.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-12 03:53:48 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Bpkb.php on line 38.
+ 1 APPPATH\Controllers\Bpkb.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Bpkb.php', 38, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('FCPATH\\foto_bpkb', '1657615691_697e049911d77dab4444.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-12 03:54:01 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Bpkb.php on line 38.
+ 1 APPPATH\Controllers\Bpkb.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Bpkb.php', 38, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('FCPATH\\foto_bpkb', 'FCPATH\\foto_bpkb', '1657615691_697e049911d77dab4444.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-12 03:54:11 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Bpkb.php on line 38.
+ 1 APPPATH\Controllers\Bpkb.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Bpkb.php', 38, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('FCPATH\\foto_bpkb', '1657615691_697e049911d77dab4444.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-12 03:54:17 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Bpkb.php on line 38.
+ 1 APPPATH\Controllers\Bpkb.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Bpkb.php', 38, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('FCPATH\\foto_bpkb', '1657615691_697e049911d77dab4444.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-12 04:11:18 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Bpkb.php on line 38.
+ 1 APPPATH\Controllers\Bpkb.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Bpkb.php', 38, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('1657617074_0a15490afb3c2c171911.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-12 04:11:51 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Bpkb.php on line 38.
+ 1 APPPATH\Controllers\Bpkb.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Bpkb.php', 38, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('FCPATH\\foto_bpkb', '1657617074_0a15490afb3c2c171911.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-12 04:16:07 --> Invalid file: peminjam/index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('peminjam/index.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam/index', [], true)
+ 3 APPPATH\Controllers\Peminjam.php(31): view('peminjam/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

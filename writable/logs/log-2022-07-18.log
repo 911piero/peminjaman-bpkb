@@ -1,0 +1,54 @@
+CRITICAL - 2022-07-18 02:50:58 --> You must use the "set" method to update an entry.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2089.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2025): CodeIgniter\Database\BaseBuilder->validateUpdate()
+ 2 APPPATH\Models\PeminjamModel.php(18): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\Peminjam.php(111): App\Models\PeminjamModel->tambahData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->save()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-18 02:53:36 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::update() must be of the type array or null, string given, called in C:\xampp\htdocs\1_peminjaman_bpkb\app\Models\PeminjamModel.php on line 17
+in SYSTEMPATH\Database\BaseBuilder.php on line 2019.
+ 1 APPPATH\Models\PeminjamModel.php(17): CodeIgniter\Database\BaseBuilder->update('23', [...])
+ 2 APPPATH\Controllers\Peminjam.php(111): App\Models\PeminjamModel->tambahData([...])
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->save()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-18 02:54:00 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::update() must be of the type array or null, string given, called in C:\xampp\htdocs\1_peminjaman_bpkb\app\Models\PeminjamModel.php on line 17
+in SYSTEMPATH\Database\BaseBuilder.php on line 2019.
+ 1 APPPATH\Models\PeminjamModel.php(17): CodeIgniter\Database\BaseBuilder->update('23', [...])
+ 2 APPPATH\Controllers\Peminjam.php(111): App\Models\PeminjamModel->tambahData([...])
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->save()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-18 02:54:29 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::update() must be of the type array or null, string given, called in C:\xampp\htdocs\1_peminjaman_bpkb\app\Models\PeminjamModel.php on line 17
+in SYSTEMPATH\Database\BaseBuilder.php on line 2019.
+ 1 APPPATH\Models\PeminjamModel.php(17): CodeIgniter\Database\BaseBuilder->update('23', [...])
+ 2 APPPATH\Controllers\Peminjam.php(111): App\Models\PeminjamModel->tambahData([...])
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->save()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-18 02:56:52 --> You must use the "set" method to update an entry.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2089.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2025): CodeIgniter\Database\BaseBuilder->validateUpdate()
+ 2 APPPATH\Models\PeminjamModel.php(18): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\Peminjam.php(111): App\Models\PeminjamModel->tambahData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->save()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-18 03:06:36 --> Call to a member function where() on array
+in APPPATH\Controllers\Peminjam.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->create()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

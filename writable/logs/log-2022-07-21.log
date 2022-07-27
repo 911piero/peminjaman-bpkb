@@ -1,0 +1,882 @@
+CRITICAL - 2022-07-21 01:40:13 --> Undefined index: nomor_bpkb
+in APPPATH\Controllers\Bpkb.php on line 56.
+ 1 APPPATH\Controllers\Bpkb.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nomor_bpkb', 'APPPATH\\Controllers\\Bpkb.php', 56, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('29')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-21 01:43:04 --> Undefined index: nomor_bpkb
+in APPPATH\Controllers\Bpkb.php on line 56.
+ 1 APPPATH\Controllers\Bpkb.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nomor_bpkb', 'APPPATH\\Controllers\\Bpkb.php', 56, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('29')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-21 01:44:48 --> Undefined index: nomor_bpkb
+in APPPATH\Controllers\Bpkb.php on line 56.
+ 1 APPPATH\Controllers\Bpkb.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nomor_bpkb', 'APPPATH\\Controllers\\Bpkb.php', 56, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('29')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-21 01:50:11 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2022-07-21 01:50:11 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_bpkb`
+WHERE `data_bpkb`.`id_bpkb` = :data_bpkb.id_bpkb:', [...], false)
+ 3 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, '29')
+ 5 APPPATH\Controllers\Bpkb.php(54): CodeIgniter\BaseModel->find('29')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('29')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-21 01:56:08 --> Undefined variable: builder
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 40.
+ 1 APPPATH\Views\master_bpkb\detail_bpkb.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: builder', 'APPPATH\\Views\\master_bpkb\\detail_bpkb.php', 40, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\detail_bpkb.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(71): view('master_bpkb/detail_bpkb', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('29')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-21 01:56:18 --> Cannot use object of type CodeIgniter\Database\MySQLi\Builder as array
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 40.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 4 APPPATH\Controllers\Bpkb.php(71): view('master_bpkb/detail_bpkb', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('29')
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-21 01:58:57 --> Cannot use object of type CodeIgniter\Database\MySQLi\Builder as array
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 40.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 4 APPPATH\Controllers\Bpkb.php(67): view('master_bpkb/detail_bpkb', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('29')
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-21 01:59:17 --> Cannot use object of type CodeIgniter\Database\MySQLi\Builder as array
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 40.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 4 APPPATH\Controllers\Bpkb.php(67): view('master_bpkb/detail_bpkb', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('29')
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-21 01:59:57 --> Undefined index: model
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 40.
+ 1 APPPATH\Views\master_bpkb\detail_bpkb.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: model', 'APPPATH\\Views\\master_bpkb\\detail_bpkb.php', 40, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\detail_bpkb.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(67): view('master_bpkb/detail_bpkb', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('29')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-21 02:00:20 --> Undefined index: bpkb_model_kendaraan.model
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 40.
+ 1 APPPATH\Views\master_bpkb\detail_bpkb.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: bpkb_model_kendaraan.model', 'APPPATH\\Views\\master_bpkb\\detail_bpkb.php', 40, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\detail_bpkb.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(67): view('master_bpkb/detail_bpkb', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('29')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-21 02:02:41 --> Array to string conversion
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 40.
+ 1 APPPATH\Views\master_bpkb\detail_bpkb.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Views\\master_bpkb\\detail_bpkb.php', 40, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\detail_bpkb.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(67): view('master_bpkb/detail_bpkb', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('29')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-21 02:03:10 --> Undefined index: bpkb_model_kendaraan.model
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 40.
+ 1 APPPATH\Views\master_bpkb\detail_bpkb.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: bpkb_model_kendaraan.model', 'APPPATH\\Views\\master_bpkb\\detail_bpkb.php', 40, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\detail_bpkb.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(67): view('master_bpkb/detail_bpkb', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('29')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-21 02:03:20 --> Undefined index: model
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 40.
+ 1 APPPATH\Views\master_bpkb\detail_bpkb.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: model', 'APPPATH\\Views\\master_bpkb\\detail_bpkb.php', 40, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\detail_bpkb.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(67): view('master_bpkb/detail_bpkb', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('29')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-21 02:03:49 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 40.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 4 APPPATH\Controllers\Bpkb.php(67): view('master_bpkb/detail_bpkb', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('29')
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-21 02:08:50 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResultArray()
+in APPPATH\Models\BpkbModel.php on line 30.
+ 1 APPPATH\Controllers\Bpkb.php(56): App\Models\BpkbModel->getDetail('29')
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('29')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-21 02:12:17 --> Undefined index: nomor_bpkb
+in APPPATH\Controllers\Bpkb.php on line 57.
+ 1 APPPATH\Controllers\Bpkb.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nomor_bpkb', 'APPPATH\\Controllers\\Bpkb.php', 57, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('29')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-21 02:39:51 --> Undefined index: nomor_bpkb
+in APPPATH\Controllers\Bpkb.php on line 57.
+ 1 APPPATH\Controllers\Bpkb.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nomor_bpkb', 'APPPATH\\Controllers\\Bpkb.php', 57, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('29')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-21 02:43:41 --> Column 'model' in field list is ambiguous
+CRITICAL - 2022-07-21 02:43:41 --> Column 'model' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `id_bpkb`, `nomor_registrasi`, `nama_pemilik`, `alamat`, `merk`, `tipe`, `model`, `tahun_pembuatan`, `isi_silinder`, `nomor_rangka`, `nomor_mesin`, `warna`, `bahan_bakar`, `warna_tnkb`, `tahun_registrasi`, `nomor_bpkb`, `kode_lokasi`
+FROM `data_bpkb`
+JOIN `bpkb_bahan_bakar` ON `bpkb_bahan_bakar`.`id_bahan_bakar` = `data_bpkb`.`bahan_bakar`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+JOIN `bpkb_warna_tnkb` ON `bpkb_warna_tnkb`.`id_warna_tnkb` = `data_bpkb`.`warna_tnkb`
+WHERE `id_bpkb` = \'29\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_bpkb`, `nomor_registrasi`, `nama_pemilik`, `alamat`, `merk`, `tipe`, `model`, `tahun_pembuatan`, `isi_silinder`, `nomor_rangka`, `nomor_mesin`, `warna`, `bahan_bakar`, `warna_tnkb`, `tahun_registrasi`, `nomor_bpkb`, `kode_lokasi`
+FROM `data_bpkb`
+JOIN `bpkb_bahan_bakar` ON `bpkb_bahan_bakar`.`id_bahan_bakar` = `data_bpkb`.`bahan_bakar`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+JOIN `bpkb_warna_tnkb` ON `bpkb_warna_tnkb`.`id_warna_tnkb` = `data_bpkb`.`warna_tnkb`
+WHERE `id_bpkb` = \'29\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_bpkb`, `nomor_registrasi`, `nama_pemilik`, `alamat`, `merk`, `tipe`, `model`, `tahun_pembuatan`, `isi_silinder`, `nomor_rangka`, `nomor_mesin`, `warna`, `bahan_bakar`, `warna_tnkb`, `tahun_registrasi`, `nomor_bpkb`, `kode_lokasi`
+FROM `data_bpkb`
+JOIN `bpkb_bahan_bakar` ON `bpkb_bahan_bakar`.`id_bahan_bakar` = `data_bpkb`.`bahan_bakar`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+JOIN `bpkb_warna_tnkb` ON `bpkb_warna_tnkb`.`id_warna_tnkb` = `data_bpkb`.`warna_tnkb`
+WHERE `id_bpkb` = \'29\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id_bpkb`, `nomor_registrasi`, `nama_pemilik`, `alamat`, `merk`, `tipe`, `model`, `tahun_pembuatan`, `isi_silinder`, `nomor_rangka`, `nomor_mesin`, `warna`, `bahan_bakar`, `warna_tnkb`, `tahun_registrasi`, `nomor_bpkb`, `kode_lokasi`
+FROM `data_bpkb`
+JOIN `bpkb_bahan_bakar` ON `bpkb_bahan_bakar`.`id_bahan_bakar` = `data_bpkb`.`bahan_bakar`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+JOIN `bpkb_warna_tnkb` ON `bpkb_warna_tnkb`.`id_warna_tnkb` = `data_bpkb`.`warna_tnkb`
+WHERE `id_bpkb` = :id_bpkb:', [...], false)
+ 5 APPPATH\Models\BpkbModel.php(32): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Bpkb.php(55): App\Models\BpkbModel->getDetail('29')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('29')
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-21 02:44:45 --> Column 'bahan_bakar' in field list is ambiguous
+CRITICAL - 2022-07-21 02:44:45 --> Column 'bahan_bakar' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `id_bpkb`, `nomor_registrasi`, `nama_pemilik`, `alamat`, `merk`, `tipe`, `bpkb_model_kendaraan`.`model`, `tahun_pembuatan`, `isi_silinder`, `nomor_rangka`, `nomor_mesin`, `warna`, `bahan_bakar`, `warna_tnkb`, `tahun_registrasi`, `nomor_bpkb`, `kode_lokasi`
+FROM `data_bpkb`
+JOIN `bpkb_bahan_bakar` ON `bpkb_bahan_bakar`.`id_bahan_bakar` = `data_bpkb`.`bahan_bakar`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+JOIN `bpkb_warna_tnkb` ON `bpkb_warna_tnkb`.`id_warna_tnkb` = `data_bpkb`.`warna_tnkb`
+WHERE `id_bpkb` = \'29\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_bpkb`, `nomor_registrasi`, `nama_pemilik`, `alamat`, `merk`, `tipe`, `bpkb_model_kendaraan`.`model`, `tahun_pembuatan`, `isi_silinder`, `nomor_rangka`, `nomor_mesin`, `warna`, `bahan_bakar`, `warna_tnkb`, `tahun_registrasi`, `nomor_bpkb`, `kode_lokasi`
+FROM `data_bpkb`
+JOIN `bpkb_bahan_bakar` ON `bpkb_bahan_bakar`.`id_bahan_bakar` = `data_bpkb`.`bahan_bakar`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+JOIN `bpkb_warna_tnkb` ON `bpkb_warna_tnkb`.`id_warna_tnkb` = `data_bpkb`.`warna_tnkb`
+WHERE `id_bpkb` = \'29\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_bpkb`, `nomor_registrasi`, `nama_pemilik`, `alamat`, `merk`, `tipe`, `bpkb_model_kendaraan`.`model`, `tahun_pembuatan`, `isi_silinder`, `nomor_rangka`, `nomor_mesin`, `warna`, `bahan_bakar`, `warna_tnkb`, `tahun_registrasi`, `nomor_bpkb`, `kode_lokasi`
+FROM `data_bpkb`
+JOIN `bpkb_bahan_bakar` ON `bpkb_bahan_bakar`.`id_bahan_bakar` = `data_bpkb`.`bahan_bakar`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+JOIN `bpkb_warna_tnkb` ON `bpkb_warna_tnkb`.`id_warna_tnkb` = `data_bpkb`.`warna_tnkb`
+WHERE `id_bpkb` = \'29\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id_bpkb`, `nomor_registrasi`, `nama_pemilik`, `alamat`, `merk`, `tipe`, `bpkb_model_kendaraan`.`model`, `tahun_pembuatan`, `isi_silinder`, `nomor_rangka`, `nomor_mesin`, `warna`, `bahan_bakar`, `warna_tnkb`, `tahun_registrasi`, `nomor_bpkb`, `kode_lokasi`
+FROM `data_bpkb`
+JOIN `bpkb_bahan_bakar` ON `bpkb_bahan_bakar`.`id_bahan_bakar` = `data_bpkb`.`bahan_bakar`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+JOIN `bpkb_warna_tnkb` ON `bpkb_warna_tnkb`.`id_warna_tnkb` = `data_bpkb`.`warna_tnkb`
+WHERE `id_bpkb` = :id_bpkb:', [...], false)
+ 5 APPPATH\Models\BpkbModel.php(32): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Bpkb.php(55): App\Models\BpkbModel->getDetail('29')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('29')
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-21 02:49:25 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\GambarController.php(32): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\foto_bpkb', '1658389764_3fc6d0946b42c8ff653f')
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\GambarController->save()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GambarController))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-21 02:57:00 --> Undefined variable: validation
+in APPPATH\Views\master_bpkb\detail_bpkb.php on line 99.
+ 1 APPPATH\Views\master_bpkb\detail_bpkb.php(99): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: validation', 'APPPATH\\Views\\master_bpkb\\detail_bpkb.php', 99, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\detail_bpkb.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/detail_bpkb', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(65): view('master_bpkb/detail_bpkb', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('29')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-21 02:58:42 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\GambarController.php(45): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\foto_bpkb', '1658390322_d8860a759cf74329291e')
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\GambarController->save()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GambarController))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-21 02:59:00 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\GambarController.php(45): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\foto_bpkb', '1658390339_334c54223501c5d38469')
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\GambarController->save()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GambarController))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-21 02:59:06 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\GambarController.php(45): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\foto_bpkb', '1658390345_9e54a25b21b7b4073d70')
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\GambarController->save()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GambarController))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-21 03:21:29 --> Too few arguments to function App\Controllers\Bpkb::detail(), 0 passed in C:\xampp\htdocs\1_peminjaman_bpkb\vendor\codeigniter4\framework\system\CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH\Controllers\Bpkb.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-21 03:22:48 --> Too few arguments to function App\Controllers\Bpkb::detail(), 0 passed in C:\xampp\htdocs\1_peminjaman_bpkb\vendor\codeigniter4\framework\system\CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH\Controllers\Bpkb.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-21 03:23:26 --> Too few arguments to function App\Controllers\Bpkb::detail(), 0 passed in C:\xampp\htdocs\1_peminjaman_bpkb\vendor\codeigniter4\framework\system\CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH\Controllers\Bpkb.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-21 03:26:31 --> Too few arguments to function App\Controllers\Bpkb::detail(), 0 passed in C:\xampp\htdocs\1_peminjaman_bpkb\vendor\codeigniter4\framework\system\CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH\Controllers\Bpkb.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-21 03:31:58 --> Too few arguments to function App\Controllers\Bpkb::detail(), 0 passed in C:\xampp\htdocs\1_peminjaman_bpkb\vendor\codeigniter4\framework\system\CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH\Controllers\Bpkb.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-21 03:41:50 --> Table 'peminjaman_bpkb.peminjam_gambar' doesn't exist
+CRITICAL - 2022-07-21 03:41:50 --> Table 'peminjaman_bpkb.peminjam_gambar' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `peminjam_gambar`
+WHERE `id_peminjam` = \'19\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `peminjam_gambar`
+WHERE `id_peminjam` = \'19\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `peminjam_gambar`
+WHERE `id_peminjam` = \'19\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `peminjam_gambar`
+WHERE `id_peminjam` = :id_peminjam:', [...], false)
+ 5 APPPATH\Models\PeminjamModel.php(52): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Peminjam.php(195): App\Models\PeminjamModel->getImg('19')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->detail('19')
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-21 03:42:48 --> Table 'peminjaman_bpkb.peminjam_gambar' doesn't exist
+CRITICAL - 2022-07-21 03:42:48 --> Table 'peminjaman_bpkb.peminjam_gambar' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `peminjam_gambar`
+WHERE `id_peminjam` = \'19\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `peminjam_gambar`
+WHERE `id_peminjam` = \'19\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `peminjam_gambar`
+WHERE `id_peminjam` = \'19\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `peminjam_gambar`
+WHERE `id_peminjam` = :id_peminjam:', [...], false)
+ 5 APPPATH\Models\PeminjamModel.php(52): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Peminjam.php(195): App\Models\PeminjamModel->getImg('19')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->detail('19')
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-21 03:44:10 --> Table 'peminjaman_bpkb.peminjam_gambar' doesn't exist
+CRITICAL - 2022-07-21 03:44:10 --> Table 'peminjaman_bpkb.peminjam_gambar' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `peminjam_gambar`
+WHERE `id_peminjam` = \'19\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `peminjam_gambar`
+WHERE `id_peminjam` = \'19\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `peminjam_gambar`
+WHERE `id_peminjam` = \'19\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `peminjam_gambar`
+WHERE `id_peminjam` = :id_peminjam:', [...], false)
+ 5 APPPATH\Models\PeminjamModel.php(52): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Peminjam.php(195): App\Models\PeminjamModel->getImg('19')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->detail('19')
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-21 03:49:13 --> Unknown column 'id_peminjam' in 'where clause'
+CRITICAL - 2022-07-21 03:49:13 --> Unknown column 'id_peminjam' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `peminjam_gambar`
+WHERE `id_peminjam` = \'19\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `peminjam_gambar`
+WHERE `id_peminjam` = \'19\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `peminjam_gambar`
+WHERE `id_peminjam` = \'19\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `peminjam_gambar`
+WHERE `id_peminjam` = :id_peminjam:', [...], false)
+ 5 APPPATH\Models\PeminjamModel.php(52): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Peminjam.php(195): App\Models\PeminjamModel->getImg('19')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->detail('19')
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-21 03:51:02 --> Unknown column 'id_peminjam' in 'field list'
+CRITICAL - 2022-07-21 03:51:02 --> Unknown column 'id_peminjam' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `peminjam_gambar` (`link`, `id_peminjam`, `created_at`, `updated_at`) VALUES (\'1658393462_b93656753ddad80f194b.jpg\', \'19\', \'2022-07-21 03:51:02\', \'2022-07-21 03:51:02\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `peminjam_gambar` (`link`, `id_peminjam`, `created_at`, `updated_at`) VALUES (\'1658393462_b93656753ddad80f194b.jpg\', \'19\', \'2022-07-21 03:51:02\', \'2022-07-21 03:51:02\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `peminjam_gambar` (`link`, `id_peminjam`, `created_at`, `updated_at`) VALUES (\'1658393462_b93656753ddad80f194b.jpg\', \'19\', \'2022-07-21 03:51:02\', \'2022-07-21 03:51:02\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `peminjam_gambar` (`link`, `id_peminjam`, `created_at`, `updated_at`) VALUES (:link:, :id_peminjam:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\GambarPeminjamanController.php(29): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\GambarPeminjamanController->save()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GambarPeminjamanController))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-21 04:11:16 --> Trying to access array offset on value of type null
+in APPPATH\Views\peminjam_bpkb\detail_peminjam.php on line 31.
+ 1 APPPATH\Views\peminjam_bpkb\detail_peminjam.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\peminjam_bpkb\\detail_peminjam.php', 31, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\detail_peminjam.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/peminjam_bpkb/detail_peminjam', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(206): view('/peminjam_bpkb/detail_peminjam', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->detail('19')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-21 04:11:45 --> Trying to access array offset on value of type null
+in APPPATH\Views\peminjam_bpkb\detail_peminjam.php on line 31.
+ 1 APPPATH\Views\peminjam_bpkb\detail_peminjam.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\peminjam_bpkb\\detail_peminjam.php', 31, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\detail_peminjam.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/peminjam_bpkb/detail_peminjam', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(206): view('/peminjam_bpkb/detail_peminjam', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->detail('19')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-21 04:18:07 --> Column 'id_bpkb' in where clause is ambiguous
+CRITICAL - 2022-07-21 04:18:07 --> Column 'id_bpkb' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nama_lengkap`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+WHERE `id_bpkb` = \'19\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nama_lengkap`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+WHERE `id_bpkb` = \'19\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nama_lengkap`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+WHERE `id_bpkb` = \'19\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nama_lengkap`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+WHERE `id_bpkb` = :id_bpkb:', [...], false)
+ 5 APPPATH\Models\PeminjamModel.php(52): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Peminjam.php(193): App\Models\PeminjamModel->getDetail('19')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->detail('19')
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-21 04:18:46 --> Column 'id_bpkb' in where clause is ambiguous
+CRITICAL - 2022-07-21 04:18:46 --> Column 'id_bpkb' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nama_lengkap`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+WHERE `id_bpkb` = \'19\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nama_lengkap`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+WHERE `id_bpkb` = \'19\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nama_lengkap`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+WHERE `id_bpkb` = \'19\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nama_lengkap`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+WHERE `id_bpkb` = :id_bpkb:', [...], false)
+ 5 APPPATH\Models\PeminjamModel.php(52): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Peminjam.php(193): App\Models\PeminjamModel->getDetail('19')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->detail('19')
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-21 04:26:49 --> syntax error, unexpected '}', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+in APPPATH\Models\PeminjamModel.php on line 51.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\PeminjamModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\PeminjamModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\PeminjamModel')
+ 4 APPPATH\Controllers\Peminjam.php(16): spl_autoload_call('App\\Models\\PeminjamModel')
+ 5 SYSTEMPATH\CodeIgniter.php(858): App\Controllers\Peminjam->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-21 04:30:57 --> Column 'id_bpkb' in field list is ambiguous
+CRITICAL - 2022-07-21 04:30:57 --> Column 'id_bpkb' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nama_lengkap`, `nik`, `id_bpkb`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `tgl_kembali`, `status`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam_id_bpkb`
+WHERE `id_peminjam` = \'19\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nama_lengkap`, `nik`, `id_bpkb`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `tgl_kembali`, `status`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam_id_bpkb`
+WHERE `id_peminjam` = \'19\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nama_lengkap`, `nik`, `id_bpkb`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `tgl_kembali`, `status`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam_id_bpkb`
+WHERE `id_peminjam` = \'19\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nama_lengkap`, `nik`, `id_bpkb`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `tgl_kembali`, `status`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam_id_bpkb`
+WHERE `id_peminjam` = :id_peminjam:', [...], false)
+ 5 APPPATH\Models\PeminjamModel.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Peminjam.php(193): App\Models\PeminjamModel->getDetail('19')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->detail('19')
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-21 04:31:21 --> Column 'status' in field list is ambiguous
+CRITICAL - 2022-07-21 04:31:21 --> Column 'status' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nama_lengkap`, `nik`, `data_bpkb`.`id_bpkb`, `data_bpkb`.`nomor_bpkb`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `tgl_kembali`, `status`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam_id_bpkb`
+WHERE `id_peminjam` = \'19\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nama_lengkap`, `nik`, `data_bpkb`.`id_bpkb`, `data_bpkb`.`nomor_bpkb`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `tgl_kembali`, `status`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam_id_bpkb`
+WHERE `id_peminjam` = \'19\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nama_lengkap`, `nik`, `data_bpkb`.`id_bpkb`, `data_bpkb`.`nomor_bpkb`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `tgl_kembali`, `status`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam_id_bpkb`
+WHERE `id_peminjam` = \'19\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nama_lengkap`, `nik`, `data_bpkb`.`id_bpkb`, `data_bpkb`.`nomor_bpkb`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `tgl_kembali`, `status`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam_id_bpkb`
+WHERE `id_peminjam` = :id_peminjam:', [...], false)
+ 5 APPPATH\Models\PeminjamModel.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Peminjam.php(193): App\Models\PeminjamModel->getDetail('19')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->detail('19')
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-21 04:31:32 --> Unknown column 'data_peminjam_id_bpkb' in 'on clause'
+CRITICAL - 2022-07-21 04:31:32 --> Unknown column 'data_peminjam_id_bpkb' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nama_lengkap`, `nik`, `data_bpkb`.`id_bpkb`, `data_bpkb`.`nomor_bpkb`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `tgl_kembali`, `data_peminjam`.`status`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam_id_bpkb`
+WHERE `id_peminjam` = \'19\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nama_lengkap`, `nik`, `data_bpkb`.`id_bpkb`, `data_bpkb`.`nomor_bpkb`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `tgl_kembali`, `data_peminjam`.`status`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam_id_bpkb`
+WHERE `id_peminjam` = \'19\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nama_lengkap`, `nik`, `data_bpkb`.`id_bpkb`, `data_bpkb`.`nomor_bpkb`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `tgl_kembali`, `data_peminjam`.`status`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam_id_bpkb`
+WHERE `id_peminjam` = \'19\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nama_lengkap`, `nik`, `data_bpkb`.`id_bpkb`, `data_bpkb`.`nomor_bpkb`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `tgl_kembali`, `data_peminjam`.`status`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam_id_bpkb`
+WHERE `id_peminjam` = :id_peminjam:', [...], false)
+ 5 APPPATH\Models\PeminjamModel.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Peminjam.php(193): App\Models\PeminjamModel->getDetail('19')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->detail('19')
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-21 04:32:43 --> Undefined variable: peminjam2
+in APPPATH\Views\peminjam_bpkb\detail_peminjam.php on line 31.
+ 1 APPPATH\Views\peminjam_bpkb\detail_peminjam.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: peminjam2', 'APPPATH\\Views\\peminjam_bpkb\\detail_peminjam.php', 31, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\detail_peminjam.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/peminjam_bpkb/detail_peminjam', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(205): view('/peminjam_bpkb/detail_peminjam', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->detail('19')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-21 04:32:54 --> Undefined index: data_bpkb.nomor_bpkb
+in APPPATH\Views\peminjam_bpkb\detail_peminjam.php on line 31.
+ 1 APPPATH\Views\peminjam_bpkb\detail_peminjam.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: data_bpkb.nomor_bpkb', 'APPPATH\\Views\\peminjam_bpkb\\detail_peminjam.php', 31, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\detail_peminjam.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/peminjam_bpkb/detail_peminjam', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(205): view('/peminjam_bpkb/detail_peminjam', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->detail('19')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-21 04:37:23 --> Column 'status' in field list is ambiguous
+CRITICAL - 2022-07-21 04:37:23 --> Column 'status' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `id_peminjam`, `nama_lengkap`, `nik`, `data_bpkb`.`nomor_bpkb`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `tgl_kembali`, `status`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+ORDER BY `nama_lengkap` ASC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_peminjam`, `nama_lengkap`, `nik`, `data_bpkb`.`nomor_bpkb`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `tgl_kembali`, `status`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+ORDER BY `nama_lengkap` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_peminjam`, `nama_lengkap`, `nik`, `data_bpkb`.`nomor_bpkb`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `tgl_kembali`, `status`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+ORDER BY `nama_lengkap` ASC
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id_peminjam`, `nama_lengkap`, `nik`, `data_bpkb`.`nomor_bpkb`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `tgl_kembali`, `status`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+ORDER BY `nama_lengkap` ASC
+ LIMIT 10', [], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(219): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+ 7 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 8 APPPATH\Controllers\Peminjam.php(53): Hermawan\DataTables\DataTable->toJson(true)
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->listData()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-21 04:37:55 --> Column 'status' in field list is ambiguous
+CRITICAL - 2022-07-21 04:37:55 --> Column 'status' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `id_peminjam`, `nama_lengkap`, `nik`, `data_bpkb`.`nomor_bpkb`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `tgl_kembali`, `status`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+ORDER BY `nama_lengkap` ASC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_peminjam`, `nama_lengkap`, `nik`, `data_bpkb`.`nomor_bpkb`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `tgl_kembali`, `status`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+ORDER BY `nama_lengkap` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_peminjam`, `nama_lengkap`, `nik`, `data_bpkb`.`nomor_bpkb`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `tgl_kembali`, `status`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+ORDER BY `nama_lengkap` ASC
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id_peminjam`, `nama_lengkap`, `nik`, `data_bpkb`.`nomor_bpkb`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `tgl_kembali`, `status`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+ORDER BY `nama_lengkap` ASC
+ LIMIT 10', [], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(219): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+ 7 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 8 APPPATH\Controllers\Peminjam.php(53): Hermawan\DataTables\DataTable->toJson(true)
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->listData()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-21 04:38:18 --> Column 'status' in field list is ambiguous
+CRITICAL - 2022-07-21 04:38:18 --> Column 'status' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `id_peminjam`, `nama_lengkap`, `nik`, `data_bpkb`.`nomor_bpkb`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `tgl_kembali`, `status`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+ORDER BY `nama_lengkap` ASC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_peminjam`, `nama_lengkap`, `nik`, `data_bpkb`.`nomor_bpkb`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `tgl_kembali`, `status`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+ORDER BY `nama_lengkap` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_peminjam`, `nama_lengkap`, `nik`, `data_bpkb`.`nomor_bpkb`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `tgl_kembali`, `status`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+ORDER BY `nama_lengkap` ASC
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id_peminjam`, `nama_lengkap`, `nik`, `data_bpkb`.`nomor_bpkb`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `tgl_kembali`, `status`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+ORDER BY `nama_lengkap` ASC
+ LIMIT 10', [], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(219): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+ 7 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 8 APPPATH\Controllers\Peminjam.php(53): Hermawan\DataTables\DataTable->toJson(true)
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->listData()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-21 04:39:17 --> Column 'status' in field list is ambiguous
+CRITICAL - 2022-07-21 04:39:17 --> Column 'status' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `id_peminjam`, `nama_lengkap`, `nik`, `data_bpkb`.`id_bpkb`, `data_bpkb`.`nomor_bpkb`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `tgl_kembali`, `status`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+ORDER BY `nama_lengkap` ASC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_peminjam`, `nama_lengkap`, `nik`, `data_bpkb`.`id_bpkb`, `data_bpkb`.`nomor_bpkb`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `tgl_kembali`, `status`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+ORDER BY `nama_lengkap` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_peminjam`, `nama_lengkap`, `nik`, `data_bpkb`.`id_bpkb`, `data_bpkb`.`nomor_bpkb`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `tgl_kembali`, `status`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+ORDER BY `nama_lengkap` ASC
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id_peminjam`, `nama_lengkap`, `nik`, `data_bpkb`.`id_bpkb`, `data_bpkb`.`nomor_bpkb`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `tgl_kembali`, `status`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+ORDER BY `nama_lengkap` ASC
+ LIMIT 10', [], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(219): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+ 7 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 8 APPPATH\Controllers\Peminjam.php(53): Hermawan\DataTables\DataTable->toJson(true)
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->listData()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-21 04:40:34 --> Undefined property: stdClass::$id_peminjam
+in APPPATH\Controllers\Peminjam.php on line 49.
+ 1 APPPATH\Controllers\Peminjam.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$id_peminjam', 'APPPATH\\Controllers\\Peminjam.php', 49, [...])
+ 2 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(91): App\Controllers\Peminjam->App\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 APPPATH\Controllers\Peminjam.php(53): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->listData()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-21 04:42:16 --> Undefined property: stdClass::$id_peminjam
+in APPPATH\Controllers\Peminjam.php on line 49.
+ 1 APPPATH\Controllers\Peminjam.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$id_peminjam', 'APPPATH\\Controllers\\Peminjam.php', 49, [...])
+ 2 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(91): App\Controllers\Peminjam->App\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 APPPATH\Controllers\Peminjam.php(53): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->listData()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-21 04:44:37 --> Unknown column 'nomor_bpkb' in 'field list'
+CRITICAL - 2022-07-21 04:44:37 --> Unknown column 'nomor_bpkb' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nama_lengkap`, `nik`, `nomor_bpkb`, `tgl_pinjam`, `tgl_kembali`, `status`
+FROM `data_peminjam`
+ORDER BY `nama_lengkap` ASC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nama_lengkap`, `nik`, `nomor_bpkb`, `tgl_pinjam`, `tgl_kembali`, `status`
+FROM `data_peminjam`
+ORDER BY `nama_lengkap` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nama_lengkap`, `nik`, `nomor_bpkb`, `tgl_pinjam`, `tgl_kembali`, `status`
+FROM `data_peminjam`
+ORDER BY `nama_lengkap` ASC
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nama_lengkap`, `nik`, `nomor_bpkb`, `tgl_pinjam`, `tgl_kembali`, `status`
+FROM `data_peminjam`
+ORDER BY `nama_lengkap` ASC
+ LIMIT 10', [], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(219): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+ 7 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 8 APPPATH\Controllers\Peminjam.php(52): Hermawan\DataTables\DataTable->toJson(true)
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->listData()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-21 04:44:53 --> Undefined property: stdClass::$id_peminjam
+in APPPATH\Controllers\Peminjam.php on line 48.
+ 1 APPPATH\Controllers\Peminjam.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$id_peminjam', 'APPPATH\\Controllers\\Peminjam.php', 48, [...])
+ 2 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(91): App\Controllers\Peminjam->App\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 APPPATH\Controllers\Peminjam.php(52): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->listData()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-21 04:45:03 --> Undefined property: stdClass::$id_peminjam
+in APPPATH\Controllers\Peminjam.php on line 48.
+ 1 APPPATH\Controllers\Peminjam.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$id_peminjam', 'APPPATH\\Controllers\\Peminjam.php', 48, [...])
+ 2 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(91): App\Controllers\Peminjam->App\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 APPPATH\Controllers\Peminjam.php(52): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->listData()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-21 04:46:36 --> Column 'id_bpkb' in field list is ambiguous
+CRITICAL - 2022-07-21 04:46:36 --> Column 'id_bpkb' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `id_peminjam`, `nama_lengkap`, `nik`, `id_bpkb`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `tgl_kembali`, `status`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+ORDER BY `nama_lengkap` ASC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_peminjam`, `nama_lengkap`, `nik`, `id_bpkb`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `tgl_kembali`, `status`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+ORDER BY `nama_lengkap` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_peminjam`, `nama_lengkap`, `nik`, `id_bpkb`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `tgl_kembali`, `status`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+ORDER BY `nama_lengkap` ASC
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id_peminjam`, `nama_lengkap`, `nik`, `id_bpkb`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `tgl_kembali`, `status`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+ORDER BY `nama_lengkap` ASC
+ LIMIT 10', [], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(219): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+ 7 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 8 APPPATH\Controllers\Peminjam.php(53): Hermawan\DataTables\DataTable->toJson(true)
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->listData()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-21 05:13:10 --> Undefined variable: project
+in APPPATH\Views\master_bpkb\index.php on line 62.
+ 1 APPPATH\Views\master_bpkb\index.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: project', 'APPPATH\\Views\\master_bpkb\\index.php', 62, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/index', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(35): view('master_bpkb/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-21 05:13:48 --> Undefined variable: BpkbModel
+in APPPATH\Views\master_bpkb\index.php on line 62.
+ 1 APPPATH\Views\master_bpkb\index.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: BpkbModel', 'APPPATH\\Views\\master_bpkb\\index.php', 62, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/index', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(35): view('master_bpkb/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
