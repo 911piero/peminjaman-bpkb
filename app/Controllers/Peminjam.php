@@ -108,10 +108,16 @@ class Peminjam extends BaseController
                     'required' => 'Keterangan Lokasi tidak boleh kosong',
                 ]
             ],
-            'tgl_kembali' => [
+            'lokasi_kendaraan' => [
                 'rules' => 'required',
                 'errors' => [
-                    'required' => 'Tanggal Kembali tidak boleh kosong',
+                    'required' => 'Lokasi Kendaraan tidak boleh kosong',
+                ]
+            ],
+            'status_kendaraan' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Status Kendaraan tidak boleh kosong',
                 ]
             ],
 
@@ -137,8 +143,9 @@ class Peminjam extends BaseController
             'nama_petugas_kembali' => "-",
             'nip_petugas_kembali' => "-",
             'tgl_pinjam' => $this->request->getVar('tgl_pinjam'),
-            'tgl_kembali' => $this->request->getVar('tgl_kembali'),
-            'ket_kendaraan' => $this->request->getVar('ket_lokasi'),
+            'ket_lokasi' => $this->request->getVar('ket_lokasi'),
+            'lokasi_kendaraan' => $this->request->getVar('lokasi_kendaraan'),
+            'status_kendaraan' => $this->request->getVar('status_kendaraan'),
             'status' => "Pinjam"
         ];
 
@@ -193,6 +200,7 @@ class Peminjam extends BaseController
             'nip_petugas_pinjam' => $this->request->getVar('nip_petugas_pinjam'),
             'nama_petugas_kembali' => $this->request->getVar('nama_petugas_kembali'),
             'nip_petugas_kembali' => $this->request->getVar('nip_petugas_kembali'),
+            'tgl_kembali' => $this->request->getVar('tgl_kembali'),
             'id_bpkb' => $this->request->getVar('id_bpkb'),
             'status' => 'Dikembalikan'
         ];

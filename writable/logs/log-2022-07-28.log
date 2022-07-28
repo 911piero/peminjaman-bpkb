@@ -94,3 +94,31 @@ in APPPATH\Views\peminjam_bpkb\tambah_peminjam.php on line 71.
  8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-28 01:47:14 --> Unknown column 'ket_kendaraan' in 'field list'
+CRITICAL - 2022-07-28 01:47:14 --> Unknown column 'ket_kendaraan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `data_peminjam` (`nama_lengkap`, `nik`, `id_bpkb`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `ket_kendaraan`, `lokasi_kendaraan`, `status_kendaraan`, `status`) VALUES (\'ada\', \'3216061302010014\', \'28\', \'Khrisna\', \'5200411025\', \'-\', \'-\', \'2022-07-28\', NULL, \'Internal Pemkot\', \'Dipinjam\', \'Pinjam\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data_peminjam` (`nama_lengkap`, `nik`, `id_bpkb`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `ket_kendaraan`, `lokasi_kendaraan`, `status_kendaraan`, `status`) VALUES (\'ada\', \'3216061302010014\', \'28\', \'Khrisna\', \'5200411025\', \'-\', \'-\', \'2022-07-28\', NULL, \'Internal Pemkot\', \'Dipinjam\', \'Pinjam\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data_peminjam` (`nama_lengkap`, `nik`, `id_bpkb`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `ket_kendaraan`, `lokasi_kendaraan`, `status_kendaraan`, `status`) VALUES (\'ada\', \'3216061302010014\', \'28\', \'Khrisna\', \'5200411025\', \'-\', \'-\', \'2022-07-28\', NULL, \'Internal Pemkot\', \'Dipinjam\', \'Pinjam\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_peminjam` (`nama_lengkap`, `nik`, `id_bpkb`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `ket_kendaraan`, `lokasi_kendaraan`, `status_kendaraan`, `status`) VALUES (:nama_lengkap:, :nik:, :id_bpkb:, :nama_petugas_pinjam:, :nip_petugas_pinjam:, :nama_petugas_kembali:, :nip_petugas_kembali:, :tgl_pinjam:, :ket_kendaraan:, :lokasi_kendaraan:, :status_kendaraan:, :status:)', [...], false)
+ 5 APPPATH\Models\PeminjamModel.php(26): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Peminjam.php(157): App\Models\PeminjamModel->tambahData([...], [...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->save()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-28 01:48:19 --> Unknown column 'status_kendaraan' in 'field list'
+CRITICAL - 2022-07-28 01:48:19 --> Unknown column 'status_kendaraan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `data_peminjam` (`nama_lengkap`, `nik`, `id_bpkb`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `ket_lokasi`, `lokasi_kendaraan`, `status_kendaraan`, `status`) VALUES (\'ada\', \'321606266595952\', \'29\', \'Khrisna\', \'5200411025\', \'-\', \'-\', \'2022-07-28\', \'jogja\', \'Internal Pemkot\', \'Dipinjam Pakai\', \'Pinjam\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data_peminjam` (`nama_lengkap`, `nik`, `id_bpkb`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `ket_lokasi`, `lokasi_kendaraan`, `status_kendaraan`, `status`) VALUES (\'ada\', \'321606266595952\', \'29\', \'Khrisna\', \'5200411025\', \'-\', \'-\', \'2022-07-28\', \'jogja\', \'Internal Pemkot\', \'Dipinjam Pakai\', \'Pinjam\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data_peminjam` (`nama_lengkap`, `nik`, `id_bpkb`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `ket_lokasi`, `lokasi_kendaraan`, `status_kendaraan`, `status`) VALUES (\'ada\', \'321606266595952\', \'29\', \'Khrisna\', \'5200411025\', \'-\', \'-\', \'2022-07-28\', \'jogja\', \'Internal Pemkot\', \'Dipinjam Pakai\', \'Pinjam\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_peminjam` (`nama_lengkap`, `nik`, `id_bpkb`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `ket_lokasi`, `lokasi_kendaraan`, `status_kendaraan`, `status`) VALUES (:nama_lengkap:, :nik:, :id_bpkb:, :nama_petugas_pinjam:, :nip_petugas_pinjam:, :nama_petugas_kembali:, :nip_petugas_kembali:, :tgl_pinjam:, :ket_lokasi:, :lokasi_kendaraan:, :status_kendaraan:, :status:)', [...], false)
+ 5 APPPATH\Models\PeminjamModel.php(26): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Peminjam.php(157): App\Models\PeminjamModel->tambahData([...], [...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->save()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

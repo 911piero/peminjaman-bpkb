@@ -33,6 +33,15 @@
                                     <?= $validation->getError('nip_petugas_kembali'); ?>
                                 </div>
                             </div>
+                            <div class="form-group">
+                                <div class="md-form md-outline input-with-post-icon datepicker" inline="true">
+                                    <label for="example">Tanggal Kembali</label>
+                                    <input type="date" class="form-control <?= ($validation->hasError('tgl_kembali')) ? 'is-invalid' : ' '; ?>" name="tgl_kembali">
+                                </div>
+                                <div class="invalid-feedback">
+                                    <?= $validation->getError('tgl_kembali'); ?>
+                                </div>
+                            </div>
                             <div class="col-md-12 mt-5 text-right">
                                 <button type="submit" class="btn btn-primary ">Simpan</button>
                             </div>

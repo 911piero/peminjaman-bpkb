@@ -41,15 +41,6 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Keterangan Lokasi</label>
-                                <input type="text" class="form-control <?= ($validation->hasError('ket_lokasi')) ? 'is-invalid' : ' '; ?>" id="ket_lokasi" name="ket_lokasi" placeholder="Masukan Keterangan Lokasi">
-                                <div class="invalid-feedback">
-                                    <?= $validation->getError('ket_lokasi'); ?>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="form-group">
                                 <label for="exampleInputEmail1">Plat Nomer</label>
                                 <div class="input-group mb-3">
                                     <select name="id_bpkb" class="custom-select form-control <?= ($validation->hasError('id_bpkb')) ? 'is-invalid' : ' '; ?>" autocomplete="on">
@@ -63,12 +54,36 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Keterangan Lokasi</label>
+                                <input type="text" class="form-control <?= ($validation->hasError('ket_lokasi')) ? 'is-invalid' : ' '; ?>" id="ket_lokasi" name="ket_lokasi" placeholder="Masukan Keterangan Lokasi">
+                                <div class="invalid-feedback">
+                                    <?= $validation->getError('ket_lokasi'); ?>
+                                </div>
+                            </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Lokasi Kendaraan</label>
                                 <div class="input-group mb-3">
                                     <select name="lokasi_kendaraan" class="custom-select form-control <?= ($validation->hasError('lokasi_kendaraan')) ? 'is-invalid' : ' '; ?>">
+                                        <option selected value=" ">Pilih Lokasi Kendaraan</option>
                                         <option value="Internal Pemkot">Internal Pemkot</option>
                                         <option value="Eksternal Pemkot">Eksternal Pemkot</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        <?= $validation->getError('model'); ?>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Status Kendaraan</label>
+                                <div class="input-group mb-3">
+                                    <select name="status_kendaraan" class="custom-select form-control <?= ($validation->hasError('status_kendaraan')) ? 'is-invalid' : ' '; ?>">
+                                        <option selected value=" ">Pilih Status Kendaraan</option>
+                                        <option value="Dipinjam">Dipinjam</option>
+                                        <option value="Dipinjam Pakai">Dipinjam Pakai</option>
+                                        <option value="Tidak Dipinjam">Tidak Dipinjam</option>
                                     </select>
                                     <div class="invalid-feedback">
                                         <?= $validation->getError('model'); ?>
@@ -82,15 +97,6 @@
                                 </div>
                                 <div class="invalid-feedback">
                                     <?= $validation->getError('tgl_pinjam'); ?>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="md-form md-outline input-with-post-icon datepicker" inline="true">
-                                    <label for="example">Tanggal Kembali</label>
-                                    <input type="date" class="form-control <?= ($validation->hasError('tgl_kembali')) ? 'is-invalid' : ' '; ?>" name="tgl_kembali">
-                                </div>
-                                <div class="invalid-feedback">
-                                    <?= $validation->getError('tgl_kembali'); ?>
                                 </div>
                             </div>
                             <div class="form-group">
