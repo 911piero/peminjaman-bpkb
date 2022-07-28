@@ -81,7 +81,7 @@
                                 <?php foreach ($getImg as $key => $link) : ?>
                                     <td>
                                         <center>
-                                            <img style="width: 100%;" src="<?= base_url('foto_bpkb/' . $link['link']); ?>" alt="">
+                                            <img style="max-width: 100%;" src="<?= base_url('foto_bpkb/' . $link['link']); ?>" alt="">
                                             <br>
                                             <br>
                                             <a href="<?= base_url('GambarController/delete/' . $link['id_gambar']);  ?>" class="btn btn-danger" onclick="return confirm('Are you sure ?')">HAPUS</a>

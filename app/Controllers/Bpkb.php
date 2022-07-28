@@ -21,7 +21,7 @@ class Bpkb extends BaseController
     public function index()
     {
 
-    
+
         $getBpkb = $this->BpkbModel->getBpkb();
         $resultBpkb = $this->BpkbModel->get()->resultID->num_rows;
 
@@ -55,7 +55,7 @@ class Bpkb extends BaseController
 
     public function detail($id)
     {
-        
+
         $data = $this->BpkbModel->getDetail($id);
 
         $no_bpkb = $data['nomor_bpkb'];

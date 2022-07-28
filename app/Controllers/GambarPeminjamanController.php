@@ -28,6 +28,10 @@ class GambarPeminjamanController extends BaseController
 
     public function delete($id)
     {
+        $fotoPeminjaman = $this->GambarPeminjamanModel->find($id);
+
+        unlink('foto_peminjam/' . $fotoPeminjaman['link']);
+
         $this->GambarPeminjamanModel->delete($id);
         return redirect()->to($_SERVER['HTTP_REFERER']);;
     }
