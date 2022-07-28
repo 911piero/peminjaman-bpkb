@@ -48,7 +48,7 @@
                                 <tr>
                                     <th>Nama Peminjam</th>
                                     <th>NIK</th>
-                                    <th>Nomor BPKB</th>
+                                    <th>Plat Nomer</th>
                                     <th>Tanggal Pinjam</th>
                                     <th>Tanggal Kembali</th>
                                     <th>Status</th>

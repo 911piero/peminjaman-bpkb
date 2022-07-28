@@ -204,26 +204,26 @@
             });
         });
 
-        $('#example').dataTable( {
-  "columnDefs": [ {
-    "targets": 3,
-    "createdCell": function (td, cellData, rowData, row, col) {
-      if ( cellData < 1 ) {
-        $(td).css('color', 'red')
-      }
-    }
-  } ]
-} );
-        $(document).ready(function() {
-            $('#data_peminjam').DataTable({
-                "columnDefs": [ {
-                "targets": 6,
-                "createdCell": function (td, cellData, rowData, row, col) {
-                if ( cellData < 1 ) {
-                    $(td).css('color', 'red')
+        $('#example').dataTable({
+            "columnDefs": [{
+                "targets": 3,
+                "createdCell": function(td, cellData, rowData, row, col) {
+                    if (cellData < 1) {
+                        $(td).css('color', 'red')
                     }
                 }
-            }],
+            }]
+        });
+        $(document).ready(function() {
+            $('#data_peminjam').DataTable({
+                "columnDefs": [{
+                    "targets": 6,
+                    "createdCell": function(td, cellData, rowData, row, col) {
+                        if (cellData < 1) {
+                            $(td).css('color', 'red')
+                        }
+                    }
+                }],
                 processing: true,
                 serverSide: true,
                 ajax: '/peminjam/listData',
@@ -234,7 +234,7 @@
                         data: 'nik'
                     },
                     {
-                        data: 'nomor_bpkb'
+                        data: 'nomor_registrasi'
                     },
                     {
                         data: 'tgl_pinjam'

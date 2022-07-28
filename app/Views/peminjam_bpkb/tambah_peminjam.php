@@ -40,15 +40,22 @@
                                     <?= $validation->getError('nip_petugas_pinjam'); ?>
                                 </div>
                             </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Keterangan Lokasi</label>
+                                <input type="text" class="form-control <?= ($validation->hasError('ket_lokasi')) ? 'is-invalid' : ' '; ?>" id="ket_lokasi" name="ket_lokasi" placeholder="Masukan Keterangan Lokasi">
+                                <div class="invalid-feedback">
+                                    <?= $validation->getError('ket_lokasi'); ?>
+                                </div>
+                            </div>
                         </div>
                         <div class="col">
                             <div class="form-group">
-                                <label for="exampleInputEmail1">BPKB</label>
+                                <label for="exampleInputEmail1">Plat Nomer</label>
                                 <div class="input-group mb-3">
-                                    <select name="id_bpkb" class="custom-select form-control <?= ($validation->hasError('id_bpkb')) ? 'is-invalid' : ' '; ?>" autocomplete="on" >
+                                    <select name="id_bpkb" class="custom-select form-control <?= ($validation->hasError('id_bpkb')) ? 'is-invalid' : ' '; ?>" autocomplete="on">
                                         <option selected value=" ">Pilih Kendaraan</option>
                                         <?php foreach ($getBpkb as $b) : ?>
-                                            <option value="<?= $b['id_bpkb']; ?>"><?= $b['nomor_bpkb']; ?></option>
+                                            <option value="<?= $b['id_bpkb']; ?>"><?= $b['nomor_registrasi']; ?></option>
                                         <?php endforeach; ?>
                                     </select>
                                     <div class="invalid-feedback">
@@ -57,10 +64,38 @@
                                 </div>
                             </div>
                             <div class="form-group">
+                                <label for="exampleInputPassword1">Lokasi Kendaraan</label>
+                                <div class="input-group mb-3">
+                                    <select name="lokasi_kendaraan" class="custom-select <?= ($validation->hasError('lokasi_kendaraan')) ? 'is-invalid' : ' '; ?>" id="inputGroupSelect01">
+                                        <option selected value="">Pilih Lokasi Kendaraan</option>
+                                        <?php foreach ($lokasi_kendaraan as $key) : ?>
+                                            <option value="<?= $key['id_lokasi']; ?>"><?= $key['lokasi_kendaraan']; ?></option>
+                                        <?php endforeach; ?>
+                                    </select>
+                                    <div class="invalid-feedback d-block">
+                                        <?= $validation->getError('lokasi_kendaraan'); ?>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Status Kendaraan</label>
+                                <div class="input-group mb-3">
+                                    <select name="status_kendaraan" class="custom-select <?= ($validation->hasError('status_kendaraan')) ? 'is-invalid' : ' '; ?>" id="inputGroupSelect01">
+                                        <option selected value="">Pilih Status Kendaraan</option>
+                                        <?php foreach ($status_kendaraan as $key) : ?>
+                                            <option value="<?= $key['id_kendaraan']; ?>"><?= $key['status_kendaraan']; ?></option>
+                                        <?php endforeach; ?>
+                                    </select>
+                                    <div class="invalid-feedback d-block">
+                                        <?= $validation->getError('status_kendaraan'); ?>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
                                 <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker" inline="true">
                                     <label for="example">Tanggal Pinjam</label>
                                     <input type="date" class="form-control <?= ($validation->hasError('tgl_pinjam')) ? 'is-invalid' : ' '; ?>" name="tgl_pinjam">
-                                </div>  
+                                </div>
                                 <div class="invalid-feedback">
                                     <?= $validation->getError('tgl_pinjam'); ?>
                                 </div>
@@ -69,7 +104,7 @@
                                 <div class="md-form md-outline input-with-post-icon datepicker" inline="true">
                                     <label for="example">Tanggal Kembali</label>
                                     <input type="date" class="form-control <?= ($validation->hasError('tgl_kembali')) ? 'is-invalid' : ' '; ?>" name="tgl_kembali">
-                                </div>        
+                                </div>
                                 <div class="invalid-feedback">
                                     <?= $validation->getError('tgl_kembali'); ?>
                                 </div>
@@ -78,7 +113,7 @@
                                 <div class="md-form md-outline" inline="true">
                                     <label for="example">Foto KTP</label>
                                     <input type="file" class="form-control <?= ($validation->hasError('foto_ktp')) ? 'is-invalid' : ' '; ?>" name="foto_ktp">
-                                </div>        
+                                </div>
                                 <div class="invalid-feedback">
                                     <?= $validation->getError('foto_ktp'); ?>
                                 </div>
