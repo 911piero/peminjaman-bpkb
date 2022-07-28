@@ -49,7 +49,8 @@ class PeminjamModel extends Model
             ->update();
     }
 
-    public function getDetail($id){
+    public function getDetail($id)
+    {
         return $this->db
             ->table('data_peminjam')
             ->join('data_bpkb', 'data_bpkb.id_bpkb = data_peminjam.id_bpkb')

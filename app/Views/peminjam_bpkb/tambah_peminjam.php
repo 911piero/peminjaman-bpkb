@@ -7,7 +7,7 @@
             <?= csrf_field(); ?>
             <div class="card card-primary">
                 <div class="card-header">
-                    <h3 class="card-title">Form Tambah Data Peminjam BPKB</h3>
+                    <h3 class="card-title">Form Tambah Data Peminjam</h3>
                 </div>
                 <div class="card-body">
                     <div class="row cols-3">
