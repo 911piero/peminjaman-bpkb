@@ -26,9 +26,15 @@ class GambarController extends BaseController
         return redirect()->to($_SERVER['HTTP_REFERER']);
     }
 
-    function delete($id)
+    public function delete($id)
     {
-        $this->GambarModel->delete($id);
+        //cari gambar berdasarkan id
+        $fotoBpkb = $this->GambarModel->find($id);
+
+        unlink('foto_bpkb/' . $fotoBpkb['link']);
+        
+        $this->GambarModel->delete($id);    
+        session()->setFlashdata('pesan', 'Foto Telah Terhapus');
         return redirect()->to($_SERVER['HTTP_REFERER']);
     }
 }

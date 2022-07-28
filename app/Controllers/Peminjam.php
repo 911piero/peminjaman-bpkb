@@ -30,8 +30,6 @@ class Peminjam extends BaseController
             'page_title' => 'Dashboard Peminjam',
         ];
 
-
-
         return view('peminjam_bpkb/index', $data);
     }
 
@@ -48,7 +46,7 @@ class Peminjam extends BaseController
                     return
                         '<a href="/peminjam/detail/' . $row->id_peminjam . '" class="badge badge-primary">DETAILS</a> 
                 <a href="/peminjam/edit/' . $row->id_peminjam . '" class="badge badge-warning">UPDATE</a>
-                 <a href="/peminjam/delete/' . $row->id_peminjam . '" class="badge badge-danger" onclick="return confirm(\'Are you sure ?\')">HAPUS</a>';
+                <a href="/peminjam/delete/' . $row->id_peminjam . '" class="badge badge-danger" onclick="return confirm(\'Are you sure ?\')">HAPUS</a>';
                 })
                 ->toJson(true);
         }

@@ -153,7 +153,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputFile">Foto BPKB</label>
+                                <label for="exampleInputFile">Foto BPKB</label> 
                                 <div class="input-group">
                                     <div class="custom-file">
                                         <input type="file" name="foto_bpkb" class="custom-file-input <?= ($validation->hasError('foto_bpkb')) ? 'is-invalid' : ' '; ?>" id="foto_bpkb">
