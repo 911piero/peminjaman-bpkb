@@ -28,7 +28,7 @@
                                 </td>
                                 <td>NIK : <p class="card-text"><?= $peminjam['nik']; ?></p>
                                 </td>
-                                <td>No BPKB: <p class="card-text"><?= $peminjam['nomor_bpkb']; ?></p>
+                                <td>Nomor Registrasi: <p class="card-text"><?= $peminjam['nomor_bpkb']; ?></p>
                                 </td>
 
                             </tr>
