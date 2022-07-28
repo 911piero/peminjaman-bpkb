@@ -41,9 +41,9 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Plat Nomer</label>
+                                <label for="exampleInputEmail1">Nomor Registrasi</label>
                                 <div class="input-group mb-3">
-                                    <select name="id_bpkb" class="custom-select form-control <?= ($validation->hasError('id_bpkb')) ? 'is-invalid' : ' '; ?>" autocomplete="on">
+                                    <select name="id_bpkb" class="form-control <?= ($validation->hasError('id_bpkb')) ? 'is-invalid' : ' '; ?>" required autocomplete="on">
                                         <option selected value=" ">Pilih Kendaraan</option>
                                         <?php foreach ($getBpkb as $b) : ?>
                                             <option value="<?= $b['id_bpkb']; ?>"><?= $b['nomor_registrasi']; ?></option>
@@ -66,7 +66,7 @@
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Lokasi Kendaraan</label>
                                 <div class="input-group mb-3">
-                                    <select name="lokasi_kendaraan" class="custom-select form-control <?= ($validation->hasError('lokasi_kendaraan')) ? 'is-invalid' : ' '; ?>">
+                                    <select name="lokasi_kendaraan" class="custom-select form-control <?= ($validation->hasError('lokasi_kendaraan')) ? 'is-invalid' : ' '; ?>" required>
                                         <option selected value=" ">Pilih Lokasi Kendaraan</option>
                                         <option value="Internal Pemkot">Internal Pemkot</option>
                                         <option value="Eksternal Pemkot">Eksternal Pemkot</option>
@@ -79,11 +79,11 @@
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Status Kendaraan</label>
                                 <div class="input-group mb-3">
-                                    <select name="status_kendaraan" class="custom-select form-control <?= ($validation->hasError('status_kendaraan')) ? 'is-invalid' : ' '; ?>">
+                                    <select name="status_kendaraan" class="custom-select form-control <?= ($validation->hasError('status_kendaraan')) ? 'is-invalid' : ' '; ?>" required>
                                         <option selected value=" ">Pilih Status Kendaraan</option>
-                                        <option value="Dipinjam">Dipinjam</option>
-                                        <option value="Dipinjam Pakai">Dipinjam Pakai</option>
-                                        <option value="Tidak Dipinjam">Tidak Dipinjam</option>
+                                        <option value="Pakai">Pakai</option>
+                                        <option value="Pinjam Pakai">Pinjam Pakai</option>
+                                        <option value="Tidak Pinjam">Tidak Pinjam</option>
                                     </select>
                                     <div class="invalid-feedback">
                                         <?= $validation->getError('model'); ?>

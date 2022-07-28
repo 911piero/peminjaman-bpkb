@@ -1,12 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 28, 2022 at 09:43 AM
--- Server version: 10.4.24-MariaDB
--- PHP Version: 8.1.6
+-- Generation Time: Jul 28, 2022 at 03:16 PM
+-- Server version: 10.4.22-MariaDB
+-- PHP Version: 7.4.26
 
+SET FOREIGN_KEY_CHECKS=0;
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
@@ -146,9 +147,9 @@ CREATE TABLE `data_bpkb` (
 
 INSERT INTO `data_bpkb` (`id_bpkb`, `nomor_registrasi`, `nama_pemilik`, `alamat`, `merk`, `tipe`, `model`, `tahun_pembuatan`, `isi_silinder`, `nomor_rangka`, `nomor_mesin`, `warna`, `bahan_bakar`, `warna_tnkb`, `tahun_registrasi`, `nomor_bpkb`, `kode_lokasi`, `status`, `created_at`, `updated_at`) VALUES
 (26, 'AB 1234 YY', 'Pemkot Yogya', 'Yogyakarta', 'Mercedez', '1', 4, 2020, 21231, 'A12312', 'M123123', 'Hitam', 1, 2, 2022, 'MCZ1232131', 55711, 'Tidak Dipinjam', '2022-07-12', '2022-07-19'),
-(28, 'AB 1234 AW', 'Pemkot Yogya', 'Yogyakarta', 'Suzuki', '3123123', 2, 123123, 123123, '123123', '31231', 'Hitam', 1, 2, 123123, '213123', 1231, 'Dipinjam', '2022-07-14', '2022-07-19'),
-(29, 'AB 1231 YY', 'Pemkot Yogya', 'Yogyakarta', 'BMW', 'M5', 2, 2018, 2222, 'BM132137X', 'BM132137X2', 'Putih', 1, 2, 2020, 'BM132137X', 1231, 'Dipinjam', '2022-07-20', '2022-07-20'),
-(30, 'AB 2931 BC', 'Pemkot Yogya', 'Yogyakarta', 'Tesla', '1', 2, 2020, 123123, '123123', '123123', 'Biru', 1, 2, 213123, '12312321', 1231, 'Dipinjam', '2022-07-21', '2022-07-21'),
+(28, 'AB 1234 AW', 'Pemkot Yogya', 'Yogyakarta', 'Suzuki', '3123123', 2, 123123, 123123, '123123', '31231', 'Hitam', 1, 2, 123123, '213123', 1231, 'Tidak Dipinjam', '2022-07-14', '2022-07-19'),
+(29, 'AB 1231 YY', 'Pemkot Yogya', 'Yogyakarta', 'BMW', 'M5', 2, 2018, 2222, 'BM132137X', 'BM132137X2', 'Putih', 1, 2, 2020, 'BM132137X', 1231, 'Tidak Dipinjam', '2022-07-20', '2022-07-20'),
+(30, 'AB 2931 BC', 'Pemkot Yogya', 'Yogyakarta', 'Tesla', '1', 2, 2020, 123123, '123123', '123123', 'Biru', 1, 2, 213123, '12312321', 1231, 'Tidak Dipinjam', '2022-07-21', '2022-07-21'),
 (31, 'AB 2921 CC', '12321312', '321313', '3123123', '31231', 2, 13213, 3123123, '3213123', '3213123', '313123', 1, 3, 3123123, '312313', 3213123, 'Tidak Dipinjam', '2022-07-21', '2022-07-26');
 
 -- --------------------------------------------------------
@@ -171,6 +172,7 @@ CREATE TABLE `data_peminjam` (
   `status_kendaraan` varchar(255) NOT NULL,
   `tgl_pinjam` date NOT NULL,
   `tgl_kembali` date NOT NULL,
+  `estimasi_kembali` date DEFAULT NULL,
   `status` varchar(255) DEFAULT 'Pinjam',
   `created_at` date NOT NULL DEFAULT current_timestamp(),
   `updated_at` date NOT NULL DEFAULT current_timestamp()
@@ -180,12 +182,16 @@ CREATE TABLE `data_peminjam` (
 -- Dumping data for table `data_peminjam`
 --
 
-INSERT INTO `data_peminjam` (`id_peminjam`, `nama_lengkap`, `nik`, `id_bpkb`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `ket_lokasi`, `lokasi_kendaraan`, `status_kendaraan`, `tgl_pinjam`, `tgl_kembali`, `status`, `created_at`, `updated_at`) VALUES
-(19, 'Amin', '123123', 29, '3213123', '3213123', '2131231', '2131231', '', '', '', '2022-07-14', '2022-08-03', 'Dikembalikan', '2022-07-21', '2022-07-21'),
-(20, 'Si Amin', '2321032101111', 26, 'Ferguso', '2900222', '123123', '123123123', '', '', '', '2022-07-21', '2022-08-01', 'Dikembalikan', '2022-07-21', '2022-07-21'),
-(21, 'Si Amin', '2321032101111', 28, 'Ferguso', '3123123', 'Sir Alex 2', '2312313', '', '', '', '2022-07-21', '2022-07-21', 'Dikembalikan', '2022-07-21', '2022-07-21'),
-(22, 'ada', '3216061302010014', 30, 'Khrisna', '5200411025', 'Khrisna', '5200411025', 'jogja', 'Internal Pemkot', 'Dipinjam', '2022-07-28', '0000-00-00', 'Dikembalikan', '2022-07-28', '2022-07-28'),
-(23, 'Disnet', '33333112121212112', 30, 'Fariz', '5164684651551', '-', '-', 'jogja', 'Internal Pemkot', 'Tidak Dipinjam', '2022-07-28', '0000-00-00', 'Pinjam', '2022-07-28', '2022-07-28');
+INSERT INTO `data_peminjam` (`id_peminjam`, `nama_lengkap`, `nik`, `id_bpkb`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `ket_lokasi`, `lokasi_kendaraan`, `status_kendaraan`, `tgl_pinjam`, `tgl_kembali`, `estimasi_kembali`, `status`, `created_at`, `updated_at`) VALUES
+(20, 'Si Amin', '2321032101111', 26, 'Ferguso', '2900222', '123123', '123123123', '', '', '', '2022-07-21', '2022-08-01', NULL, 'Dikembalikan', '2022-07-21', '2022-07-21'),
+(21, 'Si Amin', '2321032101111', 28, 'Ferguso', '3123123', 'Sir Alex 2', '2312313', '', '', '', '2022-07-21', '2022-07-21', NULL, 'Dikembalikan', '2022-07-21', '2022-07-21'),
+(25, 'Test Estimasi 2', '2131231', 31, '131231231', '12312', 'Sir Alex', '2121231312', '12312', 'Internal Pemkot', 'Pakai', '2022-07-28', '0000-00-00', '2022-08-11', 'Dikembalikan', '2022-07-28', '2022-07-28'),
+(32, 'Khrisna Yudha Pratama', '1', 0, 'Sir Alex', '1231231', '-', '-', '1', 'Internal Pemkot', 'Pakai', '2022-07-27', '0000-00-00', '2022-08-10', 'Pinjam', '2022-07-28', '2022-07-28'),
+(33, 'Khrisna Yudha Pratama', '1', 0, 'Sir Alex', '1231231', '-', '-', '1', 'Internal Pemkot', 'Pakai', '2022-07-27', '0000-00-00', '2022-08-10', 'Pinjam', '2022-07-28', '2022-07-28'),
+(34, 'Khrisna Yudha Pratama', '1', 0, 'Sir Alex', '1231231', '-', '-', '1', 'Internal Pemkot', 'Pakai', '2022-07-27', '0000-00-00', '2022-08-10', 'Pinjam', '2022-07-28', '2022-07-28'),
+(35, 'RES', '3402084309810001', 0, 'Sir Alex', '1231231', '-', '-', '1', 'Eksternal Pemkot', 'Pakai', '2022-07-28', '0000-00-00', '2022-08-11', 'Pinjam', '2022-07-28', '2022-07-28'),
+(37, 'TES GAMBAR', '12312', 31, '123132', '312312', 'Sir Alex', '2121231312', '123123', 'Internal Pemkot', 'Pakai', '2022-07-29', '2022-07-27', '2022-08-12', 'Dikembalikan', '2022-07-28', '2022-07-28'),
+(38, 'Khrisna Yudha Pratama', '2131231', 26, '13123', '1231231', 'Sir Alex', '2121231312', '12312', 'Internal Pemkot', 'Pinjam Pakai', '2022-07-29', '2022-07-21', '2022-08-12', 'Dikembalikan', '2022-07-28', '2022-07-28');
 
 -- --------------------------------------------------------
 
@@ -200,14 +206,6 @@ CREATE TABLE `peminjam_gambar` (
   `created_at` date NOT NULL,
   `updated_at` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `peminjam_gambar`
---
-
-INSERT INTO `peminjam_gambar` (`id_gambar`, `nik`, `link`, `created_at`, `updated_at`) VALUES
-(11, '3216061302010014', '1658990969_0deeca8d63a5b1500ad3.jpeg', '0000-00-00', '0000-00-00'),
-(12, '33333112121212112', '1658994176_fb3fa0b7e34237ff77f4.jpeg', '0000-00-00', '0000-00-00');
 
 --
 -- Indexes for dumped tables
@@ -297,13 +295,13 @@ ALTER TABLE `data_bpkb`
 -- AUTO_INCREMENT for table `data_peminjam`
 --
 ALTER TABLE `data_peminjam`
-  MODIFY `id_peminjam` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id_peminjam` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
 -- AUTO_INCREMENT for table `peminjam_gambar`
 --
 ALTER TABLE `peminjam_gambar`
-  MODIFY `id_gambar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id_gambar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- Constraints for dumped tables
@@ -316,12 +314,7 @@ ALTER TABLE `data_bpkb`
   ADD CONSTRAINT `data_bpkb_ibfk_1` FOREIGN KEY (`warna_tnkb`) REFERENCES `bpkb_warna_tnkb` (`id_warna_tnkb`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `data_bpkb_ibfk_2` FOREIGN KEY (`model`) REFERENCES `bpkb_model_kendaraan` (`id_model`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `data_bpkb_ibfk_3` FOREIGN KEY (`bahan_bakar`) REFERENCES `bpkb_bahan_bakar` (`id_bahan_bakar`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Constraints for table `data_peminjam`
---
-ALTER TABLE `data_peminjam`
-  ADD CONSTRAINT `data_peminjam_ibfk_1` FOREIGN KEY (`id_bpkb`) REFERENCES `data_bpkb` (`id_bpkb`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+SET FOREIGN_KEY_CHECKS=1;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

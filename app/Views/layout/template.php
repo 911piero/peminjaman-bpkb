@@ -240,7 +240,7 @@
                         data: 'tgl_pinjam'
                     },
                     {
-                        data: 'tgl_kembali'
+                        data: 'estimasi_kembali'
                     },
                     {
                         data: 'status'
