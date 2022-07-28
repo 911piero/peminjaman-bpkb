@@ -64,30 +64,14 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputPassword1">Lokasi Kendaraan</label>
+                                <label for="exampleInputEmail1">Lokasi Kendaraan</label>
                                 <div class="input-group mb-3">
-                                    <select name="lokasi_kendaraan" class="custom-select <?= ($validation->hasError('lokasi_kendaraan')) ? 'is-invalid' : ' '; ?>" id="inputGroupSelect01">
-                                        <option selected value="">Pilih Lokasi Kendaraan</option>
-                                        <?php foreach ($lokasi_kendaraan as $key) : ?>
-                                            <option value="<?= $key['id_lokasi']; ?>"><?= $key['lokasi_kendaraan']; ?></option>
-                                        <?php endforeach; ?>
+                                    <select name="lokasi_kendaraan" class="custom-select form-control <?= ($validation->hasError('lokasi_kendaraan')) ? 'is-invalid' : ' '; ?>">
+                                        <option value="Internal Pemkot">Internal Pemkot</option>
+                                        <option value="Eksternal Pemkot">Eksternal Pemkot</option>
                                     </select>
-                                    <div class="invalid-feedback d-block">
-                                        <?= $validation->getError('lokasi_kendaraan'); ?>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Status Kendaraan</label>
-                                <div class="input-group mb-3">
-                                    <select name="status_kendaraan" class="custom-select <?= ($validation->hasError('status_kendaraan')) ? 'is-invalid' : ' '; ?>" id="inputGroupSelect01">
-                                        <option selected value="">Pilih Status Kendaraan</option>
-                                        <?php foreach ($status_kendaraan as $key) : ?>
-                                            <option value="<?= $key['id_kendaraan']; ?>"><?= $key['status_kendaraan']; ?></option>
-                                        <?php endforeach; ?>
-                                    </select>
-                                    <div class="invalid-feedback d-block">
-                                        <?= $validation->getError('status_kendaraan'); ?>
+                                    <div class="invalid-feedback">
+                                        <?= $validation->getError('model'); ?>
                                     </div>
                                 </div>
                             </div>

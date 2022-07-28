@@ -39,7 +39,7 @@ class Peminjam extends BaseController
             $db = db_connect();
             $builder = $db->table('data_peminjam')
                 ->join('data_bpkb', 'data_bpkb.id_bpkb = data_peminjam.id_bpkb')
-                ->select('id_peminjam, nama_lengkap, nik, data_bpkb.nomor_bpkb, nama_petugas_pinjam, nip_petugas_pinjam, nama_petugas_kembali, nip_petugas_kembali, tgl_pinjam, tgl_kembali, data_peminjam.status');
+                ->select('id_peminjam, nama_lengkap, nik, data_bpkb.nomor_registrasi, nama_petugas_pinjam, nip_petugas_pinjam, nama_petugas_kembali, nip_petugas_kembali, tgl_pinjam, tgl_kembali, data_peminjam.status');
 
             return DataTable::of($builder)
                 ->add('action', function ($row) {
@@ -102,6 +102,12 @@ class Peminjam extends BaseController
                     'required' => 'Tanggal Pinjam tidak boleh kosong',
                 ]
             ],
+            'ket_lokasi' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Keterangan Lokasi tidak boleh kosong',
+                ]
+            ],
             'tgl_kembali' => [
                 'rules' => 'required',
                 'errors' => [
@@ -118,7 +124,7 @@ class Peminjam extends BaseController
 
         //nama file
         $namaFoto = $fotoKtp->getRandomName();
-        
+
         //memindahkan file
         $fotoKtp->move('foto_peminjam/', $namaFoto);
 
@@ -132,6 +138,7 @@ class Peminjam extends BaseController
             'nip_petugas_kembali' => "-",
             'tgl_pinjam' => $this->request->getVar('tgl_pinjam'),
             'tgl_kembali' => $this->request->getVar('tgl_kembali'),
+            'ket_kendaraan' => $this->request->getVar('ket_lokasi'),
             'status' => "Pinjam"
         ];
 
