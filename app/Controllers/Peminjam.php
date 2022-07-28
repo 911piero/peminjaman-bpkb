@@ -4,8 +4,6 @@ namespace App\Controllers;
 
 use App\Models\PeminjamModel;
 use App\Models\BpkbModel;
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
-use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 use \Hermawan\DataTables\DataTable;
 
 class Peminjam extends BaseController
@@ -207,7 +205,6 @@ class Peminjam extends BaseController
     {
         $data = $this->PeminjamModel->getDetail($id);
 
-        // $data = $this->PeminjamModel->find($id);
         $nik = $data['nik'];
         $getImg = $this->PeminjamModel->getImg($nik);
         $data = [
