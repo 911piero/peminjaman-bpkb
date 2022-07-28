@@ -4,8 +4,6 @@ namespace App\Controllers;
 
 use App\Models\PeminjamModel;
 use App\Models\BpkbModel;
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
-use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 use \Hermawan\DataTables\DataTable;
 
 class Peminjam extends BaseController
@@ -102,6 +100,12 @@ class Peminjam extends BaseController
                     'required' => 'Tanggal Pinjam tidak boleh kosong',
                 ]
             ],
+            'ket_lokasi' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Keterangan Lokasi tidak boleh kosong',
+                ]
+            ],
             'tgl_kembali' => [
                 'rules' => 'required',
                 'errors' => [
@@ -132,6 +136,7 @@ class Peminjam extends BaseController
             'nip_petugas_kembali' => "-",
             'tgl_pinjam' => $this->request->getVar('tgl_pinjam'),
             'tgl_kembali' => $this->request->getVar('tgl_kembali'),
+            'ket_kendaraan' => $this->request->getVar('ket_lokasi'),
             'status' => "Pinjam"
         ];
 
@@ -205,7 +210,6 @@ class Peminjam extends BaseController
     {
         $data = $this->PeminjamModel->getDetail($id);
 
-        // $data = $this->PeminjamModel->find($id);
         $nik = $data['nik'];
         $getImg = $this->PeminjamModel->getImg($nik);
         $data = [

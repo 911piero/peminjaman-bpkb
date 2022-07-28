@@ -40,6 +40,13 @@
                                     <?= $validation->getError('nip_petugas_pinjam'); ?>
                                 </div>
                             </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Keterangan Lokasi</label>
+                                <input type="text" class="form-control <?= ($validation->hasError('ket_lokasi')) ? 'is-invalid' : ' '; ?>" id="ket_lokasi" name="ket_lokasi" placeholder="Masukan Keterangan Lokasi">
+                                <div class="invalid-feedback">
+                                    <?= $validation->getError('ket_lokasi'); ?>
+                                </div>
+                            </div>
                         </div>
                         <div class="col">
                             <div class="form-group">
@@ -50,6 +57,18 @@
                                         <?php foreach ($getBpkb as $b) : ?>
                                             <option value="<?= $b['id_bpkb']; ?>"><?= $b['nomor_registrasi']; ?></option>
                                         <?php endforeach; ?>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        <?= $validation->getError('model'); ?>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Lokasi Kendaraan</label>
+                                <div class="input-group mb-3">
+                                    <select name="lokasi_kendaraan" class="custom-select form-control <?= ($validation->hasError('lokasi_kendaraan')) ? 'is-invalid' : ' '; ?>">
+                                        <option value="Internal Pemkot">Internal Pemkot</option>
+                                        <option value="Eksternal Pemkot">Eksternal Pemkot</option>
                                     </select>
                                     <div class="invalid-feedback">
                                         <?= $validation->getError('model'); ?>
