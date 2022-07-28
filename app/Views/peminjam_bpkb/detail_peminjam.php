@@ -17,7 +17,7 @@
         <?= csrf_field(); ?>
         <div class="card card-primary">
             <div class="card-header">
-                <h3 class="card-title">Details Peminjam </h3>
+                <h3 class="card-title">Detail Peminjam </h3>
             </div>
             <div class="card-body">
                 <div class="table-responsive">
@@ -49,6 +49,14 @@
                                 <td>Tanggal Kembali : <p class="card-text"> <?= $peminjam['tgl_kembali']; ?></p>
                                 </td>
                             </tr>
+                            <tr>
+                                <td> keterangan Lokasi : <p class="card-text"><?= $peminjam['ket_lokasi']; ?></p>
+                                </td>
+                                <td>Lokasi Kendaraan : <p class="card-text"> <?= $peminjam['lokasi_kendaraan']; ?></p>
+                                </td>
+                                <td>Status Kendaraan : <p class="card-text"> <?= $peminjam['status_kendaraan']; ?></p>
+                                </td>
+                            </tr>
                         </thead>
                     </table>
                     <table class="table m-0 mt-sm-4" border="1px">
@@ -69,7 +77,7 @@
                                             <br>
                                             <br>
                                             <a href="<?= base_url('GambarPeminjamanController/delete/' . $link['id_gambar']);  ?>" class="btn btn-danger" onclick="return confirm('Are you sure ?')">HAPUS</a>
-                                        <center>
+                                            <center>
                                     </td>
                                 <?php endforeach; ?>
                             </tr>

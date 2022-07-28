@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 22, 2022 at 11:15 AM
+-- Generation Time: Jul 28, 2022 at 09:43 AM
 -- Server version: 10.4.24-MariaDB
--- PHP Version: 7.4.29
+-- PHP Version: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -146,10 +146,10 @@ CREATE TABLE `data_bpkb` (
 
 INSERT INTO `data_bpkb` (`id_bpkb`, `nomor_registrasi`, `nama_pemilik`, `alamat`, `merk`, `tipe`, `model`, `tahun_pembuatan`, `isi_silinder`, `nomor_rangka`, `nomor_mesin`, `warna`, `bahan_bakar`, `warna_tnkb`, `tahun_registrasi`, `nomor_bpkb`, `kode_lokasi`, `status`, `created_at`, `updated_at`) VALUES
 (26, 'AB 1234 YY', 'Pemkot Yogya', 'Yogyakarta', 'Mercedez', '1', 4, 2020, 21231, 'A12312', 'M123123', 'Hitam', 1, 2, 2022, 'MCZ1232131', 55711, 'Tidak Dipinjam', '2022-07-12', '2022-07-19'),
-(28, 'AB 1234 AW', 'Pemkot Yogya', 'Yogyakarta', 'Suzuki', '3123123', 2, 123123, 123123, '123123', '31231', 'Hitam', 1, 2, 123123, '213123', 1231, 'Tidak Dipinjam', '2022-07-14', '2022-07-19'),
-(29, 'AB 1231 YY', 'Pemkot Yogya', 'Yogyakarta', 'BMW', 'M5', 2, 2018, 2222, 'BM132137X', 'BM132137X2', 'Putih', 1, 2, 2020, 'BM132137X', 1231, 'Tidak Dipinjam', '2022-07-20', '2022-07-20'),
-(30, 'AB 2931 BC', 'Pemkot Yogya', 'Yogyakarta', 'Tesla', '1', 2, 2020, 123123, '123123', '123123', 'Biru', 1, 2, 213123, '12312321', 1231, 'Tidak Dipinjam', '2022-07-21', '2022-07-21'),
-(31, 'apokwdpoawdj', '12321312', '321313', '3123123', '31231', 2, 13213, 3123123, '3213123', '3213123', '313123', 1, 3, 3123123, '312313', 3213123, 'Tidak Dipinjam', '2022-07-21', '2022-07-21');
+(28, 'AB 1234 AW', 'Pemkot Yogya', 'Yogyakarta', 'Suzuki', '3123123', 2, 123123, 123123, '123123', '31231', 'Hitam', 1, 2, 123123, '213123', 1231, 'Dipinjam', '2022-07-14', '2022-07-19'),
+(29, 'AB 1231 YY', 'Pemkot Yogya', 'Yogyakarta', 'BMW', 'M5', 2, 2018, 2222, 'BM132137X', 'BM132137X2', 'Putih', 1, 2, 2020, 'BM132137X', 1231, 'Dipinjam', '2022-07-20', '2022-07-20'),
+(30, 'AB 2931 BC', 'Pemkot Yogya', 'Yogyakarta', 'Tesla', '1', 2, 2020, 123123, '123123', '123123', 'Biru', 1, 2, 213123, '12312321', 1231, 'Dipinjam', '2022-07-21', '2022-07-21'),
+(31, 'AB 2921 CC', '12321312', '321313', '3123123', '31231', 2, 13213, 3123123, '3213123', '3213123', '313123', 1, 3, 3123123, '312313', 3213123, 'Tidak Dipinjam', '2022-07-21', '2022-07-26');
 
 -- --------------------------------------------------------
 
@@ -166,6 +166,9 @@ CREATE TABLE `data_peminjam` (
   `nip_petugas_pinjam` varchar(255) NOT NULL,
   `nama_petugas_kembali` varchar(255) DEFAULT NULL,
   `nip_petugas_kembali` varchar(255) DEFAULT NULL,
+  `ket_lokasi` varchar(255) NOT NULL,
+  `lokasi_kendaraan` varchar(255) NOT NULL,
+  `status_kendaraan` varchar(255) NOT NULL,
   `tgl_pinjam` date NOT NULL,
   `tgl_kembali` date NOT NULL,
   `status` varchar(255) DEFAULT 'Pinjam',
@@ -177,10 +180,12 @@ CREATE TABLE `data_peminjam` (
 -- Dumping data for table `data_peminjam`
 --
 
-INSERT INTO `data_peminjam` (`id_peminjam`, `nama_lengkap`, `nik`, `id_bpkb`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `tgl_kembali`, `status`, `created_at`, `updated_at`) VALUES
-(19, 'Amin', '123123', 29, '3213123', '3213123', '2131231', '2131231', '2022-07-14', '2022-08-03', 'Dikembalikan', '2022-07-21', '2022-07-21'),
-(20, 'Si Amin', '2321032101111', 26, 'Ferguso', '2900222', '123123', '123123123', '2022-07-21', '2022-08-01', 'Dikembalikan', '2022-07-21', '2022-07-21'),
-(21, 'Si Amin', '2321032101111', 28, 'Ferguso', '3123123', 'Sir Alex 2', '2312313', '2022-07-21', '2022-07-21', 'Dikembalikan', '2022-07-21', '2022-07-21');
+INSERT INTO `data_peminjam` (`id_peminjam`, `nama_lengkap`, `nik`, `id_bpkb`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `ket_lokasi`, `lokasi_kendaraan`, `status_kendaraan`, `tgl_pinjam`, `tgl_kembali`, `status`, `created_at`, `updated_at`) VALUES
+(19, 'Amin', '123123', 29, '3213123', '3213123', '2131231', '2131231', '', '', '', '2022-07-14', '2022-08-03', 'Dikembalikan', '2022-07-21', '2022-07-21'),
+(20, 'Si Amin', '2321032101111', 26, 'Ferguso', '2900222', '123123', '123123123', '', '', '', '2022-07-21', '2022-08-01', 'Dikembalikan', '2022-07-21', '2022-07-21'),
+(21, 'Si Amin', '2321032101111', 28, 'Ferguso', '3123123', 'Sir Alex 2', '2312313', '', '', '', '2022-07-21', '2022-07-21', 'Dikembalikan', '2022-07-21', '2022-07-21'),
+(22, 'ada', '3216061302010014', 30, 'Khrisna', '5200411025', 'Khrisna', '5200411025', 'jogja', 'Internal Pemkot', 'Dipinjam', '2022-07-28', '0000-00-00', 'Dikembalikan', '2022-07-28', '2022-07-28'),
+(23, 'Disnet', '33333112121212112', 30, 'Fariz', '5164684651551', '-', '-', 'jogja', 'Internal Pemkot', 'Tidak Dipinjam', '2022-07-28', '0000-00-00', 'Pinjam', '2022-07-28', '2022-07-28');
 
 -- --------------------------------------------------------
 
@@ -195,6 +200,14 @@ CREATE TABLE `peminjam_gambar` (
   `created_at` date NOT NULL,
   `updated_at` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `peminjam_gambar`
+--
+
+INSERT INTO `peminjam_gambar` (`id_gambar`, `nik`, `link`, `created_at`, `updated_at`) VALUES
+(11, '3216061302010014', '1658990969_0deeca8d63a5b1500ad3.jpeg', '0000-00-00', '0000-00-00'),
+(12, '33333112121212112', '1658994176_fb3fa0b7e34237ff77f4.jpeg', '0000-00-00', '0000-00-00');
 
 --
 -- Indexes for dumped tables
@@ -284,13 +297,13 @@ ALTER TABLE `data_bpkb`
 -- AUTO_INCREMENT for table `data_peminjam`
 --
 ALTER TABLE `data_peminjam`
-  MODIFY `id_peminjam` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id_peminjam` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT for table `peminjam_gambar`
 --
 ALTER TABLE `peminjam_gambar`
-  MODIFY `id_gambar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_gambar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- Constraints for dumped tables
