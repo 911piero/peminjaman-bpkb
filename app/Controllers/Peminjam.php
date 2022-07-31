@@ -53,7 +53,9 @@ class Peminjam extends BaseController
 
     public function create()
     {
-        $getBpkb = $this->BpkbModel->where('status', 'Tidak Dipinjam')->findAll();
+        $findCond = ['status' => 'Tidak Dipinjam', 'isActive' => 1];
+
+        $getBpkb = $this->BpkbModel->where($findCond)->findAll();
         $getModelKendaraan = $this->BpkbModel->getModelKendaraan();
 
         $data = [

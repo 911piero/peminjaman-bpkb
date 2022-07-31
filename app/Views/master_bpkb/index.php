@@ -20,8 +20,6 @@ use app\Models\BpkbModel; ?>
 
               <?php
 
-              use CodeIgniter\Controller;
-
               echo $results; ?>
             </span>
           </div>
