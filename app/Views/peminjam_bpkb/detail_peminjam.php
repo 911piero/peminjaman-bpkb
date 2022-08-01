@@ -2,104 +2,187 @@
 
 <?= $this->section('content'); ?>
 <style>
-    table {
-        width: 100%;
-        border-collapse: collapse;
+    .sub-label{
+        font-weight: bold;
+    }
+    .top-label{
+        font: bold;
+        font-size: large;
+    }
+    tr, td{
+        padding-right: 5px;
     }
 
-
-    th {
-        text-align: end;
-    }
 </style>
 <div class="content">
     <div class="container-fluid">
         <?= csrf_field(); ?>
-        <div class="card card-primary">
-            <div class="card-header">
-                <h3 class="card-title">Detail Peminjam </h3>
-            </div>
-            <div class="card-body">
-                <div class="table-responsive">
-
-                    <table class="table m-0" border="1px">
-                        <thead>
-                            <tr>
-                                <td>Nama Lengkap : <p class="card-text"> <?= $peminjam['nama_lengkap']; ?></p>
-                                </td>
-                                <td>NIK : <p class="card-text"><?= $peminjam['nik']; ?></p>
-                                </td>
-                                <td>Nomor Registrasi: <p class="card-text"><?= $peminjam['nomor_registrasi']; ?></p>
-                                </td>
-
-                            </tr>
-                            <tr>
-                                <td>Nama Petugas Peminjaman : <p class="card-text"><?= $peminjam['nama_petugas_pinjam']; ?></p>
-                                </td>
-                                <td>NIP Petugas Pinjaman : <p class="card-text"><?= $peminjam['nip_petugas_pinjam']; ?></p>
-                                </td>
-                                <td>Nama Petugas Kembali : <p class="card-text"> <?= $peminjam['nama_petugas_kembali']; ?></p>
-                                </td>
-
-                            </tr>
-                            <tr>
-                                <td>NIP Petugas Kembali : <p class="card-text"><?= $peminjam['nip_petugas_kembali']; ?></p>
-                                </td>
-                                <td>Tanggal Pinjam : <p class="card-text"> <?= $peminjam['tgl_pinjam']; ?></p>
-                                </td>
-                                <td>Tanggal Kembali : <p class="card-text"> <?= $peminjam['tgl_kembali']; ?></p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td> keterangan Lokasi : <p class="card-text"><?= $peminjam['ket_lokasi']; ?></p>
-                                </td>
-                                <td>Lokasi Kendaraan : <p class="card-text"> <?= $peminjam['lokasi_kendaraan']; ?></p>
-                                </td>
-                                <td>Status Kendaraan : <p class="card-text"> <?= $peminjam['status_kendaraan']; ?></p>
-                                </td>
-                            </tr>
-                        </thead>
+        <div class="row">
+            <div class="col">
+                 <div class="card" style="width:768px; height: 334px;">
+                 <div class="card-body">
+                <div class="row">
+                    <div class="col">
+                    <table>
+                        <tr>
+                            <td><h4>Peminjam</h4></td>
+                        </tr>
+                        <tr>
+                            <td class="sub-label">Nama Peminjam</td>
+                            <td class="sub-label">:</td>
+                            <td><?= $peminjam['nama_lengkap']; ?></td>
+                        </tr>
+                        <tr>
+                            <td class="sub-label">NIK</td>
+                            <td class="sub-label">:</td>
+                            <td><?= $peminjam['nik']; ?></td>
+                        </tr>
+                        <tr>
+                            <td><hr></td>
+                            <td><hr></td>
+                            <td><hr></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4>Kendaraan</h4>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="sub-label">Kendaraan Dipinjam</td>
+                            <td class="sub-label">:</td>
+                            <td><?= $peminjam['nomor_registrasi']; ?></td>
+                        </tr>
+        
+                        <tr>
+                            <td class="sub-label">Status Kendaraan</td>
+                            <td class="sub-label">:</td>
+                            <td><?= $peminjam['status_kendaraan']; ?></td>
+                        </tr>
+                        <tr>
+                            <td class="sub-label">Lokasi Kendaraan</td>
+                            <td class="sub-label">:</td>
+                            <td><?= $peminjam['lokasi_kendaraan']; ?></td>
+                        </tr>
+                        <tr>
+                            <td class="sub-label">Keterangan Lokasi</td>
+                            <td class="sub-label">:</td>
+                            <td><?= $peminjam['ket_lokasi']; ?></td>
+                        </tr>
+                        <tr>
+                            <td><hr></td>
+                            <td><hr></td>
+                            <td><hr></td>
+                        </tr>
+                        
                     </table>
-                    <table class="table m-0 mt-sm-4" border="1px">
-                        <thead>
-                            <tr>
-                                <td>
-                                    Gambar
-                                </td>
-                            </tr>
-                        </thead>
-                    </table>
-                    <table class="table m-0 mt-1" border="1px">
-                        <thead>
-                            <tr>
-                                <?php foreach ($getImg as $key => $link) : ?>
-                                    <td>
-                                        <center><img style="max-width:100%;" src="<?= base_url('foto_peminjam/' . $link['link']); ?>" alt="">
-                                            <br>
-                                            <br>
-                                            <a href="<?= base_url('GambarPeminjamanController/delete/' . $link['id_gambar']);  ?>" class="btn btn-danger" onclick="return confirm('Are you sure ?')">HAPUS</a>
-                                            <center>
+                    </div>
+                    <div class="col">
+
+                        <div class="images">
+                            <?php foreach ($getImg as $key => $link) : ?>
+                                <img src="<?= base_url('foto_peminjam/' . $link['link']); ?>" alt="" class="card" style="max-height: 250px;">
+                            <?php endforeach; ?>
+                        </div>
+                        <div>
+                            <table  align="center">
+                                <tr>
+                                    <td class="sub-label mt-2"><h5 style="margin: 0;">Status</h5></td>
+                                    <td class="sub-label"><h5 style="margin: 0;">:</h5></td>
+                                    <?php
+                                            $status = $peminjam['status']; 
+
+                                            if ($status == "Dikembalikan") {
+                                                $style = 'badge badge-success';
+                                            }else if($status == "Pinjam"){
+                                                $style = 'badge badge-danger';
+                                            }
+                                        ?>
+                                    <td class="<?= $style; ?>">
+                                    <h5 style="margin: 0;">
+                                         <?= $peminjam['status']; ?>
+                                    </h5>
+                                       
                                     </td>
-                                <?php endforeach; ?>
-                            </tr>
-                        </thead>
-                    </table>
-                    <table class="table mt-2" border="1px">
-                        <thead>
-                            <tr>
-                                <th>
-                                    <form action="/GambarPeminjamanController/save/" method="post" enctype="multipart/form-data">
-                                        <input type="hidden" name="nik" value="<?= $peminjam['nik']; ?>">
-                                        <input type="file" name="foto_peminjam" id="foto_peminjam" required>
-                                        <input type="submit" value="Upload" name="submit" class="btn btn-primary">
-                                    </form>
-                                </th>
-                            </tr>
-                        </thead>
-                    </table>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>                
                 </div>
+ 
+            </div>
+        </div>       
+            </div>
+            <div class="col">
+            <div class="card" style="height: 334px;">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col">
+                    <table>
+                    <tr>
+                            <td>
+                                <h4>Petugas Peminjaman</h4>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="sub-label">Nama Petugas </td>
+                            <td class="sub-label">:</td>
+                            <td><?= $peminjam['nama_petugas_pinjam']; ?></td>
+                        </tr>
+                        <tr>
+                            <td class="sub-label">NIP</td>
+                            <td class="sub-label">:</td>
+                            <td><?= $peminjam['nip_petugas_pinjam']; ?></td>
+                        </tr>
+                        <tr>
+                            <td class="sub-label">Tanggal Pinjam</td>
+                            <td class="sub-label">:</td>
+                            <td><?= $peminjam['tgl_pinjam']; ?></td>
+                        </tr>
+                                                <tr>
+                            <td><hr></td>
+                            <td><hr></td>
+                            <td><hr></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4>Petugas Pengembalian</h4>
+                            </td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td class="sub-label">Nama Petugas </td>
+                            <td class="sub-label">:</td>
+                            <td><p class="card-text"> <?= $peminjam['nama_petugas_kembali']; ?></td>
+                        </tr>
+                        <tr>
+                            <td class="sub-label">NIP</td>
+                            <td class="sub-label">:</td>
+                            <td><?= $peminjam['nip_petugas_kembali']; ?></td>
+                        </tr>
+                        <tr>
+                            <td class="sub-label">Tanggal Pengembalian</td>
+                            <td class="sub-label">:</td>
+                            <td><p class="card-text"> <?= $peminjam['tgl_kembali']; ?></td>
+                        </tr>
+                        <tr>
+                            <td><hr></td>
+                            <td><hr></td>
+                            <td><hr></td>
+                        </tr>
+                    </table>
+                    </div>              
+                </div>
+ 
             </div>
         </div>
+</div>
+        </div>
+
+
+        
     </div>
 </div>
 <?php $this->endSection(); ?>
