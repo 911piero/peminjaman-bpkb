@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ERROR - 2022-08-01 00:00:53 --> Table 'peminjaman_bpkb.data_mutasi' doesn't exist
 CRITICAL - 2022-08-01 00:00:53 --> Table 'peminjaman_bpkb.data_mutasi' doesn't exist
 in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
@@ -50,6 +51,73 @@ in APPPATH\Views\master_bpkb\detail_bpkb.php on line 75.
  5 APPPATH\Controllers\Bpkb.php(68): view('master_bpkb/detail_bpkb', [...])
  6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('33')
  7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+=======
+ERROR - 2022-08-01 01:47:12 --> Unknown column 'isActive' in 'where clause'
+CRITICAL - 2022-08-01 01:47:12 --> Unknown column 'isActive' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `data_bpkb`
+JOIN `bpkb_bahan_bakar` ON `bpkb_bahan_bakar`.`id_bahan_bakar` = `data_bpkb`.`bahan_bakar`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+JOIN `bpkb_warna_tnkb` ON `bpkb_warna_tnkb`.`id_warna_tnkb` = `data_bpkb`.`warna_tnkb`
+WHERE `isActive` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `data_bpkb`
+JOIN `bpkb_bahan_bakar` ON `bpkb_bahan_bakar`.`id_bahan_bakar` = `data_bpkb`.`bahan_bakar`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+JOIN `bpkb_warna_tnkb` ON `bpkb_warna_tnkb`.`id_warna_tnkb` = `data_bpkb`.`warna_tnkb`
+WHERE `isActive` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `data_bpkb`
+JOIN `bpkb_bahan_bakar` ON `bpkb_bahan_bakar`.`id_bahan_bakar` = `data_bpkb`.`bahan_bakar`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+JOIN `bpkb_warna_tnkb` ON `bpkb_warna_tnkb`.`id_warna_tnkb` = `data_bpkb`.`warna_tnkb`
+WHERE `isActive` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_bpkb`
+JOIN `bpkb_bahan_bakar` ON `bpkb_bahan_bakar`.`id_bahan_bakar` = `data_bpkb`.`bahan_bakar`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+JOIN `bpkb_warna_tnkb` ON `bpkb_warna_tnkb`.`id_warna_tnkb` = `data_bpkb`.`warna_tnkb`
+WHERE `isActive` = :isActive:', [...], false)
+ 5 APPPATH\Models\BpkbModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Bpkb.php(24): App\Models\BpkbModel->getBpkb()
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->index()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-01 03:01:30 --> Undefined variable: style
+in APPPATH\Views\peminjam_bpkb\detail_peminjam.php on line 57.
+ 1 APPPATH\Views\peminjam_bpkb\detail_peminjam.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: style', 'APPPATH\\Views\\peminjam_bpkb\\detail_peminjam.php', 57, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\detail_peminjam.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/peminjam_bpkb/detail_peminjam', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(244): view('/peminjam_bpkb/detail_peminjam', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->detail('40')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-01 03:36:28 --> syntax error, unexpected '?', expecting end of file
+in APPPATH\Views\peminjam_bpkb\detail_peminjam.php on line 129.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/peminjam_bpkb/detail_peminjam', [], true)
+ 3 APPPATH\Controllers\Peminjam.php(244): view('/peminjam_bpkb/detail_peminjam', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->detail('39')
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-01 04:04:01 --> Undefined index: nip
+in APPPATH\Views\peminjam_bpkb\detail_peminjam.php on line 89.
+ 1 APPPATH\Views\peminjam_bpkb\detail_peminjam.php(89): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nip', 'APPPATH\\Views\\peminjam_bpkb\\detail_peminjam.php', 89, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\detail_peminjam.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/peminjam_bpkb/detail_peminjam', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(244): view('/peminjam_bpkb/detail_peminjam', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->detail('39')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+>>>>>>> 8bb3ab7c518fc75df072c2ef506ee72ea70c28ce
  8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
