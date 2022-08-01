@@ -21,6 +21,7 @@
             </div>
             <div class="card-body">
                 <div class="table-responsive">
+
                     <table class="table m-0" border="1px">
                         <thead>
                             <tr>

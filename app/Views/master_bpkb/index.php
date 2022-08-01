@@ -20,8 +20,6 @@ use app\Models\BpkbModel; ?>
 
               <?php
 
-              use CodeIgniter\Controller;
-
               echo $results; ?>
             </span>
           </div>
@@ -43,7 +41,7 @@ use app\Models\BpkbModel; ?>
         <!-- MAP & BOX PANE -->
         <div class="card">
           <div class="card-header">
-            <h3 class="card-title">Data BPKB</h3>
+            <h3 class="card-title"><b>Data BPKB</b></h3>
             <a href="/bpkb/create" class="btn btn-sm btn-primary float-right">Tambah BPKB</a>
           </div>
           <!-- /.card-header -->

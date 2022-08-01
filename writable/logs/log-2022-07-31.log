@@ -1,0 +1,220 @@
+CRITICAL - 2022-07-31 07:26:18 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+in APPPATH\Controllers\Mutasi.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Mutasi->save()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mutasi))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-31 07:27:36 --> Array to string conversion
+in APPPATH\Controllers\Mutasi.php on line 46.
+ 1 APPPATH\Controllers\Mutasi.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\Mutasi.php', 46, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Mutasi->save()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mutasi))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-31 07:28:34 --> Undefined variable: title
+in APPPATH\Views\layout\template.php on line 7.
+ 1 APPPATH\Views\layout\template.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: title', 'APPPATH\\Views\\layout\\template.php', 7, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/template', [], true)
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mutasi_bpkb/index', [], true)
+ 6 APPPATH\Controllers\Mutasi.php(57): view('mutasi_bpkb/index')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Mutasi->save()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mutasi))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-31 07:29:34 --> syntax error, unexpected 'if' (T_IF)
+in APPPATH\Controllers\Mutasi.php on line 44.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('mutasi/save')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('mutasi/save')
+ 3 SYSTEMPATH\CodeIgniter.php(771): CodeIgniter\Router\Router->handle('mutasi/save')
+ 4 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-31 07:31:23 --> Undefined variable: title
+in APPPATH\Views\layout\template.php on line 7.
+ 1 APPPATH\Views\layout\template.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: title', 'APPPATH\\Views\\layout\\template.php', 7, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/template', [], true)
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('mutasi_bpkb/index', [], true)
+ 6 APPPATH\Controllers\Mutasi.php(57): view('mutasi_bpkb/index')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Mutasi->save()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mutasi))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-31 07:44:15 --> Argument 2 passed to CodeIgniter\Validation\Rules::is_unique() must be of the type string, null given, called in C:\xampp\htdocs\peminjaman-bpkb\vendor\codeigniter4\framework\system\Validation\Validation.php on line 305
+in SYSTEMPATH\Validation\Rules.php on line 126.
+ 1 SYSTEMPATH\Validation\Validation.php(305): CodeIgniter\Validation\Rules->is_unique('ROOTPATH\\public', null)
+ 2 SYSTEMPATH\Validation\Validation.php(173): CodeIgniter\Validation\Validation->processRules('nomor_registrasi_baru', 'nomor_registrasi_baru', 'ROOTPATH\\public', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Mutasi.php(46): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Mutasi->save()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mutasi))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-31 07:44:53 --> Argument 2 passed to CodeIgniter\Validation\Rules::is_unique() must be of the type string, null given, called in C:\xampp\htdocs\peminjaman-bpkb\vendor\codeigniter4\framework\system\Validation\Validation.php on line 305
+in SYSTEMPATH\Validation\Rules.php on line 126.
+ 1 SYSTEMPATH\Validation\Validation.php(305): CodeIgniter\Validation\Rules->is_unique('AB 1231 YY', null)
+ 2 SYSTEMPATH\Validation\Validation.php(173): CodeIgniter\Validation\Validation->processRules('nomor_registrasi_baru', 'nomor_registrasi_baru', 'AB 1231 YY', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Mutasi.php(46): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Mutasi->save()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mutasi))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-31 07:50:41 --> Call to undefined function App\Controllers\now()
+in APPPATH\Controllers\Mutasi.php on line 69.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Mutasi->save()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mutasi))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-31 07:54:45 --> Unknown column 'nomor_registrasi' in 'field list'
+CRITICAL - 2022-07-31 07:54:45 --> Unknown column 'nomor_registrasi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `data_mutasi` (`nomor_registrasi`, `jenis_mutasi`, `tgl_mutasi`) VALUES (\'AB 1234 AW\', \'Perubahan Nomor Registrasi\', \'2022-07-31 07:54:45\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data_mutasi` (`nomor_registrasi`, `jenis_mutasi`, `tgl_mutasi`) VALUES (\'AB 1234 AW\', \'Perubahan Nomor Registrasi\', \'2022-07-31 07:54:45\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data_mutasi` (`nomor_registrasi`, `jenis_mutasi`, `tgl_mutasi`) VALUES (\'AB 1234 AW\', \'Perubahan Nomor Registrasi\', \'2022-07-31 07:54:45\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_mutasi` (`nomor_registrasi`, `jenis_mutasi`, `tgl_mutasi`) VALUES (:nomor_registrasi:, :jenis_mutasi:, :tgl_mutasi:)', [...], false)
+ 5 APPPATH\Models\MutasiModel.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Mutasi.php(81): App\Models\MutasiModel->penghapusan_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Mutasi->save()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mutasi))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-31 07:55:22 --> Undefined index: nomor_registrasi
+in APPPATH\Models\MutasiModel.php on line 24.
+ 1 APPPATH\Models\MutasiModel.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nomor_registrasi', 'APPPATH\\Models\\MutasiModel.php', 24, [...])
+ 2 APPPATH\Controllers\Mutasi.php(81): App\Models\MutasiModel->penghapusan_data([...])
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Mutasi->save()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mutasi))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-31 08:32:47 --> Call to undefined method App\Models\BpkbModel::countAllResult
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Bpkb.php(25): CodeIgniter\Model->__call('countAllResult', [])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-31 08:33:10 --> Call to undefined method App\Models\BpkbModel::countAllResult
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Bpkb.php(25): CodeIgniter\Model->__call('countAllResult', [])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-31 08:33:42 --> Call to a member function where() on array
+in APPPATH\Controllers\Bpkb.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->index()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-31 08:35:05 --> Call to undefined method App\Models\BpkbModel::countAllResult
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Bpkb.php(25): CodeIgniter\Model->__call('countAllResult', [])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-31 08:35:16 --> Call to undefined method App\Models\BpkbModel::count
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Bpkb.php(25): CodeIgniter\Model->__call('count', [])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-31 08:35:17 --> Call to undefined method App\Models\BpkbModel::count
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Bpkb.php(25): CodeIgniter\Model->__call('count', [])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-31 08:35:39 --> Call to a member function countAllResult() on null
+in APPPATH\Controllers\Bpkb.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->index()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-31 08:35:55 --> Call to a member function count() on null
+in APPPATH\Controllers\Bpkb.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->index()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-31 08:36:58 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::get() must be of the type int or null, string given, called in C:\xampp\htdocs\peminjaman-bpkb\vendor\codeigniter4\framework\system\Model.php on line 771
+in SYSTEMPATH\Database\BaseBuilder.php on line 1577.
+ 1 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get('isActive', 1)
+ 2 APPPATH\Controllers\Bpkb.php(25): CodeIgniter\Model->__call('get', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->index()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-31 08:43:04 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAllResult()
+in APPPATH\Controllers\Bpkb.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->index()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-31 08:51:23 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Mutasi.php on line 61.
+ 1 APPPATH\Controllers\Mutasi.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Mutasi.php', 61, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Mutasi->save()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mutasi))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-31 08:53:05 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Mutasi.php on line 61.
+ 1 APPPATH\Controllers\Mutasi.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Mutasi.php', 61, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Mutasi->save()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mutasi))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-31 08:53:11 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Mutasi.php on line 61.
+ 1 APPPATH\Controllers\Mutasi.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Mutasi.php', 61, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Mutasi->save()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mutasi))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-31 08:53:30 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Mutasi.php on line 61.
+ 1 APPPATH\Controllers\Mutasi.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Mutasi.php', 61, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Mutasi->save()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mutasi))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-31 08:58:28 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\Bpkb.php(209): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\foto_bpkb', '1659275908_45e9876defc83d0416b6')
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->save()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
