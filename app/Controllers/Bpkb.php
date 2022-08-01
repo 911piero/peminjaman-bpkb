@@ -21,9 +21,8 @@ class Bpkb extends BaseController
     public function index()
     {
 
-
         $getBpkb = $this->BpkbModel->getBpkb();
-        $resultBpkb = $this->BpkbModel->get()->resultID->num_rows;
+        $resultBpkb = $this->BpkbModel->getBpkb()->resultID->num_rows;
 
         $data = [
             'title' => 'Home | Aplikasi Peminjaman BPKB',
@@ -41,13 +40,12 @@ class Bpkb extends BaseController
             $db = db_connect();
             $builder = $db->table('data_bpkb')
                 ->join('bpkb_model_kendaraan', 'bpkb_model_kendaraan.id_model = data_bpkb.model')
-                ->select('id_bpkb, nomor_registrasi, merk, nama_pemilik, bpkb_model_kendaraan.model, warna, status');
+                ->select('id_bpkb, nomor_registrasi, merk, nama_pemilik, bpkb_model_kendaraan.model, warna, status')
+                ->where('isActive', 1);
 
             return DataTable::of($builder)
                 ->add('action', function ($row) {
-                    return '<a href="/bpkb/detail/' . $row->id_bpkb . '" class="badge badge-primary">DETAILS</a> 
-                            <a href="/bpkb/edit/' . $row->id_bpkb . '" class="badge badge-warning">UPDATE</a>
-                            <a href="/bpkb/delete/' . $row->id_bpkb . '" class="badge badge-danger" onclick="return confirm(\'Are you sure ?\')">HAPUS</a>';
+                    return '<a href="/bpkb/detail/' . $row->id_bpkb . '" class="btn-sm btn-primary">DETAILS</a>';
                 })
                 ->toJson(true);
         }
@@ -266,12 +264,6 @@ class Bpkb extends BaseController
     public function update($id)
     {
         if (!$this->validate([
-            'nomor_regist' => [
-                'rules' => 'required',
-                'errors' => [
-                    'required' => 'Nomor Registrasi tidak boleh kosong!',
-                ]
-            ],
             'nama_pem' => [
                 'rules' => 'required',
                 'errors' => [
@@ -368,7 +360,6 @@ class Bpkb extends BaseController
         }
 
         $this->BpkbModel->update($id, [
-            'nomor_registrasi' => $this->request->getVar('nomor_regist'),
             'nama_pemilik' => $this->request->getVar('nama_pem'),
             'alamat' => $this->request->getVar('alamat'),
             'merk' => $this->request->getVar('merk'),

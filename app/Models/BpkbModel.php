@@ -19,10 +19,12 @@ class BpkbModel extends Model
             ->join('bpkb_bahan_bakar', 'bpkb_bahan_bakar.id_bahan_bakar = data_bpkb.bahan_bakar')
             ->join('bpkb_model_kendaraan', 'bpkb_model_kendaraan.id_model = data_bpkb.model')
             ->join('bpkb_warna_tnkb', 'bpkb_warna_tnkb.id_warna_tnkb = data_bpkb.warna_tnkb')
-            ->get()->getResultArray();
+            ->where('isActive', 1)
+            ->get();
     }
 
-    public function getDetail($id){
+    public function getDetail($id)
+    {
         return $this->db->table('data_bpkb')
             ->join('bpkb_bahan_bakar', 'bpkb_bahan_bakar.id_bahan_bakar = data_bpkb.bahan_bakar')
             ->join('bpkb_model_kendaraan', 'bpkb_model_kendaraan.id_model = data_bpkb.model')
@@ -51,8 +53,9 @@ class BpkbModel extends Model
     {
         return $this->db->table('bpkb_gambar')->where('nomor_bpkb', $no_bpkb)->get()->getResultArray();
     }
-    
-    public function tambahData($data_bpkb, $data_gambar){
+
+    public function tambahData($data_bpkb, $data_gambar)
+    {
         $this->db->table('data_bpkb')->insert($data_bpkb);
 
         return $this->db->table('bpkb_gambar')->insert($data_gambar);

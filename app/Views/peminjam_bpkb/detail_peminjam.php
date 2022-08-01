@@ -21,6 +21,7 @@
             </div>
             <div class="card-body">
                 <div class="table-responsive">
+
                     <table class="table m-0" border="1px">
                         <thead>
                             <tr>
@@ -28,7 +29,7 @@
                                 </td>
                                 <td>NIK : <p class="card-text"><?= $peminjam['nik']; ?></p>
                                 </td>
-                                <td>Nomor Registrasi: <p class="card-text"><?= $peminjam['nomor_bpkb']; ?></p>
+                                <td>Nomor Registrasi: <p class="card-text"><?= $peminjam['nomor_registrasi']; ?></p>
                                 </td>
 
                             </tr>
