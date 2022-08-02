@@ -10,7 +10,7 @@ class PeminjamModel extends Model
     protected $primaryKey = 'id_peminjam';
     protected $useTimestamps = true;
     protected $dateformat = 'date';
-    protected $allowedFields = ['nama_lengkap', 'nik', 'id_bpkb', 'nama_petugas_pinjam', 'nip_petugas_pinjam', 'nama_petugas_kembali', 'nip_petugas_kembali', 'lokasi_kendaraan', 'stastus_kendaraan', 'ket_lokasi', 'tgl_pinjam', 'tgl_kembali', 'status'];
+    protected $allowedFields = ['nama_lengkap', 'nik', 'id_bpkb', 'nama_petugas_pinjam', 'nip_petugas_pinjam', 'nama_petugas_kembali', 'nip_petugas_kembali', 'lokasi_kendaraan', 'status_kendaraan', 'ket_lokasi', 'tgl_pinjam', 'tgl_kembali', 'estimasi_kembali', 'status'];
 
     public function tambahData($data_peminjam, $data_gambar)
     {
@@ -43,6 +43,7 @@ class PeminjamModel extends Model
             ->set([
                 'nama_petugas_kembali' => $data_peminjam['nama_petugas_kembali'],
                 'nip_petugas_kembali' => $data_peminjam['nip_petugas_kembali'],
+                'tgl_kembali' => $data_peminjam['tgl_kembali'],
                 'status' => $data_peminjam['status']
             ])
             ->where('id_peminjam', $id)
@@ -54,7 +55,7 @@ class PeminjamModel extends Model
         return $this->db
             ->table('data_peminjam')
             ->join('data_bpkb', 'data_bpkb.id_bpkb = data_peminjam.id_bpkb')
-            ->select('nama_lengkap, nik, data_bpkb.id_bpkb, data_bpkb.nomor_bpkb, nama_petugas_pinjam, nip_petugas_pinjam, nama_petugas_kembali, nip_petugas_kembali, tgl_pinjam, tgl_kembali, data_peminjam.status')
+            ->select('nama_lengkap, nik, data_bpkb.id_bpkb, data_bpkb.nomor_registrasi, nama_petugas_pinjam, nip_petugas_pinjam, nama_petugas_kembali, nip_petugas_kembali, tgl_pinjam, tgl_kembali, data_peminjam.status , ket_lokasi, lokasi_kendaraan, status_kendaraan')
             ->where('id_peminjam', $id)
             ->get()->getRowArray();
     }

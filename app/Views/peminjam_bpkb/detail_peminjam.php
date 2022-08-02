@@ -17,10 +17,11 @@
         <?= csrf_field(); ?>
         <div class="card card-primary">
             <div class="card-header">
-                <h3 class="card-title">Details Peminjam </h3>
+                <h3 class="card-title">Detail Peminjam </h3>
             </div>
             <div class="card-body">
                 <div class="table-responsive">
+
                     <table class="table m-0" border="1px">
                         <thead>
                             <tr>
@@ -28,7 +29,7 @@
                                 </td>
                                 <td>NIK : <p class="card-text"><?= $peminjam['nik']; ?></p>
                                 </td>
-                                <td>Nomor Registrasi: <p class="card-text"><?= $peminjam['nomor_bpkb']; ?></p>
+                                <td>Nomor Registrasi: <p class="card-text"><?= $peminjam['nomor_registrasi']; ?></p>
                                 </td>
 
                             </tr>
@@ -47,6 +48,14 @@
                                 <td>Tanggal Pinjam : <p class="card-text"> <?= $peminjam['tgl_pinjam']; ?></p>
                                 </td>
                                 <td>Tanggal Kembali : <p class="card-text"> <?= $peminjam['tgl_kembali']; ?></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> keterangan Lokasi : <p class="card-text"><?= $peminjam['ket_lokasi']; ?></p>
+                                </td>
+                                <td>Lokasi Kendaraan : <p class="card-text"> <?= $peminjam['lokasi_kendaraan']; ?></p>
+                                </td>
+                                <td>Status Kendaraan : <p class="card-text"> <?= $peminjam['status_kendaraan']; ?></p>
                                 </td>
                             </tr>
                         </thead>
@@ -69,7 +78,7 @@
                                             <br>
                                             <br>
                                             <a href="<?= base_url('GambarPeminjamanController/delete/' . $link['id_gambar']);  ?>" class="btn btn-danger" onclick="return confirm('Are you sure ?')">HAPUS</a>
-                                        <center>
+                                            <center>
                                     </td>
                                 <?php endforeach; ?>
                             </tr>

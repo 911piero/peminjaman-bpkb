@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Models\PeminjamModel;
 use App\Models\BpkbModel;
 use \Hermawan\DataTables\DataTable;
+use CodeIgniter\I18n\Time;
 
 class Peminjam extends BaseController
 {
@@ -37,14 +38,14 @@ class Peminjam extends BaseController
             $db = db_connect();
             $builder = $db->table('data_peminjam')
                 ->join('data_bpkb', 'data_bpkb.id_bpkb = data_peminjam.id_bpkb')
-                ->select('id_peminjam, nama_lengkap, nik, data_bpkb.nomor_registrasi, nama_petugas_pinjam, nip_petugas_pinjam, nama_petugas_kembali, nip_petugas_kembali, tgl_pinjam, tgl_kembali, data_peminjam.status');
+                ->select('id_peminjam, nama_lengkap, nik, data_bpkb.nomor_registrasi, nama_petugas_pinjam, nip_petugas_pinjam, nama_petugas_kembali, nip_petugas_kembali, tgl_pinjam, estimasi_kembali, data_peminjam.status');
 
             return DataTable::of($builder)
                 ->add('action', function ($row) {
                     return
                         '<a href="/peminjam/detail/' . $row->id_peminjam . '" class="badge badge-primary">DETAILS</a> 
-                <a href="/peminjam/edit/' . $row->id_peminjam . '" class="badge badge-warning">UPDATE</a>
-                <a href="/peminjam/delete/' . $row->id_peminjam . '" class="badge badge-danger" onclick="return confirm(\'Are you sure ?\')">HAPUS</a>';
+                        <a href="/peminjam/edit/' . $row->id_peminjam . '" class="badge badge-warning">UPDATE</a>
+                        <a href="/peminjam/delete/' . $row->id_peminjam . '" class="badge badge-danger" onclick="return confirm(\'Are you sure ?\')">HAPUS</a>';
                 })
                 ->toJson(true);
         }
@@ -52,7 +53,9 @@ class Peminjam extends BaseController
 
     public function create()
     {
-        $getBpkb = $this->BpkbModel->where('status', 'Tidak Dipinjam')->findAll();
+        $findCond = ['status' => 'Tidak Dipinjam', 'isActive' => 1];
+
+        $getBpkb = $this->BpkbModel->where($findCond)->findAll();
         $getModelKendaraan = $this->BpkbModel->getModelKendaraan();
 
         $data = [
@@ -80,6 +83,12 @@ class Peminjam extends BaseController
                 'rules' => 'required',
                 'errors' => [
                     'required' => 'NIK tidak boleh kosong!'
+                ]
+            ],
+            'id_bpkb' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Nomor Registrasi Tidak Boleh Kosong'
                 ]
             ],
             'nama_petugas_pinjam' => [
@@ -129,8 +138,8 @@ class Peminjam extends BaseController
         //nama file
         $namaFoto = $fotoKtp->getRandomName();
 
-        //memindahkan file
-        $fotoKtp->move('foto_peminjam/', $namaFoto);
+        $est_kembali = Time::parse($this->request->getVar('tgl_pinjam'));
+        $est_kembali = $est_kembali->addDays(14);
 
         $data_peminjam = [
             'nama_lengkap' => $this->request->getVar('nama_lengkap'),
@@ -141,6 +150,7 @@ class Peminjam extends BaseController
             'nama_petugas_kembali' => "-",
             'nip_petugas_kembali' => "-",
             'tgl_pinjam' => $this->request->getVar('tgl_pinjam'),
+            'estimasi_kembali' => $est_kembali,
             'ket_lokasi' => $this->request->getVar('ket_lokasi'),
             'lokasi_kendaraan' => $this->request->getVar('lokasi_kendaraan'),
             'status_kendaraan' => $this->request->getVar('status_kendaraan'),
@@ -152,7 +162,11 @@ class Peminjam extends BaseController
             'link' => $namaFoto
         ];
 
-        $this->PeminjamModel->tambahData($data_peminjam, $data_gambar);
+        if ($this->PeminjamModel->tambahData($data_peminjam, $data_gambar)) {
+            //memindahkan file
+            $fotoKtp->move('foto_peminjam/', $namaFoto);
+        }
+
         return redirect()->to('/peminjam');
     }
 

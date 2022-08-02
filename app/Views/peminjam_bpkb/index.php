@@ -48,9 +48,9 @@
                                 <tr>
                                     <th>Nama Peminjam</th>
                                     <th>NIK</th>
-                                    <th>Plat Nomer</th>
+                                    <th>Nomor Registrasi</th>
                                     <th>Tanggal Pinjam</th>
-                                    <th>Tanggal Kembali</th>
+                                    <th>Estimasi Kembali</th>
                                     <th>Status</th>
                                     <th>Action</th>
                                 </tr>

@@ -38,7 +38,7 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Bpkb::index');
+$routes->get('/', 'HomePage::index');
 // $routes->get('/bpkb/create', 'Bpkb::create');
 // $routes->post('/bpkb/save', 'Bpkb::save');
 // $routes->get('/bpkb/edit/(:num)', 'Bpkb::edit/$1');

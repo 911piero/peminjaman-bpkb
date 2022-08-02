@@ -27,9 +27,6 @@
         <nav class="main-header navbar navbar-expand navbar-dark">
             <!-- Left navbar links -->
             <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
-                </li>
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="<?= base_url(); ?>" class="nav-link">Dashboard</a>
                 </li>
@@ -80,17 +77,25 @@
                         <li class="nav-item menu-open">
                             <a href="<?= base_url(); ?>" class="nav-link active">
                                 <i class=""></i>
-                                <p>
-                                    Master BPKB
-                                </p>
+                                Home Page
+                            </a>
+                        </li>
+                        <li class="nav-item menu-open">
+                            <a href="<?= base_url('/bpkb'); ?>" class="nav-link active">
+                                <i class=""></i>
+                                Master BPKB
                             </a>
                         </li>
                         <li class="nav-item menu-open">
                             <a href="<?= site_url('/peminjam'); ?>" class="nav-link active">
                                 <i class=""></i>
-                                <p>
-                                    Peminjam BPKB
-                                </p>
+                                Peminjam BPKB
+                            </a>
+                        </li>
+                        <li class="nav-item menu-open">
+                            <a href="<?= site_url('/mutasi'); ?>" class="nav-link active">
+                                <i></i>
+                                Mutasi
                             </a>
                         </li>
                     </ul>
@@ -240,7 +245,7 @@
                         data: 'tgl_pinjam'
                     },
                     {
-                        data: 'tgl_kembali'
+                        data: 'estimasi_kembali'
                     },
                     {
                         data: 'status'
@@ -253,21 +258,33 @@
             });
         });
 
-        //     $(function () {
-        //     $("#example1").DataTable({
-        //       "responsive": true, "lengthChange": false, "autoWidth": false,
-        //       "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
-        //     }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
-        //     $('#example2').DataTable({
-        //       "paging": true,
-        //       "lengthChange": false,
-        //       "searching": false,
-        //       "ordering": true,
-        //       "info": true,
-        //       "autoWidth": false,
-        //       "responsive": true,
-        //     });
-        //   });
+        $(document).ready(function() {
+            $('#data_mutasi').DataTable({
+                processing: true,
+                serverSide: true,
+                order: [
+                    [3, 'asc']
+                ],
+                ajax: '/mutasi/listData',
+                columns: [{
+                        data: 'nomor_registrasi_lama',
+                        orderable: false
+                    },
+                    {
+                        data: 'nomor_registrasi_baru',
+                        orderable: false
+                    },
+                    {
+                        data: 'tgl_mutasi',
+                        orderable: false
+                    },
+                    {
+                        data: 'jenis_mutasi',
+
+                    },
+                ]
+            });
+        });
     </script>
 </body>
 

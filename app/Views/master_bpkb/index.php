@@ -20,8 +20,6 @@ use app\Models\BpkbModel; ?>
 
               <?php
 
-              use CodeIgniter\Controller;
-
               echo $results; ?>
             </span>
           </div>
@@ -51,7 +49,7 @@ use app\Models\BpkbModel; ?>
             <table id="data_bpkb" class="table table-bordered table-striped">
               <thead>
                 <tr>
-                  <th>Plat Nomer</th>
+                  <th>Nomor Registrasi</th>
                   <th>Merk</th>
                   <th>Nama Pemilik</th>
                   <th>Model</th>

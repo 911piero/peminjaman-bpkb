@@ -15,13 +15,14 @@
 <div class="content">
     <div class="container-fluid">
         <?= csrf_field(); ?>
-        <div class="card card-primary">
+        <div class="card card">
             <div class="card-header">
                 <h3 class="card-title">Details BPKB </h3>
+                <a href="<?= site_url('/bpkb/edit/') . $bpkb['id_bpkb'] ?>" class="btn btn-sm btn-warning float-right">Perubahan Data</a>
             </div>
             <div class="card-body">
                 <div class="table-responsive">
-                    <table class="table m-0" border="1px">
+                    <table class="table mt-2" border="1px">
                         <thead>
                             <tr>
                                 <td>Nama Pemilik : <p class="card-text"> <?= $bpkb['nama_pemilik']; ?></p>
@@ -34,7 +35,7 @@
                                 </td>
 
                             </tr>
-                            <tr> 
+                            <tr>
                                 <td>Tipe : <p class="card-text"><?= $bpkb['tipe']; ?></p>
                                 </td>
                                 <td>Model : <p class="card-text"> <?= $bpkb['model']; ?></p>
