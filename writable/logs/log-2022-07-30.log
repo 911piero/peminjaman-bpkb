@@ -1,3 +1,23 @@
+<<<<<<< HEAD
+ERROR - 2022-07-30 08:47:34 --> MySQL server has gone away
+CRITICAL - 2022-07-30 08:47:34 --> MySQL server has gone away
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `data_bpkb` SET `status` = \'Dipinjam\'
+WHERE `id_bpkb` = \'28\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `data_bpkb` SET `status` = \'Dipinjam\'
+WHERE `id_bpkb` = \'28\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `data_bpkb` SET `status` = \'Dipinjam\'
+WHERE `id_bpkb` = \'28\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `data_bpkb` SET `status` = :status:
+WHERE `id_bpkb` = :id_bpkb:', [...], false)
+ 5 APPPATH\Models\PeminjamModel.php(22): CodeIgniter\Database\BaseBuilder->update()
+ 6 APPPATH\Controllers\Peminjam.php(163): App\Models\PeminjamModel->tambahData([...], [...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->save()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+=======
 CRITICAL - 2022-07-30 02:45:28 --> Undefined variable: row
 in APPPATH\Views\master_bpkb\detail_bpkb.php on line 23.
  1 APPPATH\Views\master_bpkb\detail_bpkb.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: row', 'APPPATH\\Views\\master_bpkb\\detail_bpkb.php', 23, [...])
@@ -89,3 +109,4 @@ in APPPATH\Views\mutasi_bpkb\tambah_mutasi.php on line 41.
  8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+>>>>>>> 8e3d2f28ead06cade224727e43aa7fff3f98f31f

@@ -36,7 +36,7 @@
                 <!-- MAP & BOX PANE -->
                 <div class="card">
                     <div class="card-header">
-                        <h3 class="card-title">Data Mutasi BPKB</h3>
+                        <h3 class="card-title"><b>Data Mutasi BPKB</b></h3>
                         <a href="<?= site_url('/mutasi/create') ?>" class="btn btn-sm btn-primary float-right">Tambah Mutasi</a>
                     </div>
                     <!-- /.card-header -->

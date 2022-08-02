@@ -3,11 +3,7 @@
 <?= $this->section('content'); ?>
 <style>
     table {
-        width: 100%;
-        border-collapse: collapse;
     }
-
-
     th {
         text-align: end;
     }
@@ -17,97 +13,154 @@
         <?= csrf_field(); ?>
         <div class="card card">
             <div class="card-header">
-                <h3 class="card-title">Details BPKB </h3>
+                <h3 class="card-title"><b>Details BPKB</b> </h3>
                 <a href="<?= site_url('/bpkb/edit/') . $bpkb['id_bpkb'] ?>" class="btn btn-sm btn-warning float-right">Perubahan Data</a>
             </div>
-            <div class="card-body">
-                <div class="table-responsive">
-                    <table class="table mt-2" border="1px">
-                        <thead>
-                            <tr>
-                                <td>Nama Pemilik : <p class="card-text"> <?= $bpkb['nama_pemilik']; ?></p>
-                                </td>
-                                <td>Nomor Registrasi : <p class="card-text"><?= $bpkb['nomor_registrasi']; ?></p>
-                                </td>
-                                <td>Alamat : <p class="card-text"><?= $bpkb['alamat']; ?></p>
-                                </td>
-                                <td>Merk : <p class="card-text"><?= $bpkb['merk']; ?></p>
-                                </td>
+            <div class="card-body"  >
+                <div class="table-striped">
+                    <table style="width: 25% ;">
+                        <tr>
+                            <td><b>Nama Pemilik </b>
+                            </td>
+                            <td>:</td>
+                            <td><?= $bpkb['nama_pemilik']; ?></td>
+                        </tr>
+                        <tr>
+                            <td><b> Nomor Polisi</b>
+                            </td>
+                            <td>:</td>
+                            <td><?= $bpkb['nomor_registrasi']; ?></td>
+                        </tr>
+                        <tr>
+                            <td><b> Alamat</b>
+                            </td>
+                            <td>:</td>
+                            <td><?= $bpkb['alamat']; ?></td>
+                        </tr>
+                    </table>
+                    <table class="table m-0 mt-sm-6">
+                        <hr color="black">
+                        <tr>
+                            <td><b>Merk</b>
+                            </td>
+                            <td>:</td>
+                            <td><?= $bpkb['merk']; ?></td>
 
-                            </tr>
-                            <tr>
-                                <td>Tipe : <p class="card-text"><?= $bpkb['tipe']; ?></p>
-                                </td>
-                                <td>Model : <p class="card-text"> <?= $bpkb['model']; ?></p>
-                                </td>
-                                <td>Tahun Pembuatan : <p class="card-text"><?= $bpkb['tahun_pembuatan']; ?></p>
-                                </td>
-                                <td>Isi Silinder : <p class="card-text"> <?= $bpkb['isi_silinder']; ?></p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Nomor Rangka : <p class="card-text"><?= $bpkb['nomor_rangka']; ?></p>
-                                </td>
-                                <td>Nomor Mesin : <p class="card-text"> <?= $bpkb['nomor_mesin']; ?></p>
-                                </td>
-                                <td>Warna : <p class="card-text"><?= $bpkb['warna']; ?></p>
-                                </td>
-                                <td>Bahan Bakar : <p class="card-text"><?= $bpkb['bahan_bakar']; ?></p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Warna Plat : <p class="card-text"><?= $bpkb['warna_tnkb']; ?></p>
-                                </td>
-                                <td>Tahun Registrasi: <p class="card-text"><?= $bpkb['tahun_registrasi']; ?></p>
-                                </td>
-                                <td>Nomor BPKB : <p class="card-text"><?= $bpkb['nomor_bpkb']; ?></p>
-                                </td>
-                                <td>Kode Lokasi : <p class="card-text"> <?= $bpkb['kode_lokasi']; ?></p>
-                                </td>
-                            </tr>
-                        </thead>
-                    </table>
-                    <table class="table m-0 mt-sm-4" border="1px">
-                        <thead>
-                            <tr>
-                                <td>
-                                    Gambar
-                                </td>
-                            </tr>
-                        </thead>
-                    </table>
-                    <table class="table m-0 mt-1" border="1px">
-                        <thead>
-                            <tr>
-                                <?php foreach ($getImg as $key => $link) : ?>
-                                    <td>
-                                        <center>
-                                            <img style="max-width: 100%;" src="<?= base_url('foto_bpkb/' . $link['link']); ?>" alt="">
-                                            <br>
-                                            <br>
-                                            <a href="<?= base_url('GambarController/delete/' . $link['id_gambar']);  ?>" class="btn btn-danger" onclick="return confirm('Are you sure ?')">HAPUS</a>
-                                        </center>
+                            <td>
+                                <table border="1px" >
+                                    <td style="font-size: 18px;">
+                                        <b>Nomor BPKB : <?= $bpkb['nomor_bpkb']; ?></b>
                                     </td>
-                                <?php endforeach; ?>
-                            </tr>
-                        </thead>
-                    </table>
-                    <table class="table mt-2" border="1px">
-                        <thead>
-                            <tr>
-                                <th>
-                                    <form action="/GambarController/save/" method="post" enctype="multipart/form-data">
-                                        <input type="hidden" name="nomor_bpkb" value="<?= $bpkb['nomor_bpkb']; ?>">
-                                        <input type="file" name="foto_bpkb" id="foto_bpkb" required>
-                                        <input type="submit" value="Upload" name="submit" class="btn btn-primary">
-                                    </form>
-                                </th>
-                            </tr>
-                        </thead>
+                                </table>
+                            </td>
+
+
+                        </tr>
+                        <tr>
+                            <td><b>Tipe</b>
+                            </td>
+                            <td>:</td>
+                            <td><?= $bpkb['tipe']; ?></td>
+
+
+                        </tr>
+                        <tr>
+                            <td><b>Model</b>
+                            </td>
+                            <td>:</td>
+                            <td><?= $bpkb['model']; ?></td>
+
+                            <td><b>Warna</b>
+                            </td>
+                            <td>:</td>
+                            <td><?= $bpkb['warna']; ?></td>
+                        </tr>
+                        <tr>
+                            <td><b>Tahun Pembuatan</b>
+                            </td>
+                            <td>:</td>
+                            <td><?= $bpkb['tahun_pembuatan']; ?></td>
+
+                            <td><b>Bahan Bakar</b>
+                            </td>
+                            <td>:</td>
+                            <td><?= $bpkb['bahan_bakar']; ?></td>
+                        </tr>
+                        <tr>
+                            <td><b>Isi Silinder</b>
+                            </td>
+                            <td>:</td>
+                            <td><?= $bpkb['isi_silinder']; ?></td>
+
+                            <td><b>Warna Plat</b>
+                            </td>
+                            <td>:</td>
+                            <td><?= $bpkb['warna_tnkb']; ?></td>
+                        </tr>
+                        <tr>
+                            <td><b>Nomor Rangka</b>
+                            </td>
+                            <td>:</td>
+                            <td><?= $bpkb['nomor_rangka']; ?></td>
+
+                            <td><b>Tahun Registrasi</b>
+                            </td>
+                            <td>:</td>
+                            <td><?= $bpkb['tahun_registrasi']; ?></td>
+                        </tr>
+                        <tr>
+                            <td><b>Nomor Mesin</b>
+                            </td>
+                            <td>:</td>
+                            <td><?= $bpkb['nomor_mesin']; ?></td>
+
+                            <td><b>Kode Lokasi</b>
+                            </td>
+                            <td>:</td>
+                            <td><?= $bpkb['kode_lokasi']; ?></td>
+                        </tr>
+                        <tr>
+
+                        </tr>
                     </table>
                 </div>
             </div>
+            <table class="table m-0 mt-1">
+                <td>
+                    <b>Gambar</b>
+                </td>
+            </table>
+            <table class="table m-0 mt-1">
+                <tr>
+                    <?php foreach ($getImg as $key => $link) : ?>
+                        <td>
+                            <center>
+                                <img style="height: 250px;" src="<?= base_url('foto_bpkb/' . $link['link']); ?>" alt="">
+                                <br>
+                                <br>
+                                <a href="<?= base_url('GambarController/delete/' . $link['id_gambar']);  ?>" class="btn btn-danger" onclick="return confirm('Are you sure ?')">HAPUS</a>
+                            </center>
+                        </td>
+                    <?php endforeach; ?>
+                </tr>
+
+            </table>
+            <table class="table mt-2">
+                <thead>
+                    <tr>
+                        <th>
+                            <form action="/GambarController/save/" method="post" enctype="multipart/form-data">
+                                <input type="hidden" name="nomor_bpkb" value="<?= $bpkb['nomor_bpkb']; ?>">
+                                <input type="file" name="foto_bpkb" id="foto_bpkb" required>
+                                <input type="submit" value="Upload" name="submit" class="btn btn-primary">
+                            </form>
+                        </th>
+                    </tr>
+                </thead>
+            </table>
+
         </div>
     </div>
+</div>
 </div>
 <?php $this->endSection(); ?>
