@@ -2,7 +2,24 @@
 
 <?= $this->section('content'); ?>
 
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
 <style>
+    .select2-container .select2-selection--single {
+        height: 40px !important;
+    }
+
+    .select2-container--default .select2-selection--single {
+        border: 1px solid #ccc !important;
+        border-radius: 4px !important;
+    }
+
     #hideValuesOnSelect {
         display: none;
     }
@@ -32,9 +49,15 @@
                                 </div>
                             </div>
 
+
                             <div class="form-group">
-                                <label for="inputNoRegistLama">Nomor Registrasi</label>
-                                <input type="text" class="form-control <?= ($validation->hasError('nomor_registrasi')) ? 'is-invalid' : ' '; ?>" id="nomor_registrasi" name="nomor_registrasi" placeholder="Masukan Nomor Registrasi">
+                                <label for="">Pilih Kendaraan</label>
+                                <select class="form-control select2" name="nomor_registrasi" <?= ($validation->hasError('nomor_registrasi')) ? 'is-invalid' : ' '; ?> required autocomplete="on">
+                                    <option selected value="Cari ">Pilih Kendaraan</option>
+                                    <?php foreach ($getBpkb as $b) : ?>
+                                        <option value="<?= $b['nomor_registrasi']; ?>"><?= $b['nomor_registrasi']; ?> </option>
+                                    <?php endforeach; ?>
+                                </select>
                                 <div class="invalid-feedback">
                                     <?= $validation->getError('nomor_registrasi'); ?>
                                 </div>
@@ -66,6 +89,7 @@
     function displayDivDemo(id, elementValue) {
         document.getElementById(id).style.display = elementValue.value == 0 ? 'block' : 'none';
     }
+    $('.select2').select2();
 </script>
 
 

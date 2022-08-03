@@ -41,9 +41,11 @@ class Mutasi extends BaseController
 
     public function create()
     {
+        $getBpkb = $this->MutasiModel->getBpkb();
         $data = [
             'title' => 'Tambah Mutasi Baru | Aplikasi Peminjaman BPKB',
             'page_title' => 'Tambah Mutasi BPKB',
+            'getBpkb' => $getBpkb,
             'validation' => \Config\Services::validation()
         ];
 
@@ -58,7 +60,7 @@ class Mutasi extends BaseController
 
         if (!$this->validate([
             'nomor_registrasi' => [
-                'rules' => 'required|in_list[' . $findNoReg['nomor_registrasi'] . ']',
+                'rules' => 'required',
                 'errors' => [
                     'required' => 'Nomor Registrasi tidak boleh kosong!',
                     'in_list' => 'Nomor Registrasi tidak terdaftar',
