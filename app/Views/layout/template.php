@@ -75,31 +75,31 @@
 
                 <!-- Sidebar Menu -->
                 <nav class="mt-2">
-                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"  >
                         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                         <li class="nav-item menu-open">
-                            <a href="<?= base_url('/bpkb'); ?>" class="nav-link active">
-                                <i class=""></i>
-                                Master BPKB
+                            <a href="<?= site_url('/bpkb'); ?>" class="nav-link active">
+                                <i class="nav-icon fas fa-car"></i>
+                               <p>Master BPKB</p> 
                             </a>
                         </li>
-                        <li class="nav-item menu-open">
+                        <li class="nav-item">
                             <a href="<?= site_url('/peminjam'); ?>" class="nav-link active">
-                                <i class=""></i>
-                                Peminjam BPKB
+                                <i class="nav-icon fas fa-users"></i>
+                               <p>Peminjam BPKB</p> 
                             </a>
                         </li>
-                        <li class="nav-item menu-open">
+                        <li class="nav-item">
                             <a href="<?= site_url('/mutasi'); ?>" class="nav-link active">
-                                <i></i>
-                                Mutasi
+                            <i class="nav-icon fas fa-edit"></i>
+                               <p>Mutasi</p> 
                             </a>
                         </li>
-                        <li class="nav-item menu-open">
+                        <li class="nav-item ">
                             <a href="<?= site_url('bpkb/bpkbExport'); ?>" class="nav-link active">
-                                <i></i>
-                                Report
+                            <i class="nav-icon fas fa-file"></i>
+                               <p>Report</p> 
                             </a>
                         </li>
                     </ul>
