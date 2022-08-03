@@ -205,3 +205,19 @@ in APPPATH\Views\peminjam_bpkb\detail_peminjam.php on line 176.
  8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-03 01:59:55 --> Cannot use object of type mysqli as array
+in APPPATH\Controllers\Bpkb.php on line 417.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->bpkbExport()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-03 02:29:49 --> unlink(foto_bpkb/1659275926_0fc0028349161899f16d.jpg): No such file or directory
+in APPPATH\Controllers\GambarController.php on line 34.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(foto_bpkb/1659275926_0fc0028349161899f16d.jpg): No such file or directory', 'APPPATH\\Controllers\\GambarController.php', 34, [...])
+ 2 APPPATH\Controllers\GambarController.php(34): unlink('foto_bpkb/1659275926_0fc0028349161899f16d.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\GambarController->delete('35')
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GambarController))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

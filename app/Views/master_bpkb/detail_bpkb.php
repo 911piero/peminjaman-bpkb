@@ -19,9 +19,7 @@
             display: none;
         }
 
-        .gambar {
-            display: list-item;
-        }
+        
 
         .main-footer {
             display: none;
@@ -45,10 +43,10 @@
         </div>
         <div class="row">
             <div class="col">
-                <div class="card card-body">
+                <div class="card card-body" style="height: fit-content;"><hr>
                     <div class="row">
                         <div class="col">
-                            <hr>
+                            
                             <table class="table table-striped" style="width: 400px">
                                 <tr>
                                     <td class="sub-label">Nama Pemilik</td>
@@ -66,11 +64,18 @@
                                     <td><?= $bpkb['alamat']; ?></td>
                                 </tr>
                             </table>
-                            <hr>
+                            
+                        </div>
+                        <div class="col d-flex align-items-center justify-content-center">
+                        
+                            <div class="d-flex align-items-center justify-content-center rounded bg-dark p-2" style="width: 100%;">
+                                <h4><b>Nomor BPKB</b> : <?= $bpkb['nomor_bpkb']; ?></h4>
+                            </div>
                         </div>
                     </div>
+                    <hr>
                 </div>
-                <div class="card" style="height: 403px;">
+                <div class="card" style="height: fit-content;">
                     <div class="card-body">
                         <div class="row">
                             <div class="col">
@@ -105,22 +110,15 @@
                                         <td class="sub-label">:</td>
                                         <td><?= $bpkb['nomor_rangka']; ?></td>
                                     </tr>
+                                </table>
+                            </div>
+                            <div class="col">
+                                <table class="table table-striped">
                                     <tr>
                                         <td class="sub-label">Nomor Mesin</td>
                                         <td class="sub-label">:</td>
                                         <td><?= $bpkb['nomor_mesin']; ?></td>
-                                </table>
-                            </div>
-                            <div class="col">
-                                <table class="table table-striped" style="width:350px text-align=right">
-                                    <tr>
-                                        <td>
-                                            <h4><b>Nomor BPKB</b> : <?= $bpkb['nomor_registrasi']; ?></h4>
-                                        </td>
                                     </tr>
-                                </table>
-                                <hr>
-                                <table class="table table-striped">
                                     <tr>
                                         <td class="sub-label">Warna</td>
                                         <td class="sub-label">:</td>
@@ -159,7 +157,7 @@
                                 <b class="foto">Foto : </b>
                             </table>
                             <hr>
-                            <table class="gambar table-bordered">
+                            <table class="gambar">
                                 <?php foreach ($getImg as $key => $link) : ?>
                                     <td>
                                         <center><img style="height:250px ; width:100%" src="<?= base_url('foto_bpkb/' . $link['link']); ?>" alt="">
