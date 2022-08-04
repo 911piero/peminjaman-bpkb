@@ -1,6 +1,25 @@
 <?= $this->extend('layout/template'); ?>
 
 <?= $this->section('content'); ?>
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
+<style>
+    .select2-container .select2-selection--single {
+        height: 40px !important;
+    }
+
+    .select2-container--default .select2-selection--single {
+        border: 1px solid #ccc !important;
+        border-radius: 4px !important;
+    }
+</style>
 <section class="content">
     <div class="container-fluid">
         <form action="<?= site_url('/peminjam/save') ?>" method="post" enctype="multipart/form-data">
@@ -41,12 +60,12 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Nomor Registrasi</label>
+                                <label for="exampleInputEmail1">Nomor Registrasi </label>
                                 <div class="input-group mb-3">
-                                    <select name="id_bpkb" class="form-control <?= ($validation->hasError('id_bpkb')) ? 'is-invalid' : ' '; ?>" required autocomplete="on">
-                                        <option selected value=" ">Pilih Kendaraan</option>
+                                    <select class="form-control select2" name="id_bpkb" <?= ($validation->hasError('id_bpkb')) ? 'is-invalid' : ' '; ?> required autocomplete="on">
+                                        <option selected value="Cari " >Pilih Kendaraan</option>
                                         <?php foreach ($getBpkb as $b) : ?>
-                                            <option value="<?= $b['id_bpkb']; ?>"><?= $b['nomor_registrasi']; ?></option>
+                                            <option value="<?= $b['id_bpkb']; ?>"><?= $b['nomor_registrasi']; ?> </option>
                                         <?php endforeach; ?>
                                     </select>
                                     <div class="invalid-feedback">
@@ -80,7 +99,7 @@
                                 <label for="exampleInputEmail1">Status Kendaraan</label>
                                 <div class="input-group mb-3">
                                     <select name="status_kendaraan" class="custom-select form-control <?= ($validation->hasError('status_kendaraan')) ? 'is-invalid' : ' '; ?>" required>
-                                        <option selected value=" ">Pilih Status Kendaraan</option>
+                                        <option value="">Pilih Status Kendaraan</option>
                                         <option value="Pakai">Pakai</option>
                                         <option value="Pinjam Pakai">Pinjam Pakai</option>
                                         <option value="Tidak Pinjam">Tidak Pinjam</option>
@@ -102,7 +121,7 @@
                             <div class="form-group">
                                 <div class="md-form md-outline" inline="true">
                                     <label for="example">Foto KTP</label>
-                                    <input type="file" class="form-control <?= ($validation->hasError('foto_ktp')) ? 'is-invalid' : ' '; ?>" name="foto_ktp">
+                                    <input style="height:45px" type="file" class="form-control <?= ($validation->hasError('foto_ktp')) ? 'is-invalid' : ' '; ?>" name="foto_ktp">
                                 </div>
                                 <div class="invalid-feedback">
                                     <?= $validation->getError('foto_ktp'); ?>
@@ -120,7 +139,9 @@
 
 
 </section>
-
+<script>
+    $('.select2').select2();
+</script>
 
 
 <?php $this->endSection(); ?>
