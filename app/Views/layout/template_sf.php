@@ -44,9 +44,9 @@
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
-            <a href="<?= base_url('bpkb'); ?>" class="brand-link">
+            <a href="<?= base_url('sertifikat'); ?>" class="brand-link">
                 <img src="<?= base_url('adminlte/dist/img/AdminLTELogo.png'); ?>" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-                <span class="brand-text font-weight-light">Peminjaman BPKB</span>
+                <span class="brand-text font-weight-light">Menu Sertifikat</span>
             </a>
 
             <!-- Sidebar -->
@@ -79,25 +79,19 @@
                         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                         <li class="nav-item menu-open">
-                            <a href="<?= site_url('/bpkb'); ?>" class="nav-link active">
-                                <i class="nav-icon fas fa-car"></i>
-                                <p>Master BPKB</p>
+                            <a href="<?= site_url('/sertifikat'); ?>" class="nav-link active">
+                                <i class="nav-icon fas fa-book"></i>
+                                <p>Cari Sertifikat</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="<?= site_url('/peminjam'); ?>" class="nav-link active">
+                            <a href="<?= site_url('/peminjam_sertifikat'); ?>" class="nav-link active">
                                 <i class="nav-icon fas fa-users"></i>
-                                <p>Peminjam BPKB</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="<?= site_url('/mutasi'); ?>" class="nav-link active">
-                                <i class="nav-icon fas fa-edit"></i>
-                                <p>Mutasi</p>
+                                <p>Peminjaman Sertifikat</p>
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a href="<?= site_url('bpkb/bpkbExport'); ?>" class="nav-link active">
+                            <a href="<?= site_url('#'); ?>" class="nav-link active">
                                 <i class="nav-icon fas fa-file"></i>
                                 <p>Report</p>
                             </a>
@@ -181,115 +175,6 @@
     <script src="<?= base_url('adminlte/plugins/datatables-buttons/js/buttons.html5.min.js'); ?>"></script>
     <script src="<?= base_url('adminlte/plugins/datatables-buttons/js/buttons.print.min.js'); ?>"></script>
     <script src="<?= base_url('adminlte/plugins/datatables-buttons/js/buttons.colVis.min.js'); ?>"></script>
-    <script>
-        $(document).ready(function() {
-            $('#data_bpkb').DataTable({
-                processing: true,
-                serverSide: true,
-                ajax: '/bpkb/listData',
-                columns: [{
-                        data: 'nomor_registrasi'
-                    },
-                    {
-                        data: 'merk'
-                    },
-                    {
-                        data: 'nama_pemilik'
-                    },
-                    {
-                        data: 'model'
-                    },
-                    {
-                        data: 'warna'
-                    },
-                    {
-                        data: 'status'
-                    },
-                    {
-                        data: 'action',
-                        orderable: false
-                    },
-                ]
-            });
-        });
-
-        $('#example').dataTable({
-            "columnDefs": [{
-                "targets": 3,
-                "createdCell": function(td, cellData, rowData, row, col) {
-                    if (cellData < 1) {
-                        $(td).css('color', 'red')
-                    }
-                }
-            }]
-        });
-        $(document).ready(function() {
-            $('#data_peminjam').DataTable({
-                "columnDefs": [{
-                    "targets": 6,
-                    "createdCell": function(td, cellData, rowData, row, col) {
-                        if (cellData < 1) {
-                            $(td).css('color', 'red')
-                        }
-                    }
-                }],
-                processing: true,
-                serverSide: true,
-                ajax: '/peminjam/listData',
-                columns: [{
-                        data: 'nama_lengkap'
-                    },
-                    {
-                        data: 'nik'
-                    },
-                    {
-                        data: 'nomor_registrasi'
-                    },
-                    {
-                        data: 'tgl_pinjam'
-                    },
-                    {
-                        data: 'estimasi_kembali'
-                    },
-                    {
-                        data: 'status'
-                    },
-                    {
-                        data: 'action',
-                        orderable: false
-                    },
-                ]
-            });
-        });
-
-        $(document).ready(function() {
-            $('#data_mutasi').DataTable({
-                processing: true,
-                serverSide: true,
-                order: [
-                    [3, 'asc']
-                ],
-                ajax: '/mutasi/listData',
-                columns: [{
-                        data: 'nomor_registrasi_lama',
-                        orderable: false
-                    },
-                    {
-                        data: 'nomor_registrasi_baru',
-                        orderable: false
-                    },
-                    {
-                        data: 'tgl_mutasi',
-                        orderable: false
-                    },
-                    {
-                        data: 'jenis_mutasi',
-
-                    },
-                ]
-            });
-        });
-    </script>
 </body>
 
 </html>
