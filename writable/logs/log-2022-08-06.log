@@ -1,0 +1,1163 @@
+ERROR - 2022-08-06 03:33:00 --> Unknown column 'kategori.id' in 'on clause'
+CRITICAL - 2022-08-06 03:33:00 --> Unknown column 'kategori.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`', [], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(174): Hermawan\DataTables\DataTableQuery->countAll()
+ 7 APPPATH\Controllers\Sertifikat.php(37): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-06 03:33:48 --> Unknown column 'kategori.id' in 'on clause'
+CRITICAL - 2022-08-06 03:33:48 --> Unknown column 'kategori.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`', [], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(174): Hermawan\DataTables\DataTableQuery->countAll()
+ 7 APPPATH\Controllers\Sertifikat.php(37): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-06 03:36:37 --> Unknown column 'kategori.id' in 'on clause'
+CRITICAL - 2022-08-06 03:36:37 --> Unknown column 'kategori.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`', [], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(174): Hermawan\DataTables\DataTableQuery->countAll()
+ 7 APPPATH\Controllers\Sertifikat.php(37): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-06 03:37:18 --> Unknown column 'kategori.id' in 'on clause'
+CRITICAL - 2022-08-06 03:37:18 --> Unknown column 'kategori.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`', [], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(174): Hermawan\DataTables\DataTableQuery->countAll()
+ 7 APPPATH\Controllers\Sertifikat.php(37): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-06 03:43:43 --> Unknown column 'kategori.id' in 'on clause'
+CRITICAL - 2022-08-06 03:43:43 --> Unknown column 'kategori.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`', [], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(174): Hermawan\DataTables\DataTableQuery->countAll()
+ 7 APPPATH\Controllers\Sertifikat.php(37): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-06 03:48:40 --> Unknown column 'kategori.id' in 'on clause'
+CRITICAL - 2022-08-06 03:48:40 --> Unknown column 'kategori.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`', [], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(174): Hermawan\DataTables\DataTableQuery->countAll()
+ 7 APPPATH\Controllers\Sertifikat.php(37): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-06 03:50:13 --> Unknown column 'kategori.id' in 'on clause'
+CRITICAL - 2022-08-06 03:50:13 --> Unknown column 'kategori.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`', [], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(174): Hermawan\DataTables\DataTableQuery->countAll()
+ 7 APPPATH\Controllers\Sertifikat.php(37): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-06 03:52:11 --> Column 'id_kecamatan' in field list is ambiguous
+CRITICAL - 2022-08-06 03:52:11 --> Column 'id_kecamatan' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `investasi`.`id`, `nama_proyek`, `intro`, `intro2`, `id_kecamatan`, `kecamatan`.`kecamatan`, `id_kelurahan`, `kelurahan`.`kelurahan`, `id_kategori`, `kategori`.`nm_kategori`, `lokasi`, `sub_kategori`.`nm_subkategori`, `tahun`, `tgl_awal`, `tgl_akhir`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+ORDER BY `nama_proyek` ASC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `investasi`.`id`, `nama_proyek`, `intro`, `intro2`, `id_kecamatan`, `kecamatan`.`kecamatan`, `id_kelurahan`, `kelurahan`.`kelurahan`, `id_kategori`, `kategori`.`nm_kategori`, `lokasi`, `sub_kategori`.`nm_subkategori`, `tahun`, `tgl_awal`, `tgl_akhir`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+ORDER BY `nama_proyek` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `investasi`.`id`, `nama_proyek`, `intro`, `intro2`, `id_kecamatan`, `kecamatan`.`kecamatan`, `id_kelurahan`, `kelurahan`.`kelurahan`, `id_kategori`, `kategori`.`nm_kategori`, `lokasi`, `sub_kategori`.`nm_subkategori`, `tahun`, `tgl_awal`, `tgl_akhir`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+ORDER BY `nama_proyek` ASC
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `investasi`.`id`, `nama_proyek`, `intro`, `intro2`, `id_kecamatan`, `kecamatan`.`kecamatan`, `id_kelurahan`, `kelurahan`.`kelurahan`, `id_kategori`, `kategori`.`nm_kategori`, `lokasi`, `sub_kategori`.`nm_subkategori`, `tahun`, `tgl_awal`, `tgl_akhir`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+ORDER BY `nama_proyek` ASC
+ LIMIT 10', [], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(219): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+ 7 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 8 APPPATH\Controllers\Sertifikat.php(37): Hermawan\DataTables\DataTable->toJson(true)
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-06 04:00:43 --> Unknown column 'no' in 'order clause'
+CRITICAL - 2022-08-06 04:00:43 --> Unknown column 'no' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `investasi`.`id`, `nama_proyek`, `intro`, `intro2`, `kecamatan`.`kecamatan`, `kelurahan`.`kelurahan`, `kategori`.`nm_kategori`, `lokasi`, `sub_kategori`.`nm_subkategori`, `tahun`, `tgl_awal`, `tgl_akhir`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+ORDER BY `no` ASC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `investasi`.`id`, `nama_proyek`, `intro`, `intro2`, `kecamatan`.`kecamatan`, `kelurahan`.`kelurahan`, `kategori`.`nm_kategori`, `lokasi`, `sub_kategori`.`nm_subkategori`, `tahun`, `tgl_awal`, `tgl_akhir`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+ORDER BY `no` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `investasi`.`id`, `nama_proyek`, `intro`, `intro2`, `kecamatan`.`kecamatan`, `kelurahan`.`kelurahan`, `kategori`.`nm_kategori`, `lokasi`, `sub_kategori`.`nm_subkategori`, `tahun`, `tgl_awal`, `tgl_akhir`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+ORDER BY `no` ASC
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `investasi`.`id`, `nama_proyek`, `intro`, `intro2`, `kecamatan`.`kecamatan`, `kelurahan`.`kelurahan`, `kategori`.`nm_kategori`, `lokasi`, `sub_kategori`.`nm_subkategori`, `tahun`, `tgl_awal`, `tgl_akhir`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+ORDER BY `no` ASC
+ LIMIT 10', [], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(219): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+ 7 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 8 APPPATH\Controllers\Sertifikat.php(41): Hermawan\DataTables\DataTable->toJson(true)
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-06 04:01:06 --> Unknown column 'no' in 'order clause'
+CRITICAL - 2022-08-06 04:01:06 --> Unknown column 'no' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `investasi`.`id`, `nama_proyek`, `intro`, `intro2`, `kecamatan`.`kecamatan`, `kelurahan`.`kelurahan`, `kategori`.`nm_kategori`, `lokasi`, `sub_kategori`.`nm_subkategori`, `tahun`, `tgl_awal`, `tgl_akhir`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+ORDER BY `no` ASC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `investasi`.`id`, `nama_proyek`, `intro`, `intro2`, `kecamatan`.`kecamatan`, `kelurahan`.`kelurahan`, `kategori`.`nm_kategori`, `lokasi`, `sub_kategori`.`nm_subkategori`, `tahun`, `tgl_awal`, `tgl_akhir`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+ORDER BY `no` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `investasi`.`id`, `nama_proyek`, `intro`, `intro2`, `kecamatan`.`kecamatan`, `kelurahan`.`kelurahan`, `kategori`.`nm_kategori`, `lokasi`, `sub_kategori`.`nm_subkategori`, `tahun`, `tgl_awal`, `tgl_akhir`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+ORDER BY `no` ASC
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `investasi`.`id`, `nama_proyek`, `intro`, `intro2`, `kecamatan`.`kecamatan`, `kelurahan`.`kelurahan`, `kategori`.`nm_kategori`, `lokasi`, `sub_kategori`.`nm_subkategori`, `tahun`, `tgl_awal`, `tgl_akhir`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+ORDER BY `no` ASC
+ LIMIT 10', [], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(219): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+ 7 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 8 APPPATH\Controllers\Sertifikat.php(41): Hermawan\DataTables\DataTable->toJson(true)
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-06 04:01:21 --> Unknown column 'no' in 'order clause'
+CRITICAL - 2022-08-06 04:01:21 --> Unknown column 'no' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `investasi`.`id`, `nama_proyek`, `intro`, `intro2`, `kecamatan`.`kecamatan`, `kelurahan`.`kelurahan`, `kategori`.`nm_kategori`, `lokasi`, `sub_kategori`.`nm_subkategori`, `tahun`, `tgl_awal`, `tgl_akhir`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+ORDER BY `no` ASC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `investasi`.`id`, `nama_proyek`, `intro`, `intro2`, `kecamatan`.`kecamatan`, `kelurahan`.`kelurahan`, `kategori`.`nm_kategori`, `lokasi`, `sub_kategori`.`nm_subkategori`, `tahun`, `tgl_awal`, `tgl_akhir`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+ORDER BY `no` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `investasi`.`id`, `nama_proyek`, `intro`, `intro2`, `kecamatan`.`kecamatan`, `kelurahan`.`kelurahan`, `kategori`.`nm_kategori`, `lokasi`, `sub_kategori`.`nm_subkategori`, `tahun`, `tgl_awal`, `tgl_akhir`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+ORDER BY `no` ASC
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `investasi`.`id`, `nama_proyek`, `intro`, `intro2`, `kecamatan`.`kecamatan`, `kelurahan`.`kelurahan`, `kategori`.`nm_kategori`, `lokasi`, `sub_kategori`.`nm_subkategori`, `tahun`, `tgl_awal`, `tgl_akhir`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+ORDER BY `no` ASC
+ LIMIT 10', [], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(219): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+ 7 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 8 APPPATH\Controllers\Sertifikat.php(41): Hermawan\DataTables\DataTable->toJson(true)
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-06 04:01:58 --> Unknown column 'nomer' in 'order clause'
+CRITICAL - 2022-08-06 04:01:58 --> Unknown column 'nomer' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `investasi`.`id`, `nama_proyek`, `intro`, `intro2`, `kecamatan`.`kecamatan`, `kelurahan`.`kelurahan`, `kategori`.`nm_kategori`, `lokasi`, `sub_kategori`.`nm_subkategori`, `tahun`, `tgl_awal`, `tgl_akhir`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+ORDER BY `nomer` ASC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `investasi`.`id`, `nama_proyek`, `intro`, `intro2`, `kecamatan`.`kecamatan`, `kelurahan`.`kelurahan`, `kategori`.`nm_kategori`, `lokasi`, `sub_kategori`.`nm_subkategori`, `tahun`, `tgl_awal`, `tgl_akhir`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+ORDER BY `nomer` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `investasi`.`id`, `nama_proyek`, `intro`, `intro2`, `kecamatan`.`kecamatan`, `kelurahan`.`kelurahan`, `kategori`.`nm_kategori`, `lokasi`, `sub_kategori`.`nm_subkategori`, `tahun`, `tgl_awal`, `tgl_akhir`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+ORDER BY `nomer` ASC
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `investasi`.`id`, `nama_proyek`, `intro`, `intro2`, `kecamatan`.`kecamatan`, `kelurahan`.`kelurahan`, `kategori`.`nm_kategori`, `lokasi`, `sub_kategori`.`nm_subkategori`, `tahun`, `tgl_awal`, `tgl_akhir`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+ORDER BY `nomer` ASC
+ LIMIT 10', [], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(219): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+ 7 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 8 APPPATH\Controllers\Sertifikat.php(41): Hermawan\DataTables\DataTable->toJson(true)
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-06 04:03:08 --> Unknown column 'nomer' in 'order clause'
+CRITICAL - 2022-08-06 04:03:08 --> Unknown column 'nomer' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `investasi`.`id`, `nama_proyek`, `intro`, `intro2`, `kecamatan`.`kecamatan`, `kelurahan`.`kelurahan`, `kategori`.`nm_kategori`, `lokasi`, `sub_kategori`.`nm_subkategori`, `tahun`, `tgl_awal`, `tgl_akhir`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+ORDER BY `nomer` ASC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `investasi`.`id`, `nama_proyek`, `intro`, `intro2`, `kecamatan`.`kecamatan`, `kelurahan`.`kelurahan`, `kategori`.`nm_kategori`, `lokasi`, `sub_kategori`.`nm_subkategori`, `tahun`, `tgl_awal`, `tgl_akhir`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+ORDER BY `nomer` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `investasi`.`id`, `nama_proyek`, `intro`, `intro2`, `kecamatan`.`kecamatan`, `kelurahan`.`kelurahan`, `kategori`.`nm_kategori`, `lokasi`, `sub_kategori`.`nm_subkategori`, `tahun`, `tgl_awal`, `tgl_akhir`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+ORDER BY `nomer` ASC
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `investasi`.`id`, `nama_proyek`, `intro`, `intro2`, `kecamatan`.`kecamatan`, `kelurahan`.`kelurahan`, `kategori`.`nm_kategori`, `lokasi`, `sub_kategori`.`nm_subkategori`, `tahun`, `tgl_awal`, `tgl_akhir`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+ORDER BY `nomer` ASC
+ LIMIT 10', [], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(219): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+ 7 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 8 APPPATH\Controllers\Sertifikat.php(41): Hermawan\DataTables\DataTable->toJson(true)
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-06 04:06:35 --> Unknown column 'nomer' in 'order clause'
+CRITICAL - 2022-08-06 04:06:35 --> Unknown column 'nomer' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `investasi`.`id`, `nama_proyek`, `intro`, `intro2`, `kecamatan`.`kecamatan`, `kelurahan`.`kelurahan`, `kategori`.`nm_kategori`, `lokasi`, `sub_kategori`.`nm_subkategori`, `tahun`, `tgl_awal`, `tgl_akhir`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+ORDER BY `nomer` ASC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `investasi`.`id`, `nama_proyek`, `intro`, `intro2`, `kecamatan`.`kecamatan`, `kelurahan`.`kelurahan`, `kategori`.`nm_kategori`, `lokasi`, `sub_kategori`.`nm_subkategori`, `tahun`, `tgl_awal`, `tgl_akhir`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+ORDER BY `nomer` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `investasi`.`id`, `nama_proyek`, `intro`, `intro2`, `kecamatan`.`kecamatan`, `kelurahan`.`kelurahan`, `kategori`.`nm_kategori`, `lokasi`, `sub_kategori`.`nm_subkategori`, `tahun`, `tgl_awal`, `tgl_akhir`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+ORDER BY `nomer` ASC
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `investasi`.`id`, `nama_proyek`, `intro`, `intro2`, `kecamatan`.`kecamatan`, `kelurahan`.`kelurahan`, `kategori`.`nm_kategori`, `lokasi`, `sub_kategori`.`nm_subkategori`, `tahun`, `tgl_awal`, `tgl_akhir`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+ORDER BY `nomer` ASC
+ LIMIT 10', [], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(219): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+ 7 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 8 APPPATH\Controllers\Sertifikat.php(41): Hermawan\DataTables\DataTable->toJson(true)
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-06 04:12:28 --> Unknown column 'nomer' in 'order clause'
+CRITICAL - 2022-08-06 04:12:28 --> Unknown column 'nomer' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `investasi`.`id`, `nama_proyek`, `intro`, `intro2`, `kecamatan`.`kecamatan`, `kelurahan`.`kelurahan`, `kategori`.`nm_kategori`, `lokasi`, `sub_kategori`.`nm_subkategori`, `tahun`, `tgl_awal`, `tgl_akhir`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+ORDER BY `nomer` ASC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `investasi`.`id`, `nama_proyek`, `intro`, `intro2`, `kecamatan`.`kecamatan`, `kelurahan`.`kelurahan`, `kategori`.`nm_kategori`, `lokasi`, `sub_kategori`.`nm_subkategori`, `tahun`, `tgl_awal`, `tgl_akhir`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+ORDER BY `nomer` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `investasi`.`id`, `nama_proyek`, `intro`, `intro2`, `kecamatan`.`kecamatan`, `kelurahan`.`kelurahan`, `kategori`.`nm_kategori`, `lokasi`, `sub_kategori`.`nm_subkategori`, `tahun`, `tgl_awal`, `tgl_akhir`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+ORDER BY `nomer` ASC
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `investasi`.`id`, `nama_proyek`, `intro`, `intro2`, `kecamatan`.`kecamatan`, `kelurahan`.`kelurahan`, `kategori`.`nm_kategori`, `lokasi`, `sub_kategori`.`nm_subkategori`, `tahun`, `tgl_awal`, `tgl_akhir`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+ORDER BY `nomer` ASC
+ LIMIT 10', [], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(219): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+ 7 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 8 APPPATH\Controllers\Sertifikat.php(41): Hermawan\DataTables\DataTable->toJson(true)
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-06 04:19:57 --> Unknown column 'a' in 'order clause'
+CRITICAL - 2022-08-06 04:19:57 --> Unknown column 'a' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `investasi`.`id`, `nama_proyek`, `intro`, `intro2`, `kecamatan`.`kecamatan`, `kelurahan`.`kelurahan`, `kategori`.`nm_kategori`, `lokasi`, `sub_kategori`.`nm_subkategori`, `tahun`, `tgl_awal`, `tgl_akhir`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+ORDER BY `a` ASC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `investasi`.`id`, `nama_proyek`, `intro`, `intro2`, `kecamatan`.`kecamatan`, `kelurahan`.`kelurahan`, `kategori`.`nm_kategori`, `lokasi`, `sub_kategori`.`nm_subkategori`, `tahun`, `tgl_awal`, `tgl_akhir`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+ORDER BY `a` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `investasi`.`id`, `nama_proyek`, `intro`, `intro2`, `kecamatan`.`kecamatan`, `kelurahan`.`kelurahan`, `kategori`.`nm_kategori`, `lokasi`, `sub_kategori`.`nm_subkategori`, `tahun`, `tgl_awal`, `tgl_akhir`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+ORDER BY `a` ASC
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `investasi`.`id`, `nama_proyek`, `intro`, `intro2`, `kecamatan`.`kecamatan`, `kelurahan`.`kelurahan`, `kategori`.`nm_kategori`, `lokasi`, `sub_kategori`.`nm_subkategori`, `tahun`, `tgl_awal`, `tgl_akhir`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+ORDER BY `a` ASC
+ LIMIT 10', [], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(219): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+ 7 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 8 APPPATH\Controllers\Sertifikat.php(37): Hermawan\DataTables\DataTable->toJson(true)
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-06 04:27:19 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%K%' ESCAPE '!'
+OR  `nama_proyek` LIKE '%K%' ESCAPE '!'
+OR  `intro` LIK...' at line 8
+CRITICAL - 2022-08-06 04:27:19 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%K%' ESCAPE '!'
+OR  `nama_proyek` LIKE '%K%' ESCAPE '!'
+OR  `intro` LIK...' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+ LIKE \'%K%\' ESCAPE \'!\'
+OR  `nama_proyek` LIKE \'%K%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%K%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%K%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%K%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%K%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%K%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%K%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%K%\' ESCAPE \'!\'
+OR  `tgl_akhir` LIKE \'%K%\' ESCAPE \'!\'
+ )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+ LIKE \'%K%\' ESCAPE \'!\'
+OR  `nama_proyek` LIKE \'%K%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%K%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%K%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%K%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%K%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%K%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%K%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%K%\' ESCAPE \'!\'
+OR  `tgl_akhir` LIKE \'%K%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+ LIKE \'%K%\' ESCAPE \'!\'
+OR  `nama_proyek` LIKE \'%K%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%K%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%K%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%K%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%K%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%K%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%K%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%K%\' ESCAPE \'!\'
+OR  `tgl_akhir` LIKE \'%K%\' ESCAPE \'!\'
+ )')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+ LIKE :: ESCAPE \'!\'
+OR  `nama_proyek` LIKE :nama_proyek: ESCAPE \'!\'
+OR  `intro` LIKE :intro: ESCAPE \'!\'
+OR  `intro2` LIKE :intro2: ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE :kecamatan.kecamatan: ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE :kelurahan.kelurahan: ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE :kategori.nm_kategori: ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE :sub_kategori.nm_subkategori: ESCAPE \'!\'
+OR  `tahun` LIKE :tahun: ESCAPE \'!\'
+OR  `tgl_akhir` LIKE :tgl_akhir: ESCAPE \'!\'
+ )', [...], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 7 APPPATH\Controllers\Sertifikat.php(37): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-06 04:27:23 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%Ka%' ESCAPE '!'
+OR  `nama_proyek` LIKE '%Ka%' ESCAPE '!'
+OR  `intro` L...' at line 8
+CRITICAL - 2022-08-06 04:27:23 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%Ka%' ESCAPE '!'
+OR  `nama_proyek` LIKE '%Ka%' ESCAPE '!'
+OR  `intro` L...' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+ LIKE \'%Ka%\' ESCAPE \'!\'
+OR  `nama_proyek` LIKE \'%Ka%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%Ka%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%Ka%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%Ka%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%Ka%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%Ka%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%Ka%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%Ka%\' ESCAPE \'!\'
+OR  `tgl_akhir` LIKE \'%Ka%\' ESCAPE \'!\'
+ )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+ LIKE \'%Ka%\' ESCAPE \'!\'
+OR  `nama_proyek` LIKE \'%Ka%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%Ka%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%Ka%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%Ka%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%Ka%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%Ka%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%Ka%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%Ka%\' ESCAPE \'!\'
+OR  `tgl_akhir` LIKE \'%Ka%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+ LIKE \'%Ka%\' ESCAPE \'!\'
+OR  `nama_proyek` LIKE \'%Ka%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%Ka%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%Ka%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%Ka%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%Ka%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%Ka%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%Ka%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%Ka%\' ESCAPE \'!\'
+OR  `tgl_akhir` LIKE \'%Ka%\' ESCAPE \'!\'
+ )')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+ LIKE :: ESCAPE \'!\'
+OR  `nama_proyek` LIKE :nama_proyek: ESCAPE \'!\'
+OR  `intro` LIKE :intro: ESCAPE \'!\'
+OR  `intro2` LIKE :intro2: ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE :kecamatan.kecamatan: ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE :kelurahan.kelurahan: ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE :kategori.nm_kategori: ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE :sub_kategori.nm_subkategori: ESCAPE \'!\'
+OR  `tahun` LIKE :tahun: ESCAPE \'!\'
+OR  `tgl_akhir` LIKE :tgl_akhir: ESCAPE \'!\'
+ )', [...], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 7 APPPATH\Controllers\Sertifikat.php(37): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-06 04:27:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%j%' ESCAPE '!'
+OR  `nama_proyek` LIKE '%j%' ESCAPE '!'
+OR  `intro` LIK...' at line 8
+CRITICAL - 2022-08-06 04:27:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%j%' ESCAPE '!'
+OR  `nama_proyek` LIKE '%j%' ESCAPE '!'
+OR  `intro` LIK...' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+ LIKE \'%j%\' ESCAPE \'!\'
+OR  `nama_proyek` LIKE \'%j%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%j%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%j%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%j%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%j%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%j%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%j%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%j%\' ESCAPE \'!\'
+OR  `tgl_akhir` LIKE \'%j%\' ESCAPE \'!\'
+ )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+ LIKE \'%j%\' ESCAPE \'!\'
+OR  `nama_proyek` LIKE \'%j%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%j%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%j%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%j%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%j%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%j%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%j%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%j%\' ESCAPE \'!\'
+OR  `tgl_akhir` LIKE \'%j%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+ LIKE \'%j%\' ESCAPE \'!\'
+OR  `nama_proyek` LIKE \'%j%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%j%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%j%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%j%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%j%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%j%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%j%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%j%\' ESCAPE \'!\'
+OR  `tgl_akhir` LIKE \'%j%\' ESCAPE \'!\'
+ )')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+ LIKE :: ESCAPE \'!\'
+OR  `nama_proyek` LIKE :nama_proyek: ESCAPE \'!\'
+OR  `intro` LIKE :intro: ESCAPE \'!\'
+OR  `intro2` LIKE :intro2: ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE :kecamatan.kecamatan: ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE :kelurahan.kelurahan: ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE :kategori.nm_kategori: ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE :sub_kategori.nm_subkategori: ESCAPE \'!\'
+OR  `tahun` LIKE :tahun: ESCAPE \'!\'
+OR  `tgl_akhir` LIKE :tgl_akhir: ESCAPE \'!\'
+ )', [...], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 7 APPPATH\Controllers\Sertifikat.php(37): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-06 04:27:45 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%k%' ESCAPE '!'
+OR  `nama_proyek` LIKE '%k%' ESCAPE '!'
+OR  `intro` LIK...' at line 8
+CRITICAL - 2022-08-06 04:27:45 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%k%' ESCAPE '!'
+OR  `nama_proyek` LIKE '%k%' ESCAPE '!'
+OR  `intro` LIK...' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+ LIKE \'%k%\' ESCAPE \'!\'
+OR  `nama_proyek` LIKE \'%k%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%k%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%k%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%k%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%k%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%k%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%k%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%k%\' ESCAPE \'!\'
+OR  `tgl_akhir` LIKE \'%k%\' ESCAPE \'!\'
+ )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+ LIKE \'%k%\' ESCAPE \'!\'
+OR  `nama_proyek` LIKE \'%k%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%k%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%k%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%k%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%k%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%k%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%k%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%k%\' ESCAPE \'!\'
+OR  `tgl_akhir` LIKE \'%k%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+ LIKE \'%k%\' ESCAPE \'!\'
+OR  `nama_proyek` LIKE \'%k%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%k%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%k%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%k%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%k%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%k%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%k%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%k%\' ESCAPE \'!\'
+OR  `tgl_akhir` LIKE \'%k%\' ESCAPE \'!\'
+ )')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+ LIKE :: ESCAPE \'!\'
+OR  `nama_proyek` LIKE :nama_proyek: ESCAPE \'!\'
+OR  `intro` LIKE :intro: ESCAPE \'!\'
+OR  `intro2` LIKE :intro2: ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE :kecamatan.kecamatan: ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE :kelurahan.kelurahan: ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE :kategori.nm_kategori: ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE :sub_kategori.nm_subkategori: ESCAPE \'!\'
+OR  `tahun` LIKE :tahun: ESCAPE \'!\'
+OR  `tgl_akhir` LIKE :tgl_akhir: ESCAPE \'!\'
+ )', [...], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 7 APPPATH\Controllers\Sertifikat.php(37): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-06 04:27:47 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%kan%' ESCAPE '!'
+OR  `nama_proyek` LIKE '%kan%' ESCAPE '!'
+OR  `intro`...' at line 8
+CRITICAL - 2022-08-06 04:27:47 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%kan%' ESCAPE '!'
+OR  `nama_proyek` LIKE '%kan%' ESCAPE '!'
+OR  `intro`...' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+ LIKE \'%kan%\' ESCAPE \'!\'
+OR  `nama_proyek` LIKE \'%kan%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%kan%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%kan%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%kan%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%kan%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%kan%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%kan%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%kan%\' ESCAPE \'!\'
+OR  `tgl_akhir` LIKE \'%kan%\' ESCAPE \'!\'
+ )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+ LIKE \'%kan%\' ESCAPE \'!\'
+OR  `nama_proyek` LIKE \'%kan%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%kan%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%kan%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%kan%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%kan%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%kan%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%kan%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%kan%\' ESCAPE \'!\'
+OR  `tgl_akhir` LIKE \'%kan%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+ LIKE \'%kan%\' ESCAPE \'!\'
+OR  `nama_proyek` LIKE \'%kan%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%kan%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%kan%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%kan%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%kan%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%kan%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%kan%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%kan%\' ESCAPE \'!\'
+OR  `tgl_akhir` LIKE \'%kan%\' ESCAPE \'!\'
+ )')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+ LIKE :: ESCAPE \'!\'
+OR  `nama_proyek` LIKE :nama_proyek: ESCAPE \'!\'
+OR  `intro` LIKE :intro: ESCAPE \'!\'
+OR  `intro2` LIKE :intro2: ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE :kecamatan.kecamatan: ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE :kelurahan.kelurahan: ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE :kategori.nm_kategori: ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE :sub_kategori.nm_subkategori: ESCAPE \'!\'
+OR  `tahun` LIKE :tahun: ESCAPE \'!\'
+OR  `tgl_akhir` LIKE :tgl_akhir: ESCAPE \'!\'
+ )', [...], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 7 APPPATH\Controllers\Sertifikat.php(37): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-06 04:30:01 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%a%' ESCAPE '!'
+OR  `nama_proyek` LIKE '%a%' ESCAPE '!'
+OR  `intro` LIK...' at line 8
+CRITICAL - 2022-08-06 04:30:01 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%a%' ESCAPE '!'
+OR  `nama_proyek` LIKE '%a%' ESCAPE '!'
+OR  `intro` LIK...' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+ LIKE \'%a%\' ESCAPE \'!\'
+OR  `nama_proyek` LIKE \'%a%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%a%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%a%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%a%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%a%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%a%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%a%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%a%\' ESCAPE \'!\'
+OR  `tgl_akhir` LIKE \'%a%\' ESCAPE \'!\'
+ )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+ LIKE \'%a%\' ESCAPE \'!\'
+OR  `nama_proyek` LIKE \'%a%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%a%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%a%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%a%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%a%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%a%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%a%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%a%\' ESCAPE \'!\'
+OR  `tgl_akhir` LIKE \'%a%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+ LIKE \'%a%\' ESCAPE \'!\'
+OR  `nama_proyek` LIKE \'%a%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%a%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%a%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%a%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%a%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%a%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%a%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%a%\' ESCAPE \'!\'
+OR  `tgl_akhir` LIKE \'%a%\' ESCAPE \'!\'
+ )')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+ LIKE :: ESCAPE \'!\'
+OR  `nama_proyek` LIKE :nama_proyek: ESCAPE \'!\'
+OR  `intro` LIKE :intro: ESCAPE \'!\'
+OR  `intro2` LIKE :intro2: ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE :kecamatan.kecamatan: ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE :kelurahan.kelurahan: ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE :kategori.nm_kategori: ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE :sub_kategori.nm_subkategori: ESCAPE \'!\'
+OR  `tahun` LIKE :tahun: ESCAPE \'!\'
+OR  `tgl_akhir` LIKE :tgl_akhir: ESCAPE \'!\'
+ )', [...], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 7 APPPATH\Controllers\Sertifikat.php(37): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
