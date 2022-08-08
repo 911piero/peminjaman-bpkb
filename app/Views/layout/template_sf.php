@@ -175,6 +175,50 @@
     <script src="<?= base_url('adminlte/plugins/datatables-buttons/js/buttons.html5.min.js'); ?>"></script>
     <script src="<?= base_url('adminlte/plugins/datatables-buttons/js/buttons.print.min.js'); ?>"></script>
     <script src="<?= base_url('adminlte/plugins/datatables-buttons/js/buttons.colVis.min.js'); ?>"></script>
+    <script>
+        $(document).ready(function() {
+            $('#data_sertifikat').DataTable({
+                processing: true,
+                serverSide: true,
+                ajax: '/sertifikat/listData',
+                columns: [{
+                        data: 'nama_proyek'
+                    },
+                    {
+                        data: 'intro'
+                    },
+                    {
+                        data: 'intro2'
+                    },
+                    {
+                        data: 'kecamatan'
+                    },
+                    {
+                        data: 'kelurahan'
+                    },
+                    {
+                        data: 'nm_kategori'
+                    },
+                    {
+                        data: 'nm_subkategori'
+                    },
+                    {
+                        data: 'tahun'
+                    },
+                    {
+                        data: 'tgl_akhir'
+                    },
+                    {
+                        data: 'action',
+                        orderable: false
+                    }
+
+                ]
+            });
+
+        });
+    </script>
 </body>
+
 
 </html>
