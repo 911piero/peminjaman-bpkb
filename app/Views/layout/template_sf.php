@@ -217,6 +217,44 @@
             });
 
         });
+        $(document).ready(function() {
+            $('#data_peminjam_sertifikat').DataTable({
+                "columnDefs": [{
+                    "targets": 6,
+                    "createdCell": function(td, cellData, rowData, row, col) {
+                        if (cellData < 1) {
+                            $(td).css('color', 'red')
+                        }
+                    }
+                }],
+                processing: true,
+                serverSide: true,
+                ajax: '/peminjamsertifikat/listData',
+                columns: [{
+                        data: 'nama_lengkap'
+                    },
+                    {
+                        data: 'nik'
+                    },
+                    {
+                        data: 'nama_proyek'
+                    },
+                    {
+                        data: 'tgl_pinjam'
+                    },
+                    {
+                        data: 'estimasi_kembali'
+                    },
+                    {
+                        data: 'status'
+                    },
+                    {
+                        data: 'action',
+                        orderable: false
+                    },
+                ]
+            });
+        });
     </script>
 </body>
 

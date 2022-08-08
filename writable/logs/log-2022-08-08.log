@@ -1,0 +1,235 @@
+CRITICAL - 2022-08-08 00:47:41 --> Undefined property: stdClass::$id_peminjam
+in APPPATH\Controllers\PeminjamSertifikat.php on line 46.
+ 1 APPPATH\Controllers\PeminjamSertifikat.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id_peminjam', 'APPPATH\\Controllers\\PeminjamSertifikat.php', 46)
+ 2 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(91): App\Controllers\PeminjamSertifikat->App\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 APPPATH\Controllers\PeminjamSertifikat.php(50): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->listData()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-08 00:49:41 --> Undefined property: stdClass::$id_peminjam
+in APPPATH\Controllers\PeminjamSertifikat.php on line 46.
+ 1 APPPATH\Controllers\PeminjamSertifikat.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id_peminjam', 'APPPATH\\Controllers\\PeminjamSertifikat.php', 46)
+ 2 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(91): App\Controllers\PeminjamSertifikat->App\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 APPPATH\Controllers\PeminjamSertifikat.php(50): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->listData()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-08 00:50:01 --> Undefined property: stdClass::$id_peminjam
+in APPPATH\Controllers\PeminjamSertifikat.php on line 46.
+ 1 APPPATH\Controllers\PeminjamSertifikat.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id_peminjam', 'APPPATH\\Controllers\\PeminjamSertifikat.php', 46)
+ 2 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(91): App\Controllers\PeminjamSertifikat->App\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 APPPATH\Controllers\PeminjamSertifikat.php(50): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->listData()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-08 00:50:18 --> Undefined property: stdClass::$id_peminjam
+in APPPATH\Controllers\PeminjamSertifikat.php on line 46.
+ 1 APPPATH\Controllers\PeminjamSertifikat.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id_peminjam', 'APPPATH\\Controllers\\PeminjamSertifikat.php', 46)
+ 2 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(91): App\Controllers\PeminjamSertifikat->App\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 APPPATH\Controllers\PeminjamSertifikat.php(50): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->listData()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-08 00:51:08 --> Undefined property: stdClass::$id_peminjam
+in APPPATH\Controllers\PeminjamSertifikat.php on line 46.
+ 1 APPPATH\Controllers\PeminjamSertifikat.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id_peminjam', 'APPPATH\\Controllers\\PeminjamSertifikat.php', 46)
+ 2 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(91): App\Controllers\PeminjamSertifikat->App\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 APPPATH\Controllers\PeminjamSertifikat.php(50): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->listData()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-08 00:54:09 --> Undefined property: stdClass::$id_peminjam
+in APPPATH\Controllers\PeminjamSertifikat.php on line 46.
+ 1 APPPATH\Controllers\PeminjamSertifikat.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id_peminjam', 'APPPATH\\Controllers\\PeminjamSertifikat.php', 46)
+ 2 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(91): App\Controllers\PeminjamSertifikat->App\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 APPPATH\Controllers\PeminjamSertifikat.php(50): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->listData()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-08 00:54:55 --> Undefined property: stdClass::$id_peminjam
+in APPPATH\Controllers\PeminjamSertifikat.php on line 46.
+ 1 APPPATH\Controllers\PeminjamSertifikat.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id_peminjam', 'APPPATH\\Controllers\\PeminjamSertifikat.php', 46)
+ 2 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(91): App\Controllers\PeminjamSertifikat->App\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 APPPATH\Controllers\PeminjamSertifikat.php(50): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->listData()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-08 00:56:08 --> Undefined property: stdClass::$id_peminjam
+in APPPATH\Controllers\PeminjamSertifikat.php on line 45.
+ 1 APPPATH\Controllers\PeminjamSertifikat.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id_peminjam', 'APPPATH\\Controllers\\PeminjamSertifikat.php', 45)
+ 2 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(91): App\Controllers\PeminjamSertifikat->App\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 APPPATH\Controllers\PeminjamSertifikat.php(49): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->listData()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-08 00:59:08 --> Unknown column 'isActive' in 'where clause'
+CRITICAL - 2022-08-08 00:59:08 --> Unknown column 'isActive' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `data_peminjam_sertifikat`
+WHERE `isActive` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `data_peminjam_sertifikat`
+WHERE `isActive` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `data_peminjam_sertifikat`
+WHERE `isActive` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `data_peminjam_sertifikat`
+WHERE `isActive` = :isActive:', [...], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(174): Hermawan\DataTables\DataTableQuery->countAll()
+ 7 APPPATH\Controllers\PeminjamSertifikat.php(50): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->listData()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-08 01:04:27 --> Unknown column 'isActive' in 'where clause'
+CRITICAL - 2022-08-08 01:04:27 --> Unknown column 'isActive' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `data_peminjam_sertifikat`
+WHERE `isActive` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `data_peminjam_sertifikat`
+WHERE `isActive` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `data_peminjam_sertifikat`
+WHERE `isActive` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `data_peminjam_sertifikat`
+WHERE `isActive` = :isActive:', [...], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(174): Hermawan\DataTables\DataTableQuery->countAll()
+ 7 APPPATH\Controllers\PeminjamSertifikat.php(50): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->listData()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-08 01:04:59 --> Undefined property: stdClass::$id_peminjam
+in APPPATH\Controllers\PeminjamSertifikat.php on line 45.
+ 1 APPPATH\Controllers\PeminjamSertifikat.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id_peminjam', 'APPPATH\\Controllers\\PeminjamSertifikat.php', 45)
+ 2 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(91): App\Controllers\PeminjamSertifikat->App\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 APPPATH\Controllers\PeminjamSertifikat.php(49): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->listData()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-08 01:14:22 --> Unknown column 'tgl_lembali' in 'field list'
+CRITICAL - 2022-08-08 01:14:22 --> Unknown column 'tgl_lembali' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `id_peminjam_sertifikat`, `nama_lengkap`, `nik`, `id_sertifikat`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `tgl_lembali`, `estimasi_kembali`, `data_peminjam_sertifikat`.`status`
+FROM `data_peminjam_sertifikat`
+ORDER BY `nama_lengkap` ASC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_peminjam_sertifikat`, `nama_lengkap`, `nik`, `id_sertifikat`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `tgl_lembali`, `estimasi_kembali`, `data_peminjam_sertifikat`.`status`
+FROM `data_peminjam_sertifikat`
+ORDER BY `nama_lengkap` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_peminjam_sertifikat`, `nama_lengkap`, `nik`, `id_sertifikat`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `tgl_lembali`, `estimasi_kembali`, `data_peminjam_sertifikat`.`status`
+FROM `data_peminjam_sertifikat`
+ORDER BY `nama_lengkap` ASC
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id_peminjam_sertifikat`, `nama_lengkap`, `nik`, `id_sertifikat`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `tgl_lembali`, `estimasi_kembali`, `data_peminjam_sertifikat`.`status`
+FROM `data_peminjam_sertifikat`
+ORDER BY `nama_lengkap` ASC
+ LIMIT 10', [], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(219): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+ 7 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 8 APPPATH\Controllers\PeminjamSertifikat.php(49): Hermawan\DataTables\DataTable->toJson(true)
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->listData()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-08 01:15:38 --> Unknown column 'tgl_lembali' in 'field list'
+CRITICAL - 2022-08-08 01:15:38 --> Unknown column 'tgl_lembali' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `id_peminjam_sertifikat`, `nama_lengkap`, `nik`, `id_sertifikat`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `tgl_lembali`, `estimasi_kembali`, `data_peminjam_sertifikat`.`status`
+FROM `data_peminjam_sertifikat`
+ORDER BY `nama_lengkap` ASC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_peminjam_sertifikat`, `nama_lengkap`, `nik`, `id_sertifikat`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `tgl_lembali`, `estimasi_kembali`, `data_peminjam_sertifikat`.`status`
+FROM `data_peminjam_sertifikat`
+ORDER BY `nama_lengkap` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_peminjam_sertifikat`, `nama_lengkap`, `nik`, `id_sertifikat`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `tgl_lembali`, `estimasi_kembali`, `data_peminjam_sertifikat`.`status`
+FROM `data_peminjam_sertifikat`
+ORDER BY `nama_lengkap` ASC
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id_peminjam_sertifikat`, `nama_lengkap`, `nik`, `id_sertifikat`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `tgl_lembali`, `estimasi_kembali`, `data_peminjam_sertifikat`.`status`
+FROM `data_peminjam_sertifikat`
+ORDER BY `nama_lengkap` ASC
+ LIMIT 10', [], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(219): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+ 7 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 8 APPPATH\Controllers\PeminjamSertifikat.php(49): Hermawan\DataTables\DataTable->toJson(true)
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->listData()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-08 01:18:40 --> Undefined property: stdClass::$id_peminjam
+in APPPATH\Controllers\PeminjamSertifikat.php on line 45.
+ 1 APPPATH\Controllers\PeminjamSertifikat.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id_peminjam', 'APPPATH\\Controllers\\PeminjamSertifikat.php', 45)
+ 2 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(91): App\Controllers\PeminjamSertifikat->App\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 APPPATH\Controllers\PeminjamSertifikat.php(49): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->listData()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-08 03:00:28 --> Unknown column 'investasi_hist.id' in 'on clause'
+CRITICAL - 2022-08-08 03:00:28 --> Unknown column 'investasi_hist.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `data_peminjam_sertifikat`
+JOIN `investasi` ON `investasi_hist`.`id` = `data_peminjam_sertifikat`.`id_sertifikat`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `data_peminjam_sertifikat`
+JOIN `investasi` ON `investasi_hist`.`id` = `data_peminjam_sertifikat`.`id_sertifikat`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `data_peminjam_sertifikat`
+JOIN `investasi` ON `investasi_hist`.`id` = `data_peminjam_sertifikat`.`id_sertifikat`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `data_peminjam_sertifikat`
+JOIN `investasi` ON `investasi_hist`.`id` = `data_peminjam_sertifikat`.`id_sertifikat`', [], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(174): Hermawan\DataTables\DataTableQuery->countAll()
+ 7 APPPATH\Controllers\PeminjamSertifikat.php(50): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->listData()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
