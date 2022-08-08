@@ -177,10 +177,18 @@
     <script src="<?= base_url('adminlte/plugins/datatables-buttons/js/buttons.colVis.min.js'); ?>"></script>
     <script>
         $(document).ready(function() {
-            $('#data_sertifikat').DataTable({
+            table = $('#data_sertifikat').DataTable({
                 processing: true,
                 serverSide: true,
-                ajax: '/sertifikat/listData',
+                ajax: {
+                    url: '/sertifikat/listData',
+                    data: function(d) {
+                        d.kecamatan = $('#kecamatan').val();
+                        d.tahun_objek = $('#tahun_objek').val();
+                        d.kelurahan = $('#kelurahan').val();
+                        d.aktif = $('#status').val();
+                    }
+                },
                 columns: [{
                         data: 'nama_proyek'
                     },
@@ -212,11 +220,63 @@
                         data: 'action',
                         orderable: false
                     }
-
                 ]
             });
 
-        });
+            $('#kecamatan').change(function(event) {
+                table.ajax.reload();
+            });
+
+            $('#tahun_objek').change(function(event) {
+                table.ajax.reload();
+            });
+
+            $('#kelurahan').change(function(event) {
+                table.ajax.reload();
+            });
+        })
+
+        // $(document).ready(function() {
+        //     $('#data_sertifikat').DataTable({
+        //         processing: true,
+        //         serverSide: true,
+        //         ajax: '/sertifikat/listData',
+        //         columns: [{
+        //                 data: 'nama_proyek'
+        //             },
+        //             {
+        //                 data: 'intro'
+        //             },
+        //             {
+        //                 data: 'intro2'
+        //             },
+        //             {
+        //                 data: 'kecamatan'
+        //             },
+        //             {
+        //                 data: 'kelurahan'
+        //             },
+        //             {
+        //                 data: 'nm_kategori'
+        //             },
+        //             {
+        //                 data: 'nm_subkategori'
+        //             },
+        //             {
+        //                 data: 'tahun'
+        //             },
+        //             {
+        //                 data: 'tgl_akhir'
+        //             },
+        //             {
+        //                 data: 'action',
+        //                 orderable: false
+        //             }
+
+        //         ]
+        //     });
+
+        // });
     </script>
 </body>
 
