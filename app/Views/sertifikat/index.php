@@ -3,6 +3,13 @@
 <?= $this->section('content'); ?>
 
 <!-- Main content -->
+<style>
+    table,
+    tr,
+    td {
+        padding: 15px;
+    }
+</style>
 <section class="content">
 
     <div class="container-fluid">
@@ -33,7 +40,7 @@
             <!-- Left col -->
             <div class="col">
                 <!-- MAP & BOX PANE -->
-                <div class="card">
+                <div class="card" style="width: fit-content;">
                     <div class="card-header">
                         <h3 class="card-title"><b>Daftar Objek</b></h3>
 
@@ -43,7 +50,6 @@
                         <table>
                             <tbody>
                                 <tr>
-
                                     <td>
                                         <div class="form-group">
                                             <label for="">Kecamatan</label>
@@ -74,9 +80,6 @@
                                             </div>
                                         </div>
                                     </td>
-
-
-
                                     <td>
                                         <div class="form-group">
                                             <label for="">Status</label>
@@ -84,18 +87,6 @@
                                                 <select name="kecamatan" class="custom-select">
                                                     <option selected value="">Semua Status</option>
                                                 </select>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="form-group">
-                                            <label for="masa_berlaku">Masa Berlaku (Kekancingan)</label>
-                                            <div class="input-group">
-                                                <input class="form-control" type="date" name="" id="">
-                                                <label for="" style="margin: 7px;">&nbsp; - &nbsp;</label>
-                                                <input type="date" class="form-control">
                                             </div>
                                         </div>
                                     </td>
@@ -120,10 +111,35 @@
                                         </div>
                                     </td>
                                 </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-group">
+                                            <label for="masa_berlaku">Masa Berlaku (Kekancingan)</label>
+                                            <div class="input-group">
+                                                <input class="form-control" type="date" name="" id="">
+                                                <label for="" style="margin: 7px;">&nbsp; - &nbsp;</label>
+                                                <input type="date" class="form-control">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <label for="excelPrint">Print Excel</label>
+                                        <div class="input-group">
+                                            <input type="button" value="Cetak">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <label for="searchButton">Search</label>
+                                        <div class="input-group">
+                                            <input type="button" value="Search">
+                                        </div>
+                                    </td>
+                                </tr>
+
                             </tbody>
                         </table>
                         <hr>
-                        <table id="data_bpkb" class="table table-bordered table-striped">
+                        <table id="data_sertifikat" class="table table-bordered ">
                             <thead>
                                 <tr>
                                     <th>No Objek</th>
