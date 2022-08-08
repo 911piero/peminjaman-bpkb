@@ -1,4 +1,4 @@
-<?= $this->extend('layout/template'); ?>
+<?= $this->extend('layout/template_sf'); ?>
 
 <?= $this->section('content'); ?>
 
@@ -6,22 +6,21 @@
 <!-- Main content -->
 <section class="content">
     <div class="container-fluid">
-        <!-- Info boxes
+        <!-- Info boxes -->
         <div class="row">
             <div class="col-12 col-sm-6 col-md-3">
                 <div class="info-box">
                     <span class="info-box-icon bg-primary elevation-1"><i class="fas fa-cog"></i></span>
 
                     <div class="info-box-content">
-                        <span class="info-box-text">Jumlah Mutasi yang Dilakukan</span>
+                        <span class="info-box-text">Jumlah Peminjam BPKB</span>
                         <span class="info-box-number">
-
                         </span>
                     </div>
-                     /.info-box-content 
+                    <!-- /.info-box-content -->
                 </div>
-                 /.info-box
-            </div> -->
+                <!-- /.info-box -->
+            </div>
 
             <!-- fix for small devices only -->
             <div class="clearfix hidden-md-up"></div>
@@ -36,18 +35,21 @@
                 <!-- MAP & BOX PANE -->
                 <div class="card">
                     <div class="card-header">
-                        <h3 class="card-title"><b>Data Mutasi BPKB</b></h3>
-                        <a href="<?= site_url('/mutasi/create') ?>" class="btn btn-sm btn-primary float-right">Tambah Mutasi</a>
+                        <h3 class="card-title"><b>Peminjam BPKB</b></h3>
+                        <a href="/peminjam/create" class="btn btn-sm btn-primary float-right">Tambah Peminjam BPKB</a>
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body">
-                        <table id="data_mutasi" class="table table-bordered table-striped">
+                        <table id="data_peminjam" class="table table-bordered table-striped">
                             <thead>
                                 <tr>
-                                    <th>Nomor Registrasi Lama</th>
-                                    <th>Nomor Registrasi Baru</th>
-                                    <th>Tanggal Mutasi</th>
-                                    <th>Jenis Mutasi</th>
+                                    <th>Nama Peminjam</th>
+                                    <th>NIK</th>
+                                    <th>Nomor Registrasi</th>
+                                    <th>Tanggal Pinjam</th>
+                                    <th>Estimasi Kembali</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
                                 </tr>
                             </thead>
                         </table>
