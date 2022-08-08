@@ -444,34 +444,4 @@ class Bpkb extends BaseController
 
         $writer->save('php://output');
     }
-
-// 	public function PDF()
-// {
-// $id = $this->request->uri->getSegment(3);
-// $bpkbModel = new \App\Models\BpkbModel();
-// $transaksi = $transaksiModel->find($id);
-// $userModel = new \App\Models\UserModel();
-// $pembeli = $userModel->find($transaksi->id_pembeli);
-// $barangModel = new \App\Models\BarangModel();
-// $barang = $barangModel->find($transaksi->id_barang);
-// $html = view('transaksi/invoice',[
-// 'transaksi'=> $transaksi,
-// 'pembeli' => $pembeli,
-// 'barang' => $barang,
-// ]);
-// $pdf = new TCPDF('L', PDF_UNIT, 'A5', true, 'UTF-8', false);
-// $pdf->SetCreator(PDF_CREATOR);
-// $pdf->SetAuthor('Dea Venditama');
-// $pdf->SetTitle('Invoice');
-// $pdf->SetSubject('Invoice');
-// $pdf->setPrintHeader(false);
-// $pdf->setPrintFooter(false);
-// $pdf->addPage();
-// // output the HTML content
-// $pdf->writeHTML($html, true, false, true, false, '');
-// //line ini penting
-// $this->response->setContentType('application/pdf');
-// //Close and output PDF document
-// $pdf->Output('invoice.pdf', 'I');
-// }
 }

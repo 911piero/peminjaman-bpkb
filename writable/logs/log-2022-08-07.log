@@ -1,0 +1,337 @@
+CRITICAL - 2022-08-07 08:19:14 --> Cannot use object of type mysqli as array
+in APPPATH\Controllers\Bpkb.php on line 417.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->bpkbExport()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-07 08:30:05 --> Invalid file: peminjaman_bpkb/cetak.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('peminjaman_bpkb/cetak.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjaman_bpkb/cetak', [], true)
+ 3 APPPATH\Controllers\Peminjam.php(254): view('peminjaman_bpkb/cetak', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('39')
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-07 08:30:12 --> Invalid file: peminjaman_bpkb/cetak.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('peminjaman_bpkb/cetak.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjaman_bpkb/cetak', [], true)
+ 3 APPPATH\Controllers\Peminjam.php(254): view('peminjaman_bpkb/cetak', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('39')
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-07 08:30:13 --> Invalid file: cetak.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cetak.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('cetak', [], true)
+ 3 APPPATH\Controllers\Peminjam.php(254): view('cetak', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('39')
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-07 08:30:14 --> Invalid file: cetak.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cetak.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('cetak', [], true)
+ 3 APPPATH\Controllers\Peminjam.php(254): view('cetak', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('39')
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-07 08:30:21 --> Invalid file: /cetak.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/cetak.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/cetak', [], true)
+ 3 APPPATH\Controllers\Peminjam.php(254): view('/cetak', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('39')
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-07 08:30:37 --> Invalid file: peminjaman_bpkb/cetak.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('peminjaman_bpkb/cetak.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjaman_bpkb/cetak', [], true)
+ 3 APPPATH\Controllers\Peminjam.php(254): view('peminjaman_bpkb/cetak', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('39')
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-07 08:30:38 --> Invalid file: peminjaman_bpkb/cetak.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('peminjaman_bpkb/cetak.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjaman_bpkb/cetak', [], true)
+ 3 APPPATH\Controllers\Peminjam.php(254): view('peminjaman_bpkb/cetak', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('39')
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-07 08:39:13 --> Undefined variable $bpkb
+in APPPATH\Views\peminjam_bpkb\cetak.php on line 40.
+ 1 APPPATH\Views\peminjam_bpkb\cetak.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bpkb', 'APPPATH\\Views\\peminjam_bpkb\\cetak.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\cetak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/cetak', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(254): view('peminjam_bpkb/cetak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('39')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-07 08:39:13 --> Undefined variable $bpkb
+in APPPATH\Views\peminjam_bpkb\cetak.php on line 40.
+ 1 APPPATH\Views\peminjam_bpkb\cetak.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bpkb', 'APPPATH\\Views\\peminjam_bpkb\\cetak.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\cetak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/cetak', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(254): view('peminjam_bpkb/cetak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('39')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-07 08:55:20 --> Undefined variable $bpkb
+in APPPATH\Views\peminjam_bpkb\cetak.php on line 58.
+ 1 APPPATH\Views\peminjam_bpkb\cetak.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bpkb', 'APPPATH\\Views\\peminjam_bpkb\\cetak.php', 58)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\cetak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/cetak', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(254): view('peminjam_bpkb/cetak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('39')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-07 08:55:36 --> Undefined variable $bpkb
+in APPPATH\Views\peminjam_bpkb\cetak.php on line 68.
+ 1 APPPATH\Views\peminjam_bpkb\cetak.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bpkb', 'APPPATH\\Views\\peminjam_bpkb\\cetak.php', 68)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\cetak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/cetak', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(254): view('peminjam_bpkb/cetak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('39')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-07 15:29:03 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2022-08-07 15:29:03 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_bpkb`
+JOIN `bpkb_bahan_bakar` ON `bpkb_bahan_bakar`.`id_bahan_bakar` = `data_bpkb`.`bahan_bakar`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+JOIN `bpkb_warna_tnkb` ON `bpkb_warna_tnkb`.`id_warna_tnkb` = `data_bpkb`.`warna_tnkb`
+WHERE `isActive` = :isActive:', [...], false)
+ 3 APPPATH\Models\BpkbModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Bpkb.php(25): App\Models\BpkbModel->getBpkb()
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->index()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-07 23:30:21 --> Undefined array key ""
+in APPPATH\Views\peminjam_bpkb\cetak.php on line 101.
+ 1 APPPATH\Views\peminjam_bpkb\cetak.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key ""', 'APPPATH\\Views\\peminjam_bpkb\\cetak.php', 101)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\cetak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/cetak', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(257): view('peminjam_bpkb/cetak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('39')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-07 23:32:58 --> Undefined array key "petugas_peminjam"
+in APPPATH\Views\peminjam_bpkb\cetak.php on line 144.
+ 1 APPPATH\Views\peminjam_bpkb\cetak.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "petugas_peminjam"', 'APPPATH\\Views\\peminjam_bpkb\\cetak.php', 144)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\cetak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/cetak', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(257): view('peminjam_bpkb/cetak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('39')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-07 23:32:59 --> Undefined array key "petugas_peminjam"
+in APPPATH\Views\peminjam_bpkb\cetak.php on line 144.
+ 1 APPPATH\Views\peminjam_bpkb\cetak.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "petugas_peminjam"', 'APPPATH\\Views\\peminjam_bpkb\\cetak.php', 144)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\cetak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/cetak', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(257): view('peminjam_bpkb/cetak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('39')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-07 23:33:00 --> Undefined array key "petugas_peminjam"
+in APPPATH\Views\peminjam_bpkb\cetak.php on line 144.
+ 1 APPPATH\Views\peminjam_bpkb\cetak.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "petugas_peminjam"', 'APPPATH\\Views\\peminjam_bpkb\\cetak.php', 144)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\cetak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/cetak', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(257): view('peminjam_bpkb/cetak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('39')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-07 23:35:21 --> Trying to access array offset on value of type null
+in APPPATH\Views\peminjam_bpkb\cetak.php on line 96.
+ 1 APPPATH\Views\peminjam_bpkb\cetak.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\peminjam_bpkb\\cetak.php', 96)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\cetak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/cetak', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(257): view('peminjam_bpkb/cetak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('32')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-07 23:35:41 --> Trying to access array offset on value of type null
+in APPPATH\Views\peminjam_bpkb\cetak.php on line 96.
+ 1 APPPATH\Views\peminjam_bpkb\cetak.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\peminjam_bpkb\\cetak.php', 96)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\cetak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/cetak', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(257): view('peminjam_bpkb/cetak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('32')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-07 23:37:36 --> Trying to access array offset on value of type null
+in APPPATH\Views\peminjam_bpkb\cetak.php on line 96.
+ 1 APPPATH\Views\peminjam_bpkb\cetak.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\peminjam_bpkb\\cetak.php', 96)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\cetak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/cetak', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(257): view('peminjam_bpkb/cetak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('32')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-07 23:37:37 --> Trying to access array offset on value of type null
+in APPPATH\Views\peminjam_bpkb\cetak.php on line 96.
+ 1 APPPATH\Views\peminjam_bpkb\cetak.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\peminjam_bpkb\\cetak.php', 96)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\cetak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/cetak', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(257): view('peminjam_bpkb/cetak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('32')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-07 23:37:38 --> Trying to access array offset on value of type null
+in APPPATH\Views\peminjam_bpkb\cetak.php on line 96.
+ 1 APPPATH\Views\peminjam_bpkb\cetak.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\peminjam_bpkb\\cetak.php', 96)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\cetak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/cetak', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(257): view('peminjam_bpkb/cetak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('32')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-07 23:37:40 --> Undefined array key "id_peminjam"
+in APPPATH\Views\peminjam_bpkb\detail_peminjam.php on line 24.
+ 1 APPPATH\Views\peminjam_bpkb\detail_peminjam.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_peminjam"', 'APPPATH\\Views\\peminjam_bpkb\\detail_peminjam.php', 24)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\detail_peminjam.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/peminjam_bpkb/detail_peminjam', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(244): view('/peminjam_bpkb/detail_peminjam', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->detail('40')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-07 23:37:46 --> Undefined array key "id_peminjam"
+in APPPATH\Views\peminjam_bpkb\detail_peminjam.php on line 24.
+ 1 APPPATH\Views\peminjam_bpkb\detail_peminjam.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_peminjam"', 'APPPATH\\Views\\peminjam_bpkb\\detail_peminjam.php', 24)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\detail_peminjam.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/peminjam_bpkb/detail_peminjam', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(244): view('/peminjam_bpkb/detail_peminjam', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->detail('39')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-07 23:39:33 --> Trying to access array offset on value of type null
+in APPPATH\Views\peminjam_bpkb\cetak.php on line 96.
+ 1 APPPATH\Views\peminjam_bpkb\cetak.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\peminjam_bpkb\\cetak.php', 96)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\cetak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/cetak', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(256): view('peminjam_bpkb/cetak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('32')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-07 23:41:06 --> Too few arguments to function App\Controllers\Peminjam::cetak(), 0 passed in C:\xampp\htdocs\peminjaman-bpkb\vendor\codeigniter4\framework\system\CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH\Controllers\Peminjam.php on line 246.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-07 23:43:15 --> Too few arguments to function App\Controllers\Peminjam::cetak(), 0 passed in C:\xampp\htdocs\peminjaman-bpkb\vendor\codeigniter4\framework\system\CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH\Controllers\Peminjam.php on line 246.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-07 23:43:35 --> Trying to access array offset on value of type null
+in APPPATH\Views\peminjam_bpkb\cetak.php on line 96.
+ 1 APPPATH\Views\peminjam_bpkb\cetak.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\peminjam_bpkb\\cetak.php', 96)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\cetak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/cetak', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(256): view('peminjam_bpkb/cetak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('32')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-07 23:44:00 --> Trying to access array offset on value of type null
+in APPPATH\Views\peminjam_bpkb\cetak.php on line 96.
+ 1 APPPATH\Views\peminjam_bpkb\cetak.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\peminjam_bpkb\\cetak.php', 96)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\cetak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/cetak', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(256): view('peminjam_bpkb/cetak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('32')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-07 23:44:01 --> Trying to access array offset on value of type null
+in APPPATH\Views\peminjam_bpkb\cetak.php on line 96.
+ 1 APPPATH\Views\peminjam_bpkb\cetak.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\peminjam_bpkb\\cetak.php', 96)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\cetak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/cetak', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(256): view('peminjam_bpkb/cetak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('32')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

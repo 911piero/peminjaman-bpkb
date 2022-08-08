@@ -231,7 +231,6 @@ class Peminjam extends BaseController
     public function detail($id)
     {
         $data = $this->PeminjamModel->getDetail($id);
-
         $nik = $data['nik'];
         $getImg = $this->PeminjamModel->getImg($nik);
         $data = [
@@ -244,8 +243,16 @@ class Peminjam extends BaseController
         return view('/peminjam_bpkb/detail_peminjam', $data);
     }
 
-    public function cetak()
+    public function cetak($id)
     {
-        
+        $data = $this->PeminjamModel->getDetail($id);
+
+        $data = [
+            'title' => 'Cetak',
+            'page_title' => 'Cetak',
+            'peminjam' => $data,
+        ];
+
+        return view('peminjam_bpkb/cetak', $data);
     }
 }

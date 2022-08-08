@@ -20,7 +20,7 @@
     <div class="container-fluid">
         <?= csrf_field(); ?>
         <div class="card-header">
-        <a href="<?= site_url('/peminjam/edit/') . $peminjam['id_bpkb'] ?>" class="btn btn-sm btn-warning float-rightN">Perubahan Data</a>
+        <a href="<?= site_url('/peminjam/edit/') . $peminjam['id_bpkb'] ?>" class="btn btn-sm btn-warning">Perubahan Data</a>
         </div>
         <div class="row">
             <div class="col">
