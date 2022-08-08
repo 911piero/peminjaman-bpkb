@@ -46,7 +46,6 @@
                 <div class="card card-body" style="height: fit-content;"><hr>
                     <div class="row">
                         <div class="col">
-                            
                             <table class="table table-striped" style="width: 400px">
                                 <tr>
                                     <td class="sub-label">Nama Pemilik</td>
