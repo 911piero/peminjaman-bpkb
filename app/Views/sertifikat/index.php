@@ -74,32 +74,25 @@
                                         </select>
                                     </td>
                                     <td>
-                                        <select name="status" class="custom-select" id="status" onchange="aktif">
+                                        <select name="status" class="custom-select" id="status" onchange="status">
                                             <option selected value="">Semua</option>
-                                            <?php
-                                            $status = [
-                                                '1' => "Aktif",
-                                                '0' => "Tidak Aktif",
-                                            ];
-                                            foreach ($status as $key) :
-                                            ?>
-                                                <option value="<?= $key; ?>"><?= $key; ?></option>
-                                            <?php endforeach; ?>
+                                            <option value="Aktif">Aktif</option>
+                                            <option value="Tidak Aktif">Tidak Aktif</option>
                                         </select>
                                     </td>
                                     <td>
-                                        <select name="nm_kategori" class="custom-select" id="nm_kategori" onchange="nm_kategori">
+                                        <select name="kategori" class="custom-select" id="kategori" onchange="kategori">
                                             <option selected value="">Semua</option>
                                             <?php foreach ($kategori as $key) : ?>
-                                                <option value="<?= $key['id_kategori']; ?>"><?= $key['nm_kategori']; ?></option>
+                                                <option value="<?= $key['nm_kategori']; ?>"><?= $key['nm_kategori']; ?></option>
                                             <?php endforeach; ?>
                                         </select>
                                     </td>
                                     <td>
-                                        <select name="sub_kategori" class=" custom-select">
+                                        <select name="sub_kategori" class=" custom-select" id="sub_kategori" onchange="sub_kategori">
                                             <option selected value="">Semua</option>
                                             <?php foreach ($subKategori as $key) : ?>
-                                                <option value="<?= $key['id_subkategori']; ?>"><?= $key['nm_subkategori']; ?></option>
+                                                <option value="<?= $key['nm_subkategori']; ?>"><?= $key['nm_subkategori']; ?></option>
                                             <?php endforeach; ?>
                                         </select>
                                     </td>
@@ -150,7 +143,7 @@
                                         <th>Sub Kategori</th>
                                         <th>Tahun Objek</th>
                                         <th>Masa Berlaku (Kekancingan)</th>
-                                        <th>Action</th>
+                                        <th>Status</th>
                                     </tr>
                                 </thead>
                             </table>

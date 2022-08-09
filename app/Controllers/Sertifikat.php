@@ -51,8 +51,16 @@ class Sertifikat extends BaseController
                 ->select('investasi.id, nama_proyek, intro, aktif, intro2, kecamatan.kecamatan, kelurahan.kelurahan, kategori.nm_kategori, lokasi, sub_kategori.nm_subkategori, tahun, tgl_awal, tgl_akhir');
 
             return DataTable::of($builder)
-                ->add('action', function ($row) {
-                    return '<a href="/bpkb/detail/' . $row->id . '" class="btn-sm btn-primary">DETAILS</a>';
+                ->add('status', function ($row) {
+                    $status = $row->aktif;
+
+                    if ($status == 1) {
+                        $status = "Aktif";
+                    } else if ($status == 0) {
+                        $status = "Tidak Aktif";
+                    }
+
+                    return $status;
                 })
                 ->filter(function ($builder, $request) {
                     if ($request->kecamatan) {
@@ -63,6 +71,23 @@ class Sertifikat extends BaseController
                     }
                     if ($request->kelurahan) {
                         $builder->where('kelurahan', $request->kelurahan);
+                    }
+                    if ($request->kategori) {
+                        $builder->where('nm_kategori', $request->kategori);
+                    }
+                    if ($request->sub_kategori) {
+                        $builder->where('nm_subkategori', $request->sub_kategori);
+                    }
+
+                    if ($request->status) {
+                        $status = $request->status;
+                        if ($status == "Aktif") {
+                            $status = 1;
+                        }
+                        if ($status == "Tidak Aktif") {
+                            $status = 0;
+                        }
+                        $builder->where('aktif', $status);
                     }
                 })
                 ->toJson(true);

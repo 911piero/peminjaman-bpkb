@@ -705,3 +705,573 @@ in APPPATH\Views\peminjam_bpkb\cetak.php on line 4.
  8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-08 17:36:46 --> Undefined property: stdClass::$kategori
+in APPPATH\Controllers\Sertifikat.php on line 67.
+ 1 APPPATH\Controllers\Sertifikat.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$kategori', 'APPPATH\\Controllers\\Sertifikat.php', 67, [...])
+ 2 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(195): App\Controllers\Sertifikat->App\Controllers\{closure}(Object(CodeIgniter\Database\MySQLi\Builder), Object(stdClass))
+ 3 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(185): Hermawan\DataTables\DataTableQuery->queryFilter(Object(CodeIgniter\Database\MySQLi\Builder))
+ 4 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(61): Hermawan\DataTables\DataTableQuery->queryFilterSearch(Object(CodeIgniter\Database\MySQLi\Builder))
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 6 APPPATH\Controllers\Sertifikat.php(71): Hermawan\DataTables\DataTable->toJson(true)
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-08 17:36:59 --> Undefined property: stdClass::$kategori
+in APPPATH\Controllers\Sertifikat.php on line 67.
+ 1 APPPATH\Controllers\Sertifikat.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$kategori', 'APPPATH\\Controllers\\Sertifikat.php', 67, [...])
+ 2 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(195): App\Controllers\Sertifikat->App\Controllers\{closure}(Object(CodeIgniter\Database\MySQLi\Builder), Object(stdClass))
+ 3 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(185): Hermawan\DataTables\DataTableQuery->queryFilter(Object(CodeIgniter\Database\MySQLi\Builder))
+ 4 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(61): Hermawan\DataTables\DataTableQuery->queryFilterSearch(Object(CodeIgniter\Database\MySQLi\Builder))
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 6 APPPATH\Controllers\Sertifikat.php(71): Hermawan\DataTables\DataTable->toJson(true)
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-08 17:37:20 --> Undefined property: stdClass::$kategori
+in APPPATH\Controllers\Sertifikat.php on line 64.
+ 1 APPPATH\Controllers\Sertifikat.php(64): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$kategori', 'APPPATH\\Controllers\\Sertifikat.php', 64, [...])
+ 2 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(195): App\Controllers\Sertifikat->App\Controllers\{closure}(Object(CodeIgniter\Database\MySQLi\Builder), Object(stdClass))
+ 3 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(185): Hermawan\DataTables\DataTableQuery->queryFilter(Object(CodeIgniter\Database\MySQLi\Builder))
+ 4 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(61): Hermawan\DataTables\DataTableQuery->queryFilterSearch(Object(CodeIgniter\Database\MySQLi\Builder))
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 6 APPPATH\Controllers\Sertifikat.php(68): Hermawan\DataTables\DataTable->toJson(true)
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-08 17:38:20 --> Undefined property: stdClass::$kategori
+in APPPATH\Controllers\Sertifikat.php on line 64.
+ 1 APPPATH\Controllers\Sertifikat.php(64): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$kategori', 'APPPATH\\Controllers\\Sertifikat.php', 64, [...])
+ 2 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(195): App\Controllers\Sertifikat->App\Controllers\{closure}(Object(CodeIgniter\Database\MySQLi\Builder), Object(stdClass))
+ 3 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(185): Hermawan\DataTables\DataTableQuery->queryFilter(Object(CodeIgniter\Database\MySQLi\Builder))
+ 4 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(61): Hermawan\DataTables\DataTableQuery->queryFilterSearch(Object(CodeIgniter\Database\MySQLi\Builder))
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 6 APPPATH\Controllers\Sertifikat.php(68): Hermawan\DataTables\DataTable->toJson(true)
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-08 17:40:11 --> Undefined property: stdClass::$kategori
+in APPPATH\Controllers\Sertifikat.php on line 64.
+ 1 APPPATH\Controllers\Sertifikat.php(64): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$kategori', 'APPPATH\\Controllers\\Sertifikat.php', 64, [...])
+ 2 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(195): App\Controllers\Sertifikat->App\Controllers\{closure}(Object(CodeIgniter\Database\MySQLi\Builder), Object(stdClass))
+ 3 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(185): Hermawan\DataTables\DataTableQuery->queryFilter(Object(CodeIgniter\Database\MySQLi\Builder))
+ 4 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(61): Hermawan\DataTables\DataTableQuery->queryFilterSearch(Object(CodeIgniter\Database\MySQLi\Builder))
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 6 APPPATH\Controllers\Sertifikat.php(68): Hermawan\DataTables\DataTable->toJson(true)
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-08 17:42:54 --> Undefined property: stdClass::$nm_kategori
+in APPPATH\Controllers\Sertifikat.php on line 67.
+ 1 APPPATH\Controllers\Sertifikat.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$nm_kategori', 'APPPATH\\Controllers\\Sertifikat.php', 67, [...])
+ 2 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(195): App\Controllers\Sertifikat->App\Controllers\{closure}(Object(CodeIgniter\Database\MySQLi\Builder), Object(stdClass))
+ 3 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(185): Hermawan\DataTables\DataTableQuery->queryFilter(Object(CodeIgniter\Database\MySQLi\Builder))
+ 4 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(61): Hermawan\DataTables\DataTableQuery->queryFilterSearch(Object(CodeIgniter\Database\MySQLi\Builder))
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 6 APPPATH\Controllers\Sertifikat.php(71): Hermawan\DataTables\DataTable->toJson(true)
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-08 17:45:11 --> Undefined property: stdClass::$nm_kategori
+in APPPATH\Controllers\Sertifikat.php on line 67.
+ 1 APPPATH\Controllers\Sertifikat.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$nm_kategori', 'APPPATH\\Controllers\\Sertifikat.php', 67, [...])
+ 2 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(195): App\Controllers\Sertifikat->App\Controllers\{closure}(Object(CodeIgniter\Database\MySQLi\Builder), Object(stdClass))
+ 3 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(185): Hermawan\DataTables\DataTableQuery->queryFilter(Object(CodeIgniter\Database\MySQLi\Builder))
+ 4 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(61): Hermawan\DataTables\DataTableQuery->queryFilterSearch(Object(CodeIgniter\Database\MySQLi\Builder))
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 6 APPPATH\Controllers\Sertifikat.php(71): Hermawan\DataTables\DataTable->toJson(true)
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-08 17:49:15 --> Undefined property: stdClass::$nm_kategori
+in APPPATH\Controllers\Sertifikat.php on line 67.
+ 1 APPPATH\Controllers\Sertifikat.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$nm_kategori', 'APPPATH\\Controllers\\Sertifikat.php', 67, [...])
+ 2 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(195): App\Controllers\Sertifikat->App\Controllers\{closure}(Object(CodeIgniter\Database\MySQLi\Builder), Object(stdClass))
+ 3 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(185): Hermawan\DataTables\DataTableQuery->queryFilter(Object(CodeIgniter\Database\MySQLi\Builder))
+ 4 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(61): Hermawan\DataTables\DataTableQuery->queryFilterSearch(Object(CodeIgniter\Database\MySQLi\Builder))
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 6 APPPATH\Controllers\Sertifikat.php(73): Hermawan\DataTables\DataTable->toJson(true)
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-08 17:50:36 --> Undefined property: stdClass::$nm_kategori
+in APPPATH\Controllers\Sertifikat.php on line 67.
+ 1 APPPATH\Controllers\Sertifikat.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$nm_kategori', 'APPPATH\\Controllers\\Sertifikat.php', 67, [...])
+ 2 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(195): App\Controllers\Sertifikat->App\Controllers\{closure}(Object(CodeIgniter\Database\MySQLi\Builder), Object(stdClass))
+ 3 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(185): Hermawan\DataTables\DataTableQuery->queryFilter(Object(CodeIgniter\Database\MySQLi\Builder))
+ 4 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(61): Hermawan\DataTables\DataTableQuery->queryFilterSearch(Object(CodeIgniter\Database\MySQLi\Builder))
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 6 APPPATH\Controllers\Sertifikat.php(71): Hermawan\DataTables\DataTable->toJson(true)
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-08 17:51:27 --> Undefined property: stdClass::$nm_kategori
+in APPPATH\Controllers\Sertifikat.php on line 67.
+ 1 APPPATH\Controllers\Sertifikat.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$nm_kategori', 'APPPATH\\Controllers\\Sertifikat.php', 67, [...])
+ 2 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(195): App\Controllers\Sertifikat->App\Controllers\{closure}(Object(CodeIgniter\Database\MySQLi\Builder), Object(stdClass))
+ 3 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(185): Hermawan\DataTables\DataTableQuery->queryFilter(Object(CodeIgniter\Database\MySQLi\Builder))
+ 4 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(61): Hermawan\DataTables\DataTableQuery->queryFilterSearch(Object(CodeIgniter\Database\MySQLi\Builder))
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 6 APPPATH\Controllers\Sertifikat.php(71): Hermawan\DataTables\DataTable->toJson(true)
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-08 17:58:30 --> Undefined property: stdClass::$kategori
+in APPPATH\Controllers\Sertifikat.php on line 67.
+ 1 APPPATH\Controllers\Sertifikat.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$kategori', 'APPPATH\\Controllers\\Sertifikat.php', 67, [...])
+ 2 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(195): App\Controllers\Sertifikat->App\Controllers\{closure}(Object(CodeIgniter\Database\MySQLi\Builder), Object(stdClass))
+ 3 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(185): Hermawan\DataTables\DataTableQuery->queryFilter(Object(CodeIgniter\Database\MySQLi\Builder))
+ 4 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(61): Hermawan\DataTables\DataTableQuery->queryFilterSearch(Object(CodeIgniter\Database\MySQLi\Builder))
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 6 APPPATH\Controllers\Sertifikat.php(71): Hermawan\DataTables\DataTable->toJson(true)
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-08 18:07:15 --> Unknown column 'sub_kategori' in 'where clause'
+CRITICAL - 2022-08-08 18:07:15 --> Unknown column 'sub_kategori' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `sub_kategori` = \'Kantor\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `sub_kategori` = \'Kantor\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `sub_kategori` = \'Kantor\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `sub_kategori` = :sub_kategori:', [...], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 7 APPPATH\Controllers\Sertifikat.php(74): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-08 18:07:34 --> Unknown column 'sub_kategori' in 'where clause'
+CRITICAL - 2022-08-08 18:07:34 --> Unknown column 'sub_kategori' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `sub_kategori` = \'Kantor\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `sub_kategori` = \'Kantor\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `sub_kategori` = \'Kantor\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `sub_kategori` = :sub_kategori:', [...], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 7 APPPATH\Controllers\Sertifikat.php(74): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-08 19:18:18 --> Undefined property: stdClass::$aktif
+in APPPATH\Controllers\Sertifikat.php on line 71.
+ 1 APPPATH\Controllers\Sertifikat.php(71): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$aktif', 'APPPATH\\Controllers\\Sertifikat.php', 71, [...])
+ 2 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(195): App\Controllers\Sertifikat->App\Controllers\{closure}(Object(CodeIgniter\Database\MySQLi\Builder), Object(stdClass))
+ 3 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(185): Hermawan\DataTables\DataTableQuery->queryFilter(Object(CodeIgniter\Database\MySQLi\Builder))
+ 4 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(61): Hermawan\DataTables\DataTableQuery->queryFilterSearch(Object(CodeIgniter\Database\MySQLi\Builder))
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 6 APPPATH\Controllers\Sertifikat.php(75): Hermawan\DataTables\DataTable->toJson(true)
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-08 19:21:58 --> Undefined property: stdClass::$aktif
+in APPPATH\Controllers\Sertifikat.php on line 71.
+ 1 APPPATH\Controllers\Sertifikat.php(71): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$aktif', 'APPPATH\\Controllers\\Sertifikat.php', 71, [...])
+ 2 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(195): App\Controllers\Sertifikat->App\Controllers\{closure}(Object(CodeIgniter\Database\MySQLi\Builder), Object(stdClass))
+ 3 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(185): Hermawan\DataTables\DataTableQuery->queryFilter(Object(CodeIgniter\Database\MySQLi\Builder))
+ 4 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(61): Hermawan\DataTables\DataTableQuery->queryFilterSearch(Object(CodeIgniter\Database\MySQLi\Builder))
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 6 APPPATH\Controllers\Sertifikat.php(75): Hermawan\DataTables\DataTable->toJson(true)
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-08 19:22:57 --> Unknown column 'status' in 'where clause'
+CRITICAL - 2022-08-08 19:22:57 --> Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `status` = \'Aktif\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `status` = \'Aktif\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `status` = \'Aktif\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `status` = :status:', [...], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 7 APPPATH\Controllers\Sertifikat.php(75): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-08 19:53:52 --> Undefined property: stdClass::$statuA
+in APPPATH\Controllers\Sertifikat.php on line 72.
+ 1 APPPATH\Controllers\Sertifikat.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$statuA', 'APPPATH\\Controllers\\Sertifikat.php', 72, [...])
+ 2 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(195): App\Controllers\Sertifikat->App\Controllers\{closure}(Object(CodeIgniter\Database\MySQLi\Builder), Object(stdClass))
+ 3 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(185): Hermawan\DataTables\DataTableQuery->queryFilter(Object(CodeIgniter\Database\MySQLi\Builder))
+ 4 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(61): Hermawan\DataTables\DataTableQuery->queryFilterSearch(Object(CodeIgniter\Database\MySQLi\Builder))
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 6 APPPATH\Controllers\Sertifikat.php(75): Hermawan\DataTables\DataTable->toJson(true)
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-08 19:54:07 --> Undefined property: stdClass::$statuA
+in APPPATH\Controllers\Sertifikat.php on line 72.
+ 1 APPPATH\Controllers\Sertifikat.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$statuA', 'APPPATH\\Controllers\\Sertifikat.php', 72, [...])
+ 2 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(195): App\Controllers\Sertifikat->App\Controllers\{closure}(Object(CodeIgniter\Database\MySQLi\Builder), Object(stdClass))
+ 3 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(185): Hermawan\DataTables\DataTableQuery->queryFilter(Object(CodeIgniter\Database\MySQLi\Builder))
+ 4 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(61): Hermawan\DataTables\DataTableQuery->queryFilterSearch(Object(CodeIgniter\Database\MySQLi\Builder))
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 6 APPPATH\Controllers\Sertifikat.php(75): Hermawan\DataTables\DataTable->toJson(true)
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-08 20:13:38 --> Unknown column 'kecamatan.kecamatan' in 'field list'
+CRITICAL - 2022-08-08 20:13:38 --> Unknown column 'kecamatan.kecamatan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `investasi`.`id`, `nama_proyek`, `intro`, `aktif`, `intro2`, `kecamatan`.`kecamatan`, `kelurahan`.`kelurahan`, `kategori`.`nm_kategori`, `lokasi`, `sub_kategori`.`nm_subkategori`, `tahun`, `tgl_awal`, `tgl_akhir`
+FROM `investasi`
+ORDER BY `nama_proyek` ASC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `investasi`.`id`, `nama_proyek`, `intro`, `aktif`, `intro2`, `kecamatan`.`kecamatan`, `kelurahan`.`kelurahan`, `kategori`.`nm_kategori`, `lokasi`, `sub_kategori`.`nm_subkategori`, `tahun`, `tgl_awal`, `tgl_akhir`
+FROM `investasi`
+ORDER BY `nama_proyek` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `investasi`.`id`, `nama_proyek`, `intro`, `aktif`, `intro2`, `kecamatan`.`kecamatan`, `kelurahan`.`kelurahan`, `kategori`.`nm_kategori`, `lokasi`, `sub_kategori`.`nm_subkategori`, `tahun`, `tgl_awal`, `tgl_akhir`
+FROM `investasi`
+ORDER BY `nama_proyek` ASC
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `investasi`.`id`, `nama_proyek`, `intro`, `aktif`, `intro2`, `kecamatan`.`kecamatan`, `kelurahan`.`kelurahan`, `kategori`.`nm_kategori`, `lokasi`, `sub_kategori`.`nm_subkategori`, `tahun`, `tgl_awal`, `tgl_akhir`
+FROM `investasi`
+ORDER BY `nama_proyek` ASC
+ LIMIT 10', [], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(219): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+ 7 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 8 APPPATH\Controllers\Sertifikat.php(72): Hermawan\DataTables\DataTable->toJson(true)
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-08 20:26:48 --> Unknown column 'sub_kategori.nm_subkategori' in 'field list'
+CRITICAL - 2022-08-08 20:26:48 --> Unknown column 'sub_kategori.nm_subkategori' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `investasi`.`id`, `nama_proyek`, `intro`, `aktif`, `intro2`, `kecamatan`.`kecamatan`, `kelurahan`.`kelurahan`, `kategori`.`nm_kategori`, `lokasi`, `sub_kategori`.`nm_subkategori`, `tahun`, `tgl_awal`, `tgl_akhir`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+ORDER BY `nama_proyek` ASC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `investasi`.`id`, `nama_proyek`, `intro`, `aktif`, `intro2`, `kecamatan`.`kecamatan`, `kelurahan`.`kelurahan`, `kategori`.`nm_kategori`, `lokasi`, `sub_kategori`.`nm_subkategori`, `tahun`, `tgl_awal`, `tgl_akhir`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+ORDER BY `nama_proyek` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `investasi`.`id`, `nama_proyek`, `intro`, `aktif`, `intro2`, `kecamatan`.`kecamatan`, `kelurahan`.`kelurahan`, `kategori`.`nm_kategori`, `lokasi`, `sub_kategori`.`nm_subkategori`, `tahun`, `tgl_awal`, `tgl_akhir`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+ORDER BY `nama_proyek` ASC
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `investasi`.`id`, `nama_proyek`, `intro`, `aktif`, `intro2`, `kecamatan`.`kecamatan`, `kelurahan`.`kelurahan`, `kategori`.`nm_kategori`, `lokasi`, `sub_kategori`.`nm_subkategori`, `tahun`, `tgl_awal`, `tgl_akhir`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+ORDER BY `nama_proyek` ASC
+ LIMIT 10', [], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(219): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+ 7 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 8 APPPATH\Controllers\Sertifikat.php(74): Hermawan\DataTables\DataTable->toJson(true)
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-08 21:10:28 --> Undefined property: stdClass::$customerName
+in APPPATH\Controllers\Sertifikat.php on line 75.
+ 1 APPPATH\Controllers\Sertifikat.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$customerName', 'APPPATH\\Controllers\\Sertifikat.php', 75, [...])
+ 2 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(91): App\Controllers\Sertifikat->App\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 APPPATH\Controllers\Sertifikat.php(77): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-08 21:10:37 --> Undefined property: stdClass::$customerName
+in APPPATH\Controllers\Sertifikat.php on line 75.
+ 1 APPPATH\Controllers\Sertifikat.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$customerName', 'APPPATH\\Controllers\\Sertifikat.php', 75, [...])
+ 2 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(91): App\Controllers\Sertifikat->App\Controllers\{closure}(Object(stdClass))
+ 3 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 4 APPPATH\Controllers\Sertifikat.php(77): Hermawan\DataTables\DataTable->toJson(true)
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-08 21:15:49 --> Unknown column 'status' in 'where clause'
+CRITICAL - 2022-08-08 21:15:49 --> Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `status` = \'Tidak Aktif\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `status` = \'Tidak Aktif\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `status` = \'Tidak Aktif\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `status` = :status:', [...], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 7 APPPATH\Controllers\Sertifikat.php(86): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-08 21:16:08 --> Unknown column 'status' in 'where clause'
+CRITICAL - 2022-08-08 21:16:08 --> Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `status` = \'Aktif\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `status` = \'Aktif\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `status` = \'Aktif\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `status` = :status:', [...], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 7 APPPATH\Controllers\Sertifikat.php(86): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-08 21:18:33 --> Illegal string offset 'nm_status'
+in APPPATH\Views\sertifikat\index.php on line 79.
+ 1 APPPATH\Views\sertifikat\index.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'nm_status\'', 'APPPATH\\Views\\sertifikat\\index.php', 79, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sertifikat\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/index', [], true)
+ 5 APPPATH\Controllers\Sertifikat.php(39): view('sertifikat/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-08 21:23:20 --> Unknown column 'status' in 'where clause'
+CRITICAL - 2022-08-08 21:23:20 --> Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `status` = \'Aktif\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `status` = \'Aktif\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `status` = \'Aktif\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `status` = :status:', [...], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 7 APPPATH\Controllers\Sertifikat.php(86): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-08 21:28:18 --> Unknown column 'status' in 'where clause'
+CRITICAL - 2022-08-08 21:28:18 --> Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `status` = \'Tidak Aktif\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `status` = \'Tidak Aktif\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `status` = \'Tidak Aktif\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `status` = :status:', [...], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 7 APPPATH\Controllers\Sertifikat.php(86): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

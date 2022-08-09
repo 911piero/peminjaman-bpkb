@@ -186,7 +186,9 @@
                         d.kecamatan = $('#kecamatan').val();
                         d.tahun_objek = $('#tahun_objek').val();
                         d.kelurahan = $('#kelurahan').val();
-                        d.aktif = $('#status').val();
+                        d.kategori = $('#kategori').val();
+                        d.sub_kategori = $('#sub_kategori').val();
+                        d.status = $('#status').val();
                     }
                 },
                 columns: [{
@@ -217,11 +219,13 @@
                         data: 'tgl_akhir'
                     },
                     {
-                        data: 'action',
-                        orderable: false
+                        data: 'status',
+                        visible: true
                     }
                 ]
             });
+
+
 
             $('#kecamatan').change(function(event) {
                 table.ajax.reload();
@@ -234,6 +238,19 @@
             $('#kelurahan').change(function(event) {
                 table.ajax.reload();
             });
+            $('#kategori').change(function(event) {
+                table.ajax.reload();
+            });
+
+            $('#sub_kategori').change(function(event) {
+                table.ajax.reload();
+            });
+
+            $('#status').change(function(event) {
+                table.ajax.reload();
+            });
+
+
         })
 
         // $(document).ready(function() {
