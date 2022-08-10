@@ -226,3 +226,27 @@ in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
  9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
 11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-10 03:23:11 --> Undefined array key "investasi"
+in APPPATH\Views\peminjam_sertifikat\tambah_peminjam_serti.php on line 71.
+ 1 APPPATH\Views\peminjam_sertifikat\tambah_peminjam_serti.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "investasi"', 'APPPATH\\Views\\peminjam_sertifikat\\tambah_peminjam_serti.php', 71)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_sertifikat\\tambah_peminjam_serti.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/peminjam_sertifikat/tambah_peminjam_serti', [], true)
+ 5 APPPATH\Controllers\PeminjamSertifikat.php(63): view('/peminjam_sertifikat/tambah_peminjam_serti', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->create()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-10 03:23:47 --> Undefined array key "id_sertifikat"
+in APPPATH\Views\peminjam_sertifikat\tambah_peminjam_serti.php on line 71.
+ 1 APPPATH\Views\peminjam_sertifikat\tambah_peminjam_serti.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_sertifikat"', 'APPPATH\\Views\\peminjam_sertifikat\\tambah_peminjam_serti.php', 71)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_sertifikat\\tambah_peminjam_serti.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/peminjam_sertifikat/tambah_peminjam_serti', [], true)
+ 5 APPPATH\Controllers\PeminjamSertifikat.php(63): view('/peminjam_sertifikat/tambah_peminjam_serti', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->create()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

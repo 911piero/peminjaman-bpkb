@@ -176,10 +176,9 @@
     <script src="<?= base_url('adminlte/plugins/datatables-buttons/js/buttons.print.min.js'); ?>"></script>
     <script src="<?= base_url('adminlte/plugins/datatables-buttons/js/buttons.colVis.min.js'); ?>"></script>
     <script>
-
         $(document).ready(function() {
 
-            
+
             table = $('#data_sertifikat').DataTable({
                 processing: true,
                 serverSide: true,
@@ -232,14 +231,6 @@
         });
         $(document).ready(function() {
             $('#data_peminjam_sertifikat').DataTable({
-                "columnDefs": [{
-                    "targets": 6,
-                    "createdCell": function(td, cellData, rowData, row, col) {
-                        if (cellData < 1) {
-                            $(td).css('color', 'red')
-                        }
-                    }
-                }],
                 processing: true,
                 serverSide: true,
                 ajax: '/peminjamsertifikat/listData',
@@ -254,9 +245,6 @@
                     },
                     {
                         data: 'tgl_pinjam'
-                    },
-                    {
-                        data: 'estimasi_kembali'
                     },
                     {
                         data: 'status'
@@ -295,10 +283,10 @@
         });
 
 
-            $('#minDate, #maxDate').on('change', function () {
-                table.draw();
-                table.ajax.reload();
-            });
+        $('#minDate, #maxDate').on('change', function() {
+            table.draw();
+            table.ajax.reload();
+        });
 
 
 

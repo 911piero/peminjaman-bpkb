@@ -60,12 +60,16 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="col">
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Nama Objek </label>
                                 <div class="input-group mb-3">
                                     <select class="form-control select2" name="id_sertifikat" <?= ($validation->hasError('id_sertifikat')) ? 'is-invalid' : ' '; ?> required autocomplete="on">
                                         <option selected value="Cari ">Pilih Objek</option>
+                                        <?php foreach ($getSertifikat as $s) : ?>
+                                            <option value="<?= $s['id']; ?>"><?= $s['intro']; ?> </option>
+                                        <?php endforeach; ?>
                                     </select>
                                     <div class="invalid-feedback">
                                         <?= $validation->getError('id_sertifikat'); ?>

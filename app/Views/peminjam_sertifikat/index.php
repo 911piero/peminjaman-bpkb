@@ -47,7 +47,6 @@
                                     <th>NIK</th>
                                     <th>Nama Objek</th>
                                     <th>Tanggal Pinjam</th>
-                                    <th>Estimasi Kembali</th>
                                     <th>Status</th>
                                     <th>Action</th>
                                 </tr>

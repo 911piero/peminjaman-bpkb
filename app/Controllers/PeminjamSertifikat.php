@@ -39,7 +39,7 @@ class PeminjamSertifikat extends BaseController
             $db = db_connect();
             $builder = $db->table('data_peminjam_sertifikat')
                 ->join('investasi', 'investasi.id = data_peminjam_sertifikat.id_sertifikat')
-                ->select('id_peminjam_sertifikat, nama_lengkap, nik, investasi.intro, nama_petugas_pinjam, nip_petugas_pinjam, nama_petugas_kembali, nip_petugas_kembali, tgl_pinjam, tgl_kembali, estimasi_kembali, data_peminjam_sertifikat.status');
+                ->select('id_peminjam_sertifikat, nama_lengkap, nik, investasi.intro, nama_petugas_pinjam, nip_petugas_pinjam, tgl_pinjam, tgl_kembali, data_peminjam_sertifikat.status');
 
             return DataTable::of($builder)
                 ->add('action', function ($row) {
@@ -53,7 +53,7 @@ class PeminjamSertifikat extends BaseController
     }
     public function create()
     {
-        $getSertifikat = $this->PeminjamSertifikatModel->findAll();
+        $getSertifikat = $this->SertifikatModel->findAll();
         $data = [
             'title' => 'Tambah Data Peminjam Sertifikat',
             'getSertifikat' => $getSertifikat,
@@ -116,7 +116,6 @@ class PeminjamSertifikat extends BaseController
             'nama_petugas_kembali' => "-",
             'nip_petugas_kembali' => "-",
             'tgl_pinjam' => $this->request->getVar('tgl_pinjam'),
-            'estimasi_kembali' => $this->request->getVar('estimasi_kembali'),
             'status' => "Pinjam"
         ];
         if ($this->PeminjamSertifikatModel->tambahData($data_peminjam_sertifikat))
