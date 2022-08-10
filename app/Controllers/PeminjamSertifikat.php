@@ -43,9 +43,9 @@ class PeminjamSertifikat extends BaseController
             return DataTable::of($builder)
                 ->add('action', function ($row) {
                     return
-                        '<a href="/peminjam/detail/' . $row->id_peminjam_sertifikat . '" class="badge badge-primary">DETAILS</a> 
-                        <a href="/peminjam/edit/' . $row->id_peminjam_sertifikat . '" class="badge badge-warning">UPDATE</a>
-                        <a href="/peminjam/delete/' . $row->id_peminjam_sertifikat . '" class="badge badge-danger" onclick="return confirm(\'Are you sure ?\')">HAPUS</a>';
+                        '<a href="/peminjam/detail/' . $row->id_peminjam_sertifikat . '"class="btn btn-outline-primary btn-shadow"><i class="fa fa-eye"></i></a> 
+                        <a href="/peminjam/edit/' . $row->id_peminjam_sertifikat . '" class="btn btn-outline-warning btn-shadow"><i class="fa fa-pen"></i></a>
+                        <a href="/peminjam/delete/' . $row->id_peminjam_sertifikat . '" class="btn btn-outline-secondary btn-shadow"><i class="fa fa-print"></i></a>';
                 })
                 ->toJson(true);
         }

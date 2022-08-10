@@ -36,7 +36,7 @@
                 <div class="card">
                     <div class="card-header">
                         <h3 class="card-title"><b>Peminjam Sertifikat</b></h3>
-                        <a href="#" class="btn btn-sm btn-primary float-right">Tambah Peminjam BPKB</a>
+                        <a href="/peminjamsertifikat/create" class="btn btn-sm btn-primary float-right">Tambah Peminjam Sertifikat</a>
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body">

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CRITICAL - 2022-08-08 00:47:41 --> Undefined property: stdClass::$id_peminjam
 in APPPATH\Controllers\PeminjamSertifikat.php on line 46.
  1 APPPATH\Controllers\PeminjamSertifikat.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id_peminjam', 'APPPATH\\Controllers\\PeminjamSertifikat.php', 46)
@@ -233,3 +234,666 @@ JOIN `investasi` ON `investasi_hist`.`id` = `data_peminjam_sertifikat`.`id_serti
 10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
 12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+=======
+CRITICAL - 2022-08-08 12:17:38 --> date_default_timezone_set(): Timezone ID 'l' is invalid
+in APPPATH\Views\peminjam_bpkb\cetak.php on line 88.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'date_default_timezone_set(): Timezone ID \'l\' is invalid', 'APPPATH\\Views\\peminjam_bpkb\\cetak.php', 88)
+ 2 APPPATH\Views\peminjam_bpkb\cetak.php(88): date_default_timezone_set('l')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\cetak.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/cetak', [], true)
+ 6 APPPATH\Controllers\Peminjam.php(256): view('peminjam_bpkb/cetak', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('39')
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-08 12:17:38 --> date_default_timezone_set(): Timezone ID 'l' is invalid
+in APPPATH\Views\peminjam_bpkb\cetak.php on line 88.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'date_default_timezone_set(): Timezone ID \'l\' is invalid', 'APPPATH\\Views\\peminjam_bpkb\\cetak.php', 88)
+ 2 APPPATH\Views\peminjam_bpkb\cetak.php(88): date_default_timezone_set('l')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\cetak.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/cetak', [], true)
+ 6 APPPATH\Controllers\Peminjam.php(256): view('peminjam_bpkb/cetak', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('39')
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-08 12:17:45 --> date_default_timezone_set(): Timezone ID 'l' is invalid
+in APPPATH\Views\peminjam_bpkb\cetak.php on line 88.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'date_default_timezone_set(): Timezone ID \'l\' is invalid', 'APPPATH\\Views\\peminjam_bpkb\\cetak.php', 88)
+ 2 APPPATH\Views\peminjam_bpkb\cetak.php(88): date_default_timezone_set('l')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\cetak.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/cetak', [], true)
+ 6 APPPATH\Controllers\Peminjam.php(256): view('peminjam_bpkb/cetak', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('39')
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-08 00:17:45 --> date_default_timezone_set(): Timezone ID 'l' is invalid
+in APPPATH\Views\peminjam_bpkb\cetak.php on line 88.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'date_default_timezone_set(): Timezone ID \'l\' is invalid', 'APPPATH\\Views\\peminjam_bpkb\\cetak.php', 88)
+ 2 APPPATH\Views\peminjam_bpkb\cetak.php(88): date_default_timezone_set('l')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\cetak.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/cetak', [], true)
+ 6 APPPATH\Controllers\Peminjam.php(256): view('peminjam_bpkb/cetak', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('39')
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-08 00:17:46 --> date_default_timezone_set(): Timezone ID 'l' is invalid
+in APPPATH\Views\peminjam_bpkb\cetak.php on line 88.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'date_default_timezone_set(): Timezone ID \'l\' is invalid', 'APPPATH\\Views\\peminjam_bpkb\\cetak.php', 88)
+ 2 APPPATH\Views\peminjam_bpkb\cetak.php(88): date_default_timezone_set('l')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\cetak.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/cetak', [], true)
+ 6 APPPATH\Controllers\Peminjam.php(256): view('peminjam_bpkb/cetak', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('39')
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-08 00:19:10 --> Call to undefined function date_default()
+in APPPATH\Views\peminjam_bpkb\cetak.php on line 88.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/cetak', [], true)
+ 4 APPPATH\Controllers\Peminjam.php(256): view('peminjam_bpkb/cetak', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('39')
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-08 00:19:10 --> Call to undefined function date_default()
+in APPPATH\Views\peminjam_bpkb\cetak.php on line 88.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/cetak', [], true)
+ 4 APPPATH\Controllers\Peminjam.php(256): view('peminjam_bpkb/cetak', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('39')
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-08 00:21:26 --> syntax error, unexpected token "use"
+in APPPATH\Views\peminjam_bpkb\cetak.php on line 3.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/cetak', [], true)
+ 3 APPPATH\Controllers\Peminjam.php(256): view('peminjam_bpkb/cetak', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('39')
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-08 00:21:29 --> syntax error, unexpected token "use"
+in APPPATH\Views\peminjam_bpkb\cetak.php on line 3.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/cetak', [], true)
+ 3 APPPATH\Controllers\Peminjam.php(256): view('peminjam_bpkb/cetak', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('39')
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-08 12:24:01 --> Undefined variable $hari
+in APPPATH\Views\peminjam_bpkb\cetak.php on line 4.
+ 1 APPPATH\Views\peminjam_bpkb\cetak.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $hari', 'APPPATH\\Views\\peminjam_bpkb\\cetak.php', 4)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\cetak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/cetak', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(256): view('peminjam_bpkb/cetak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('39')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-08 12:24:08 --> Undefined variable $hari
+in APPPATH\Views\peminjam_bpkb\cetak.php on line 4.
+ 1 APPPATH\Views\peminjam_bpkb\cetak.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $hari', 'APPPATH\\Views\\peminjam_bpkb\\cetak.php', 4)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\cetak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/cetak', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(256): view('peminjam_bpkb/cetak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('39')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-08 12:24:36 --> Undefined variable $hari
+in APPPATH\Views\peminjam_bpkb\cetak.php on line 4.
+ 1 APPPATH\Views\peminjam_bpkb\cetak.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $hari', 'APPPATH\\Views\\peminjam_bpkb\\cetak.php', 4)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\cetak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/cetak', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(256): view('peminjam_bpkb/cetak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('39')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+>>>>>>> 5fe9ea58d5f1adee212f8be019053fb4aceb122e
+ERROR - 2022-08-08 03:28:00 --> Unknown column 'status' in 'where clause'
+CRITICAL - 2022-08-08 03:28:00 --> Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `investasi`
+WHERE `status` = \'Tidak Dipinjam\'
+AND `isActive` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `investasi`
+WHERE `status` = \'Tidak Dipinjam\'
+AND `isActive` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `investasi`
+WHERE `status` = \'Tidak Dipinjam\'
+AND `isActive` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `investasi`
+WHERE `status` = :status:
+AND `isActive` = :isActive:', [...], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\PeminjamSertifikat.php(57): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->create()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-08 03:30:22 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Bpkb.php on line 60.
+ 1 APPPATH\Controllers\Bpkb.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Bpkb.php', 60)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('443')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-08 03:37:53 --> Unknown column 'status' in 'where clause'
+CRITICAL - 2022-08-08 03:37:53 --> Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `investasi`
+WHERE `status` = \'Tidak Dipinjam\'
+AND `isActive` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `investasi`
+WHERE `status` = \'Tidak Dipinjam\'
+AND `isActive` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `investasi`
+WHERE `status` = \'Tidak Dipinjam\'
+AND `isActive` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `investasi`
+WHERE `status` = :status:
+AND `isActive` = :isActive:', [...], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\PeminjamSertifikat.php(57): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->create()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-08 03:38:04 --> Unknown column 'status' in 'where clause'
+CRITICAL - 2022-08-08 03:38:04 --> Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `investasi`
+WHERE `status` = \'Tidak Dipinjam\'
+AND `isActive` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `investasi`
+WHERE `status` = \'Tidak Dipinjam\'
+AND `isActive` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `investasi`
+WHERE `status` = \'Tidak Dipinjam\'
+AND `isActive` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `investasi`
+WHERE `status` = :status:
+AND `isActive` = :isActive:', [...], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\PeminjamSertifikat.php(57): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->create()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-08 03:39:19 --> Unknown column 'status' in 'where clause'
+CRITICAL - 2022-08-08 03:39:19 --> Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `investasi`
+WHERE `status` = \'Tidak Dipinjam\'
+AND `isActive` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `investasi`
+WHERE `status` = \'Tidak Dipinjam\'
+AND `isActive` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `investasi`
+WHERE `status` = \'Tidak Dipinjam\'
+AND `isActive` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `investasi`
+WHERE `status` = :status:
+AND `isActive` = :isActive:', [...], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\PeminjamSertifikat.php(57): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->create()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-08 03:41:16 --> Unknown column 'status' in 'where clause'
+CRITICAL - 2022-08-08 03:41:16 --> Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `investasi`
+WHERE `status` = \'Tidak Dipinjam\'
+AND `isActive` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `investasi`
+WHERE `status` = \'Tidak Dipinjam\'
+AND `isActive` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `investasi`
+WHERE `status` = \'Tidak Dipinjam\'
+AND `isActive` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `investasi`
+WHERE `status` = :status:
+AND `isActive` = :isActive:', [...], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\PeminjamSertifikat.php(57): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->create()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-08 03:43:18 --> Unknown column 'status' in 'where clause'
+CRITICAL - 2022-08-08 03:43:18 --> Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `investasi`
+WHERE `status` = \'Tidak Dipinjam\'
+AND `isActive` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `investasi`
+WHERE `status` = \'Tidak Dipinjam\'
+AND `isActive` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `investasi`
+WHERE `status` = \'Tidak Dipinjam\'
+AND `isActive` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `investasi`
+WHERE `status` = :status:
+AND `isActive` = :isActive:', [...], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\PeminjamSertifikat.php(57): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->create()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-08 03:44:23 --> Unknown column 'status' in 'where clause'
+CRITICAL - 2022-08-08 03:44:23 --> Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `investasi`
+WHERE `status` = \'Tidak Dipinjam\'
+AND `isActive` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `investasi`
+WHERE `status` = \'Tidak Dipinjam\'
+AND `isActive` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `investasi`
+WHERE `status` = \'Tidak Dipinjam\'
+AND `isActive` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `investasi`
+WHERE `status` = :status:
+AND `isActive` = :isActive:', [...], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\PeminjamSertifikat.php(57): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->create()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-08 03:46:38 --> Undefined variable $getBpkb
+in APPPATH\Views\peminjam_sertifikat\tambah_peminjam_serti.php on line 67.
+ 1 APPPATH\Views\peminjam_sertifikat\tambah_peminjam_serti.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $getBpkb', 'APPPATH\\Views\\peminjam_sertifikat\\tambah_peminjam_serti.php', 67)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_sertifikat\\tambah_peminjam_serti.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_sertifikat/tambah_peminjam_serti', [], true)
+ 5 APPPATH\Controllers\PeminjamSertifikat.php(65): view('peminjam_sertifikat/tambah_peminjam_serti', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->create()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-08 03:48:30 --> Undefined array key "id_sertifikat"
+in APPPATH\Views\peminjam_sertifikat\tambah_peminjam_serti.php on line 68.
+ 1 APPPATH\Views\peminjam_sertifikat\tambah_peminjam_serti.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_sertifikat"', 'APPPATH\\Views\\peminjam_sertifikat\\tambah_peminjam_serti.php', 68)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_sertifikat\\tambah_peminjam_serti.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_sertifikat/tambah_peminjam_serti', [], true)
+ 5 APPPATH\Controllers\PeminjamSertifikat.php(65): view('peminjam_sertifikat/tambah_peminjam_serti', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->create()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-08 04:02:44 --> Undefined property: App\Controllers\PeminjamSertifikat::$PeminjamModel
+in APPPATH\Controllers\PeminjamSertifikat.php on line 131.
+ 1 APPPATH\Controllers\PeminjamSertifikat.php(131): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PeminjamSertifikat::$PeminjamModel', 'APPPATH\\Controllers\\PeminjamSertifikat.php', 131)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->save()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-08 04:03:15 --> Unknown column 'status' in 'field list'
+CRITICAL - 2022-08-08 04:03:15 --> Unknown column 'status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `investasi` SET `status` = \'Dipinjam\'
+WHERE `id` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `investasi` SET `status` = \'Dipinjam\'
+WHERE `id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `investasi` SET `status` = \'Dipinjam\'
+WHERE `id` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `investasi` SET `status` = :status:
+WHERE `id` IS NULL', [...], false)
+ 5 APPPATH\Models\PeminjamSertifikatModel.php(22): CodeIgniter\Database\BaseBuilder->update()
+ 6 APPPATH\Controllers\PeminjamSertifikat.php(131): App\Models\PeminjamSertifikatModel->tambahData([...], [...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->save()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-08 04:03:15 --> Unknown column 'status' in 'field list'
+CRITICAL - 2022-08-08 04:03:15 --> Unknown column 'status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `investasi` SET `status` = \'Dipinjam\'
+WHERE `id` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `investasi` SET `status` = \'Dipinjam\'
+WHERE `id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `investasi` SET `status` = \'Dipinjam\'
+WHERE `id` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `investasi` SET `status` = :status:
+WHERE `id` IS NULL', [...], false)
+ 5 APPPATH\Models\PeminjamSertifikatModel.php(22): CodeIgniter\Database\BaseBuilder->update()
+ 6 APPPATH\Controllers\PeminjamSertifikat.php(131): App\Models\PeminjamSertifikatModel->tambahData([...], [...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->save()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-08 04:03:15 --> Unknown column 'status' in 'field list'
+CRITICAL - 2022-08-08 04:03:15 --> Unknown column 'status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `investasi` SET `status` = \'Dipinjam\'
+WHERE `id` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `investasi` SET `status` = \'Dipinjam\'
+WHERE `id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `investasi` SET `status` = \'Dipinjam\'
+WHERE `id` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `investasi` SET `status` = :status:
+WHERE `id` IS NULL', [...], false)
+ 5 APPPATH\Models\PeminjamSertifikatModel.php(22): CodeIgniter\Database\BaseBuilder->update()
+ 6 APPPATH\Controllers\PeminjamSertifikat.php(131): App\Models\PeminjamSertifikatModel->tambahData([...], [...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->save()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-08 04:05:09 --> Unknown column 'status' in 'where clause'
+CRITICAL - 2022-08-08 04:05:09 --> Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `investasi`
+WHERE `status` = \'Tidak Dipinjam\'
+AND `isActive` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `investasi`
+WHERE `status` = \'Tidak Dipinjam\'
+AND `isActive` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `investasi`
+WHERE `status` = \'Tidak Dipinjam\'
+AND `isActive` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `investasi`
+WHERE `status` = :status:
+AND `isActive` = :isActive:', [...], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\PeminjamSertifikat.php(57): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->create()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-08 08:16:56 --> Unknown column 'status' in 'where clause'
+CRITICAL - 2022-08-08 08:16:56 --> Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `investasi`
+WHERE `status` = \'Tidak Dipinjam\'
+AND `isActive` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `investasi`
+WHERE `status` = \'Tidak Dipinjam\'
+AND `isActive` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `investasi`
+WHERE `status` = \'Tidak Dipinjam\'
+AND `isActive` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `investasi`
+WHERE `status` = :status:
+AND `isActive` = :isActive:', [...], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\PeminjamSertifikat.php(56): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->create()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-08 08:22:11 --> Unknown column 'status' in 'where clause'
+CRITICAL - 2022-08-08 08:22:11 --> Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `investasi`
+WHERE `status` = \'Tidak Dipinjam\'
+AND `isActive` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `investasi`
+WHERE `status` = \'Tidak Dipinjam\'
+AND `isActive` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `investasi`
+WHERE `status` = \'Tidak Dipinjam\'
+AND `isActive` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `investasi`
+WHERE `status` = :status:
+AND `isActive` = :isActive:', [...], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\PeminjamSertifikat.php(56): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->create()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-08 08:23:15 --> Unknown column 'status' in 'where clause'
+CRITICAL - 2022-08-08 08:23:15 --> Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `investasi`
+WHERE `status` = \'Tidak Dipinjam\'
+AND `isActive` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `investasi`
+WHERE `status` = \'Tidak Dipinjam\'
+AND `isActive` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `investasi`
+WHERE `status` = \'Tidak Dipinjam\'
+AND `isActive` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `investasi`
+WHERE `status` = :status:
+AND `isActive` = :isActive:', [...], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\PeminjamSertifikat.php(56): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->create()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-08 08:23:22 --> Unknown column 'status' in 'where clause'
+CRITICAL - 2022-08-08 08:23:22 --> Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `investasi`
+WHERE `status` = \'Tidak Dipinjam\'
+AND `isActive` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `investasi`
+WHERE `status` = \'Tidak Dipinjam\'
+AND `isActive` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `investasi`
+WHERE `status` = \'Tidak Dipinjam\'
+AND `isActive` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `investasi`
+WHERE `status` = :status:
+AND `isActive` = :isActive:', [...], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\PeminjamSertifikat.php(56): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->create()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-08 08:25:40 --> Unknown column 'status' in 'field list'
+CRITICAL - 2022-08-08 08:25:40 --> Unknown column 'status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `investasi` SET `status` = \'Dipinjam\'
+WHERE `id` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `investasi` SET `status` = \'Dipinjam\'
+WHERE `id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `investasi` SET `status` = \'Dipinjam\'
+WHERE `id` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `investasi` SET `status` = :status:
+WHERE `id` IS NULL', [...], false)
+ 5 APPPATH\Models\PeminjamSertifikatModel.php(22): CodeIgniter\Database\BaseBuilder->update()
+ 6 APPPATH\Controllers\PeminjamSertifikat.php(130): App\Models\PeminjamSertifikatModel->tambahData([...], [...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->save()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-08 08:27:07 --> Unknown column 'status' in 'field list'
+CRITICAL - 2022-08-08 08:27:07 --> Unknown column 'status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `investasi` SET `status` = \'Dipinjam\'
+WHERE `id` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `investasi` SET `status` = \'Dipinjam\'
+WHERE `id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `investasi` SET `status` = \'Dipinjam\'
+WHERE `id` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `investasi` SET `status` = :status:
+WHERE `id` IS NULL', [...], false)
+ 5 APPPATH\Models\PeminjamSertifikatModel.php(22): CodeIgniter\Database\BaseBuilder->update()
+ 6 APPPATH\Controllers\PeminjamSertifikat.php(130): App\Models\PeminjamSertifikatModel->tambahData([...], [...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->save()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-08 08:32:20 --> Unknown column 'status' in 'field list'
+CRITICAL - 2022-08-08 08:32:20 --> Unknown column 'status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `investasi` SET `status` = \'Dipinjam\'
+WHERE `id` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `investasi` SET `status` = \'Dipinjam\'
+WHERE `id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `investasi` SET `status` = \'Dipinjam\'
+WHERE `id` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `investasi` SET `status` = :status:
+WHERE `id` IS NULL', [...], false)
+ 5 APPPATH\Models\PeminjamSertifikatModel.php(22): CodeIgniter\Database\BaseBuilder->update()
+ 6 APPPATH\Controllers\PeminjamSertifikat.php(130): App\Models\PeminjamSertifikatModel->tambahData([...], [...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->save()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-08 08:33:04 --> Unknown column 'status' in 'field list'
+CRITICAL - 2022-08-08 08:33:04 --> Unknown column 'status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `investasi` SET `status` = \'Dipinjam\'
+WHERE `id` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `investasi` SET `status` = \'Dipinjam\'
+WHERE `id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `investasi` SET `status` = \'Dipinjam\'
+WHERE `id` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `investasi` SET `status` = :status:
+WHERE `id` IS NULL', [...], false)
+ 5 APPPATH\Models\PeminjamSertifikatModel.php(22): CodeIgniter\Database\BaseBuilder->update()
+ 6 APPPATH\Controllers\PeminjamSertifikat.php(130): App\Models\PeminjamSertifikatModel->tambahData([...], [...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->save()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-08 08:33:50 --> You must use the "set" method to update an entry.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2089.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2025): CodeIgniter\Database\BaseBuilder->validateUpdate()
+ 2 APPPATH\Models\PeminjamSertifikatModel.php(21): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\PeminjamSertifikat.php(130): App\Models\PeminjamSertifikatModel->tambahData([...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->save()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-08 08:42:09 --> Unknown column 'status' in 'field list'
+CRITICAL - 2022-08-08 08:42:09 --> Unknown column 'status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `investasi` SET `status` = \'Dipinjam\'
+WHERE `id` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `investasi` SET `status` = \'Dipinjam\'
+WHERE `id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `investasi` SET `status` = \'Dipinjam\'
+WHERE `id` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `investasi` SET `status` = :status:
+WHERE `id` IS NULL', [...], false)
+ 5 APPPATH\Models\PeminjamSertifikatModel.php(22): CodeIgniter\Database\BaseBuilder->update()
+ 6 APPPATH\Controllers\PeminjamSertifikat.php(130): App\Models\PeminjamSertifikatModel->tambahData([...], [...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->save()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
