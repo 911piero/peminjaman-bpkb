@@ -176,7 +176,10 @@
     <script src="<?= base_url('adminlte/plugins/datatables-buttons/js/buttons.print.min.js'); ?>"></script>
     <script src="<?= base_url('adminlte/plugins/datatables-buttons/js/buttons.colVis.min.js'); ?>"></script>
     <script>
+
         $(document).ready(function() {
+
+            
             table = $('#data_sertifikat').DataTable({
                 processing: true,
                 serverSide: true,
@@ -219,8 +222,12 @@
                         data: 'tgl_akhir'
                     },
                     {
+                        data: 'action',
+                        orderable: false
+                    },
+                    {
                         data: 'status',
-                        visible: true
+                        visible: false
                     }
                 ]
             });
@@ -245,6 +252,11 @@
             });
 
             $('#status').change(function(event) {
+                table.ajax.reload();
+            });
+
+            $('#minDate, #maxDate').on('change', function () {
+                table.draw();
                 table.ajax.reload();
             });
 

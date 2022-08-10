@@ -62,6 +62,12 @@ class Sertifikat extends BaseController
 
                     return $status;
                 })
+                ->add('action', function ($row) {
+                    return 
+                    '<a href="/sertifikat/detail/' . $row->id . '"class="btn btn-outline-primary btn-shadow"><i class="fa fa-eye"></i></a>
+                    <a href="/sertifikat/cetak/' .$row->id . '" class="btn btn-outline-secondary btn-shadow"><i class="fa fa-print"></i></a>';
+                })
+
                 ->filter(function ($builder, $request) {
                     if ($request->kecamatan) {
                         $builder->where('kecamatan', $request->kecamatan);
@@ -92,5 +98,31 @@ class Sertifikat extends BaseController
                 })
                 ->toJson(true);
         }
+    }
+
+    
+    public function cetak($id)
+    {
+        $data = $this->SertifikatModel->getDetail($id);
+
+        $data = [
+            'title' => 'Cetak',
+            'page_title' => 'Cetak',
+            'peminjam' => $data,
+        ];
+
+        return view('sertifikat/cetak_sf', $data);
+    }
+
+    public function detail($id)
+    {
+        $data = $this->SertifikatModel->getDetail($id);
+        $data = [
+            'title' => 'Detail BPKB',
+            'page_title' => 'Detail Sertifikat',
+            'sertifikat' => $data,
+            'validation' => \Config\Services::validation()
+        ];
+        return view('sertifikat/detail_sf', $data);
     }
 }
