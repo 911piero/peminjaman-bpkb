@@ -7,159 +7,152 @@
     table,
     tr,
     td {
-        padding: 15px;
+        padding-top: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 5px;
+
     }
 </style>
 <section class="content">
 
     <div class="container-fluid">
-        <!-- Info boxes -->
-        <div class="row">
-            <div class="col-12 col-sm-6 col-md-3">
-                <div class="info-box">
-                    <span class="info-box-icon bg-primary elevation-1"><i class="fas fa-cog"></i></span>
 
-                    <div class="info-box-content">
-                        <span class="info-box-text">Jumlah Objek Terdaftar</span>
-                        <span class="info-box-number">
-                        </span>
-                    </div>
-                    <!-- /.info-box-content -->
-                </div>
-                <!-- /.info-box -->
-            </div>
-
-            <!-- fix for small devices only -->
-            <div class="clearfix hidden-md-up"></div>
-            <!-- /.col -->
-        </div>
         <!-- /.row -->
 
         <!-- Main row -->
         <div class="row">
             <!-- Left col -->
             <div class="col">
-                <!-- MAP & BOX PANE -->
-                <div class="card" style="width: fit-content;">
-                    <div class="card-header">
-                        <h3 class="card-title"><b>Daftar Objek</b></h3>
-
-                    </div>
-                    <!-- /.card-header -->
-                    <div class="card-body">
+                <form action="cari" method="POST">
+                    <?= csrf_field(); ?>
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">
+                                Filter Search
+                            </div>
+                        </div>
                         <table>
+                            <thead>
+                                <tr>
+                                    <td><b>Kecamatan</b></td>
+                                    <td><b>Tahun Objek</b></td>
+                                    <td><b>Kelurahan</b></td>
+                                    <td><b>Status</b></td>
+                                    <td><b>Kategori</b></td>
+                                    <td><b>Sub Kategori</b></td>
+                                    <td><b>Masa Berlaku (Kekancingan)</b></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </thead>
                             <tbody>
                                 <tr>
                                     <td>
-                                        <div class="form-group">
-                                            <label for="">Kecamatan</label>
-                                            <div class="input-group">
-                                                <select name="kecamatan" class="custom-select">
-                                                    <option selected value="">Semua Kecamatan</option>
-                                                </select>
-                                            </div>
-                                        </div>
+                                        <select name="kecamatan" class="custom-select" id="kecamatan" onchange="kecamatan">
+                                            <option selected value="">Semua</option>
+                                            <?php foreach ($kecamatan as $key) : ?>
+                                                <option value="<?= $key['kecamatan']; ?>"><?= $key['kecamatan']; ?></option>
+                                            <?php endforeach; ?>
+                                        </select>
                                     </td>
                                     <td>
-                                        <div class="form-group">
-                                            <label for="">Kelurahan</label>
-                                            <div class="input-group">
-                                                <select name="kecamatan" class="custom-select">
-                                                    <option selected value="">Semua Kelurahan</option>
-                                                </select>
-                                            </div>
-                                        </div>
+                                        <select name="tahun_objek" class="custom-select" id="tahun_objek" onchange="tahun_objek">
+                                            <option selected value="">Semua</option>
+                                            <?php foreach ($tahunObjek as $k) : ?>
+                                                <option value="<?= $k ?>"><?= $k ?></option>
+                                            <?php endforeach; ?>
+
+                                        </select>
                                     </td>
                                     <td>
-                                        <div class="form-group">
-                                            <label for="tahunObjek">Tahun Objek</label>
-                                            <div class="input-group">
-                                                <select class="custom-select">
-                                                    <option selected value="">Semua Tahun</option>
-                                                </select>
-                                            </div>
-                                        </div>
+                                        <select name="kelurahan" class="custom-select" id="kelurahan" onchange="kelurahan">
+                                            <option selected value="">Semua </option>
+                                            <?php foreach ($kelurahan as $key) : ?>
+                                                <option value="<?= $key['kelurahan']; ?>"><?= $key['kelurahan']; ?></option>
+                                            <?php endforeach; ?>
+                                        </select>
                                     </td>
                                     <td>
-                                        <div class="form-group">
-                                            <label for="">Status</label>
-                                            <div class="input-group">
-                                                <select name="kecamatan" class="custom-select">
-                                                    <option selected value="">Semua Status</option>
-                                                </select>
-                                            </div>
-                                        </div>
+                                        <select name="status" class="custom-select" id="status" onchange="status">
+                                            <option selected value="">Semua</option>
+                                            <option value="Aktif">Aktif</option>
+                                            <option value="Tidak Aktif">Tidak Aktif</option>
+                                        </select>
                                     </td>
                                     <td>
-                                        <div class="form-group">
-                                            <label for="lbl_kategori">Kategori</label>
-                                            <div class="input-group">
-                                                <select name="kategori" class="custom-select">
-                                                    <option selected value="">Semua Kategori</option>
-                                                </select>
-                                            </div>
-                                        </div>
+                                        <select name="kategori" class="custom-select" id="kategori" onchange="kategori">
+                                            <option selected value="">Semua</option>
+                                            <?php foreach ($kategori as $key) : ?>
+                                                <option value="<?= $key['nm_kategori']; ?>"><?= $key['nm_kategori']; ?></option>
+                                            <?php endforeach; ?>
+                                        </select>
                                     </td>
                                     <td>
-                                        <div class="form-group">
-                                            <label for="tahunObjek">Sub Kategori</label>
-                                            <div class="input-group">
-                                                <select class="custom-select">
-                                                    <option selected value="">Semua Sub Kategori</option>
-                                                </select>
-                                            </div>
-                                        </div>
+                                        <select name="sub_kategori" class=" custom-select" id="sub_kategori" onchange="sub_kategori">
+                                            <option selected value="">Semua</option>
+                                            <?php foreach ($subKategori as $key) : ?>
+                                                <option value="<?= $key['nm_subkategori']; ?>"><?= $key['nm_subkategori']; ?></option>
+                                            <?php endforeach; ?>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <input class="form-control" type="date" name="" id="">
+                                    </td>
+                                    <td>
+                                        <label for="">s.d</label>
+                                    </td>
+                                    <td>
+                                        <input type="date" class="form-control">
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        <div class="form-group">
-                                            <label for="masa_berlaku">Masa Berlaku (Kekancingan)</label>
-                                            <div class="input-group">
-                                                <input class="form-control" type="date" name="" id="">
-                                                <label for="" style="margin: 7px;">&nbsp; - &nbsp;</label>
-                                                <input type="date" class="form-control">
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <label for="excelPrint">Print Excel</label>
-                                        <div class="input-group">
-                                            <input type="button" value="Cetak">
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <label for="searchButton">Search</label>
-                                        <div class="input-group">
-                                            <input type="button" value="Search">
-                                        </div>
-                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
                                 </tr>
 
                             </tbody>
                         </table>
-                        <hr>
-                        <table id="data_sertifikat" class="table table-bordered ">
-                            <thead>
-                                <tr>
-                                    <th>No Objek</th>
-                                    <th>Nama Objek</th>
-                                    <th>Alamat</th>
-                                    <th>Kecamatan</th>
-                                    <th>Kelurahan</th>
-                                    <th>Kategori</th>
-                                    <th>Sub Kategori</th>
-                                    <th>Tahun Objek</th>
-                                    <th>Masa Berlaku (Kekancingan)</th>
-                                    <th>Action</th>
-                                </tr>
-                            </thead>
-                        </table>
                     </div>
+                    <!-- MAP & BOX PANE -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title"><b>Daftar Objek</b></h3>
+                            <div class="float-right">
+                                <a href="" class="btn btn-success">Print Excel</a>
+                            </div>
+                        </div>
+                        <!-- /.card-header -->
+                        <div class="card-body">
+                            <table id="data_sertifikat" class="table" style="width: 100%;">
+                                <thead>
+                                    <tr>
+                                        <th>No Objek</th>
+                                        <th>Nama Objek</th>
+                                        <th>Alamat</th>
+                                        <th>Kecamatan</th>
+                                        <th>Kelurahan</th>
+                                        <th>Kategori</th>
+                                        <th>Sub Kategori</th>
+                                        <th>Tahun Objek</th>
+                                        <th>Masa Berlaku (Kekancingan)</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
 
-                    <!-- /.card-body -->
-                </div>
-                <!-- /.card -->
+                        <!-- /.card-body -->
+                    </div>
+                    <!-- /.card -->
+                </form>
             </div>
             <!-- /.col -->
         </div>

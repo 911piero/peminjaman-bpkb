@@ -62,6 +62,17 @@
                         </div>
                         <div class="col">
                             <div class="form-group">
+                                <label for="exampleInputEmail1">Nama Objek </label>
+                                <div class="input-group mb-3">
+                                    <select class="form-control select2" name="id_sertifikat" <?= ($validation->hasError('id_sertifikat')) ? 'is-invalid' : ' '; ?> required autocomplete="on">
+                                        <option selected value="Cari ">Pilih Objek</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        <?= $validation->getError('id_sertifikat'); ?>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
                                 <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker" inline="true">
                                     <label for="example">Tanggal Pinjam</label>
                                     <input type="date" class="form-control <?= ($validation->hasError('tgl_pinjam')) ? 'is-invalid' : ' '; ?>" name="tgl_pinjam">
