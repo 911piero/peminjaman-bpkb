@@ -7,11 +7,8 @@
     table,
     tr,
     td {
-        padding-top: 5px;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 5px;
-
+    padding:5px;
+    
     }
 </style>
 <section class="content">
@@ -26,22 +23,16 @@
             <div class="col">
                 <form action="cari" method="POST">
                     <?= csrf_field(); ?>
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="card-title">
-                                Filter Search
-                            </div>
-                        </div>
                         <table>
                             <thead>
                                 <tr>
-                                    <td><b>Kecamatan</b></td>
-                                    <td><b>Tahun Objek</b></td>
-                                    <td><b>Kelurahan</b></td>
-                                    <td><b>Status</b></td>
-                                    <td><b>Kategori</b></td>
-                                    <td><b>Sub Kategori</b></td>
-                                    <td><b>Masa Berlaku (Kekancingan)</b></td>
+                                    <td style="width: 150px;"><b>Kecamatan</b></td>
+                                    <td style="width: 150px;"><b>Tahun Objek</b></td>
+                                    <td style="width: 150px;"><b>Kelurahan</b></td>
+                                    <td style="width: 150px;"><b>Status</b></td>
+                                    <td style="width: 150px;"><b>Kategori</b></td>
+                                    <td style="width: 150px;"><b>Sub Kategori</b></td>
+                                    <td style="width: 150px;"><b>Masa Berlaku (Kekancingan)</b></td>
                                     <td></td>
                                     <td></td>
                                 </tr>
@@ -97,13 +88,13 @@
                                         </select>
                                     </td>
                                     <td>
-                                        <input class="form-control" type="date" name="" id="">
+                                        <input class="form-control" type="date" name="" id="minDate" onchange="minDate">
                                     </td>
                                     <td>
                                         <label for="">s.d</label>
                                     </td>
                                     <td>
-                                        <input type="date" class="form-control">
+                                        <input type="date" class="form-control" name="maxDate" id="maxDate" onchange="maxDate">
                                     </td>
                                 </tr>
                                 <tr>
@@ -120,9 +111,8 @@
 
                             </tbody>
                         </table>
-                    </div>
                     <!-- MAP & BOX PANE -->
-                    <div class="card">
+                    <div class="card" style="width: 100%;">
                         <div class="card-header">
                             <h3 class="card-title"><b>Daftar Objek</b></h3>
                             <div class="float-right">
@@ -143,7 +133,7 @@
                                         <th>Sub Kategori</th>
                                         <th>Tahun Objek</th>
                                         <th>Masa Berlaku (Kekancingan)</th>
-                                        <th>Status</th>
+                                        <th style="display:none;">Status</th>
                                     </tr>
                                 </thead>
                             </table>

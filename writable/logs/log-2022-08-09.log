@@ -1,0 +1,18 @@
+ERROR - 2022-08-09 02:32:02 --> Table 'peminjaman_bpkb.kecamatan' doesn't exist
+CRITICAL - 2022-08-09 02:32:02 --> Table 'peminjaman_bpkb.kecamatan' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `kecamatan`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `kecamatan`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `kecamatan`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kecamatan`', [], false)
+ 5 APPPATH\Models\SertifikatModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Sertifikat.php(20): App\Models\SertifikatModel->getKecamatan()
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->index()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
