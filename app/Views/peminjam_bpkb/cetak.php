@@ -47,7 +47,7 @@ use App\Controllers\Peminjam;
         }
 
         .isi{
-            margin: 40px;
+            margin: 70px;
         }
     </style>
 

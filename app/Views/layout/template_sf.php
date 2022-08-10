@@ -225,8 +225,6 @@
                 ]
             });
 
-
-
             $('#kecamatan').change(function(event) {
                 table.ajax.reload();
             });
