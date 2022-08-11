@@ -88,7 +88,7 @@
                                     </select>
                                 </td>
                                 <td>
-                                    <input class="form-control" type="date" name="" id="minDate" onchange="minDate">
+                                    <input type="date" class="form-control" name="minDate" id="minDate" onchange="minDate">
                                 </td>
                                 <td>
                                     <label for="">s.d</label>

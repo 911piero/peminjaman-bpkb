@@ -84,7 +84,13 @@ class Sertifikat extends BaseController
                     if ($request->sub_kategori) {
                         $builder->where('nm_subkategori', $request->sub_kategori);
                     }
-
+                    if($request->minDate){
+                        $builder->where('tgl_awal >=', $request->minDate);
+                    }
+                    if($request->maxDate){
+                        $builder->where('tgl_akhir <=', $request->maxDate);
+                    }
+             
                     if ($request->status) {
                         $status = $request->status;
                         if ($status == "Aktif") {

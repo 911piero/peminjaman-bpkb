@@ -1,0 +1,43 @@
+CRITICAL - 2022-08-11 11:24:56 --> Undefined variable: getImg
+in APPPATH\Views\sertifikat\cetak_sf.php on line 37.
+ 1 APPPATH\Views\sertifikat\cetak_sf.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: getImg', 'APPPATH\\Views\\sertifikat\\cetak_sf.php', 37, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sertifikat\\cetak_sf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 5 APPPATH\Controllers\Sertifikat.php(114): view('sertifikat/cetak_sf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('443')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-11 02:45:28 --> Table 'peminjaman_bpkb.data_peminjam_sertifikat' doesn't exist
+CRITICAL - 2022-08-11 02:45:28 --> Table 'peminjaman_bpkb.data_peminjam_sertifikat' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `data_peminjam_sertifikat`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `data_peminjam_sertifikat`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `data_peminjam_sertifikat`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_peminjam_sertifikat`', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\PeminjamSertifikat.php(23): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->index()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-11 03:17:34 --> Cannot use object of type CodeIgniter\Database\MySQLi\Builder as array
+in APPPATH\Controllers\Sertifikat.php on line 90.
+ 1 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(195): App\Controllers\Sertifikat->App\Controllers\{closure}(Object(CodeIgniter\Database\MySQLi\Builder), Object(stdClass))
+ 2 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(185): Hermawan\DataTables\DataTableQuery->queryFilter(Object(CodeIgniter\Database\MySQLi\Builder))
+ 3 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(61): Hermawan\DataTables\DataTableQuery->queryFilterSearch(Object(CodeIgniter\Database\MySQLi\Builder))
+ 4 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 5 APPPATH\Controllers\Sertifikat.php(105): Hermawan\DataTables\DataTable->toJson(true)
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

@@ -191,6 +191,8 @@
                         d.kategori = $('#kategori').val();
                         d.sub_kategori = $('#sub_kategori').val();
                         d.status = $('#status').val();
+                        d.minDate = $('#minDate').val();
+                        d.maxDate = $('#maxDate').val();
                     }
                 },
                 columns: [{
@@ -217,8 +219,12 @@
                     {
                         data: 'tahun'
                     },
-                    {
-                        data: 'tgl_akhir'
+                    { "data": null , 
+                        "render" : function ( data, type, full ) { 
+                            if (full['tgl_awal'] == "0000-00-00") {
+                                return '-';
+                            }
+                        return full['tgl_awal']+'&nbsp;<b>s.d</b>&nbsp;'+full['tgl_akhir'];}
                     },
                     {
                         data: 'action',
@@ -284,7 +290,7 @@
                 table.ajax.reload();
             });
 
-            $('#minDate, #maxDate').on('change', function() {
+            $('#minDate, #maxDate').change(function(event) {
                 table.draw();
                 table.ajax.reload();
 
@@ -292,35 +298,6 @@
         });
 
 
-
-        $('#kecamatan').change(function(event) {
-            table.ajax.reload();
-        });
-
-        $('#tahun_objek').change(function(event) {
-            table.ajax.reload();
-        });
-
-        $('#kelurahan').change(function(event) {
-            table.ajax.reload();
-        });
-        $('#kategori').change(function(event) {
-            table.ajax.reload();
-        });
-
-        $('#sub_kategori').change(function(event) {
-            table.ajax.reload();
-        });
-
-        $('#status').change(function(event) {
-            table.ajax.reload();
-        });
-
-
-        $('#minDate, #maxDate').on('change', function() {
-            table.draw();
-            table.ajax.reload();
-        });
 
 
 
