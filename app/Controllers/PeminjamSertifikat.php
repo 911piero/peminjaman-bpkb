@@ -44,7 +44,7 @@ class PeminjamSertifikat extends BaseController
             return DataTable::of($builder)
                 ->add('action', function ($row) {
                     return
-                        '<a href="/peminjam/detail/' . $row->id_peminjam_sertifikat . '"class="btn btn-outline-primary btn-shadow"><i class="fa fa-eye"></i></a> 
+                        '<a href="/peminjamsertifikat/detail/' . $row->id_peminjam_sertifikat . '"class="btn btn-outline-primary btn-shadow"><i class="fa fa-eye"></i></a> 
                         <a href="/peminjam/edit/' . $row->id_peminjam_sertifikat . '" class="btn btn-outline-warning btn-shadow"><i class="fa fa-pen"></i></a>
                         <a href="/peminjam/delete/' . $row->id_peminjam_sertifikat . '" class="btn btn-outline-secondary btn-shadow"><i class="fa fa-print"></i></a>';
                 })
@@ -121,5 +121,18 @@ class PeminjamSertifikat extends BaseController
         if ($this->PeminjamSertifikatModel->tambahData($data_peminjam_sertifikat))
 
             return redirect()->to('/peminjamsertifikat/index');
+    }
+
+    public function detail($id)
+    {
+        $data = $this->PeminjamSertifikatModel->getDetail($id);
+        $nik = $data['nik'];
+        $data = [
+            'title' => 'Detail Peminjaman',
+            'page_title' => 'Detail Peminjaman',
+            'peminjamsertifikat' => $data,
+            'id_peminjam_sertifikat' => $nik,
+        ];
+        return view('/peminjam_sertifikat/detail_peminjam_serti', $data);
     }
 }

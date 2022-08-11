@@ -221,11 +221,16 @@
                         data: 'tgl_akhir'
                     },
                     {
+                        data: 'action',
+                        orderable: false
+                    },
+                    {
                         data: 'status',
                         visible: false
                     }
                 ]
             });
+
 
 
         });
@@ -254,6 +259,35 @@
                         orderable: false
                     },
                 ]
+            });
+
+            $('#kecamatan').change(function(event) {
+                table.ajax.reload();
+            });
+
+            $('#tahun_objek').change(function(event) {
+                table.ajax.reload();
+            });
+
+            $('#kelurahan').change(function(event) {
+                table.ajax.reload();
+            });
+            $('#kategori').change(function(event) {
+                table.ajax.reload();
+            });
+
+            $('#sub_kategori').change(function(event) {
+                table.ajax.reload();
+            });
+
+            $('#status').change(function(event) {
+                table.ajax.reload();
+            });
+
+            $('#minDate, #maxDate').on('change', function() {
+                table.draw();
+                table.ajax.reload();
+
             });
         });
 

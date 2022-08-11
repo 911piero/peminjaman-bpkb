@@ -1,4 +1,4 @@
-<?= $this->extend('layout/template'); ?>
+<?= $this->extend('layout/template_sf'); ?>
 
 <?= $this->section('content'); ?>
 <style>
@@ -19,9 +19,6 @@
 <div class="content">
     <div class="container-fluid">
         <?= csrf_field(); ?>
-        <div class="card-header">
-            <a href="<?= site_url('/peminjam/edit/') . $peminjam['id_bpkb'] ?>" class="btn btn-sm btn-warning">Perubahan Data</a>
-        </div>
         <div class="row">
             <div class="col">
                 <div class="card" style="width:768px; height: 334px;">
@@ -37,12 +34,12 @@
                                     <tr>
                                         <td class="sub-label">Nama Peminjam</td>
                                         <td class="sub-label">:</td>
-                                        <td><?= $peminjam['nama_lengkap']; ?></td>
+                                        <td><?= $peminjamsertifikat['nama_lengkap']; ?></td>
                                     </tr>
                                     <tr>
                                         <td class="sub-label">NIK</td>
                                         <td class="sub-label">:</td>
-                                        <td><?= $peminjam['nik']; ?></td>
+                                        <td><?= $peminjamsertifikat['nik']; ?></td>
                                     </tr>
                                     <tr>
                                         <td>
@@ -57,30 +54,34 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <h4>Kendaraan</h4>
+                                            <h4>Sertifikat</h4>
                                         </td>
                                         <td></td>
                                     </tr>
                                     <tr>
-                                        <td class="sub-label">Kendaraan Dipinjam</td>
+                                        <td class="sub-label">Sertifikat yang Dipinjam</td>
                                         <td class="sub-label">:</td>
-                                        <td><?= $peminjam['nomor_registrasi']; ?></td>
-                                    </tr>
-
-                                    <tr>
-                                        <td class="sub-label">Status Kendaraan</td>
-                                        <td class="sub-label">:</td>
-                                        <td><?= $peminjam['status_kendaraan']; ?></td>
+                                        <td><?= $peminjamsertifikat['intro']; ?></td>
                                     </tr>
                                     <tr>
-                                        <td class="sub-label">Lokasi Kendaraan</td>
+                                        <td class="sub-label">Kecamatan</td>
                                         <td class="sub-label">:</td>
-                                        <td><?= $peminjam['lokasi_kendaraan']; ?></td>
+                                        <td><?= $peminjamsertifikat['kecamatan']; ?></td>
                                     </tr>
                                     <tr>
-                                        <td class="sub-label">Keterangan Lokasi</td>
+                                        <td class="sub-label">Kelurahan</td>
                                         <td class="sub-label">:</td>
-                                        <td><?= $peminjam['ket_lokasi']; ?></td>
+                                        <td><?= $peminjamsertifikat['kelurahan']; ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sub-label">Kategori</td>
+                                        <td class="sub-label">:</td>
+                                        <td><?= $peminjamsertifikat['nm_kategori']; ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sub-label">Sertifikat yang Dipinjam</td>
+                                        <td class="sub-label">:</td>
+                                        <td><?= $peminjamsertifikat['nm_subkategori']; ?></td>
                                     </tr>
                                     <tr>
                                         <td>
@@ -97,12 +98,6 @@
                                 </table>
                             </div>
                             <div class="col">
-
-                                <div class="images">
-                                    <?php foreach ($getImg as $key => $link) : ?>
-                                        <img src="<?= base_url('foto_peminjam/' . $link['link']); ?>" alt="" class="card" style="max-height: 250px;">
-                                    <?php endforeach; ?>
-                                </div>
                                 <div>
                                     <table align="center">
                                         <tr>
@@ -113,7 +108,7 @@
                                                 <h5 style="margin: 0;">:</h5>
                                             </td>
                                             <?php
-                                            $status = $peminjam['status'];
+                                            $status = $peminjamsertifikat['status'];
 
                                             if ($status == "Dikembalikan") {
                                                 $style = 'badge badge-success';
@@ -123,7 +118,7 @@
                                             ?>
                                             <td class="<?= $style; ?>">
                                                 <h5 style="margin: 0;">
-                                                    <?= $peminjam['status']; ?>
+                                                    <?= $peminjamsertifikat['status']; ?>
                                                 </h5>
 
                                             </td>
@@ -151,17 +146,17 @@
                                     <tr>
                                         <td class="sub-label">Nama Petugas </td>
                                         <td class="sub-label">:</td>
-                                        <td><?= $peminjam['nama_petugas_pinjam']; ?></td>
+                                        <td><?= $peminjamsertifikat['nama_petugas_pinjam']; ?></td>
                                     </tr>
                                     <tr>
                                         <td class="sub-label">NIP</td>
                                         <td class="sub-label">:</td>
-                                        <td><?= $peminjam['nip_petugas_pinjam']; ?></td>
+                                        <td><?= $peminjamsertifikat['nip_petugas_pinjam']; ?></td>
                                     </tr>
                                     <tr>
                                         <td class="sub-label">Tanggal Pinjam</td>
                                         <td class="sub-label">:</td>
-                                        <td><?= $peminjam['tgl_pinjam']; ?></td>
+                                        <td><?= $peminjamsertifikat['tgl_pinjam']; ?></td>
                                     </tr>
                                     <tr>
                                         <td>
@@ -185,19 +180,19 @@
                                         <td class="sub-label">Nama Petugas </td>
                                         <td class="sub-label">:</td>
                                         <td>
-                                            <p class="card-text"> <?= $peminjam['nama_petugas_kembali']; ?>
+                                            <p class="card-text"> <?= $peminjamsertifikat['nama_petugas_kembali']; ?>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="sub-label">NIP</td>
                                         <td class="sub-label">:</td>
-                                        <td><?= $peminjam['nip_petugas_kembali']; ?></td>
+                                        <td><?= $peminjamsertifikat['nip_petugas_kembali']; ?></td>
                                     </tr>
                                     <tr>
                                         <td class="sub-label">Tanggal Pengembalian</td>
                                         <td class="sub-label">:</td>
                                         <td>
-                                            <p class="card-text"> <?= $peminjam['tgl_kembali']; ?>
+                                            <p class="card-text"> <?= $peminjamsertifikat['tgl_kembali']; ?>
                                         </td>
                                     </tr>
                                     <tr>

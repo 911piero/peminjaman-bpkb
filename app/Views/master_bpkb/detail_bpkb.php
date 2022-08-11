@@ -19,7 +19,7 @@
             display: none;
         }
 
-        
+
 
         .main-footer {
             display: none;
@@ -43,7 +43,8 @@
         </div>
         <div class="row">
             <div class="col">
-                <div class="card card-body" style="height: fit-content;"><hr>
+                <div class="card card-body" style="height: fit-content;">
+                    <hr>
                     <div class="row">
                         <div class="col">
                             <table class="table table-striped" style="width: 400px">
@@ -63,10 +64,9 @@
                                     <td><?= $bpkb['alamat']; ?></td>
                                 </tr>
                             </table>
-                            
+
                         </div>
                         <div class="col d-flex align-items-center justify-content-center">
-                        
                             <div class="d-flex align-items-center justify-content-center rounded bg-dark p-2" style="width: 100%;">
                                 <h4><b>Nomor BPKB</b> : <?= $bpkb['nomor_bpkb']; ?></h4>
                             </div>
