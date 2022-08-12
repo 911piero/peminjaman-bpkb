@@ -19,6 +19,9 @@
 <div class="content">
     <div class="container-fluid">
         <?= csrf_field(); ?>
+        <div class="card-header">
+            <a href="<?= site_url('/peminjamsertifikat/edit/') . $peminjamsertifikat['id_peminjam_sertifikat'] ?>" class="btn btn-sm btn-warning">Perubahan Data</a>
+        </div>
         <div class="row">
             <div class="col">
                 <div class="card" style="width:768px; height: 334px;">

@@ -30,4 +30,18 @@ class PeminjamSertifikatModel extends Model
             ->where('id_peminjam_sertifikat', $id)
             ->get()->getRowArray();
     }
+
+    public function updateData($id, $data_peminjam_sertifikat)
+    {
+        return $this->db
+            ->table('data_peminjam_sertifikat')
+            ->set([
+                'nama_petugas_kembali' => $data_peminjam_sertifikat['nama_petugas_kembali'],
+                'nip_petugas_kembali' => $data_peminjam_sertifikat['nip_petugas_kembali'],
+                'tgl_kembali' => $data_peminjam_sertifikat['tgl_kembali'],
+                'status' => $data_peminjam_sertifikat['status']
+            ])
+            ->where('id_peminjam_sertifikat', $id)
+            ->update();
+    }
 }

@@ -45,7 +45,7 @@ class PeminjamSertifikat extends BaseController
                 ->add('action', function ($row) {
                     return
                         '<a href="/peminjamsertifikat/detail/' . $row->id_peminjam_sertifikat . '"class="btn btn-outline-primary btn-shadow"><i class="fa fa-eye"></i></a> 
-                        <a href="/peminjam/edit/' . $row->id_peminjam_sertifikat . '" class="btn btn-outline-warning btn-shadow"><i class="fa fa-pen"></i></a>
+                        <a href="/peminjamsertifikat/edit/' . $row->id_peminjam_sertifikat . '" class="btn btn-outline-warning btn-shadow"><i class="fa fa-pen"></i></a>
                         <a href="/peminjam/delete/' . $row->id_peminjam_sertifikat . '" class="btn btn-outline-secondary btn-shadow"><i class="fa fa-print"></i></a>';
                 })
                 ->toJson(true);
@@ -134,5 +134,57 @@ class PeminjamSertifikat extends BaseController
             'id_peminjam_sertifikat' => $nik,
         ];
         return view('/peminjam_sertifikat/detail_peminjam_serti', $data);
+    }
+
+    public function edit($id)
+    {
+
+        $dataPeminjamSertifikat = $this->PeminjamSertifikatModel->find($id);
+
+        $dataPeminjamSertifikat = [
+            'title' => 'Pengembalian Sertifikat',
+            'page_title' => 'Pengembalian Sertifikat',
+            'peminjamsertifikat' => $dataPeminjamSertifikat,
+            'validation' => \Config\Services::validation()
+
+
+        ];
+
+        return view('peminjam_sertifikat/edit_peminjam_serti', $dataPeminjamSertifikat);
+    }
+
+    public function update($id)
+    {
+        if (!$this->validate([
+            'nama_petugas_kembali' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Nama Petugas tidak boleh kosong!'
+                ]
+            ],
+            'nip_petugas_kembali' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'NIP Petugas tidak boleh kosong!'
+                ]
+            ]
+        ])) {
+            return redirect()->to('/peminjamsertifikat/edit/' . $id)->withInput();
+        }
+        $data_peminjam_sertifikat = [
+            'nama_lengkap' => $this->request->getVar('nama_lengkap'),
+            'nik' => $this->request->getVar('nik'),
+            'nama_petugas_pinjam' => $this->request->getVar('nama_petugas_pinjam'),
+            'nip_petugas_pinjam' => $this->request->getVar('nip_petugas_pinjam'),
+            'nama_petugas_kembali' => $this->request->getVar('nama_petugas_kembali'),
+            'nip_petugas_kembali' => $this->request->getVar('nip_petugas_kembali'),
+            'tgl_kembali' => $this->request->getVar('tgl_kembali'),
+            'id_sertifikat' => $this->request->getVar('id_sertifikat'),
+            'status' => 'Dikembalikan'
+        ];
+
+        $this->PeminjamSertifikatModel->updateData($id, $data_peminjam_sertifikat);
+
+        return redirect()->to('/peminjamsertifikat');
     }
 }
