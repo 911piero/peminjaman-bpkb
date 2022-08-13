@@ -12,6 +12,14 @@ use App\Controllers\Peminjam;
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <style>
+        @media print {
+            .card-header {
+                display: none;
+            }
+        }
+    </style>
+
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
@@ -33,12 +41,42 @@ use App\Controllers\Peminjam;
     <!-- summernote -->
 </head>
 
-<div class="images">
-    <?php foreach ($getImg as $key => $img1) : ?>
-        <img src="<?= base_url('sample/' . $img1['img1']); ?>" alt="" class="card" style="max-height: 250px;">
-    <?php endforeach; ?>
+<div class="card-header">
+    <button onclick="window.print()" class="btn btn-outline-secondary btn-shadow float-right">PRINT<i class="fa fa-print"></i></button>
 </div>
+<div class="card">
+    <div class="row">
+        <div class="col">
+            <table class="table table-bordered" border="1px">
 
+                <tr>
+                    <td>
+                        <center><img src="<?= base_url('adminlte/dist/img/Logo.png'); ?>" alt="" height="100" width="90"></center>
+                        <hr>
+                        <center><img src="<?= base_url('adminlte/dist/img/AdminLTELogo.png'); ?>" alt="" height="100" width="90"></center>
+                        <img src="<?= $sertifikat['img1']; ?>" style="height:250px; width:50%" alt="">
+                        <img src="<?= $sertifikat['img1']; ?>" style="height:250px; width:50%" alt="">
+                    </td>
+                    <td>
+                        <center><img src="<?= base_url('adminlte/dist/img/Logo.png'); ?>" alt="" height="100" width="90"></center>
+                        <hr>
+                        <center><img src="<?= base_url('adminlte/dist/img/Logo.png'); ?>" alt="" height="100" width="90"></center>
+                        <img src="<?= $sertifikat['img1']; ?>" style="height:250px; width:50%" alt="">
+                        <img src="<?= $sertifikat['img1']; ?>" style="height:250px; width:50%" alt="">
+                    </td>
+                    <td>
+                        <center><img src="<?= base_url('adminlte/dist/img/Logo.png'); ?>" alt="" height="100" width="90"></center>
+                        <hr>
+                        <center><img src="<?= base_url('adminlte/dist/img/Logo.png'); ?>" alt="" height="100" width="90"></center>
+                        <img src="<?= $sertifikat['img1']; ?>" style="height:250px; width:50%" alt="">
+                        <img src="<?= $sertifikat['img1']; ?>" style="height:250px; width:50%" alt="">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</div>
 
 
 <!-- jQuery -->

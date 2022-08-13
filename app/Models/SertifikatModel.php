@@ -46,7 +46,7 @@ class SertifikatModel extends Model
             ->join('kelurahan', 'kelurahan.id = investasi.id_kelurahan')
             ->join('sub_kategori', 'sub_kategori.id_subkategori = investasi.lokasi')
             ->where('investasi.id', $id)
-            ->select('investasi.id, nama_proyek, intro, aktif, intro2, kecamatan.kecamatan, kelurahan.kelurahan, kategori.nm_kategori, lokasi, sub_kategori.nm_subkategori, tahun, tgl_awal, tgl_akhir')
+            ->select('investasi.id, nama_proyek, intro, aktif, intro2, kecamatan.kecamatan, kelurahan.kelurahan, kategori.nm_kategori, lokasi, sub_kategori.nm_subkategori, tahun, tgl_awal, img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, tgl_akhir')
             ->get()
             ->getRowArray();
     }

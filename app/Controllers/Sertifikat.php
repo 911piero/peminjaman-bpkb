@@ -114,7 +114,7 @@ class Sertifikat extends BaseController
         $data = [
             'title' => 'Cetak',
             'page_title' => 'Cetak',
-            'peminjam' => $data,
+            'sertifikat' => $data,
         ];
 
         return view('sertifikat/cetak_sf', $data);
