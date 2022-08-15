@@ -219,12 +219,14 @@
                     {
                         data: 'tahun'
                     },
-                    { "data": null , 
-                        "render" : function ( data, type, full ) { 
+                    {
+                        "data": null,
+                        "render": function(data, type, full) {
                             if (full['tgl_awal'] == "0000-00-00") {
                                 return '-';
                             }
-                        return full['tgl_awal']+'&nbsp;<b>s.d</b>&nbsp;'+full['tgl_akhir'];}
+                            return full['tgl_awal'] + '&nbsp;<b>s.d</b>&nbsp;' + full['tgl_akhir'];
+                        }
                     },
                     {
                         data: 'action',
@@ -253,6 +255,9 @@
                     },
                     {
                         data: 'intro'
+                    },
+                    {
+                        data: 'keperluan'
                     },
                     {
                         data: 'tgl_pinjam'
