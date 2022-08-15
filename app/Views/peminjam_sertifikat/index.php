@@ -46,6 +46,7 @@
                                     <th>Nama Peminjam</th>
                                     <th>NIK</th>
                                     <th>Nama Objek</th>
+                                    <th>Keperluan Peminjaman</th>
                                     <th>Tanggal Pinjam</th>
                                     <th>Status</th>
                                     <th>Action</th>

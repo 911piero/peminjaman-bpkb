@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ERROR - 2022-08-15 00:11:49 --> Table 'peminjaman_bpkb.data_peminjam_sertifikat' doesn't exist
 CRITICAL - 2022-08-15 00:11:49 --> Table 'peminjaman_bpkb.data_peminjam_sertifikat' doesn't exist
 in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
@@ -611,3 +612,17 @@ in APPPATH\Controllers\Bpkb.php on line 24.
  4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
  6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+=======
+CRITICAL - 2022-08-15 12:50:44 --> Undefined array key "keperluan"
+in APPPATH\Views\peminjam_sertifikat\cetak.php on line 112.
+ 1 APPPATH\Views\peminjam_sertifikat\cetak.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "keperluan"', 'APPPATH\\Views\\peminjam_sertifikat\\cetak.php', 112)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_sertifikat\\cetak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_sertifikat/cetak', [], true)
+ 5 APPPATH\Controllers\PeminjamSertifikat.php(209): view('peminjam_sertifikat/cetak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->cetak('8')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+>>>>>>> c023f3553ca320c2e0d30f469bf76e1f6de49651

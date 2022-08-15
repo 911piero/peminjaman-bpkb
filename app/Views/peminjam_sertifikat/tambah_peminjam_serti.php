@@ -77,6 +77,13 @@
                                 </div>
                             </div>
                             <div class="form-group">
+                                <label for="exampleInputEmail1">Keperluan Peminjaman</label>
+                                <input type="text" class="form-control <?= ($validation->hasError('keperluan')) ? 'is-invalid' : ' '; ?>" id="keperluan" name="keperluan" placeholder="Masukan Keperluan Peminjaman">
+                                <div class="invalid-feedback">
+                                    <?= $validation->getError('keperluan'); ?>
+                                </div>
+                            </div>
+                            <div class="form-group">
                                 <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker" inline="true">
                                     <label for="example">Tanggal Pinjam</label>
                                     <input type="date" class="form-control <?= ($validation->hasError('tgl_pinjam')) ? 'is-invalid' : ' '; ?>" name="tgl_pinjam">
