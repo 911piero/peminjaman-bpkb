@@ -8,6 +8,7 @@
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="<?= base_url('adminlte/plugins/fontawesome-free/css/all.min.css'); ?>">
     <!-- overlayScrollbars -->
@@ -219,22 +220,23 @@
                     {
                         data: 'tahun'
                     },
-                    {
-                        "data": null,
-                        "render": function(data, type, full) {
+                    { "data": null , 
+                        "render" : function ( data, type, full ) { 
                             if (full['tgl_awal'] == "0000-00-00") {
                                 return '-';
                             }
-                            return full['tgl_awal'] + '&nbsp;<b>s.d</b>&nbsp;' + full['tgl_akhir'];
-                        }
+                        return full['tgl_awal']+'&nbsp;<b>s.d</b>&nbsp;'+full['tgl_akhir'];},
+                        searchable:false
                     },
                     {
                         data: 'action',
-                        orderable: false
+                        orderable: false,
+                        searchable:false
                     },
                     {
                         data: 'status',
-                        visible: false
+                        visible: false,
+                        searchable:false
                     }
                 ]
             });
@@ -255,9 +257,6 @@
                     },
                     {
                         data: 'intro'
-                    },
-                    {
-                        data: 'keperluan'
                     },
                     {
                         data: 'tgl_pinjam'

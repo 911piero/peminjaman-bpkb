@@ -45,7 +45,7 @@
 
                     <div class="row">
                         <div class="col">
-                            <a href="<?= base_url('/bpkb'); ?>" class="btn btn-app bg-primary justify-content-center align-items-center float-right" style="padding:30px; height:fit-content; width: 300px;">
+                            <a href="<?= base_url('/bpkb/home'); ?>" class="btn btn-app bg-primary justify-content-center align-items-center float-right" style="padding:30px; height:fit-content; width: 300px;">
                                 <i class="fas fa-car " style="font-size: 70px;"></i>
                                 <p style="font-size: 30px;">Master BPKB</p>
                             </a>
