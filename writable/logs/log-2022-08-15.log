@@ -1,0 +1,1282 @@
+CRITICAL - 2022-08-15 07:05:48 --> Call to undefined function CodeIgniter\locale_set_default()
+in SYSTEMPATH\CodeIgniter.php on line 193.
+ 1 ROOTPATH\spark(71): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2022-08-15 07:06:01 --> Call to undefined function CodeIgniter\locale_set_default()
+in SYSTEMPATH\CodeIgniter.php on line 193.
+ 1 ROOTPATH\spark(71): CodeIgniter\CodeIgniter->initialize()
+ERROR - 2022-08-15 00:09:49 --> Error connecting to the database: Unknown database 'peminjaman_bpkb'
+CRITICAL - 2022-08-15 00:09:49 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'peminjaman_bpkb'
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kecamatan`', [], false)
+ 3 APPPATH\Models\SertifikatModel.php(17): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Sertifikat.php(20): App\Models\SertifikatModel->getKecamatan()
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->index()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-15 00:11:30 --> Table 'peminjaman_bpkb.data_peminjam_sertifikat' doesn't exist
+CRITICAL - 2022-08-15 00:11:30 --> Table 'peminjaman_bpkb.data_peminjam_sertifikat' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `data_peminjam_sertifikat`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `data_peminjam_sertifikat`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `data_peminjam_sertifikat`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_peminjam_sertifikat`', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\PeminjamSertifikat.php(23): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->index()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 12:23:34 --> Trying to access array offset on value of type null
+in APPPATH\Views\sertifikat\cetak_sf.php on line 57.
+ 1 APPPATH\Views\sertifikat\cetak_sf.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\sertifikat\\cetak_sf.php', 57)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sertifikat\\cetak_sf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 5 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('P-P.99_hal0001')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 12:23:56 --> Trying to access array offset on value of type null
+in APPPATH\Views\sertifikat\cetak_sf.php on line 57.
+ 1 APPPATH\Views\sertifikat\cetak_sf.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\sertifikat\\cetak_sf.php', 57)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sertifikat\\cetak_sf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 5 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('P-P.99_hal0001')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 12:23:57 --> Trying to access array offset on value of type null
+in APPPATH\Views\sertifikat\cetak_sf.php on line 57.
+ 1 APPPATH\Views\sertifikat\cetak_sf.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\sertifikat\\cetak_sf.php', 57)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sertifikat\\cetak_sf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 5 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('P-P.99_hal0001')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 12:23:58 --> Trying to access array offset on value of type null
+in APPPATH\Views\sertifikat\cetak_sf.php on line 57.
+ 1 APPPATH\Views\sertifikat\cetak_sf.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\sertifikat\\cetak_sf.php', 57)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sertifikat\\cetak_sf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 5 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('P-P.99_hal0001')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 12:26:06 --> Undefined variable $link
+in APPPATH\Views\sertifikat\cetak_sf.php on line 61.
+ 1 APPPATH\Views\sertifikat\cetak_sf.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $link', 'APPPATH\\Views\\sertifikat\\cetak_sf.php', 61)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sertifikat\\cetak_sf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 5 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('390')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 12:31:55 --> Trying to access array offset on value of type null
+in APPPATH\Views\sertifikat\cetak_sf.php on line 57.
+ 1 APPPATH\Views\sertifikat\cetak_sf.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\sertifikat\\cetak_sf.php', 57)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sertifikat\\cetak_sf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 5 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('P-P.99_hal0001')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 12:31:56 --> Trying to access array offset on value of type null
+in APPPATH\Views\sertifikat\cetak_sf.php on line 57.
+ 1 APPPATH\Views\sertifikat\cetak_sf.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\sertifikat\\cetak_sf.php', 57)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sertifikat\\cetak_sf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 5 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('P-P.99_hal0001')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 12:32:16 --> Trying to access array offset on value of type null
+in APPPATH\Views\sertifikat\cetak_sf.php on line 54.
+ 1 APPPATH\Views\sertifikat\cetak_sf.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\sertifikat\\cetak_sf.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sertifikat\\cetak_sf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 5 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('P-P.99_hal0001')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 12:32:17 --> Trying to access array offset on value of type null
+in APPPATH\Views\sertifikat\cetak_sf.php on line 54.
+ 1 APPPATH\Views\sertifikat\cetak_sf.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\sertifikat\\cetak_sf.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sertifikat\\cetak_sf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 5 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('P-P.99_hal0001')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 12:32:40 --> Trying to access array offset on value of type null
+in APPPATH\Views\sertifikat\cetak_sf.php on line 54.
+ 1 APPPATH\Views\sertifikat\cetak_sf.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\sertifikat\\cetak_sf.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sertifikat\\cetak_sf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 5 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('P-P.99_hal0001')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 12:32:41 --> Trying to access array offset on value of type null
+in APPPATH\Views\sertifikat\cetak_sf.php on line 54.
+ 1 APPPATH\Views\sertifikat\cetak_sf.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\sertifikat\\cetak_sf.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sertifikat\\cetak_sf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 5 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('P-P.99_hal0001')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 12:32:43 --> Trying to access array offset on value of type null
+in APPPATH\Views\sertifikat\cetak_sf.php on line 54.
+ 1 APPPATH\Views\sertifikat\cetak_sf.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\sertifikat\\cetak_sf.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sertifikat\\cetak_sf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 5 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('P-P.99_hal0001')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 12:32:44 --> Trying to access array offset on value of type null
+in APPPATH\Views\sertifikat\cetak_sf.php on line 54.
+ 1 APPPATH\Views\sertifikat\cetak_sf.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\sertifikat\\cetak_sf.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sertifikat\\cetak_sf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 5 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('P-P.99_hal0001')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 12:32:55 --> Trying to access array offset on value of type null
+in APPPATH\Views\sertifikat\cetak_sf.php on line 54.
+ 1 APPPATH\Views\sertifikat\cetak_sf.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\sertifikat\\cetak_sf.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sertifikat\\cetak_sf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 5 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('P-P.99_hal0001')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 12:32:55 --> Trying to access array offset on value of type null
+in APPPATH\Views\sertifikat\cetak_sf.php on line 54.
+ 1 APPPATH\Views\sertifikat\cetak_sf.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\sertifikat\\cetak_sf.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sertifikat\\cetak_sf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 5 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('P-P.99_hal0001')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 12:33:39 --> Trying to access array offset on value of type null
+in APPPATH\Views\sertifikat\cetak_sf.php on line 54.
+ 1 APPPATH\Views\sertifikat\cetak_sf.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\sertifikat\\cetak_sf.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sertifikat\\cetak_sf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 5 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('P-P.99_hal0001')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 12:34:33 --> Trying to access array offset on value of type null
+in APPPATH\Views\sertifikat\cetak_sf.php on line 54.
+ 1 APPPATH\Views\sertifikat\cetak_sf.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\sertifikat\\cetak_sf.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sertifikat\\cetak_sf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 5 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('P-P.99_hal0001')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 12:34:54 --> Trying to access array offset on value of type null
+in APPPATH\Views\sertifikat\cetak_sf.php on line 54.
+ 1 APPPATH\Views\sertifikat\cetak_sf.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\sertifikat\\cetak_sf.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sertifikat\\cetak_sf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 5 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('P-P.99_hal0001')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 12:34:56 --> Trying to access array offset on value of type null
+in APPPATH\Views\sertifikat\cetak_sf.php on line 54.
+ 1 APPPATH\Views\sertifikat\cetak_sf.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\sertifikat\\cetak_sf.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sertifikat\\cetak_sf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 5 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('P-P.99_hal0001')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 12:36:53 --> Trying to access array offset on value of type null
+in APPPATH\Views\sertifikat\cetak_sf.php on line 54.
+ 1 APPPATH\Views\sertifikat\cetak_sf.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\sertifikat\\cetak_sf.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sertifikat\\cetak_sf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 5 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('P-P.99_hal0001')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 12:37:59 --> Trying to access array offset on value of type null
+in APPPATH\Views\sertifikat\cetak_sf.php on line 54.
+ 1 APPPATH\Views\sertifikat\cetak_sf.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\sertifikat\\cetak_sf.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sertifikat\\cetak_sf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 5 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('P-P.99_hal0001')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 12:38:09 --> Trying to access array offset on value of type null
+in APPPATH\Views\sertifikat\cetak_sf.php on line 54.
+ 1 APPPATH\Views\sertifikat\cetak_sf.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\sertifikat\\cetak_sf.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sertifikat\\cetak_sf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 5 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('P-P.99_hal0001')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 12:38:11 --> Trying to access array offset on value of type null
+in APPPATH\Views\sertifikat\cetak_sf.php on line 54.
+ 1 APPPATH\Views\sertifikat\cetak_sf.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\sertifikat\\cetak_sf.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sertifikat\\cetak_sf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 5 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('P-P.99_hal0001')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 12:38:27 --> Trying to access array offset on value of type null
+in APPPATH\Views\sertifikat\cetak_sf.php on line 54.
+ 1 APPPATH\Views\sertifikat\cetak_sf.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\sertifikat\\cetak_sf.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sertifikat\\cetak_sf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 5 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('P-P.99_hal0001')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 12:39:03 --> Trying to access array offset on value of type null
+in APPPATH\Views\sertifikat\cetak_sf.php on line 54.
+ 1 APPPATH\Views\sertifikat\cetak_sf.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\sertifikat\\cetak_sf.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sertifikat\\cetak_sf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 5 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('P-P.99_hal0001')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 12:39:58 --> Trying to access array offset on value of type null
+in APPPATH\Views\sertifikat\cetak_sf.php on line 54.
+ 1 APPPATH\Views\sertifikat\cetak_sf.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\sertifikat\\cetak_sf.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sertifikat\\cetak_sf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 5 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('P-P.99_hal0001')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 12:40:41 --> Trying to access array offset on value of type null
+in APPPATH\Views\sertifikat\cetak_sf.php on line 54.
+ 1 APPPATH\Views\sertifikat\cetak_sf.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\sertifikat\\cetak_sf.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sertifikat\\cetak_sf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 5 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('P-P.99_hal0001')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 12:40:46 --> Trying to access array offset on value of type null
+in APPPATH\Views\sertifikat\cetak_sf.php on line 54.
+ 1 APPPATH\Views\sertifikat\cetak_sf.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\sertifikat\\cetak_sf.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sertifikat\\cetak_sf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 5 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('P-P.99_hal0001')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 12:47:42 --> Undefined variable $link
+in APPPATH\Views\sertifikat\cetak_sf.php on line 61.
+ 1 APPPATH\Views\sertifikat\cetak_sf.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $link', 'APPPATH\\Views\\sertifikat\\cetak_sf.php', 61)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sertifikat\\cetak_sf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 5 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('443')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 12:47:49 --> Undefined variable $link
+in APPPATH\Views\sertifikat\cetak_sf.php on line 61.
+ 1 APPPATH\Views\sertifikat\cetak_sf.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $link', 'APPPATH\\Views\\sertifikat\\cetak_sf.php', 61)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sertifikat\\cetak_sf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 5 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('443')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 01:08:08 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH\Views\sertifikat\cetak_sf.php on line 59.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 3 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('443')
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 01:08:21 --> syntax error, unexpected token "if"
+in APPPATH\Views\sertifikat\cetak_sf.php on line 56.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 3 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('443')
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 01:08:22 --> syntax error, unexpected token "if"
+in APPPATH\Views\sertifikat\cetak_sf.php on line 56.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 3 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('443')
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 13:10:36 --> Cannot access offset of type string on string
+in APPPATH\Views\sertifikat\cetak_sf.php on line 57.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 4 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('443')
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 13:10:37 --> Cannot access offset of type string on string
+in APPPATH\Views\sertifikat\cetak_sf.php on line 57.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 4 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('443')
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 13:12:03 --> Cannot access offset of type string on string
+in APPPATH\Views\sertifikat\cetak_sf.php on line 64.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 4 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('443')
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 13:12:05 --> Cannot access offset of type string on string
+in APPPATH\Views\sertifikat\cetak_sf.php on line 64.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 4 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('443')
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 13:12:18 --> Cannot access offset of type string on string
+in APPPATH\Views\sertifikat\cetak_sf.php on line 64.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 4 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('443')
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 13:12:20 --> Cannot access offset of type string on string
+in APPPATH\Views\sertifikat\cetak_sf.php on line 64.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 4 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('443')
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 13:12:20 --> Cannot access offset of type string on string
+in APPPATH\Views\sertifikat\cetak_sf.php on line 64.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 4 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('443')
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 13:12:21 --> Cannot access offset of type string on string
+in APPPATH\Views\sertifikat\cetak_sf.php on line 64.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 4 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('443')
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 13:12:22 --> Cannot access offset of type string on string
+in APPPATH\Views\sertifikat\cetak_sf.php on line 64.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 4 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('443')
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 13:12:23 --> Cannot access offset of type string on string
+in APPPATH\Views\sertifikat\cetak_sf.php on line 64.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 4 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('443')
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 13:12:24 --> Cannot access offset of type string on string
+in APPPATH\Views\sertifikat\cetak_sf.php on line 64.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 4 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('443')
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 13:12:34 --> Cannot access offset of type string on string
+in APPPATH\Views\sertifikat\cetak_sf.php on line 64.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 4 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('443')
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 01:19:27 --> syntax error, unexpected token "<", expecting end of file
+in APPPATH\Views\sertifikat\cetak_sf.php on line 71.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 3 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('443')
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 01:19:28 --> syntax error, unexpected token "<", expecting end of file
+in APPPATH\Views\sertifikat\cetak_sf.php on line 71.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 3 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('443')
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 01:32:45 --> syntax error, unexpected token "<", expecting end of file
+in APPPATH\Views\sertifikat\cetak_sf.php on line 51.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 3 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('443')
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 01:32:45 --> syntax error, unexpected token "<", expecting end of file
+in APPPATH\Views\sertifikat\cetak_sf.php on line 51.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 3 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('443')
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 13:42:31 --> Undefined array key "img"
+in APPPATH\Views\sertifikat\cetak_sf.php on line 22.
+ 1 APPPATH\Views\sertifikat\cetak_sf.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "img"', 'APPPATH\\Views\\sertifikat\\cetak_sf.php', 22)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sertifikat\\cetak_sf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 5 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('443')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 13:42:32 --> Undefined array key "img"
+in APPPATH\Views\sertifikat\cetak_sf.php on line 22.
+ 1 APPPATH\Views\sertifikat\cetak_sf.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "img"', 'APPPATH\\Views\\sertifikat\\cetak_sf.php', 22)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sertifikat\\cetak_sf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 5 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('443')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 13:42:33 --> Undefined array key "img"
+in APPPATH\Views\sertifikat\cetak_sf.php on line 22.
+ 1 APPPATH\Views\sertifikat\cetak_sf.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "img"', 'APPPATH\\Views\\sertifikat\\cetak_sf.php', 22)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sertifikat\\cetak_sf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 5 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('443')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 13:42:33 --> Undefined array key "img"
+in APPPATH\Views\sertifikat\cetak_sf.php on line 22.
+ 1 APPPATH\Views\sertifikat\cetak_sf.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "img"', 'APPPATH\\Views\\sertifikat\\cetak_sf.php', 22)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sertifikat\\cetak_sf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 5 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('443')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 13:42:38 --> Undefined array key "img"
+in APPPATH\Views\sertifikat\cetak_sf.php on line 22.
+ 1 APPPATH\Views\sertifikat\cetak_sf.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "img"', 'APPPATH\\Views\\sertifikat\\cetak_sf.php', 22)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sertifikat\\cetak_sf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 5 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('443')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 13:44:15 --> Call to undefined function img()
+in APPPATH\Views\sertifikat\cetak_sf.php on line 22.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 4 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('443')
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 13:44:16 --> Call to undefined function img()
+in APPPATH\Views\sertifikat\cetak_sf.php on line 22.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 4 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('443')
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 13:44:16 --> Call to undefined function img()
+in APPPATH\Views\sertifikat\cetak_sf.php on line 22.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 4 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('443')
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 13:44:17 --> Call to undefined function img()
+in APPPATH\Views\sertifikat\cetak_sf.php on line 22.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 4 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('443')
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 13:44:22 --> Call to undefined function img()
+in APPPATH\Views\sertifikat\cetak_sf.php on line 22.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 4 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('443')
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 13:44:23 --> Call to undefined function img()
+in APPPATH\Views\sertifikat\cetak_sf.php on line 22.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 4 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('443')
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 01:44:32 --> syntax error, unexpected token "."
+in APPPATH\Views\sertifikat\cetak_sf.php on line 22.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 3 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('443')
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 01:44:33 --> syntax error, unexpected token "."
+in APPPATH\Views\sertifikat\cetak_sf.php on line 22.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 3 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('443')
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 01:44:34 --> syntax error, unexpected token "."
+in APPPATH\Views\sertifikat\cetak_sf.php on line 22.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 3 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('443')
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 01:44:40 --> syntax error, unexpected token "."
+in APPPATH\Views\sertifikat\cetak_sf.php on line 22.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 3 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('443')
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 01:44:40 --> syntax error, unexpected token "echo"
+in APPPATH\Views\sertifikat\cetak_sf.php on line 23.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 3 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('443')
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 01:44:41 --> syntax error, unexpected token "echo"
+in APPPATH\Views\sertifikat\cetak_sf.php on line 23.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 3 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('443')
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 01:44:41 --> syntax error, unexpected token "echo"
+in APPPATH\Views\sertifikat\cetak_sf.php on line 23.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 3 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('443')
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 01:44:42 --> syntax error, unexpected token "echo"
+in APPPATH\Views\sertifikat\cetak_sf.php on line 23.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 3 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('443')
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 13:44:50 --> Call to undefined function img()
+in APPPATH\Views\sertifikat\cetak_sf.php on line 22.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 4 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('443')
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 13:44:51 --> Call to undefined function img()
+in APPPATH\Views\sertifikat\cetak_sf.php on line 22.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 4 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('443')
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-15 02:04:11 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%p%' ESCAPE '!' 
+ )' at line 16
+CRITICAL - 2022-08-15 02:04:11 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%p%' ESCAPE '!' 
+ )' at line 16
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE \'%p%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%p%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%p%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%p%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%p%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%p%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%p%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%p%\' ESCAPE \'!\'
+OR    LIKE \'%p%\' ESCAPE \'!\' 
+ )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE \'%p%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%p%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%p%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%p%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%p%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%p%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%p%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%p%\' ESCAPE \'!\'
+OR    LIKE \'%p%\' ESCAPE \'!\' 
+ )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE \'%p%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%p%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%p%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%p%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%p%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%p%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%p%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%p%\' ESCAPE \'!\'
+OR    LIKE \'%p%\' ESCAPE \'!\' 
+ )')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE :nama_proyek: ESCAPE \'!\'
+OR  `intro` LIKE :intro: ESCAPE \'!\'
+OR  `intro2` LIKE :intro2: ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE :kecamatan.kecamatan: ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE :kelurahan.kelurahan: ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE :kategori.nm_kategori: ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE :sub_kategori.nm_subkategori: ESCAPE \'!\'
+OR  `tahun` LIKE :tahun: ESCAPE \'!\'
+OR    LIKE :: ESCAPE \'!\' 
+ )', [...], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 7 APPPATH\Controllers\Sertifikat.php(105): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-15 02:04:14 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%pa%' ESCAPE '!' 
+ )' at line 16
+CRITICAL - 2022-08-15 02:04:14 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%pa%' ESCAPE '!' 
+ )' at line 16
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE \'%pa%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%pa%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%pa%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%pa%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%pa%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%pa%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%pa%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%pa%\' ESCAPE \'!\'
+OR    LIKE \'%pa%\' ESCAPE \'!\' 
+ )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE \'%pa%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%pa%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%pa%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%pa%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%pa%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%pa%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%pa%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%pa%\' ESCAPE \'!\'
+OR    LIKE \'%pa%\' ESCAPE \'!\' 
+ )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE \'%pa%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%pa%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%pa%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%pa%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%pa%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%pa%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%pa%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%pa%\' ESCAPE \'!\'
+OR    LIKE \'%pa%\' ESCAPE \'!\' 
+ )')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE :nama_proyek: ESCAPE \'!\'
+OR  `intro` LIKE :intro: ESCAPE \'!\'
+OR  `intro2` LIKE :intro2: ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE :kecamatan.kecamatan: ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE :kelurahan.kelurahan: ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE :kategori.nm_kategori: ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE :sub_kategori.nm_subkategori: ESCAPE \'!\'
+OR  `tahun` LIKE :tahun: ESCAPE \'!\'
+OR    LIKE :: ESCAPE \'!\' 
+ )', [...], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 7 APPPATH\Controllers\Sertifikat.php(105): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-15 02:04:21 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%1%' ESCAPE '!' 
+ )' at line 16
+CRITICAL - 2022-08-15 02:04:21 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%1%' ESCAPE '!' 
+ )' at line 16
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE \'%1%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%1%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%1%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%1%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%1%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%1%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%1%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%1%\' ESCAPE \'!\'
+OR    LIKE \'%1%\' ESCAPE \'!\' 
+ )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE \'%1%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%1%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%1%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%1%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%1%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%1%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%1%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%1%\' ESCAPE \'!\'
+OR    LIKE \'%1%\' ESCAPE \'!\' 
+ )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE \'%1%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%1%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%1%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%1%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%1%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%1%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%1%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%1%\' ESCAPE \'!\'
+OR    LIKE \'%1%\' ESCAPE \'!\' 
+ )')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE :nama_proyek: ESCAPE \'!\'
+OR  `intro` LIKE :intro: ESCAPE \'!\'
+OR  `intro2` LIKE :intro2: ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE :kecamatan.kecamatan: ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE :kelurahan.kelurahan: ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE :kategori.nm_kategori: ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE :sub_kategori.nm_subkategori: ESCAPE \'!\'
+OR  `tahun` LIKE :tahun: ESCAPE \'!\'
+OR    LIKE :: ESCAPE \'!\' 
+ )', [...], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 7 APPPATH\Controllers\Sertifikat.php(105): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-15 02:04:29 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%12%' ESCAPE '!' 
+ )' at line 16
+CRITICAL - 2022-08-15 02:04:29 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%12%' ESCAPE '!' 
+ )' at line 16
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE \'%12%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%12%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%12%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%12%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%12%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%12%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%12%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%12%\' ESCAPE \'!\'
+OR    LIKE \'%12%\' ESCAPE \'!\' 
+ )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE \'%12%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%12%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%12%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%12%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%12%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%12%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%12%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%12%\' ESCAPE \'!\'
+OR    LIKE \'%12%\' ESCAPE \'!\' 
+ )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE \'%12%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%12%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%12%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%12%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%12%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%12%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%12%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%12%\' ESCAPE \'!\'
+OR    LIKE \'%12%\' ESCAPE \'!\' 
+ )')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE :nama_proyek: ESCAPE \'!\'
+OR  `intro` LIKE :intro: ESCAPE \'!\'
+OR  `intro2` LIKE :intro2: ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE :kecamatan.kecamatan: ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE :kelurahan.kelurahan: ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE :kategori.nm_kategori: ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE :sub_kategori.nm_subkategori: ESCAPE \'!\'
+OR  `tahun` LIKE :tahun: ESCAPE \'!\'
+OR    LIKE :: ESCAPE \'!\' 
+ )', [...], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 7 APPPATH\Controllers\Sertifikat.php(105): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-15 02:04:54 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%12]%' ESCAPE '!' 
+ )' at line 16
+CRITICAL - 2022-08-15 02:04:54 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%12]%' ESCAPE '!' 
+ )' at line 16
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE \'%12]%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%12]%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%12]%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%12]%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%12]%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%12]%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%12]%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%12]%\' ESCAPE \'!\'
+OR    LIKE \'%12]%\' ESCAPE \'!\' 
+ )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE \'%12]%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%12]%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%12]%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%12]%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%12]%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%12]%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%12]%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%12]%\' ESCAPE \'!\'
+OR    LIKE \'%12]%\' ESCAPE \'!\' 
+ )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE \'%12]%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%12]%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%12]%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%12]%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%12]%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%12]%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%12]%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%12]%\' ESCAPE \'!\'
+OR    LIKE \'%12]%\' ESCAPE \'!\' 
+ )')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE :nama_proyek: ESCAPE \'!\'
+OR  `intro` LIKE :intro: ESCAPE \'!\'
+OR  `intro2` LIKE :intro2: ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE :kecamatan.kecamatan: ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE :kelurahan.kelurahan: ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE :kategori.nm_kategori: ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE :sub_kategori.nm_subkategori: ESCAPE \'!\'
+OR  `tahun` LIKE :tahun: ESCAPE \'!\'
+OR    LIKE :: ESCAPE \'!\' 
+ )', [...], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 7 APPPATH\Controllers\Sertifikat.php(105): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 14:19:59 --> Trying to access array offset on value of type null
+in APPPATH\Views\sertifikat\cetak_sf.php on line 58.
+ 1 APPPATH\Views\sertifikat\cetak_sf.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\sertifikat\\cetak_sf.php', 58)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sertifikat\\cetak_sf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 5 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('$_SERVER[HTTP_REFERER]')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 14:22:27 --> Trying to access array offset on value of type null
+in APPPATH\Views\sertifikat\cetak_sf.php on line 59.
+ 1 APPPATH\Views\sertifikat\cetak_sf.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\sertifikat\\cetak_sf.php', 59)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sertifikat\\cetak_sf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 5 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('$_SERVER[HTTP_REFERER]')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 14:22:28 --> Trying to access array offset on value of type null
+in APPPATH\Views\sertifikat\cetak_sf.php on line 59.
+ 1 APPPATH\Views\sertifikat\cetak_sf.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\sertifikat\\cetak_sf.php', 59)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sertifikat\\cetak_sf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 5 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('$_SERVER[HTTP_REFERER]')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 14:22:29 --> Trying to access array offset on value of type null
+in APPPATH\Views\sertifikat\cetak_sf.php on line 59.
+ 1 APPPATH\Views\sertifikat\cetak_sf.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\sertifikat\\cetak_sf.php', 59)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sertifikat\\cetak_sf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/cetak_sf', [], true)
+ 5 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('$_SERVER[HTTP_REFERER]')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
