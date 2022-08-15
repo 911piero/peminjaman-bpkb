@@ -1,0 +1,613 @@
+ERROR - 2022-08-15 00:11:49 --> Table 'peminjaman_bpkb.data_peminjam_sertifikat' doesn't exist
+CRITICAL - 2022-08-15 00:11:49 --> Table 'peminjaman_bpkb.data_peminjam_sertifikat' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `data_peminjam_sertifikat`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `data_peminjam_sertifikat`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `data_peminjam_sertifikat`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_peminjam_sertifikat`', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\PeminjamSertifikat.php(23): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->index()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 01:01:44 --> Undefined variable: results
+in APPPATH\Views\master_bpkb\home.php on line 24.
+ 1 APPPATH\Views\master_bpkb\home.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: results', 'APPPATH\\Views\\master_bpkb\\home.php', 24, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master_bpkb\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/home', [], true)
+ 5 APPPATH\Controllers\Bpkb.php(29): view('master_bpkb/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->home()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 01:03:05 --> Cannot use object of type mysqli as array
+in APPPATH\Controllers\Bpkb.php on line 428.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->bpkbExport()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-15 02:05:00 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%0%' ESCAPE '!' 
+ )' at line 16
+CRITICAL - 2022-08-15 02:05:00 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%0%' ESCAPE '!' 
+ )' at line 16
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE \'%0%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%0%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%0%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%0%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%0%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%0%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%0%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%0%\' ESCAPE \'!\'
+OR    LIKE \'%0%\' ESCAPE \'!\' 
+ )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE \'%0%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%0%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%0%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%0%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%0%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%0%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%0%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%0%\' ESCAPE \'!\'
+OR    LIKE \'%0%\' ESCAPE \'!\' 
+ )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE \'%0%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%0%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%0%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%0%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%0%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%0%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%0%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%0%\' ESCAPE \'!\'
+OR    LIKE \'%0%\' ESCAPE \'!\' 
+ )')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE :nama_proyek: ESCAPE \'!\'
+OR  `intro` LIKE :intro: ESCAPE \'!\'
+OR  `intro2` LIKE :intro2: ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE :kecamatan.kecamatan: ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE :kelurahan.kelurahan: ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE :kategori.nm_kategori: ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE :sub_kategori.nm_subkategori: ESCAPE \'!\'
+OR  `tahun` LIKE :tahun: ESCAPE \'!\'
+OR    LIKE :: ESCAPE \'!\' 
+ )', [...], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 7 APPPATH\Controllers\Sertifikat.php(105): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-15 02:05:04 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%01%' ESCAPE '!' 
+ )' at line 16
+CRITICAL - 2022-08-15 02:05:04 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%01%' ESCAPE '!' 
+ )' at line 16
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE \'%01%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%01%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%01%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%01%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%01%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%01%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%01%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%01%\' ESCAPE \'!\'
+OR    LIKE \'%01%\' ESCAPE \'!\' 
+ )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE \'%01%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%01%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%01%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%01%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%01%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%01%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%01%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%01%\' ESCAPE \'!\'
+OR    LIKE \'%01%\' ESCAPE \'!\' 
+ )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE \'%01%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%01%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%01%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%01%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%01%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%01%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%01%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%01%\' ESCAPE \'!\'
+OR    LIKE \'%01%\' ESCAPE \'!\' 
+ )')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE :nama_proyek: ESCAPE \'!\'
+OR  `intro` LIKE :intro: ESCAPE \'!\'
+OR  `intro2` LIKE :intro2: ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE :kecamatan.kecamatan: ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE :kelurahan.kelurahan: ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE :kategori.nm_kategori: ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE :sub_kategori.nm_subkategori: ESCAPE \'!\'
+OR  `tahun` LIKE :tahun: ESCAPE \'!\'
+OR    LIKE :: ESCAPE \'!\' 
+ )', [...], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 7 APPPATH\Controllers\Sertifikat.php(105): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-15 02:05:13 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%y%' ESCAPE '!' 
+ )' at line 16
+CRITICAL - 2022-08-15 02:05:13 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%y%' ESCAPE '!' 
+ )' at line 16
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE \'%y%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%y%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%y%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%y%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%y%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%y%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%y%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%y%\' ESCAPE \'!\'
+OR    LIKE \'%y%\' ESCAPE \'!\' 
+ )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE \'%y%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%y%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%y%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%y%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%y%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%y%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%y%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%y%\' ESCAPE \'!\'
+OR    LIKE \'%y%\' ESCAPE \'!\' 
+ )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE \'%y%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%y%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%y%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%y%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%y%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%y%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%y%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%y%\' ESCAPE \'!\'
+OR    LIKE \'%y%\' ESCAPE \'!\' 
+ )')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE :nama_proyek: ESCAPE \'!\'
+OR  `intro` LIKE :intro: ESCAPE \'!\'
+OR  `intro2` LIKE :intro2: ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE :kecamatan.kecamatan: ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE :kelurahan.kelurahan: ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE :kategori.nm_kategori: ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE :sub_kategori.nm_subkategori: ESCAPE \'!\'
+OR  `tahun` LIKE :tahun: ESCAPE \'!\'
+OR    LIKE :: ESCAPE \'!\' 
+ )', [...], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 7 APPPATH\Controllers\Sertifikat.php(105): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-15 02:05:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%yog%' ESCAPE '!' 
+ )' at line 16
+CRITICAL - 2022-08-15 02:05:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%yog%' ESCAPE '!' 
+ )' at line 16
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE \'%yog%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%yog%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%yog%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%yog%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%yog%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%yog%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%yog%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%yog%\' ESCAPE \'!\'
+OR    LIKE \'%yog%\' ESCAPE \'!\' 
+ )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE \'%yog%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%yog%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%yog%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%yog%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%yog%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%yog%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%yog%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%yog%\' ESCAPE \'!\'
+OR    LIKE \'%yog%\' ESCAPE \'!\' 
+ )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE \'%yog%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%yog%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%yog%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%yog%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%yog%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%yog%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%yog%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%yog%\' ESCAPE \'!\'
+OR    LIKE \'%yog%\' ESCAPE \'!\' 
+ )')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE :nama_proyek: ESCAPE \'!\'
+OR  `intro` LIKE :intro: ESCAPE \'!\'
+OR  `intro2` LIKE :intro2: ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE :kecamatan.kecamatan: ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE :kelurahan.kelurahan: ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE :kategori.nm_kategori: ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE :sub_kategori.nm_subkategori: ESCAPE \'!\'
+OR  `tahun` LIKE :tahun: ESCAPE \'!\'
+OR    LIKE :: ESCAPE \'!\' 
+ )', [...], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 7 APPPATH\Controllers\Sertifikat.php(105): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-15 02:05:37 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '% %' ESCAPE '!' 
+ )' at line 16
+CRITICAL - 2022-08-15 02:05:37 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '% %' ESCAPE '!' 
+ )' at line 16
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE \'% %\' ESCAPE \'!\'
+OR  `intro` LIKE \'% %\' ESCAPE \'!\'
+OR  `intro2` LIKE \'% %\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'% %\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'% %\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'% %\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'% %\' ESCAPE \'!\'
+OR  `tahun` LIKE \'% %\' ESCAPE \'!\'
+OR    LIKE \'% %\' ESCAPE \'!\' 
+ )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE \'% %\' ESCAPE \'!\'
+OR  `intro` LIKE \'% %\' ESCAPE \'!\'
+OR  `intro2` LIKE \'% %\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'% %\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'% %\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'% %\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'% %\' ESCAPE \'!\'
+OR  `tahun` LIKE \'% %\' ESCAPE \'!\'
+OR    LIKE \'% %\' ESCAPE \'!\' 
+ )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE \'% %\' ESCAPE \'!\'
+OR  `intro` LIKE \'% %\' ESCAPE \'!\'
+OR  `intro2` LIKE \'% %\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'% %\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'% %\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'% %\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'% %\' ESCAPE \'!\'
+OR  `tahun` LIKE \'% %\' ESCAPE \'!\'
+OR    LIKE \'% %\' ESCAPE \'!\' 
+ )')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE :nama_proyek: ESCAPE \'!\'
+OR  `intro` LIKE :intro: ESCAPE \'!\'
+OR  `intro2` LIKE :intro2: ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE :kecamatan.kecamatan: ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE :kelurahan.kelurahan: ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE :kategori.nm_kategori: ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE :sub_kategori.nm_subkategori: ESCAPE \'!\'
+OR  `tahun` LIKE :tahun: ESCAPE \'!\'
+OR    LIKE :: ESCAPE \'!\' 
+ )', [...], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 7 APPPATH\Controllers\Sertifikat.php(105): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-15 02:06:11 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%a%' ESCAPE '!' 
+ )' at line 16
+CRITICAL - 2022-08-15 02:06:11 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%a%' ESCAPE '!' 
+ )' at line 16
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE \'%a%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%a%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%a%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%a%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%a%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%a%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%a%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%a%\' ESCAPE \'!\'
+OR    LIKE \'%a%\' ESCAPE \'!\' 
+ )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE \'%a%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%a%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%a%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%a%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%a%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%a%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%a%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%a%\' ESCAPE \'!\'
+OR    LIKE \'%a%\' ESCAPE \'!\' 
+ )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE \'%a%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%a%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%a%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%a%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%a%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%a%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%a%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%a%\' ESCAPE \'!\'
+OR    LIKE \'%a%\' ESCAPE \'!\' 
+ )')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE :nama_proyek: ESCAPE \'!\'
+OR  `intro` LIKE :intro: ESCAPE \'!\'
+OR  `intro2` LIKE :intro2: ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE :kecamatan.kecamatan: ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE :kelurahan.kelurahan: ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE :kategori.nm_kategori: ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE :sub_kategori.nm_subkategori: ESCAPE \'!\'
+OR  `tahun` LIKE :tahun: ESCAPE \'!\'
+OR    LIKE :: ESCAPE \'!\' 
+ )', [...], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 7 APPPATH\Controllers\Sertifikat.php(105): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-15 02:14:25 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%a%' ESCAPE '!' 
+ )' at line 16
+CRITICAL - 2022-08-15 02:14:25 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%a%' ESCAPE '!' 
+ )' at line 16
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE \'%a%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%a%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%a%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%a%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%a%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%a%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%a%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%a%\' ESCAPE \'!\'
+OR    LIKE \'%a%\' ESCAPE \'!\' 
+ )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE \'%a%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%a%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%a%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%a%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%a%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%a%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%a%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%a%\' ESCAPE \'!\'
+OR    LIKE \'%a%\' ESCAPE \'!\' 
+ )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE \'%a%\' ESCAPE \'!\'
+OR  `intro` LIKE \'%a%\' ESCAPE \'!\'
+OR  `intro2` LIKE \'%a%\' ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE \'%a%\' ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE \'%a%\' ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE \'%a%\' ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE \'%a%\' ESCAPE \'!\'
+OR  `tahun` LIKE \'%a%\' ESCAPE \'!\'
+OR    LIKE \'%a%\' ESCAPE \'!\' 
+ )')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE   (
+`nama_proyek` LIKE :nama_proyek: ESCAPE \'!\'
+OR  `intro` LIKE :intro: ESCAPE \'!\'
+OR  `intro2` LIKE :intro2: ESCAPE \'!\'
+OR  `kecamatan`.`kecamatan` LIKE :kecamatan.kecamatan: ESCAPE \'!\'
+OR  `kelurahan`.`kelurahan` LIKE :kelurahan.kelurahan: ESCAPE \'!\'
+OR  `kategori`.`nm_kategori` LIKE :kategori.nm_kategori: ESCAPE \'!\'
+OR  `sub_kategori`.`nm_subkategori` LIKE :sub_kategori.nm_subkategori: ESCAPE \'!\'
+OR  `tahun` LIKE :tahun: ESCAPE \'!\'
+OR    LIKE :: ESCAPE \'!\' 
+ )', [...], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 7 APPPATH\Controllers\Sertifikat.php(105): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 02:53:29 --> Undefined property: App\Controllers\Bpkb::$PeminjamModel
+in APPPATH\Controllers\Bpkb.php on line 24.
+ 1 APPPATH\Controllers\Bpkb.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Bpkb::$PeminjamModel', 'APPPATH\\Controllers\\Bpkb.php', 24, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->home()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

@@ -3,8 +3,10 @@
 namespace App\Controllers;
 
 use App\Models\BpkbModel;
+use App\Models\PeminjamModel;
+use App\Models\MutasiModel;
+
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
-use PhpOffice\PhpSpreadsheet\Writer\Pdf\Tcpdf;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 
 use \Hermawan\DataTables\DataTable;
@@ -16,6 +18,24 @@ class Bpkb extends BaseController
     public function __construct()
     {
         $this->BpkbModel = new BpkbModel();
+        $this->PeminjamModel = new PeminjamModel();
+        $this->MutasiModel = new MutasiModel();
+    }
+    
+    public function home(){
+
+        $resultBpkb = $this->BpkbModel->getBpkb()->resultID->num_rows;
+        $resultPeminjam = $this->PeminjamModel->get()->resultID->num_rows;
+        $resultMutasi = $this->MutasiModel->get()->resultID->num_rows;
+        $data = [
+            'title' => 'Home | Aplikasi Peminjaman BPKB',
+            'resultBpkb' => $resultBpkb,
+            'resultPeminjam' => $resultPeminjam,
+            'resultMutasi' => $resultMutasi,
+            'page_title' => 'Dashboard BPKB',
+        ];
+
+        return view('master_bpkb/home', $data);
     }
 
 
@@ -26,10 +46,10 @@ class Bpkb extends BaseController
         $resultBpkb = $this->BpkbModel->getBpkb()->resultID->num_rows;
 
         $data = [
-            'title' => 'Home | Aplikasi Peminjaman BPKB',
+            'title' => 'Data BPKB | Aplikasi Peminjaman BPKB',
             'results' => $resultBpkb,
             'getBpkb' => $getBpkb,
-            'page_title' => 'Dashboard BPKB',
+            'page_title' => 'Data BPKB',
         ];
 
         return view('master_bpkb/index', $data);
