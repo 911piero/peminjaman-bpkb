@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CRITICAL - 2022-08-15 07:05:48 --> Call to undefined function CodeIgniter\locale_set_default()
 in SYSTEMPATH\CodeIgniter.php on line 193.
  1 ROOTPATH\spark(71): CodeIgniter\CodeIgniter->initialize()
@@ -1277,6 +1278,213 @@ in APPPATH\Views\sertifikat\cetak_sf.php on line 59.
  5 APPPATH\Controllers\Sertifikat.php(120): view('sertifikat/cetak_sf', [...])
  6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->cetak('$_SERVER[HTTP_REFERER]')
  7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+=======
+CRITICAL - 2022-08-15 12:50:44 --> Undefined array key "keperluan"
+in APPPATH\Views\peminjam_sertifikat\cetak.php on line 112.
+ 1 APPPATH\Views\peminjam_sertifikat\cetak.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "keperluan"', 'APPPATH\\Views\\peminjam_sertifikat\\cetak.php', 112)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_sertifikat\\cetak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_sertifikat/cetak', [], true)
+ 5 APPPATH\Controllers\PeminjamSertifikat.php(209): view('peminjam_sertifikat/cetak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->cetak('8')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+>>>>>>> c023f3553ca320c2e0d30f469bf76e1f6de49651
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 03:42:20 --> Undefined variable $getImg
+in APPPATH\Views\peminjam_sertifikat\detail_peminjam_serti.php on line 103.
+ 1 APPPATH\Views\peminjam_sertifikat\detail_peminjam_serti.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $getImg', 'APPPATH\\Views\\peminjam_sertifikat\\detail_peminjam_serti.php', 103)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_sertifikat\\detail_peminjam_serti.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/peminjam_sertifikat/detail_peminjam_serti', [], true)
+ 5 APPPATH\Controllers\PeminjamSertifikat.php(155): view('/peminjam_sertifikat/detail_peminjam_serti', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->detail('10')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 03:42:21 --> Undefined variable $getImg
+in APPPATH\Views\peminjam_sertifikat\detail_peminjam_serti.php on line 103.
+ 1 APPPATH\Views\peminjam_sertifikat\detail_peminjam_serti.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $getImg', 'APPPATH\\Views\\peminjam_sertifikat\\detail_peminjam_serti.php', 103)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_sertifikat\\detail_peminjam_serti.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/peminjam_sertifikat/detail_peminjam_serti', [], true)
+ 5 APPPATH\Controllers\PeminjamSertifikat.php(155): view('/peminjam_sertifikat/detail_peminjam_serti', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->detail('10')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 03:45:11 --> Undefined property: App\Controllers\PeminjamSertifikat::$PeminjamModel
+in APPPATH\Controllers\PeminjamSertifikat.php on line 149.
+ 1 APPPATH\Controllers\PeminjamSertifikat.php(149): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PeminjamSertifikat::$PeminjamModel', 'APPPATH\\Controllers\\PeminjamSertifikat.php', 149)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->detail('10')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 03:45:11 --> Undefined property: App\Controllers\PeminjamSertifikat::$PeminjamModel
+in APPPATH\Controllers\PeminjamSertifikat.php on line 149.
+ 1 APPPATH\Controllers\PeminjamSertifikat.php(149): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PeminjamSertifikat::$PeminjamModel', 'APPPATH\\Controllers\\PeminjamSertifikat.php', 149)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->detail('10')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 03:45:12 --> Undefined property: App\Controllers\PeminjamSertifikat::$PeminjamModel
+in APPPATH\Controllers\PeminjamSertifikat.php on line 149.
+ 1 APPPATH\Controllers\PeminjamSertifikat.php(149): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PeminjamSertifikat::$PeminjamModel', 'APPPATH\\Controllers\\PeminjamSertifikat.php', 149)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->detail('10')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 03:45:13 --> Undefined property: App\Controllers\PeminjamSertifikat::$PeminjamModel
+in APPPATH\Controllers\PeminjamSertifikat.php on line 149.
+ 1 APPPATH\Controllers\PeminjamSertifikat.php(149): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PeminjamSertifikat::$PeminjamModel', 'APPPATH\\Controllers\\PeminjamSertifikat.php', 149)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->detail('10')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 03:45:26 --> Undefined property: App\Controllers\PeminjamSertifikat::$PeminjamModel
+in APPPATH\Controllers\PeminjamSertifikat.php on line 149.
+ 1 APPPATH\Controllers\PeminjamSertifikat.php(149): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PeminjamSertifikat::$PeminjamModel', 'APPPATH\\Controllers\\PeminjamSertifikat.php', 149)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->detail('10')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 03:45:26 --> Undefined array key "link"
+in APPPATH\Views\peminjam_sertifikat\detail_peminjam_serti.php on line 104.
+ 1 APPPATH\Views\peminjam_sertifikat\detail_peminjam_serti.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "link"', 'APPPATH\\Views\\peminjam_sertifikat\\detail_peminjam_serti.php', 104)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_sertifikat\\detail_peminjam_serti.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/peminjam_sertifikat/detail_peminjam_serti', [], true)
+ 5 APPPATH\Controllers\PeminjamSertifikat.php(157): view('/peminjam_sertifikat/detail_peminjam_serti', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->detail('10')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 03:45:27 --> Undefined array key "link"
+in APPPATH\Views\peminjam_sertifikat\detail_peminjam_serti.php on line 104.
+ 1 APPPATH\Views\peminjam_sertifikat\detail_peminjam_serti.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "link"', 'APPPATH\\Views\\peminjam_sertifikat\\detail_peminjam_serti.php', 104)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_sertifikat\\detail_peminjam_serti.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/peminjam_sertifikat/detail_peminjam_serti', [], true)
+ 5 APPPATH\Controllers\PeminjamSertifikat.php(157): view('/peminjam_sertifikat/detail_peminjam_serti', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->detail('10')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 03:45:27 --> Undefined array key "link"
+in APPPATH\Views\peminjam_sertifikat\detail_peminjam_serti.php on line 104.
+ 1 APPPATH\Views\peminjam_sertifikat\detail_peminjam_serti.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "link"', 'APPPATH\\Views\\peminjam_sertifikat\\detail_peminjam_serti.php', 104)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_sertifikat\\detail_peminjam_serti.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/peminjam_sertifikat/detail_peminjam_serti', [], true)
+ 5 APPPATH\Controllers\PeminjamSertifikat.php(157): view('/peminjam_sertifikat/detail_peminjam_serti', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->detail('10')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 03:45:49 --> Undefined variable $link
+in APPPATH\Views\peminjam_sertifikat\detail_peminjam_serti.php on line 104.
+ 1 APPPATH\Views\peminjam_sertifikat\detail_peminjam_serti.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $link', 'APPPATH\\Views\\peminjam_sertifikat\\detail_peminjam_serti.php', 104)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_sertifikat\\detail_peminjam_serti.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/peminjam_sertifikat/detail_peminjam_serti', [], true)
+ 5 APPPATH\Controllers\PeminjamSertifikat.php(157): view('/peminjam_sertifikat/detail_peminjam_serti', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->detail('10')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 03:45:49 --> Undefined variable $link
+in APPPATH\Views\peminjam_sertifikat\detail_peminjam_serti.php on line 104.
+ 1 APPPATH\Views\peminjam_sertifikat\detail_peminjam_serti.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $link', 'APPPATH\\Views\\peminjam_sertifikat\\detail_peminjam_serti.php', 104)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_sertifikat\\detail_peminjam_serti.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/peminjam_sertifikat/detail_peminjam_serti', [], true)
+ 5 APPPATH\Controllers\PeminjamSertifikat.php(157): view('/peminjam_sertifikat/detail_peminjam_serti', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->detail('10')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 03:50:04 --> Undefined array key "link"
+in APPPATH\Views\peminjam_sertifikat\detail_peminjam_serti.php on line 104.
+ 1 APPPATH\Views\peminjam_sertifikat\detail_peminjam_serti.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "link"', 'APPPATH\\Views\\peminjam_sertifikat\\detail_peminjam_serti.php', 104)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_sertifikat\\detail_peminjam_serti.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/peminjam_sertifikat/detail_peminjam_serti', [], true)
+ 5 APPPATH\Controllers\PeminjamSertifikat.php(157): view('/peminjam_sertifikat/detail_peminjam_serti', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->detail('10')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 03:50:09 --> Undefined array key "link"
+in APPPATH\Views\peminjam_sertifikat\detail_peminjam_serti.php on line 104.
+ 1 APPPATH\Views\peminjam_sertifikat\detail_peminjam_serti.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "link"', 'APPPATH\\Views\\peminjam_sertifikat\\detail_peminjam_serti.php', 104)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_sertifikat\\detail_peminjam_serti.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/peminjam_sertifikat/detail_peminjam_serti', [], true)
+ 5 APPPATH\Controllers\PeminjamSertifikat.php(157): view('/peminjam_sertifikat/detail_peminjam_serti', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->detail('10')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 03:50:10 --> Undefined array key "link"
+in APPPATH\Views\peminjam_sertifikat\detail_peminjam_serti.php on line 104.
+ 1 APPPATH\Views\peminjam_sertifikat\detail_peminjam_serti.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "link"', 'APPPATH\\Views\\peminjam_sertifikat\\detail_peminjam_serti.php', 104)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_sertifikat\\detail_peminjam_serti.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/peminjam_sertifikat/detail_peminjam_serti', [], true)
+ 5 APPPATH\Controllers\PeminjamSertifikat.php(157): view('/peminjam_sertifikat/detail_peminjam_serti', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->detail('10')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 03:50:11 --> Undefined array key "link"
+in APPPATH\Views\peminjam_sertifikat\detail_peminjam_serti.php on line 104.
+ 1 APPPATH\Views\peminjam_sertifikat\detail_peminjam_serti.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "link"', 'APPPATH\\Views\\peminjam_sertifikat\\detail_peminjam_serti.php', 104)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_sertifikat\\detail_peminjam_serti.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/peminjam_sertifikat/detail_peminjam_serti', [], true)
+ 5 APPPATH\Controllers\PeminjamSertifikat.php(157): view('/peminjam_sertifikat/detail_peminjam_serti', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->detail('10')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 03:50:12 --> Undefined array key "link"
+in APPPATH\Views\peminjam_sertifikat\detail_peminjam_serti.php on line 104.
+ 1 APPPATH\Views\peminjam_sertifikat\detail_peminjam_serti.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "link"', 'APPPATH\\Views\\peminjam_sertifikat\\detail_peminjam_serti.php', 104)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_sertifikat\\detail_peminjam_serti.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/peminjam_sertifikat/detail_peminjam_serti', [], true)
+ 5 APPPATH\Controllers\PeminjamSertifikat.php(157): view('/peminjam_sertifikat/detail_peminjam_serti', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->detail('10')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 03:50:12 --> Undefined array key "link"
+in APPPATH\Views\peminjam_sertifikat\detail_peminjam_serti.php on line 104.
+ 1 APPPATH\Views\peminjam_sertifikat\detail_peminjam_serti.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "link"', 'APPPATH\\Views\\peminjam_sertifikat\\detail_peminjam_serti.php', 104)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_sertifikat\\detail_peminjam_serti.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/peminjam_sertifikat/detail_peminjam_serti', [], true)
+ 5 APPPATH\Controllers\PeminjamSertifikat.php(157): view('/peminjam_sertifikat/detail_peminjam_serti', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->detail('10')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
  8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

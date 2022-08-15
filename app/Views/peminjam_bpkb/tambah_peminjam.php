@@ -63,7 +63,7 @@
                                 <label for="exampleInputEmail1">Nomor Registrasi </label>
                                 <div class="input-group mb-3">
                                     <select class="form-control select2" name="id_bpkb" <?= ($validation->hasError('id_bpkb')) ? 'is-invalid' : ' '; ?> required autocomplete="on">
-                                        <option selected value="Cari " >Pilih Kendaraan</option>
+                                        <option selected value="Cari ">Pilih Kendaraan</option>
                                         <?php foreach ($getBpkb as $b) : ?>
                                             <option value="<?= $b['id_bpkb']; ?>"><?= $b['nomor_registrasi']; ?> </option>
                                         <?php endforeach; ?>

@@ -19,12 +19,9 @@
 <div class="content">
     <div class="container-fluid">
         <?= csrf_field(); ?>
-        <div class="card-header">
-            <a href="<?= site_url('/peminjamsertifikat/edit/') . $peminjamsertifikat['id_peminjam_sertifikat'] ?>" class="btn btn-sm btn-warning">Perubahan Data</a>
-        </div>
         <div class="row">
             <div class="col">
-                <div class="card" style="width:768px; height: 334px;">
+                <div class="card" style="width:768px; height: fit-content">
                     <div class="card-body">
                         <div class="row">
                             <div class="col">
@@ -62,7 +59,7 @@
                                         <td></td>
                                     </tr>
                                     <tr>
-                                        <td class="sub-label">Sertifikat yang Dipinjam</td>
+                                        <td class="sub-label">Nama Objek</td>
                                         <td class="sub-label">:</td>
                                         <td><?= $peminjamsertifikat['intro']; ?></td>
                                     </tr>
@@ -102,6 +99,11 @@
                             </div>
                             <div class="col">
                                 <div>
+                                    <div class="images">
+                                        <?php foreach ($getImg as $key => $link) : ?>
+                                            <img src="<?= base_url('foto_peminjam_sf/' . $link['link']); ?>" alt="" class="card" style="max-height: 250px;">
+                                        <?php endforeach; ?>
+                                    </div>
                                     <table align="center">
                                         <tr>
                                             <td class="sub-label mt-2">
@@ -135,7 +137,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card" style="height: 334px;">
+                <div class="card" style="height: 465px;;">
                     <div class="card-body">
                         <div class="row">
                             <div class="col">

@@ -1,7 +1,7 @@
 <?php
 date_default_timezone_set('Asia/Jakarta');
 
-use App\Controllers\Peminjam;
+use App\Controllers\PeminjamSertifikat;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -89,20 +89,18 @@ use App\Controllers\Peminjam;
         <p class="title">Nomor : 121643636</p>
     </div>
     <div class="isi">
-        <p>Hari <?= date('l') ?> tanggal <?= date('d') ?> bulan <?= date('F') ?> tahun <?= date('Y') ?> telah diterima dokumen kendaraan bermotor
-            berupa Bukti Pemilikan Kendaraan Bermotor (BPKB) dengan nomor Polisi <?= $peminjam['nomor_registrasi'] ?> milik Pemerintah
-            Kota Yogyakarta dari : </p>
+        <p>Hari <?= date('l') ?> tanggal <?= date('d') ?> bulan <?= date('F') ?> tahun <?= date('Y') ?> telah diterima dokumen sertifikat/surat kekancingan tanah milik/dikuasai dengan nomor ............ berlokasi di .................. dari : </p>
         <div class="justify">
             <table class="mx-auto" style="width: 800px; font-size:21.2px">
                 <tr>
                     <td class="label">Nama</td>
                     <td class="label">:</td>
-                    <td class="label">&nbsp;&nbsp;&nbsp;<?= $peminjam['nama_lengkap'] ?>.</td>
+                    <td class="label">&nbsp;&nbsp;&nbsp;<?= $peminjamsertifikat['nama_lengkap'] ?>.</td>
                 </tr>
                 <tr>
                     <td class="label">NIP</td>
                     <td class="label">:</td>
-                    <td class="label">&nbsp;&nbsp;&nbsp;<?= $peminjam['nik'] ?>.</td>
+                    <td class="label">&nbsp;&nbsp;&nbsp;<?= $peminjamsertifikat['nik'] ?>.</td>
                 </tr>
                 <tr>
                     <td class="label">Instansi</td>
@@ -112,7 +110,7 @@ use App\Controllers\Peminjam;
                 <tr>
                     <td class="label">Keperluan</td>
                     <td class="label">:</td>
-                    <td class="label">&nbsp;&nbsp;&nbsp;Sebagian syarat pembayaran pajak kendaraan bermotor lima (5) tahunan.</td>
+                    <td class="label">&nbsp;&nbsp;&nbsp;<?= $peminjamsertifikat['keperluan'] ?>.</td>
                 </tr>
             </table>
         </div>
@@ -145,8 +143,8 @@ use App\Controllers\Peminjam;
             </tr>
 
             <tr>
-                <td class="sub-label mt-5"><?= $peminjam['nama_petugas_pinjam'] ?></td>
-                <td class="sub-label mt-5"><?= $peminjam['nama_lengkap'] ?></td>
+                <td class="sub-label mt-5"><?= $peminjamsertifikat['nama_petugas_pinjam'] ?></td>
+                <td class="sub-label mt-5"><?= $peminjamsertifikat['nama_lengkap'] ?></td>
             </tr>
         </table>
     </div>
