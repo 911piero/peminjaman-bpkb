@@ -14,9 +14,27 @@ use App\Controllers\Peminjam;
 
     <style>
         @media print {
+            .img {
+                width: 210mm;
+                height: 297mm;
+                margin-top: 200px;
+                margin-bottom: 170px;
+            }
+
             .card-header {
                 display: none;
             }
+
+            #toolbarContainer {
+                display: none;
+            }
+        }
+
+        .img {
+            height: 297mm;
+            width: 210mm;
+            margin-left: auto;
+            margin-right: auto;
         }
     </style>
 
@@ -41,42 +59,68 @@ use App\Controllers\Peminjam;
     <!-- summernote -->
 </head>
 
-<div class="card-header">
-    <button onclick="window.print()" class="btn btn-outline-secondary btn-shadow float-right">PRINT<i class="fa fa-print"></i></button>
-</div>
-<div class="card">
-    <div class="row">
-        <div class="col">
-            <table class="table table-bordered" border="1px">
-
-                <tr>
-                    <td>
-                        <center><img src="<?= base_url('adminlte/dist/img/Logo.png'); ?>" alt="" height="100" width="90"></center>
-                        <hr>
-                        <center><img src="<?= base_url('adminlte/dist/img/AdminLTELogo.png'); ?>" alt="" height="100" width="90"></center>
-                        <img src="<?= $sertifikat['img1']; ?>" style="height:250px; width:50%" alt="">
-                        <img src="<?= $sertifikat['img1']; ?>" style="height:250px; width:50%" alt="">
-                    </td>
-                    <td>
-                        <center><img src="<?= base_url('adminlte/dist/img/Logo.png'); ?>" alt="" height="100" width="90"></center>
-                        <hr>
-                        <center><img src="<?= base_url('adminlte/dist/img/Logo.png'); ?>" alt="" height="100" width="90"></center>
-                        <img src="<?= $sertifikat['img1']; ?>" style="height:250px; width:50%" alt="">
-                        <img src="<?= $sertifikat['img1']; ?>" style="height:250px; width:50%" alt="">
-                    </td>
-                    <td>
-                        <center><img src="<?= base_url('adminlte/dist/img/Logo.png'); ?>" alt="" height="100" width="90"></center>
-                        <hr>
-                        <center><img src="<?= base_url('adminlte/dist/img/Logo.png'); ?>" alt="" height="100" width="90"></center>
-                        <img src="<?= $sertifikat['img1']; ?>" style="height:250px; width:50%" alt="">
-                        <img src="<?= $sertifikat['img1']; ?>" style="height:250px; width:50%" alt="">
-                    </td>
-                </tr>
-            </table>
-        </div>
+<body>
+    <div class="card-header">
+        <a href="<?php echo $_SERVER['HTTP_REFERER'] ?>" class="btn btn-outline-info btn-shadow">Kembali</a>
+        <button onclick="window.print()" class="btn btn-outline-secondary btn-shadow float-right">PRINT<i class="fa fa-print"></i></button>
     </div>
+    <div class="card">
+        <table class="table">
+            <?php
+            $link = $sertifikat['img1'];
+            if ($sertifikat['img1'] == null) {
+                echo '';
+            } else {
+                echo '<center><img class="img" src="' . base_url('BPKAD/') . '/' .  $sertifikat['img1'] . '.jpg' . '" ></center>';
+            }
+            ?>
+            <?php
+            $link = $sertifikat['img2'];
+            if ($sertifikat['img2'] == null) {
+                echo '';
+            } else {
+                echo '<center><img class="img" src="' . base_url('BPKAD/') . '/' .  $sertifikat['img2'] . '.jpg' . '"></center>';
+            }
+            ?>
 
-</div>
+            <?php
+            $link = $sertifikat['img3'];
+            if ($sertifikat['img3'] == null) {
+                echo '';
+            } else {
+                echo '<center><img class="img" src="' . base_url('BPKAD/') . '/' .  $sertifikat['img3'] . '.jpg' . '" ></center>';
+            }
+            ?>
+
+            <?php
+            $link = $sertifikat['img4'];
+            if ($sertifikat['img4'] == null) {
+                echo '';
+            } else {
+                echo '<center><img class="img" src="' . base_url('BPKAD/') . '/' .  $sertifikat['img4'] . '.jpg' . '" ></center>';
+            }
+            ?>
+
+            <?php
+            $link = $sertifikat['img5'];
+            if ($sertifikat['img5'] == null) {
+                echo '';
+            } else {
+                echo '<center><img class="img" src="' . base_url('BPKAD/') . '/' .  $sertifikat['img5'] . '.jpg' . '" ></center>';
+            }
+            ?>
+
+            <?php
+            $link = $sertifikat['img6'];
+            if ($sertifikat['img6'] == null) {
+                echo '';
+            } else {
+                echo '<center><img class="img" src="' . base_url('BPKAD/') . '/' .  $sertifikat['img6'] . '.jpg' . '" ></center>';
+            }
+            ?>
+        </table>
+    </div>
+</body>
 
 
 <!-- jQuery -->

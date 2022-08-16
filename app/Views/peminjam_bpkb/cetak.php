@@ -16,7 +16,7 @@ use App\Controllers\Peminjam;
                 display: none;
             }
 
-            #toolbarContainer{
+            #toolbarContainer {
                 display: none;
             }
         }
@@ -29,24 +29,25 @@ use App\Controllers\Peminjam;
             text-align: center;
         }
 
-        .isi{
+        .isi {
             text-align: justify;
         }
 
-        .justify{
+        .justify {
             text-align: justify;
         }
 
-        .sub-label{
+        .sub-label {
             text-align: center;
             font-size: 21.2px;
         }
+
         p {
             font-size: 21.2px;
             text-align: justify;
         }
 
-        .isi{
+        .isi {
             margin: 70px;
         }
     </style>
@@ -75,6 +76,7 @@ use App\Controllers\Peminjam;
     <!-- summernote -->
 </head>
 <div class="card-header">
+    <a href="<?php echo $_SERVER['HTTP_REFERER'] ?>" class="btn btn-outline-info btn-shadow">Kembali</a>
     <button onclick="window.print()" class="btn btn-outline-secondary btn-shadow float-right">PRINT<i class="fa fa-print"></i></button>
 </div>
 <div class="container">
@@ -87,20 +89,20 @@ use App\Controllers\Peminjam;
         <p class="title">Nomor : 121643636</p>
     </div>
     <div class="isi">
-        <p>Hari <?=date('l')?> tanggal <?=date('d')?> bulan <?=date('F')?> tahun <?=date('Y')?> telah diterima dokumen kendaraan bermotor
-        berupa Bukti Pemilikan Kendaraan Bermotor (BPKB) dengan nomor Polisi <?=$peminjam['nomor_registrasi']?> milik Pemerintah
-        Kota Yogyakarta dari : </p>
+        <p>Hari <?= date('l') ?> tanggal <?= date('d') ?> bulan <?= date('F') ?> tahun <?= date('Y') ?> telah diterima dokumen kendaraan bermotor
+            berupa Bukti Pemilikan Kendaraan Bermotor (BPKB) dengan nomor Polisi <?= $peminjam['nomor_registrasi'] ?> milik Pemerintah
+            Kota Yogyakarta dari : </p>
         <div class="justify">
             <table class="mx-auto" style="width: 800px; font-size:21.2px">
                 <tr>
                     <td class="label">Nama</td>
                     <td class="label">:</td>
-                    <td class="label">&nbsp;&nbsp;&nbsp;<?=$peminjam['nama_lengkap']?>.</td>
+                    <td class="label">&nbsp;&nbsp;&nbsp;<?= $peminjam['nama_lengkap'] ?>.</td>
                 </tr>
                 <tr>
                     <td class="label">NIP</td>
                     <td class="label">:</td>
-                    <td class="label">&nbsp;&nbsp;&nbsp;<?=$peminjam['nik']?>.</td>
+                    <td class="label">&nbsp;&nbsp;&nbsp;<?= $peminjam['nik'] ?>.</td>
                 </tr>
                 <tr>
                     <td class="label">Instansi</td>
@@ -119,7 +121,7 @@ use App\Controllers\Peminjam;
     </div>
     <br>
     <br>
-    <div class="justify" >
+    <div class="justify">
         <table class="mx-auto" style="width: 800px;">
             <tr>
                 <td class="sub-label">Yang menyerahkan</td>
@@ -143,8 +145,8 @@ use App\Controllers\Peminjam;
             </tr>
 
             <tr>
-                <td class="sub-label mt-5"><?=$peminjam['nama_petugas_pinjam']?></td>
-                <td class="sub-label mt-5"><?=$peminjam['nama_lengkap']?></td>
+                <td class="sub-label mt-5"><?= $peminjam['nama_petugas_pinjam'] ?></td>
+                <td class="sub-label mt-5"><?= $peminjam['nama_lengkap'] ?></td>
             </tr>
         </table>
     </div>

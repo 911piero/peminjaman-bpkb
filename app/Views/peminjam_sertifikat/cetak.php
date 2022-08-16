@@ -76,6 +76,7 @@ use App\Controllers\PeminjamSertifikat;
     <!-- summernote -->
 </head>
 <div class="card-header">
+    <a href="<?php echo $_SERVER['HTTP_REFERER'] ?>" class="btn btn-outline-info btn-shadow">Kembali</a>
     <button onclick="window.print()" class="btn btn-outline-secondary btn-shadow float-right">PRINT<i class="fa fa-print"></i></button>
 </div>
 <div class="container">

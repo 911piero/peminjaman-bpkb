@@ -112,6 +112,11 @@ class PeminjamSertifikat extends BaseController
         ])) {
             return redirect()->to('/peminjamsertifikat/create')->withInput();
         }
+        //Ambil File Gambar
+        $fotoKtp = $this->request->getFile('foto_ktp');
+
+        //nama file
+        $namaFoto = $fotoKtp->getRandomName();
 
         $data_peminjam_sertifikat = [
             'nama_lengkap' => $this->request->getVar('nama_lengkap'),
@@ -125,20 +130,29 @@ class PeminjamSertifikat extends BaseController
             'tgl_pinjam' => $this->request->getVar('tgl_pinjam'),
             'status' => "Pinjam"
         ];
-        if ($this->PeminjamSertifikatModel->tambahData($data_peminjam_sertifikat))
+        $data_gambar = [
+            'nik' => $this->request->getVar('nik'),
+            'link' => $namaFoto
+        ];
+        if ($this->PeminjamSertifikatModel->tambahData($data_peminjam_sertifikat, $data_gambar)) {
+            $fotoKtp->move('foto_peminjam_sf/', $namaFoto);
+        }
 
-            return redirect()->to('/peminjamsertifikat/index');
+
+        return redirect()->to('/peminjamsertifikat/index');
     }
 
     public function detail($id)
     {
         $data = $this->PeminjamSertifikatModel->getDetail($id);
         $nik = $data['nik'];
+        $getImg = $this->PeminjamSertifikatModel->getImg($nik);
         $data = [
             'title' => 'Detail Peminjaman',
             'page_title' => 'Detail Peminjaman',
             'peminjamsertifikat' => $data,
             'id_peminjam_sertifikat' => $nik,
+            'getImg' => $getImg,
         ];
         return view('/peminjam_sertifikat/detail_peminjam_serti', $data);
     }

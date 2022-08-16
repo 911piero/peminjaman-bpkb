@@ -12,9 +12,13 @@ class PeminjamSertifikatModel extends Model
     protected $dateformat = 'date';
     protected $allowedFields = ['nama_lengkap', 'nik', 'id_sertifikat', 'nama_petugas_pinjam', 'nip_petugas_pinjam', 'nama_petugas_kembali', 'nip_petugas_kembali', 'tgl_pinjam', 'tgl_kembali', 'status'];
 
-    public function tambahData($data_peminjam_sertifikat)
+    public function tambahData($data_peminjam_sertifikat, $data_gambar)
     {
-        return $this->db->table('data_peminjam_sertifikat')->insert($data_peminjam_sertifikat);
+        $this->db->table('data_peminjam_sertifikat')->insert($data_peminjam_sertifikat);
+
+        return $this->db
+            ->table('peminjam_gambar')
+            ->insert($data_gambar);
     }
 
     public function getDetail($id)
@@ -43,5 +47,14 @@ class PeminjamSertifikatModel extends Model
             ])
             ->where('id_peminjam_sertifikat', $id)
             ->update();
+    }
+
+    public function getImg($nik)
+    {
+        return $this->db
+            ->table('peminjam_gambar')
+            ->where('nik', $nik)
+            ->get()
+            ->getResultArray();
     }
 }
