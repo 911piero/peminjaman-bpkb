@@ -21,8 +21,9 @@ class Bpkb extends BaseController
         $this->PeminjamModel = new PeminjamModel();
         $this->MutasiModel = new MutasiModel();
     }
-    
-    public function home(){
+
+    public function home()
+    {
 
         $resultBpkb = $this->BpkbModel->getBpkb()->resultID->num_rows;
         $resultPeminjam = $this->PeminjamModel->get()->resultID->num_rows;

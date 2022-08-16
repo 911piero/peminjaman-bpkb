@@ -2,8 +2,8 @@
 
 namespace App\Controllers;
 
-use App\Models\BpkbModel;
 use App\Models\SertifikatModel;
+use App\Models\PeminjamSertifikatModel;
 
 use \Hermawan\DataTables\DataTable;
 
@@ -12,6 +12,23 @@ class Sertifikat extends BaseController
     public function __construct()
     {
         $this->SertifikatModel = new SertifikatModel();
+        $this->PeminjamSertifikat = new PeminjamSertifikatModel();
+    }
+
+    public function home()
+    {
+
+        $resultSf = $this->SertifikatModel->get()->resultID->num_rows;
+        $resultPeminjam = $this->PeminjamSertifikat->get()->resultID->num_rows;
+
+        $data = [
+            'title' => 'Dashboard Sertifikat | Aplikasi Digitalisasi',
+            'resultSf' => $resultSf,
+            'resultPeminjam' => $resultPeminjam,
+            'page_title' => 'Dashboard Sertifikat',
+        ];
+
+        return view('sertifikat/home_sf', $data);
     }
 
     public function index()
@@ -26,7 +43,7 @@ class Sertifikat extends BaseController
 
 
         $data = [
-            'title' => 'Home Sertifikat | Aplikasi Digitalisasi',
+            'title' => 'Cari Sertifikat | Aplikasi Digitalisasi',
             'page_title' => 'Cari Sertifikat',
             'kecamatan' => $kecamatan,
             'kelurahan' => $kelurahan,
@@ -63,9 +80,9 @@ class Sertifikat extends BaseController
                     return $status;
                 })
                 ->add('action', function ($row) {
-                    return 
-                    '<a href="/sertifikat/detail/' . $row->id . '"class="btn btn-outline-primary btn-shadow"><i class="fa fa-eye"></i></a>
-                    <a href="/sertifikat/cetak/' .$row->id . '" class="btn btn-outline-secondary btn-shadow"><i class="fa fa-print"></i></a>';
+                    return
+                        '<a href="/sertifikat/detail/' . $row->id . '"class="btn btn-outline-primary btn-shadow"><i class="fa fa-eye"></i></a>
+                    <a href="/sertifikat/cetak/' . $row->id . '" class="btn btn-outline-secondary btn-shadow"><i class="fa fa-print"></i></a>';
                 })
 
                 ->filter(function ($builder, $request) {
@@ -84,13 +101,13 @@ class Sertifikat extends BaseController
                     if ($request->sub_kategori) {
                         $builder->where('nm_subkategori', $request->sub_kategori);
                     }
-                    if($request->minDate){
+                    if ($request->minDate) {
                         $builder->where('tgl_awal >=', $request->minDate);
                     }
-                    if($request->maxDate){
+                    if ($request->maxDate) {
                         $builder->where('tgl_akhir <=', $request->maxDate);
                     }
-             
+
                     if ($request->status) {
                         $status = $request->status;
                         if ($status == "Aktif") {
@@ -106,7 +123,7 @@ class Sertifikat extends BaseController
         }
     }
 
-    
+
     public function cetak($id)
     {
         $data = $this->SertifikatModel->getDetail($id);

@@ -51,6 +51,29 @@ class Peminjam extends BaseController
         }
     }
 
+    public function listDataOverdate()
+    {
+
+        $today = date("Y/m/d");
+        if ($this->request->isAJAX()) {
+            $db = db_connect();
+            $builder = $db->table('data_peminjam')
+                ->join('data_bpkb', 'data_bpkb.id_bpkb = data_peminjam.id_bpkb')
+                ->select('id_peminjam, nama_lengkap, nik, data_bpkb.nomor_registrasi, nama_petugas_pinjam, nip_petugas_pinjam, nama_petugas_kembali, nip_petugas_kembali, tgl_pinjam, estimasi_kembali, data_peminjam.status')
+                ->where('estimasi_kembali <=', $today)
+                ->where('data_peminjam.status = "Pinjam"');
+
+            return DataTable::of($builder)
+                ->add('action', function ($row) {
+                    return
+                        '<a href="/peminjam/detail/' . $row->id_peminjam . '"class="btn btn-outline-primary btn-shadow"><i class="fa fa-eye"></i></a> 
+                        <a href="/peminjam/edit/' . $row->id_peminjam . '" class="btn btn-outline-warning btn-shadow"><i class="fa fa-pen"></i></a>
+                        <a href="/peminjam/cetak/' . $row->id_peminjam . '" class="btn btn-outline-secondary btn-shadow"><i class="fa fa-print"></i></a>';
+                })
+                ->toJson(true);
+        }
+    }
+
     public function create()
     {
         $findCond = ['status' => 'Tidak Dipinjam', 'isActive' => 1];

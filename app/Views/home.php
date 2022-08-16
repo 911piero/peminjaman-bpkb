@@ -51,7 +51,7 @@
                             </a>
                         </div>
                         <div class="col">
-                            <a href="<?= base_url('/sertifikat'); ?>" class="btn btn-app bg-primary justify-content-center align-items-center" style="padding:30px; height:fit-content; width: 300px;">
+                            <a href="<?= base_url('/sertifikat/home'); ?>" class="btn btn-app bg-primary justify-content-center align-items-center" style="padding:30px; height:fit-content; width: 300px;">
                                 <i class="fas fa-book " style="font-size: 70px;"></i>
                                 <p style="font-size: 30px;">Master Sertifikat</p>
                             </a>
