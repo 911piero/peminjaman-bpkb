@@ -59,6 +59,13 @@
                                     <?= $validation->getError('nip_petugas_pinjam'); ?>
                                 </div>
                             </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Nomor Surat Tanda Terima</label>
+                                <input type="text" class="form-control <?= ($validation->hasError('nomor_surat')) ? 'is-invalid' : ' '; ?>" id="nomor_surat" name="nomor_surat" placeholder="Masukan Nomor Surat Tanda Terima">
+                                <div class="invalid-feedback">
+                                    <?= $validation->getError('nomor_surat'); ?>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="col">

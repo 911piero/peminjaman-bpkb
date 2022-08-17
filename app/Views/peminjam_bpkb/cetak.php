@@ -86,7 +86,7 @@ use App\Controllers\Peminjam;
         </table>
         <br>
         <p class="title">Tanda Terima Dokumen</p>
-        <p class="title">Nomor : 121643636</p>
+        <p class="title">Nomor : <?= $peminjam['nomor_surat'] ?></p>
     </div>
     <div class="isi">
         <p>Hari <?= date('l') ?> tanggal <?= date('d') ?> bulan <?= date('F') ?> tahun <?= date('Y') ?> telah diterima dokumen kendaraan bermotor

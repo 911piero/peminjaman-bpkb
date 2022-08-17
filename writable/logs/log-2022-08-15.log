@@ -1896,3 +1896,249 @@ in APPPATH\Views\peminjam_sertifikat\detail_peminjam_serti.php on line 104.
  9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
 >>>>>>> c023f3553ca320c2e0d30f469bf76e1f6de49651
+ERROR - 2022-08-15 22:24:42 --> Table 'peminjaman_bpkb.data_peminjam_sertifikat' doesn't exist
+CRITICAL - 2022-08-15 22:24:42 --> Table 'peminjaman_bpkb.data_peminjam_sertifikat' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `data_peminjam_sertifikat`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `data_peminjam_sertifikat`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `data_peminjam_sertifikat`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_peminjam_sertifikat`', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\PeminjamSertifikat.php(23): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PeminjamSertifikat->index()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeminjamSertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-15 22:45:47 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`:tgl_pinjam` >= estimasi_kembali:' at line 4
+CRITICAL - 2022-08-15 22:45:47 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`:tgl_pinjam` >= estimasi_kembali:' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+WHERE `tgl_pinjam >= estimasi_kembali` `:tgl_pinjam` >= estimasi_kembali:', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+WHERE `tgl_pinjam >= estimasi_kembali` `:tgl_pinjam` >= estimasi_kembali:')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+WHERE `tgl_pinjam >= estimasi_kembali` `:tgl_pinjam` >= estimasi_kembali:')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+WHERE `tgl_pinjam >= estimasi_kembali` `:tgl_pinjam` >= estimasi_kembali:', [...], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(174): Hermawan\DataTables\DataTableQuery->countAll()
+ 7 APPPATH\Controllers\Peminjam.php(70): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->listDataOverdate()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-15 22:46:14 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`:tgl_pinjam` >= estimasi_kembali:' at line 4
+CRITICAL - 2022-08-15 22:46:14 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`:tgl_pinjam` >= estimasi_kembali:' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+WHERE `tgl_pinjam >= estimasi_kembali` `:tgl_pinjam` >= estimasi_kembali:', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+WHERE `tgl_pinjam >= estimasi_kembali` `:tgl_pinjam` >= estimasi_kembali:')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+WHERE `tgl_pinjam >= estimasi_kembali` `:tgl_pinjam` >= estimasi_kembali:')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+WHERE `tgl_pinjam >= estimasi_kembali` `:tgl_pinjam` >= estimasi_kembali:', [...], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(174): Hermawan\DataTables\DataTableQuery->countAll()
+ 7 APPPATH\Controllers\Peminjam.php(70): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->listDataOverdate()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-15 22:46:43 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`:tgl_pinjam` >= estimasi_kembali:' at line 4
+CRITICAL - 2022-08-15 22:46:43 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`:tgl_pinjam` >= estimasi_kembali:' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+WHERE `tgl_pinjam >= estimasi_kembali` `:tgl_pinjam` >= estimasi_kembali:', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+WHERE `tgl_pinjam >= estimasi_kembali` `:tgl_pinjam` >= estimasi_kembali:')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+WHERE `tgl_pinjam >= estimasi_kembali` `:tgl_pinjam` >= estimasi_kembali:')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+WHERE `tgl_pinjam >= estimasi_kembali` `:tgl_pinjam` >= estimasi_kembali:', [...], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(174): Hermawan\DataTables\DataTableQuery->countAll()
+ 7 APPPATH\Controllers\Peminjam.php(70): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->listDataOverdate()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-15 22:50:28 --> Unknown column '2022/08/15' in 'where clause'
+CRITICAL - 2022-08-15 22:50:28 --> Unknown column '2022/08/15' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+WHERE `2022/08/15` >= estimasi_kembali
+AND `data_peminjam`.`status` = "Pinjam"', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+WHERE `2022/08/15` >= estimasi_kembali
+AND `data_peminjam`.`status` = "Pinjam"')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+WHERE `2022/08/15` >= estimasi_kembali
+AND `data_peminjam`.`status` = "Pinjam"')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+WHERE `2022/08/15` >= estimasi_kembali
+AND `data_peminjam`.`status` = "Pinjam"', [], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(174): Hermawan\DataTables\DataTableQuery->countAll()
+ 7 APPPATH\Controllers\Peminjam.php(73): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->listDataOverdate()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-15 22:50:55 --> Unknown column '$today' in 'where clause'
+CRITICAL - 2022-08-15 22:50:55 --> Unknown column '$today' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+WHERE `$today` >= estimasi_kembali
+AND `data_peminjam`.`status` = "Pinjam"', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+WHERE `$today` >= estimasi_kembali
+AND `data_peminjam`.`status` = "Pinjam"')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+WHERE `$today` >= estimasi_kembali
+AND `data_peminjam`.`status` = "Pinjam"')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+WHERE `$today` >= estimasi_kembali
+AND `data_peminjam`.`status` = "Pinjam"', [], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(174): Hermawan\DataTables\DataTableQuery->countAll()
+ 7 APPPATH\Controllers\Peminjam.php(73): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->listDataOverdate()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-15 22:51:07 --> Unknown column '$today' in 'where clause'
+CRITICAL - 2022-08-15 22:51:07 --> Unknown column '$today' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+WHERE `$today` >= estimasi_kembali
+AND `data_peminjam`.`status` = "Pinjam"', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+WHERE `$today` >= estimasi_kembali
+AND `data_peminjam`.`status` = "Pinjam"')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+WHERE `$today` >= estimasi_kembali
+AND `data_peminjam`.`status` = "Pinjam"')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+WHERE `$today` >= estimasi_kembali
+AND `data_peminjam`.`status` = "Pinjam"', [], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(174): Hermawan\DataTables\DataTableQuery->countAll()
+ 7 APPPATH\Controllers\Peminjam.php(73): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->listDataOverdate()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-15 22:52:08 --> Unknown column '$today' in 'where clause'
+CRITICAL - 2022-08-15 22:52:08 --> Unknown column '$today' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+WHERE `estimasi_kembali` <= $today
+AND `data_peminjam`.`status` = "Pinjam"', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+WHERE `estimasi_kembali` <= $today
+AND `data_peminjam`.`status` = "Pinjam"')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+WHERE `estimasi_kembali` <= $today
+AND `data_peminjam`.`status` = "Pinjam"')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+WHERE `estimasi_kembali` <= $today
+AND `data_peminjam`.`status` = "Pinjam"', [], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(174): Hermawan\DataTables\DataTableQuery->countAll()
+ 7 APPPATH\Controllers\Peminjam.php(73): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->listDataOverdate()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 23:06:58 --> Invalid file: sertifikat/home.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sertifikat/home.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/home', [], true)
+ 3 APPPATH\Controllers\Sertifikat.php(31): view('sertifikat/home', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->home()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-15 23:07:36 --> Undefined variable: resultBpkb
+in APPPATH\Views\sertifikat\home_sf.php on line 15.
+ 1 APPPATH\Views\sertifikat\home_sf.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: resultBpkb', 'APPPATH\\Views\\sertifikat\\home_sf.php', 15, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sertifikat\\home_sf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('sertifikat/home_sf', [], true)
+ 5 APPPATH\Controllers\Sertifikat.php(31): view('sertifikat/home_sf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->home()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

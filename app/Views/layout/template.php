@@ -262,6 +262,36 @@
                 ]
             });
         });
+        $(document).ready(function() {
+            $('#data_peminjam_overdate').DataTable({
+                processing: true,
+                serverSide: true,
+                ajax: '/peminjam/listDataOverdate',
+                columns: [{
+                        data: 'nama_lengkap'
+                    },
+                    {
+                        data: 'nik'
+                    },
+                    {
+                        data: 'nomor_registrasi'
+                    },
+                    {
+                        data: 'tgl_pinjam'
+                    },
+                    {
+                        data: 'estimasi_kembali'
+                    },
+                    {
+                        data: 'status'
+                    },
+                    {
+                        data: 'action',
+                        orderable: false
+                    },
+                ]
+            });
+        });
 
         $(document).ready(function() {
             $('#data_mutasi').DataTable({

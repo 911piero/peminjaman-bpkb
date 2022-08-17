@@ -91,6 +91,12 @@ class PeminjamSertifikat extends BaseController
                     'required' => 'NIP Petugas tidak boleh kosong!'
                 ]
             ],
+            'nomor_surat' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Nomor Surat Tanda Terima tidak boleh kosong!'
+                ]
+            ],
             'id_sertifikat' => [
                 'rules' => 'required',
                 'errors' => [
@@ -125,6 +131,7 @@ class PeminjamSertifikat extends BaseController
             'keperluan' => $this->request->getVar('keperluan'),
             'nama_petugas_pinjam' => $this->request->getVar('nama_petugas_pinjam'),
             'nip_petugas_pinjam' => $this->request->getVar('nip_petugas_pinjam'),
+            'nomor_surat' => $this->request->getVar('nomor_surat'),
             'nama_petugas_kembali' => "-",
             'nip_petugas_kembali' => "-",
             'tgl_pinjam' => $this->request->getVar('tgl_pinjam'),
@@ -200,6 +207,7 @@ class PeminjamSertifikat extends BaseController
             'nip_petugas_pinjam' => $this->request->getVar('nip_petugas_pinjam'),
             'nama_petugas_kembali' => $this->request->getVar('nama_petugas_kembali'),
             'nip_petugas_kembali' => $this->request->getVar('nip_petugas_kembali'),
+            'nomor_surat' => $this->request->getVar('nomor_surat'),
             'tgl_kembali' => $this->request->getVar('tgl_kembali'),
             'id_sertifikat' => $this->request->getVar('id_sertifikat'),
             'status' => 'Dikembalikan'

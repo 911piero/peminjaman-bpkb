@@ -40,7 +40,7 @@
             <section class="content">
                 <div class="container">
                     <div class="p-3 mb-5">
-                        <h2 class="d-flex align-items-center justify-content-center" style="font-size:100px;">Aplikasi Digitalisasi</h2>
+                        <h2 class="d-flex align-items-center justify-content-center" style="font-size:100px;">APLIKASI DIGITALISASI</h2>
                     </div>
 
                     <div class="row">
@@ -51,7 +51,7 @@
                             </a>
                         </div>
                         <div class="col">
-                            <a href="<?= base_url('/sertifikat'); ?>" class="btn btn-app bg-primary justify-content-center align-items-center" style="padding:30px; height:fit-content; width: 300px;">
+                            <a href="<?= base_url('/sertifikat/home'); ?>" class="btn btn-app bg-primary justify-content-center align-items-center" style="padding:30px; height:fit-content; width: 300px;">
                                 <i class="fas fa-book " style="font-size: 70px;"></i>
                                 <p style="font-size: 30px;">Master Sertifikat</p>
                             </a>

@@ -60,26 +60,40 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Nomor Registrasi </label>
-                                <div class="input-group mb-3">
-                                    <select class="form-control select2" name="id_bpkb" <?= ($validation->hasError('id_bpkb')) ? 'is-invalid' : ' '; ?> required autocomplete="on">
-                                        <option selected value="Cari ">Pilih Kendaraan</option>
-                                        <?php foreach ($getBpkb as $b) : ?>
-                                            <option value="<?= $b['id_bpkb']; ?>"><?= $b['nomor_registrasi']; ?> </option>
-                                        <?php endforeach; ?>
-                                    </select>
-                                    <div class="invalid-feedback">
-                                        <?= $validation->getError('model'); ?>
-                                    </div>
+                                <label for="exampleInputEmail1">Nomor Surat Tanda Terima</label>
+                                <input type="text" class="form-control <?= ($validation->hasError('nomor_surat')) ? 'is-invalid' : ' '; ?>" id="nomor_surat" name="nomor_surat" placeholder="Masukan Nomor Surat">
+                                <div class="invalid-feedback">
+                                    <?= $validation->getError('nomor_surat'); ?>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Keterangan Lokasi</label>
-                                <input type="text" class="form-control <?= ($validation->hasError('ket_lokasi')) ? 'is-invalid' : ' '; ?>" id="ket_lokasi" name="ket_lokasi" placeholder="Masukan Keterangan Lokasi">
-                                <div class="invalid-feedback">
-                                    <?= $validation->getError('ket_lokasi'); ?>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Nomor Registrasi </label>
+                                    <div class="input-group mb-3">
+                                        <select class="form-control select2" name="id_bpkb" <?= ($validation->hasError('id_bpkb')) ? 'is-invalid' : ' '; ?> required autocomplete="on">
+                                            <option selected value="Cari ">Pilih Kendaraan</option>
+                                            <?php foreach ($getBpkb as $b) : ?>
+                                                <option value="<?= $b['id_bpkb']; ?>"><?= $b['nomor_registrasi']; ?> </option>
+                                            <?php endforeach; ?>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            <?= $validation->getError('model'); ?>
+                                        </div>
+                                    </div>
+                                </div>
+                                <label for="exampleInputEmail1">Status Kendaraan</label>
+                                <div class="input-group mb-3">
+                                    <select name="status_kendaraan" class="custom-select form-control <?= ($validation->hasError('status_kendaraan')) ? 'is-invalid' : ' '; ?>" required>
+                                        <option value="">Pilih Status Kendaraan</option>
+                                        <option value="Pakai">Pakai</option>
+                                        <option value="Pinjam Pakai">Pinjam Pakai</option>
+                                        <option value="Tidak Pinjam">Tidak Pinjam</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        <?= $validation->getError('model'); ?>
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -96,17 +110,10 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Status Kendaraan</label>
-                                <div class="input-group mb-3">
-                                    <select name="status_kendaraan" class="custom-select form-control <?= ($validation->hasError('status_kendaraan')) ? 'is-invalid' : ' '; ?>" required>
-                                        <option value="">Pilih Status Kendaraan</option>
-                                        <option value="Pakai">Pakai</option>
-                                        <option value="Pinjam Pakai">Pinjam Pakai</option>
-                                        <option value="Tidak Pinjam">Tidak Pinjam</option>
-                                    </select>
-                                    <div class="invalid-feedback">
-                                        <?= $validation->getError('model'); ?>
-                                    </div>
+                                <label for="exampleInputEmail1">Keterangan Lokasi</label>
+                                <input type="text" class="form-control <?= ($validation->hasError('ket_lokasi')) ? 'is-invalid' : ' '; ?>" id="ket_lokasi" name="ket_lokasi" placeholder="Masukan Keterangan Lokasi">
+                                <div class="invalid-feedback">
+                                    <?= $validation->getError('ket_lokasi'); ?>
                                 </div>
                             </div>
                             <div class="form-group">
