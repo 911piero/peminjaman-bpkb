@@ -9,7 +9,7 @@ class PeminjamModel extends Model
     protected $table = 'data_peminjam';
     protected $primaryKey = 'id_peminjam';
     protected $useTimestamps = true;
-    protected $dateformat = 'date';
+    protected $dateformat = 'datetime';
     protected $allowedFields = ['nama_lengkap', 'nik', 'id_bpkb', 'nama_petugas_pinjam', 'nip_petugas_pinjam', 'nama_petugas_kembali', 'nip_petugas_kembali', 'nomor_surat', 'lokasi_kendaraan', 'status_kendaraan', 'ket_lokasi', 'tgl_pinjam', 'tgl_kembali', 'estimasi_kembali', 'status'];
 
     public function tambahData($data_peminjam, $data_gambar)

@@ -26,7 +26,7 @@ class Bpkb extends BaseController
     {
 
         $resultBpkb = $this->BpkbModel->getBpkb()->resultID->num_rows;
-        $resultPeminjam = $this->PeminjamModel->get()->resultID->num_rows;
+        $resultPeminjam = $this->PeminjamModel->where('status', 'Pinjam')->get()->resultID->num_rows;
         $resultMutasi = $this->MutasiModel->get()->resultID->num_rows;
         $data = [
             'title' => 'Home | Aplikasi Peminjaman BPKB',
@@ -62,12 +62,13 @@ class Bpkb extends BaseController
             $db = db_connect();
             $builder = $db->table('data_bpkb')
                 ->join('bpkb_model_kendaraan', 'bpkb_model_kendaraan.id_model = data_bpkb.model')
-                ->select('id_bpkb, nomor_registrasi, merk, nama_pemilik, bpkb_model_kendaraan.model, warna, status')
-                ->where('isActive', 1);
+                ->select('id_bpkb, nomor_registrasi, merk, nama_pemilik, bpkb_model_kendaraan.model, warna, status, data_bpkb.created_at')
+                ->where('isActive', 1)
+                ->orderBy('data_bpkb.created_at', 'DESC');;
 
             return DataTable::of($builder)
                 ->add('action', function ($row) {
-                    return '<a href="/bpkb/detail/' . $row->id_bpkb . '" class="btn-sm btn-primary">DETAILS</a>';
+                    return '<a href="/bpkb/detail/' . $row->id_bpkb . '" class="btn btn-outline-primary"><i class="fa fa-eye"></i></a>';
                 })
                 ->toJson(true);
         }
@@ -292,7 +293,7 @@ class Bpkb extends BaseController
                     'required' => 'Nama Pemilik tidak boleh kosong!'
                 ]
             ],
-            'alamat' => [
+            'alamat' => [ 
                 'rules' => 'required',
                 'errors' => [
                     'required' => 'Alamat tidak boleh kosong!'

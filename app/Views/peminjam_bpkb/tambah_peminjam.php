@@ -89,7 +89,7 @@
                                         <option value="">Pilih Status Kendaraan</option>
                                         <option value="Pakai">Pakai</option>
                                         <option value="Pinjam Pakai">Pinjam Pakai</option>
-                                        <option value="Tidak Pinjam">Tidak Pinjam</option>
+                                        
                                     </select>
                                     <div class="invalid-feedback">
                                         <?= $validation->getError('model'); ?>

@@ -20,7 +20,7 @@ class Peminjam extends BaseController
     {
 
         $getPeminjam = $this->PeminjamModel->findAll();
-        $resultPeminjam = $this->PeminjamModel->get()->resultID->num_rows;
+        $resultPeminjam = $this->PeminjamModel->where('status', 'Pinjam')->get()->resultID->num_rows;
 
         $data = [
             'title' => 'Peminjam | Aplikasi Peminjaman BPKB',
@@ -38,14 +38,22 @@ class Peminjam extends BaseController
             $db = db_connect();
             $builder = $db->table('data_peminjam')
                 ->join('data_bpkb', 'data_bpkb.id_bpkb = data_peminjam.id_bpkb')
-                ->select('id_peminjam, nama_lengkap, nik, data_bpkb.nomor_registrasi, nama_petugas_pinjam, nip_petugas_pinjam, nama_petugas_kembali, nip_petugas_kembali, tgl_pinjam, estimasi_kembali, data_peminjam.status');
+                ->select('id_peminjam, nama_lengkap, nik, data_bpkb.nomor_registrasi, nama_petugas_pinjam, nip_petugas_pinjam, nama_petugas_kembali, nip_petugas_kembali, tgl_pinjam, estimasi_kembali, data_peminjam.status, data_peminjam.created_at')
+                ->orderBy('data_peminjam.created_at', 'DESC');
 
             return DataTable::of($builder)
                 ->add('action', function ($row) {
+
+                    if($row->status == 'Dikembalikan'){
+                        return
+                        '<a href="/peminjam/detail/' . $row->id_peminjam . '"class="btn btn-outline-primary"><i class="fa fa-eye"></i></a> 
+                        <a href="/peminjam/cetak/' . $row->id_peminjam . '" class="btn btn-outline-secondary"><i class="fa fa-print"></i></a>';
+                    }
                     return
-                        '<a href="/peminjam/detail/' . $row->id_peminjam . '"class="btn btn-outline-primary btn-shadow"><i class="fa fa-eye"></i></a> 
-                        <a href="/peminjam/edit/' . $row->id_peminjam . '" class="btn btn-outline-warning btn-shadow"><i class="fa fa-pen"></i></a>
-                        <a href="/peminjam/cetak/' . $row->id_peminjam . '" class="btn btn-outline-secondary btn-shadow"><i class="fa fa-print"></i></a>';
+                        '<a href="/peminjam/detail/' . $row->id_peminjam . '"class="btn btn-outline-primary"><i class="fa fa-eye"></i></a> 
+                        <a href="/peminjam/edit/' . $row->id_peminjam . '" class="btn btn-outline-warning "><i class="fa fa-pen"></i></a>
+                        <a href="/peminjam/cetak/' . $row->id_peminjam . '" class="btn btn-outline-secondary "><i class="fa fa-print"></i></a>';
+                    
                 })
                 ->toJson(true);
         }
@@ -61,14 +69,13 @@ class Peminjam extends BaseController
                 ->join('data_bpkb', 'data_bpkb.id_bpkb = data_peminjam.id_bpkb')
                 ->select('id_peminjam, nama_lengkap, nik, data_bpkb.nomor_registrasi, nama_petugas_pinjam, nip_petugas_pinjam, nama_petugas_kembali, nip_petugas_kembali, tgl_pinjam, estimasi_kembali, data_peminjam.status')
                 ->where('estimasi_kembali <=', $today)
-                ->where('data_peminjam.status = "Pinjam"');
+                ->where('data_peminjam.status = "Pinjam"')
+                ;
 
             return DataTable::of($builder)
                 ->add('action', function ($row) {
                     return
-                        '<a href="/peminjam/detail/' . $row->id_peminjam . '"class="btn btn-outline-primary btn-shadow"><i class="fa fa-eye"></i></a> 
-                        <a href="/peminjam/edit/' . $row->id_peminjam . '" class="btn btn-outline-warning btn-shadow"><i class="fa fa-pen"></i></a>
-                        <a href="/peminjam/cetak/' . $row->id_peminjam . '" class="btn btn-outline-secondary btn-shadow"><i class="fa fa-print"></i></a>';
+                        '<a href="/peminjam/detail/' . $row->id_peminjam . '"class="btn btn-outline-primary btn-shadow"><i class="fa fa-eye"></i></a> ';
                 })
                 ->toJson(true);
         }

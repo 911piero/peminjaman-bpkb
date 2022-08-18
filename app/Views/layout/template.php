@@ -152,6 +152,7 @@
 
     <!-- REQUIRED SCRIPTS -->
     <!-- jQuery -->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="<?= base_url('adminlte/plugins/jquery/jquery.min.js'); ?>"></script>
     <!-- Bootstrap -->
     <script src="<?= base_url('adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js'); ?>"></script>
@@ -188,7 +189,13 @@
                 processing: true,
                 serverSide: true,
                 ajax: '/bpkb/listData',
-                columns: [{
+                columns: [
+                    { 
+                        data: null,"sortable": false, 
+                        render: function (data, type, row, meta) {
+                            return meta.row + meta.settings._iDisplayStart + 1;
+                        }  
+                    },{
                         data: 'nomor_registrasi'
                     },
                     {
@@ -210,35 +217,37 @@
                         data: 'action',
                         orderable: false
                     },
-                ]
+                ],
+                "rowCallback": function( row, data, index ) {
+                    
+                    if (data.status == "Dipinjam" ) {
+                            $('td:eq(0)', row).addClass("bg-danger");
+                            $('td:eq(6)', row).addClass("bg-danger");
+                           
+                        }
+                },
             });
+            
         });
 
-        $('#example').dataTable({
-            "columnDefs": [{
-                "targets": 3,
-                "createdCell": function(td, cellData, rowData, row, col) {
-                    if (cellData < 1) {
-                        $(td).css('color', 'red')
-                    }
-                }
-            }]
-        });
         $(document).ready(function() {
-            $('#data_peminjam').DataTable({
-                "columnDefs": [{
-                    "targets": 6,
-                    "createdCell": function(td, cellData, rowData, row, col) {
-                        if (cellData < 1) {
-                            $(td).css('color', 'red')
-                        }
-                    }
-                }],
+            var table = $('#data_peminjam').DataTable({
                 processing: true,
                 serverSide: true,
+                order: [
+                    [4, 'asc']
+                ],
                 ajax: '/peminjam/listData',
-                columns: [{
-                        data: 'nama_lengkap'
+                columns: [
+                    { 
+                        data: null,"sortable": false, 
+                        render: function (data, type, row, meta) {
+                            return meta.row + meta.settings._iDisplayStart + 1;
+                        }  
+                    },
+                    {
+                        data: 'nama_lengkap',
+                        orderable:false
                     },
                     {
                         data: 'nik'
@@ -253,15 +262,27 @@
                         data: 'estimasi_kembali'
                     },
                     {
-                        data: 'status'
+                        data: 'status',
                     },
                     {
                         data: 'action',
                         orderable: false
                     },
-                ]
+                ],
+                "rowCallback": function( row, data, index ) {
+                    var today = new Date();
+                    var date = today.getFullYear()+'-'+'0'+(today.getMonth()+1)+'-'+today.getDate();
+                    if (date >= data.estimasi_kembali && data.status == "Pinjam" ) {
+                            $('td:eq(0)', row).addClass("bg-danger");
+                            $('td:eq(5)', row).addClass("bg-danger");
+                           
+                        }
+                },
+                
             });
+
         });
+
         $(document).ready(function() {
             $('#data_peminjam_overdate').DataTable({
                 processing: true,
@@ -280,15 +301,18 @@
                         data: 'tgl_pinjam'
                     },
                     {
-                        data: 'estimasi_kembali'
+                        data: 'estimasi_kembali',
+                        color:'red'
                     },
                     {
-                        data: 'status'
+                        data: 'status',
+                        searchable: false
                     },
                     {
                         data: 'action',
                         orderable: false
                     },
+                    
                 ]
             });
         });

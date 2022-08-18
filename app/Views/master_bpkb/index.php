@@ -47,9 +47,10 @@ use app\Models\BpkbModel; ?>
           </div>
           <!-- /.card-header -->
           <div class="card-body">
-            <table id="data_bpkb" class="table table-bordered table-striped">
+            <table id="data_bpkb" class="table table-striped">
               <thead>
                 <tr>
+                  <th>No</th>
                   <th>Nomor Registrasi</th>
                   <th>Merk</th>
                   <th>Nama Pemilik</th>

@@ -1,0 +1,174 @@
+CRITICAL - 2022-08-18 01:06:03 --> Array to string conversion
+in APPPATH\Views\layout\template.php on line 290.
+ 1 APPPATH\Views\layout\template.php(290): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Views\\layout\\template.php', 290, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/template', [], true)
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('master_bpkb/home', [], true)
+ 6 APPPATH\Controllers\Bpkb.php(39): view('master_bpkb/home', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->home()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-18 03:53:00 --> Column 'created_at' in field list is ambiguous
+CRITICAL - 2022-08-18 03:53:00 --> Column 'created_at' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `id_peminjam`, `nama_lengkap`, `nik`, `data_bpkb`.`nomor_registrasi`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `estimasi_kembali`, `data_peminjam`.`status`, `created_at`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+ORDER BY `created_at` DESC, `tgl_pinjam` ASC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_peminjam`, `nama_lengkap`, `nik`, `data_bpkb`.`nomor_registrasi`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `estimasi_kembali`, `data_peminjam`.`status`, `created_at`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+ORDER BY `created_at` DESC, `tgl_pinjam` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_peminjam`, `nama_lengkap`, `nik`, `data_bpkb`.`nomor_registrasi`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `estimasi_kembali`, `data_peminjam`.`status`, `created_at`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+ORDER BY `created_at` DESC, `tgl_pinjam` ASC
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id_peminjam`, `nama_lengkap`, `nik`, `data_bpkb`.`nomor_registrasi`, `nama_petugas_pinjam`, `nip_petugas_pinjam`, `nama_petugas_kembali`, `nip_petugas_kembali`, `tgl_pinjam`, `estimasi_kembali`, `data_peminjam`.`status`, `created_at`
+FROM `data_peminjam`
+JOIN `data_bpkb` ON `data_bpkb`.`id_bpkb` = `data_peminjam`.`id_bpkb`
+ORDER BY `created_at` DESC, `tgl_pinjam` ASC
+ LIMIT 10', [], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(219): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+ 7 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 8 APPPATH\Controllers\Peminjam.php(51): Hermawan\DataTables\DataTable->toJson(true)
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->listData()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-18 04:04:19 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\Peminjam.php on line 46.
+ 1 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(91): App\Controllers\Peminjam->App\Controllers\{closure}(Object(stdClass))
+ 2 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 3 APPPATH\Controllers\Peminjam.php(57): Hermawan\DataTables\DataTable->toJson(true)
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->listData()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-18 04:05:50 --> Cannot use object of type CodeIgniter\Database\MySQLi\Builder as array
+in APPPATH\Controllers\Peminjam.php on line 49.
+ 1 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(91): App\Controllers\Peminjam->App\Controllers\{closure}(Object(stdClass))
+ 2 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 3 APPPATH\Controllers\Peminjam.php(60): Hermawan\DataTables\DataTable->toJson(true)
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->listData()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-18 04:06:04 --> Cannot use object of type CodeIgniter\Database\MySQLi\Builder as array
+in APPPATH\Controllers\Peminjam.php on line 49.
+ 1 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(91): App\Controllers\Peminjam->App\Controllers\{closure}(Object(stdClass))
+ 2 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 3 APPPATH\Controllers\Peminjam.php(57): Hermawan\DataTables\DataTable->toJson(true)
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->listData()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-18 04:06:22 --> Cannot use object of type CodeIgniter\Database\MySQLi\Builder as array
+in APPPATH\Controllers\Peminjam.php on line 49.
+ 1 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(91): App\Controllers\Peminjam->App\Controllers\{closure}(Object(stdClass))
+ 2 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 3 APPPATH\Controllers\Peminjam.php(56): Hermawan\DataTables\DataTable->toJson(true)
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->listData()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-18 04:07:39 --> Cannot use object of type CodeIgniter\Database\MySQLi\Builder as array
+in APPPATH\Controllers\Peminjam.php on line 49.
+ 1 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(91): App\Controllers\Peminjam->App\Controllers\{closure}(Object(stdClass))
+ 2 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 3 APPPATH\Controllers\Peminjam.php(57): Hermawan\DataTables\DataTable->toJson(true)
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->listData()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-18 04:08:53 --> Cannot use object of type CodeIgniter\Database\MySQLi\Builder as array
+in APPPATH\Controllers\Peminjam.php on line 48.
+ 1 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(91): App\Controllers\Peminjam->App\Controllers\{closure}(Object(stdClass))
+ 2 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 3 APPPATH\Controllers\Peminjam.php(58): Hermawan\DataTables\DataTable->toJson(true)
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->listData()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-18 04:09:26 --> Cannot use object of type CodeIgniter\Database\MySQLi\Builder as array
+in APPPATH\Controllers\Peminjam.php on line 48.
+ 1 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(91): App\Controllers\Peminjam->App\Controllers\{closure}(Object(stdClass))
+ 2 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 3 APPPATH\Controllers\Peminjam.php(58): Hermawan\DataTables\DataTable->toJson(true)
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->listData()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-18 04:19:26 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Peminjam.php on line 272.
+ 1 APPPATH\Controllers\Peminjam.php(272): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Peminjam.php', 272, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->detail('33')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-18 04:20:29 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Peminjam.php on line 272.
+ 1 APPPATH\Controllers\Peminjam.php(272): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Peminjam.php', 272, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->detail('33')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-18 04:22:05 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::where()
+in APPPATH\Controllers\Peminjam.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->index()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-18 04:25:24 --> Column 'created_at' in field list is ambiguous
+CRITICAL - 2022-08-18 04:25:24 --> Column 'created_at' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `id_bpkb`, `nomor_registrasi`, `merk`, `nama_pemilik`, `bpkb_model_kendaraan`.`model`, `warna`, `status`, `created_at`
+FROM `data_bpkb`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+WHERE `isActive` = 1
+ORDER BY `data_bpkb`.`created_at` DESC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_bpkb`, `nomor_registrasi`, `merk`, `nama_pemilik`, `bpkb_model_kendaraan`.`model`, `warna`, `status`, `created_at`
+FROM `data_bpkb`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+WHERE `isActive` = 1
+ORDER BY `data_bpkb`.`created_at` DESC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_bpkb`, `nomor_registrasi`, `merk`, `nama_pemilik`, `bpkb_model_kendaraan`.`model`, `warna`, `status`, `created_at`
+FROM `data_bpkb`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+WHERE `isActive` = 1
+ORDER BY `data_bpkb`.`created_at` DESC
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id_bpkb`, `nomor_registrasi`, `merk`, `nama_pemilik`, `bpkb_model_kendaraan`.`model`, `warna`, `status`, `created_at`
+FROM `data_bpkb`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+WHERE `isActive` = :isActive:
+ORDER BY `data_bpkb`.`created_at` DESC
+ LIMIT 10', [...], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(219): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+ 7 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 8 APPPATH\Controllers\Bpkb.php(73): Hermawan\DataTables\DataTable->toJson(true)
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->listData()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

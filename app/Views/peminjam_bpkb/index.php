@@ -44,9 +44,10 @@
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body">
-                        <table id="data_peminjam" class="table table-bordered table-striped">
+                        <table id="data_peminjam" class="table ">
                             <thead>
                                 <tr>
+                                    <th>No</th>
                                     <th>Nama Peminjam</th>
                                     <th>NIK</th>
                                     <th>Nomor Registrasi</th>
@@ -54,6 +55,7 @@
                                     <th>Estimasi Kembali</th>
                                     <th>Status</th>
                                     <th>Action</th>
+                               
                                 </tr>
                             </thead>
                         </table>

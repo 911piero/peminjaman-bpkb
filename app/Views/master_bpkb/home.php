@@ -60,13 +60,13 @@
       <div class="col">
         <!-- MAP & BOX PANE -->
         <div class="card">
-          <div class="card-header">
+          <div class="card-header bg-danger">
             <h3 class="card-title"><b>Peminjam Yang Melebihi Estimasi Waktu</b></h3>
 
           </div>
           <!-- /.card-header -->
           <div class="card-body">
-            <table id="data_peminjam_overdate" class="table table-bordered table-striped">
+            <table id="data_peminjam_overdate" class="table table-bordered table-striped  r" >
               <thead>
                 <tr>
                   <th>Nama Peminjam</th>
