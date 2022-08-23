@@ -3,7 +3,7 @@
 <?= $this->section('content'); ?>
 <section class="content">
     <div class="container-fluid">
-        <form action="/bpkb/save" method="post" enctype="multipart/form-data">
+        <form action="<?= site_url('/bpkb/save') ?>" method="post" enctype="multipart/form-data">
             <?= csrf_field(); ?>
             <div class="card card-primary">
                 <div class="card-header">
@@ -50,7 +50,7 @@
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Model</label>
                                 <div class="input-group mb-3">
-                                    <select name="model" class="custom-select form-control <?= ($validation->hasError('model')) ? 'is-invalid' : ' '; ?>" >
+                                    <select name="model" class="custom-select form-control <?= ($validation->hasError('model')) ? 'is-invalid' : ' '; ?>">
                                         <option selected value="">Pilih Model Kendaraan</option>
                                         <?php foreach ($model as $key) : ?>
                                             <option value="<?= $key['id_model']; ?>"><?= $key['model']; ?></option>
@@ -153,7 +153,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputFile">Foto BPKB</label> 
+                                <label for="exampleInputFile">Foto BPKB</label>
                                 <div class="input-group">
                                     <div class="custom-file">
                                         <input type="file" name="foto_bpkb" class="custom-file-input <?= ($validation->hasError('foto_bpkb')) ? 'is-invalid' : ' '; ?>" id="foto_bpkb">

@@ -172,12 +172,66 @@
     <script src="<?= base_url('adminlte/plugins/datatables-buttons/js/buttons.colVis.min.js'); ?>"></script>
     <script>
         $(document).ready(function() {
-
+            /* For Export Buttons available inside jquery-datatable "server side processing" - Start
+            - due to "server side processing" jquery datatble doesn't support all data to be exported
+            - below function makes the datatable to export all records when "server side processing" is on */
+            function newexportaction(e, dt, button, config) {
+                var self = this;
+                var oldStart = dt.settings()[0]._iDisplayStart;
+                dt.one('preXhr', function(e, s, data) {
+                    // Just this once, load all data from the server...
+                    data.start = 0;
+                    data.length = 2147483647;
+                    dt.one('preDraw', function(e, settings) {
+                        // Call the original action function
+                        if (button[0].className.indexOf('buttons-copy') >= 0) {
+                            $.fn.dataTable.ext.buttons.copyHtml5.action.call(self, e, dt, button, config);
+                        } else if (button[0].className.indexOf('buttons-excel') >= 0) {
+                            $.fn.dataTable.ext.buttons.excelHtml5.available(dt, config) ?
+                                $.fn.dataTable.ext.buttons.excelHtml5.action.call(self, e, dt, button, config) :
+                                $.fn.dataTable.ext.buttons.excelFlash.action.call(self, e, dt, button, config);
+                        } else if (button[0].className.indexOf('buttons-csv') >= 0) {
+                            $.fn.dataTable.ext.buttons.csvHtml5.available(dt, config) ?
+                                $.fn.dataTable.ext.buttons.csvHtml5.action.call(self, e, dt, button, config) :
+                                $.fn.dataTable.ext.buttons.csvFlash.action.call(self, e, dt, button, config);
+                        } else if (button[0].className.indexOf('buttons-pdf') >= 0) {
+                            $.fn.dataTable.ext.buttons.pdfHtml5.available(dt, config) ?
+                                $.fn.dataTable.ext.buttons.pdfHtml5.action.call(self, e, dt, button, config) :
+                                $.fn.dataTable.ext.buttons.pdfFlash.action.call(self, e, dt, button, config);
+                        } else if (button[0].className.indexOf('buttons-print') >= 0) {
+                            $.fn.dataTable.ext.buttons.print.action(e, dt, button, config);
+                        }
+                        dt.one('preXhr', function(e, s, data) {
+                            // DataTables thinks the first item displayed is index 0, but we're not drawing that.
+                            // Set the property to what it was before exporting.
+                            settings._iDisplayStart = oldStart;
+                            data.start = oldStart;
+                        });
+                        // Reload the grid with the original page. Otherwise, API functions like table.cell(this) don't work properly.
+                        setTimeout(dt.ajax.reload, 0);
+                        // Prevent rendering of the full data to the DOM
+                        return false;
+                    });
+                });
+                // Requery the server with the new one-time export settings
+                dt.ajax.reload();
+            };
+            //For Export Buttons available inside jquery-datatable "server side processing" - End
 
             table = $('#data_sertifikat').DataTable({
                 dom: 'Bfrtip',
-                buttons: [
-                    'copy', 'csv', 'excel', 'pdf', 'print'
+                buttons: [{
+                    "extend": 'excel',
+                    "text": 'Print Excel',
+                    "titleAttr": 'Excel',
+                    "className": 'btn btn-sm btn-success',
+                    "action": newexportaction,
+                    exportOptions: {
+                        columns: [1, 2, 3, 4, 5, 6, 7, 8, 9, 11]
+                    }
+                }, ],
+                order: [
+                    [8, 'desc']
                 ],
                 processing: true,
                 serverSide: true,
@@ -195,6 +249,13 @@
                     }
                 },
                 columns: [{
+                        data: null,
+                        "sortable": false,
+                        render: function(data, type, row, meta) {
+                            return meta.row + meta.settings._iDisplayStart + 1;
+                        },
+                        searchable: false,
+                    }, {
                         data: 'nama_proyek'
                     },
                     {
@@ -240,16 +301,82 @@
                     }
                 ]
             });
-
-
+            table.buttons().container().appendTo($('#test'));
 
         });
         $(document).ready(function() {
-            $('#data_peminjam_sertifikat').DataTable({
+            /* For Export Buttons available inside jquery-datatable "server side processing" - Start
+            - due to "server side processing" jquery datatble doesn't support all data to be exported
+            - below function makes the datatable to export all records when "server side processing" is on */
+            function newexportaction(e, dt, button, config) {
+                var self = this;
+                var oldStart = dt.settings()[0]._iDisplayStart;
+                dt.one('preXhr', function(e, s, data) {
+                    // Just this once, load all data from the server...
+                    data.start = 0;
+                    data.length = 2147483647;
+                    dt.one('preDraw', function(e, settings) {
+                        // Call the original action function
+                        if (button[0].className.indexOf('buttons-copy') >= 0) {
+                            $.fn.dataTable.ext.buttons.copyHtml5.action.call(self, e, dt, button, config);
+                        } else if (button[0].className.indexOf('buttons-excel') >= 0) {
+                            $.fn.dataTable.ext.buttons.excelHtml5.available(dt, config) ?
+                                $.fn.dataTable.ext.buttons.excelHtml5.action.call(self, e, dt, button, config) :
+                                $.fn.dataTable.ext.buttons.excelFlash.action.call(self, e, dt, button, config);
+                        } else if (button[0].className.indexOf('buttons-csv') >= 0) {
+                            $.fn.dataTable.ext.buttons.csvHtml5.available(dt, config) ?
+                                $.fn.dataTable.ext.buttons.csvHtml5.action.call(self, e, dt, button, config) :
+                                $.fn.dataTable.ext.buttons.csvFlash.action.call(self, e, dt, button, config);
+                        } else if (button[0].className.indexOf('buttons-pdf') >= 0) {
+                            $.fn.dataTable.ext.buttons.pdfHtml5.available(dt, config) ?
+                                $.fn.dataTable.ext.buttons.pdfHtml5.action.call(self, e, dt, button, config) :
+                                $.fn.dataTable.ext.buttons.pdfFlash.action.call(self, e, dt, button, config);
+                        } else if (button[0].className.indexOf('buttons-print') >= 0) {
+                            $.fn.dataTable.ext.buttons.print.action(e, dt, button, config);
+                        }
+                        dt.one('preXhr', function(e, s, data) {
+                            // DataTables thinks the first item displayed is index 0, but we're not drawing that.
+                            // Set the property to what it was before exporting.
+                            settings._iDisplayStart = oldStart;
+                            data.start = oldStart;
+                        });
+                        // Reload the grid with the original page. Otherwise, API functions like table.cell(this) don't work properly.
+                        setTimeout(dt.ajax.reload, 0);
+                        // Prevent rendering of the full data to the DOM
+                        return false;
+                    });
+                });
+                // Requery the server with the new one-time export settings
+                dt.ajax.reload();
+            };
+            //For Export Buttons available inside jquery-datatable "server side processing" - End
+
+            table2 = $('#data_peminjam_sertifikat').DataTable({
+                dom: 'Bfrtip',
+                buttons: [{
+                    "extend": 'excel',
+                    "text": 'Print Excel',
+                    "titleAttr": 'Excel',
+                    "className": 'btn btn-sm btn-success ml-3',
+                    "action": newexportaction,
+                    exportOptions: {
+                        columns: [1, 2, 3, 4, 5, 6, ]
+                    }
+                }, ],
+                order: [
+                    [5, 'desc']
+                ],
                 processing: true,
                 serverSide: true,
                 ajax: '/peminjamsertifikat/listData',
                 columns: [{
+                        data: null,
+                        "sortable": false,
+                        render: function(data, type, row, meta) {
+                            return meta.row + meta.settings._iDisplayStart + 1;
+                        },
+                        searchable: false,
+                    }, {
                         data: 'nama_lengkap'
                     },
                     {
@@ -264,7 +391,6 @@
                     {
                         data: 'tgl_pinjam'
                     },
-
                     {
                         data: 'status'
                     },
@@ -273,6 +399,7 @@
                         orderable: false
                     },
                 ]
+
             });
 
 
@@ -304,53 +431,9 @@
                 table.ajax.reload();
 
             });
+            table2.buttons().container().appendTo($('#btnPlace'));
+
         });
-
-
-
-
-
-        // $(document).ready(function() {
-        //     $('#data_sertifikat').DataTable({
-        //         processing: true,
-        //         serverSide: true,
-        //         ajax: '/sertifikat/listData',
-        //         columns: [{
-        //                 data: 'nama_proyek'
-        //             },
-        //             {
-        //                 data: 'intro'
-        //             },
-        //             {
-        //                 data: 'intro2'
-        //             },
-        //             {
-        //                 data: 'kecamatan'
-        //             },
-        //             {
-        //                 data: 'kelurahan'
-        //             },
-        //             {
-        //                 data: 'nm_kategori'
-        //             },
-        //             {
-        //                 data: 'nm_subkategori'
-        //             },
-        //             {
-        //                 data: 'tahun'
-        //             },
-        //             {
-        //                 data: 'tgl_akhir'
-        //             },
-        //             {
-        //                 data: 'action',
-        //                 orderable: false
-        //             }
-
-        //         ]
-        //     });
-
-        // });
     </script>
 </body>
 

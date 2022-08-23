@@ -1,0 +1,12 @@
+CRITICAL - 2022-08-23 07:05:20 --> Undefined index: dir
+in APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php on line 138.
+ 1 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(138): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: dir', 'APPPATH\\ThirdParty\\codeigniter4-datatables\\src\\DataTableQuery.php', 138, [...])
+ 2 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(206): Hermawan\DataTables\DataTableQuery->queryOrder(Object(CodeIgniter\Database\MySQLi\Builder))
+ 3 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+ 4 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 5 APPPATH\Controllers\Sertifikat.php(122): Hermawan\DataTables\DataTable->toJson(true)
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
