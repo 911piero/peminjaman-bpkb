@@ -47,7 +47,7 @@ use app\Models\BpkbModel; ?>
           </div>
           <!-- /.card-header -->
           <div class="card-body">
-            <table id="data_bpkb" class="table table-striped">
+            <table id="data_bpkb" class="table">
               <thead>
                 <tr>
                   <th>No</th>
@@ -56,8 +56,9 @@ use app\Models\BpkbModel; ?>
                   <th>Nama Pemilik</th>
                   <th>Model</th>
                   <th>Warna</th>
-                  <th>Status</th>
+
                   <th>Action</th>
+                  <th>Status</th>
                 </tr>
               </thead>
             </table>

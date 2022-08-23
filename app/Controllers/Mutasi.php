@@ -32,7 +32,8 @@ class Mutasi extends BaseController
         if ($this->request->isAJAX()) {
             $db = db_connect();
             $builder = $db->table('data_mutasi')
-                ->select('nomor_registrasi_lama, nomor_registrasi_baru, tgl_mutasi, jenis_mutasi');
+                ->select('nomor_registrasi_lama, nomor_registrasi_baru, tgl_mutasi, jenis_mutasi, created_at')
+                ->orderBy('created_at', 'DESC');
 
             return DataTable::of($builder)
                 ->toJson(true);

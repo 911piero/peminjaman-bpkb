@@ -172,3 +172,470 @@ ORDER BY `data_bpkb`.`created_at` DESC
 11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
 13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-18 07:46:53 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%1%' ESCAPE '!'
+OR  `nomor_registrasi` LIKE '%1%' ESCAPE '!'
+OR  `merk`...' at line 6
+CRITICAL - 2022-08-18 07:46:53 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%1%' ESCAPE '!'
+OR  `nomor_registrasi` LIKE '%1%' ESCAPE '!'
+OR  `merk`...' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `data_bpkb`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+WHERE `isActive` = 1
+AND   (
+ LIKE \'%1%\' ESCAPE \'!\'
+OR  `nomor_registrasi` LIKE \'%1%\' ESCAPE \'!\'
+OR  `merk` LIKE \'%1%\' ESCAPE \'!\'
+OR  `nama_pemilik` LIKE \'%1%\' ESCAPE \'!\'
+OR  `bpkb_model_kendaraan`.`model` LIKE \'%1%\' ESCAPE \'!\'
+OR  `warna` LIKE \'%1%\' ESCAPE \'!\'
+OR  `status` LIKE \'%1%\' ESCAPE \'!\'
+ )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `data_bpkb`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+WHERE `isActive` = 1
+AND   (
+ LIKE \'%1%\' ESCAPE \'!\'
+OR  `nomor_registrasi` LIKE \'%1%\' ESCAPE \'!\'
+OR  `merk` LIKE \'%1%\' ESCAPE \'!\'
+OR  `nama_pemilik` LIKE \'%1%\' ESCAPE \'!\'
+OR  `bpkb_model_kendaraan`.`model` LIKE \'%1%\' ESCAPE \'!\'
+OR  `warna` LIKE \'%1%\' ESCAPE \'!\'
+OR  `status` LIKE \'%1%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `data_bpkb`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+WHERE `isActive` = 1
+AND   (
+ LIKE \'%1%\' ESCAPE \'!\'
+OR  `nomor_registrasi` LIKE \'%1%\' ESCAPE \'!\'
+OR  `merk` LIKE \'%1%\' ESCAPE \'!\'
+OR  `nama_pemilik` LIKE \'%1%\' ESCAPE \'!\'
+OR  `bpkb_model_kendaraan`.`model` LIKE \'%1%\' ESCAPE \'!\'
+OR  `warna` LIKE \'%1%\' ESCAPE \'!\'
+OR  `status` LIKE \'%1%\' ESCAPE \'!\'
+ )')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `data_bpkb`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+WHERE `isActive` = :isActive:
+AND   (
+ LIKE :: ESCAPE \'!\'
+OR  `nomor_registrasi` LIKE :nomor_registrasi: ESCAPE \'!\'
+OR  `merk` LIKE :merk: ESCAPE \'!\'
+OR  `nama_pemilik` LIKE :nama_pemilik: ESCAPE \'!\'
+OR  `bpkb_model_kendaraan`.`model` LIKE :bpkb_model_kendaraan.model: ESCAPE \'!\'
+OR  `warna` LIKE :warna: ESCAPE \'!\'
+OR  `status` LIKE :status: ESCAPE \'!\'
+ )', [...], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 7 APPPATH\Controllers\Bpkb.php(73): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->listData()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-18 07:46:58 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%A%' ESCAPE '!'
+OR  `nomor_registrasi` LIKE '%A%' ESCAPE '!'
+OR  `merk`...' at line 6
+CRITICAL - 2022-08-18 07:46:58 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%A%' ESCAPE '!'
+OR  `nomor_registrasi` LIKE '%A%' ESCAPE '!'
+OR  `merk`...' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `data_bpkb`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+WHERE `isActive` = 1
+AND   (
+ LIKE \'%A%\' ESCAPE \'!\'
+OR  `nomor_registrasi` LIKE \'%A%\' ESCAPE \'!\'
+OR  `merk` LIKE \'%A%\' ESCAPE \'!\'
+OR  `nama_pemilik` LIKE \'%A%\' ESCAPE \'!\'
+OR  `bpkb_model_kendaraan`.`model` LIKE \'%A%\' ESCAPE \'!\'
+OR  `warna` LIKE \'%A%\' ESCAPE \'!\'
+OR  `status` LIKE \'%A%\' ESCAPE \'!\'
+ )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `data_bpkb`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+WHERE `isActive` = 1
+AND   (
+ LIKE \'%A%\' ESCAPE \'!\'
+OR  `nomor_registrasi` LIKE \'%A%\' ESCAPE \'!\'
+OR  `merk` LIKE \'%A%\' ESCAPE \'!\'
+OR  `nama_pemilik` LIKE \'%A%\' ESCAPE \'!\'
+OR  `bpkb_model_kendaraan`.`model` LIKE \'%A%\' ESCAPE \'!\'
+OR  `warna` LIKE \'%A%\' ESCAPE \'!\'
+OR  `status` LIKE \'%A%\' ESCAPE \'!\'
+ )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `data_bpkb`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+WHERE `isActive` = 1
+AND   (
+ LIKE \'%A%\' ESCAPE \'!\'
+OR  `nomor_registrasi` LIKE \'%A%\' ESCAPE \'!\'
+OR  `merk` LIKE \'%A%\' ESCAPE \'!\'
+OR  `nama_pemilik` LIKE \'%A%\' ESCAPE \'!\'
+OR  `bpkb_model_kendaraan`.`model` LIKE \'%A%\' ESCAPE \'!\'
+OR  `warna` LIKE \'%A%\' ESCAPE \'!\'
+OR  `status` LIKE \'%A%\' ESCAPE \'!\'
+ )')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `data_bpkb`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+WHERE `isActive` = :isActive:
+AND   (
+ LIKE :: ESCAPE \'!\'
+OR  `nomor_registrasi` LIKE :nomor_registrasi: ESCAPE \'!\'
+OR  `merk` LIKE :merk: ESCAPE \'!\'
+OR  `nama_pemilik` LIKE :nama_pemilik: ESCAPE \'!\'
+OR  `bpkb_model_kendaraan`.`model` LIKE :bpkb_model_kendaraan.model: ESCAPE \'!\'
+OR  `warna` LIKE :warna: ESCAPE \'!\'
+OR  `status` LIKE :status: ESCAPE \'!\'
+ )', [...], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(63): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 7 APPPATH\Controllers\Bpkb.php(73): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->listData()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-18 20:37:18 --> Call to undefined function 2022-07-19()
+in APPPATH\Views\peminjam_bpkb\cetak.php on line 95.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/cetak', [], true)
+ 4 APPPATH\Controllers\Peminjam.php(293): view('peminjam_bpkb/cetak', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('39')
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-18 20:39:23 --> Function name must be a string
+in APPPATH\Views\peminjam_bpkb\cetak.php on line 95.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/cetak', [], true)
+ 4 APPPATH\Controllers\Peminjam.php(293): view('peminjam_bpkb/cetak', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('39')
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-18 20:39:36 --> Function name must be a string
+in APPPATH\Views\peminjam_bpkb\cetak.php on line 95.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/cetak', [], true)
+ 4 APPPATH\Controllers\Peminjam.php(293): view('peminjam_bpkb/cetak', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('39')
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-18 20:45:55 --> Undefined offset: -1
+in APPPATH\Views\peminjam_bpkb\cetak.php on line 16.
+ 1 APPPATH\Views\peminjam_bpkb\cetak.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: -1', 'APPPATH\\Views\\peminjam_bpkb\\cetak.php', 16, [...])
+ 2 APPPATH\Views\peminjam_bpkb\cetak.php(111): format_indo('Thursday')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\cetak.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/cetak', [], true)
+ 6 APPPATH\Controllers\Peminjam.php(293): view('peminjam_bpkb/cetak', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('39')
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-18 20:46:46 --> Undefined offset: -1
+in APPPATH\Views\peminjam_bpkb\cetak.php on line 16.
+ 1 APPPATH\Views\peminjam_bpkb\cetak.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: -1', 'APPPATH\\Views\\peminjam_bpkb\\cetak.php', 16, [...])
+ 2 APPPATH\Views\peminjam_bpkb\cetak.php(111): format_indo('4')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\cetak.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/cetak', [], true)
+ 6 APPPATH\Controllers\Peminjam.php(293): view('peminjam_bpkb/cetak', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('39')
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-18 08:53:04 --> Undefined property: App\Controllers\Peminjam::$load
+in APPPATH\Controllers\Peminjam.php on line 17.
+ 1 APPPATH\Controllers\Peminjam.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Peminjam::$load', 'APPPATH\\Controllers\\Peminjam.php', 17, [])
+ 2 SYSTEMPATH\CodeIgniter.php(858): App\Controllers\Peminjam->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-18 08:53:41 --> Call to undefined function longdate_indo()
+in APPPATH\Views\peminjam_bpkb\cetak.php on line 88.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/cetak', [], true)
+ 4 APPPATH\Controllers\Peminjam.php(294): view('peminjam_bpkb/cetak', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('39')
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-18 08:53:55 --> Call to undefined function longdate_indo()
+in APPPATH\Views\peminjam_bpkb\cetak.php on line 88.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/cetak', [], true)
+ 4 APPPATH\Controllers\Peminjam.php(294): view('peminjam_bpkb/cetak', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('39')
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-18 08:55:18 --> Undefined property: App\Controllers\Peminjam::$load
+in APPPATH\Controllers\Peminjam.php on line 17.
+ 1 APPPATH\Controllers\Peminjam.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Peminjam::$load', 'APPPATH\\Controllers\\Peminjam.php', 17, [])
+ 2 SYSTEMPATH\CodeIgniter.php(858): App\Controllers\Peminjam->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-18 09:00:13 --> Call to undefined function Senin,15 Agustus 2022()
+in APPPATH\Views\peminjam_bpkb\cetak.php on line 92.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/cetak', [], true)
+ 4 APPPATH\Controllers\Peminjam.php(293): view('peminjam_bpkb/cetak', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('40')
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-18 09:00:26 --> Illegal string offset 'l'
+in APPPATH\Views\peminjam_bpkb\cetak.php on line 92.
+ 1 APPPATH\Views\peminjam_bpkb\cetak.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'l\'', 'APPPATH\\Views\\peminjam_bpkb\\cetak.php', 92, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\cetak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/cetak', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(293): view('peminjam_bpkb/cetak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('40')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-18 09:26:30 --> Undefined index: nip
+in APPPATH\Views\peminjam_bpkb\cetak.php on line 152.
+ 1 APPPATH\Views\peminjam_bpkb\cetak.php(152): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nip', 'APPPATH\\Views\\peminjam_bpkb\\cetak.php', 152, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\cetak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/cetak', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(293): view('peminjam_bpkb/cetak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('39')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-18 09:27:01 --> Undefined index: nip_petugas_peminjam
+in APPPATH\Views\peminjam_bpkb\cetak.php on line 152.
+ 1 APPPATH\Views\peminjam_bpkb\cetak.php(152): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nip_petugas_peminjam', 'APPPATH\\Views\\peminjam_bpkb\\cetak.php', 152, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\cetak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/cetak', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(293): view('peminjam_bpkb/cetak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('39')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-18 09:33:10 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\Bpkb.php(232): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\foto_bpkb', '1660833190_4f34132305bf95f0e852')
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->save()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-18 09:34:11 --> Unknown column 'action' in 'order clause'
+CRITICAL - 2022-08-18 09:34:11 --> Unknown column 'action' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `id_bpkb`, `nomor_registrasi`, `merk`, `nama_pemilik`, `bpkb_model_kendaraan`.`model`, `warna`, `status`, `data_bpkb`.`created_at`
+FROM `data_bpkb`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+WHERE `isActive` = 1
+ORDER BY `data_bpkb`.`created_at` DESC, `action` ASC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_bpkb`, `nomor_registrasi`, `merk`, `nama_pemilik`, `bpkb_model_kendaraan`.`model`, `warna`, `status`, `data_bpkb`.`created_at`
+FROM `data_bpkb`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+WHERE `isActive` = 1
+ORDER BY `data_bpkb`.`created_at` DESC, `action` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_bpkb`, `nomor_registrasi`, `merk`, `nama_pemilik`, `bpkb_model_kendaraan`.`model`, `warna`, `status`, `data_bpkb`.`created_at`
+FROM `data_bpkb`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+WHERE `isActive` = 1
+ORDER BY `data_bpkb`.`created_at` DESC, `action` ASC
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id_bpkb`, `nomor_registrasi`, `merk`, `nama_pemilik`, `bpkb_model_kendaraan`.`model`, `warna`, `status`, `data_bpkb`.`created_at`
+FROM `data_bpkb`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+WHERE `isActive` = :isActive:
+ORDER BY `data_bpkb`.`created_at` DESC, `action` ASC
+ LIMIT 10', [...], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(219): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+ 7 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 8 APPPATH\Controllers\Bpkb.php(73): Hermawan\DataTables\DataTable->toJson(true)
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->listData()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-18 09:34:40 --> Unknown column 'action' in 'order clause'
+CRITICAL - 2022-08-18 09:34:40 --> Unknown column 'action' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `id_bpkb`, `nomor_registrasi`, `merk`, `nama_pemilik`, `bpkb_model_kendaraan`.`model`, `warna`, `status`, `data_bpkb`.`created_at`
+FROM `data_bpkb`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+WHERE `isActive` = 1
+ORDER BY `data_bpkb`.`created_at` DESC, `action` ASC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_bpkb`, `nomor_registrasi`, `merk`, `nama_pemilik`, `bpkb_model_kendaraan`.`model`, `warna`, `status`, `data_bpkb`.`created_at`
+FROM `data_bpkb`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+WHERE `isActive` = 1
+ORDER BY `data_bpkb`.`created_at` DESC, `action` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_bpkb`, `nomor_registrasi`, `merk`, `nama_pemilik`, `bpkb_model_kendaraan`.`model`, `warna`, `status`, `data_bpkb`.`created_at`
+FROM `data_bpkb`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+WHERE `isActive` = 1
+ORDER BY `data_bpkb`.`created_at` DESC, `action` ASC
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id_bpkb`, `nomor_registrasi`, `merk`, `nama_pemilik`, `bpkb_model_kendaraan`.`model`, `warna`, `status`, `data_bpkb`.`created_at`
+FROM `data_bpkb`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+WHERE `isActive` = :isActive:
+ORDER BY `data_bpkb`.`created_at` DESC, `action` ASC
+ LIMIT 10', [...], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(219): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+ 7 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 8 APPPATH\Controllers\Bpkb.php(73): Hermawan\DataTables\DataTable->toJson(true)
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->listData()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-18 09:35:52 --> Unknown column 'action' in 'order clause'
+CRITICAL - 2022-08-18 09:35:52 --> Unknown column 'action' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `id_bpkb`, `nomor_registrasi`, `merk`, `nama_pemilik`, `bpkb_model_kendaraan`.`model`, `warna`, `status`, `data_bpkb`.`created_at`
+FROM `data_bpkb`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+WHERE `isActive` = 1
+ORDER BY `data_bpkb`.`created_at` DESC, `action` ASC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_bpkb`, `nomor_registrasi`, `merk`, `nama_pemilik`, `bpkb_model_kendaraan`.`model`, `warna`, `status`, `data_bpkb`.`created_at`
+FROM `data_bpkb`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+WHERE `isActive` = 1
+ORDER BY `data_bpkb`.`created_at` DESC, `action` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_bpkb`, `nomor_registrasi`, `merk`, `nama_pemilik`, `bpkb_model_kendaraan`.`model`, `warna`, `status`, `data_bpkb`.`created_at`
+FROM `data_bpkb`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+WHERE `isActive` = 1
+ORDER BY `data_bpkb`.`created_at` DESC, `action` ASC
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id_bpkb`, `nomor_registrasi`, `merk`, `nama_pemilik`, `bpkb_model_kendaraan`.`model`, `warna`, `status`, `data_bpkb`.`created_at`
+FROM `data_bpkb`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+WHERE `isActive` = :isActive:
+ORDER BY `data_bpkb`.`created_at` DESC, `action` ASC
+ LIMIT 10', [...], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(219): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+ 7 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 8 APPPATH\Controllers\Bpkb.php(73): Hermawan\DataTables\DataTable->toJson(true)
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->listData()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-18 09:36:38 --> Unknown column 'action' in 'order clause'
+CRITICAL - 2022-08-18 09:36:38 --> Unknown column 'action' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `id_bpkb`, `nomor_registrasi`, `merk`, `nama_pemilik`, `bpkb_model_kendaraan`.`model`, `warna`, `status`, `data_bpkb`.`created_at`
+FROM `data_bpkb`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+WHERE `isActive` = 1
+ORDER BY `data_bpkb`.`created_at` DESC, `action` ASC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_bpkb`, `nomor_registrasi`, `merk`, `nama_pemilik`, `bpkb_model_kendaraan`.`model`, `warna`, `status`, `data_bpkb`.`created_at`
+FROM `data_bpkb`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+WHERE `isActive` = 1
+ORDER BY `data_bpkb`.`created_at` DESC, `action` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_bpkb`, `nomor_registrasi`, `merk`, `nama_pemilik`, `bpkb_model_kendaraan`.`model`, `warna`, `status`, `data_bpkb`.`created_at`
+FROM `data_bpkb`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+WHERE `isActive` = 1
+ORDER BY `data_bpkb`.`created_at` DESC, `action` ASC
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id_bpkb`, `nomor_registrasi`, `merk`, `nama_pemilik`, `bpkb_model_kendaraan`.`model`, `warna`, `status`, `data_bpkb`.`created_at`
+FROM `data_bpkb`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+WHERE `isActive` = :isActive:
+ORDER BY `data_bpkb`.`created_at` DESC, `action` ASC
+ LIMIT 10', [...], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(219): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+ 7 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 8 APPPATH\Controllers\Bpkb.php(73): Hermawan\DataTables\DataTable->toJson(true)
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->listData()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-18 09:37:00 --> Unknown column 'action' in 'order clause'
+CRITICAL - 2022-08-18 09:37:00 --> Unknown column 'action' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `id_bpkb`, `nomor_registrasi`, `merk`, `nama_pemilik`, `bpkb_model_kendaraan`.`model`, `warna`, `status`, `data_bpkb`.`created_at`
+FROM `data_bpkb`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+WHERE `isActive` = 1
+ORDER BY `data_bpkb`.`created_at` DESC, `action` ASC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_bpkb`, `nomor_registrasi`, `merk`, `nama_pemilik`, `bpkb_model_kendaraan`.`model`, `warna`, `status`, `data_bpkb`.`created_at`
+FROM `data_bpkb`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+WHERE `isActive` = 1
+ORDER BY `data_bpkb`.`created_at` DESC, `action` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_bpkb`, `nomor_registrasi`, `merk`, `nama_pemilik`, `bpkb_model_kendaraan`.`model`, `warna`, `status`, `data_bpkb`.`created_at`
+FROM `data_bpkb`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+WHERE `isActive` = 1
+ORDER BY `data_bpkb`.`created_at` DESC, `action` ASC
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id_bpkb`, `nomor_registrasi`, `merk`, `nama_pemilik`, `bpkb_model_kendaraan`.`model`, `warna`, `status`, `data_bpkb`.`created_at`
+FROM `data_bpkb`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+WHERE `isActive` = :isActive:
+ORDER BY `data_bpkb`.`created_at` DESC, `action` ASC
+ LIMIT 10', [...], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(219): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+ 7 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(176): Hermawan\DataTables\DataTableQuery->getDataResult()
+ 8 APPPATH\Controllers\Bpkb.php(73): Hermawan\DataTables\DataTable->toJson(true)
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->listData()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

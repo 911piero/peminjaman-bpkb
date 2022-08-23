@@ -1,8 +1,3 @@
-<?php
-date_default_timezone_set('Asia/Jakarta');
-
-use App\Controllers\Peminjam;
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -76,8 +71,8 @@ use App\Controllers\Peminjam;
     <!-- summernote -->
 </head>
 <div class="card-header">
-    <a href="<?php echo $_SERVER['HTTP_REFERER'] ?>" class="btn btn-outline-info btn-shadow">Kembali</a>
-    <button onclick="window.print()" class="btn btn-outline-secondary btn-shadow float-right">PRINT<i class="fa fa-print"></i></button>
+    <a href="<?php echo $_SERVER['HTTP_REFERER'] ?>" class="btn btn-primary">Kembali</a>
+    <button onclick="window.print()" class="btn btn-secondary  float-right">PRINT&nbsp;<i class="fa fa-print"></i></button>
 </div>
 <div class="container">
     <div class="foto mt-5">
@@ -89,35 +84,40 @@ use App\Controllers\Peminjam;
         <p class="title">Nomor : <?= $peminjam['nomor_surat'] ?></p>
     </div>
     <div class="isi">
-        <p>Hari <?= date('l') ?> tanggal <?= date('d') ?> bulan <?= date('F') ?> tahun <?= date('Y') ?> telah diterima dokumen kendaraan bermotor
-            berupa Bukti Pemilikan Kendaraan Bermotor (BPKB) dengan nomor Polisi <?= $peminjam['nomor_registrasi'] ?> milik Pemerintah
+        <?php
+        $tgl_pinjam = longdate_indo($peminjam['tgl_pinjam']);
+
+
+        ?>
+        <p><?= $tgl_pinjam ?> telah diterima dokumen kendaraan bermotor
+            berupa Bukti Pemilikan Kendaraan Bermotor (BPKB) dengan nomor Polisi <b><?= $peminjam['nomor_registrasi'] ?></b> milik Pemerintah
             Kota Yogyakarta dari : </p>
         <div class="justify">
             <table class="mx-auto" style="width: 800px; font-size:21.2px">
                 <tr>
                     <td class="label">Nama</td>
-                    <td class="label">:</td>
-                    <td class="label">&nbsp;&nbsp;&nbsp;<?= $peminjam['nama_lengkap'] ?>.</td>
+                    <td class="label" style="padding-left: 100px;">:</td>
+                    <td class="label" style="padding-left: 30px;"><?= $peminjam['nama_lengkap'] ?>.</td>
                 </tr>
                 <tr>
-                    <td class="label">NIP</td>
-                    <td class="label">:</td>
-                    <td class="label">&nbsp;&nbsp;&nbsp;<?= $peminjam['nik'] ?>.</td>
+                    <td class="label">NIK</td>
+                    <td class="label" style="padding-left: 100px;">:</td>
+                    <td class="label" style="padding-left: 30px;"><?= $peminjam['nik'] ?>.</td>
                 </tr>
                 <tr>
                     <td class="label">Instansi</td>
-                    <td class="label">:</td>
-                    <td class="label">&nbsp;&nbsp;&nbsp;Pemerintah Kota.</td>
+                    <td class="label" style="padding-left: 100px;">:</td>
+                    <td class="label" style="padding-left: 30px;">Pemerintah Kota.</td>
                 </tr>
                 <tr>
-                    <td class="label">Keperluan</td>
-                    <td class="label">:</td>
-                    <td class="label">&nbsp;&nbsp;&nbsp;Sebagian syarat pembayaran pajak kendaraan bermotor lima (5) tahunan.</td>
+                    <td class="label" style="padding-bottom: 50px;">Keperluan</td>
+                    <td class="label" style="padding-left: 100px; padding-bottom: 50px;">:</td>
+                    <td class=" label" style="padding-left: 30px; padding-bottom: 15px;">Sebagian syarat pembayaran pajak kendaraan bermotor lima (5) tahunan.</td>
                 </tr>
             </table>
         </div>
         <br>
-        <p class="justify">Dokumen Tersebut telah diterima dalam keadaan baik untuk dapat ditindaklanjuti sesuai isi surat.</p>
+        <p class=" justify">Dokumen Tersebut telah diterima dalam keadaan baik untuk dapat ditindaklanjuti sesuai isi surat.</p>
     </div>
     <br>
     <br>
@@ -140,13 +140,17 @@ use App\Controllers\Peminjam;
                 <td class="sub-label "><br></td>
             </tr>
             <tr>
-                <td class="sub-label">(.........................)</td>
-                <td class="sub-label">(.........................)</td>
+                <td class="sub-label">(<?= $peminjam['nama_petugas_pinjam'] ?>)</td>
+                <td class="sub-label">(<?= $peminjam['nama_lengkap'] ?>)</td>
             </tr>
 
             <tr>
-                <td class="sub-label mt-5"><?= $peminjam['nama_petugas_pinjam'] ?></td>
-                <td class="sub-label mt-5"><?= $peminjam['nama_lengkap'] ?></td>
+                <td class="sub-label mt-5"></td>
+                <td class="sub-label mt-5"></td>
+            </tr>
+            <tr>
+                <td class="sub-label mt-5"><b>NIP. </b><?= $peminjam['nip_petugas_pinjam'] ?></td>
+                <td class="sub-label mt-5"><b>NIK. </b><?= $peminjam['nik'] ?></td>
             </tr>
         </table>
     </div>

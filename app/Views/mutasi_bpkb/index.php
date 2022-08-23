@@ -23,44 +23,45 @@
                  /.info-box
             </div> -->
 
-            <!-- fix for small devices only -->
-            <div class="clearfix hidden-md-up"></div>
-            <!-- /.col -->
-        </div>
-        <!-- /.row -->
+        <!-- fix for small devices only -->
+        <div class="clearfix hidden-md-up"></div>
+        <!-- /.col -->
+    </div>
+    <!-- /.row -->
 
-        <!-- Main row -->
-        <div class="row">
-            <!-- Left col -->
-            <div class="col">
-                <!-- MAP & BOX PANE -->
-                <div class="card">
-                    <div class="card-header">
-                        <h3 class="card-title"><b>Data Mutasi BPKB</b></h3>
-                        <a href="<?= site_url('/mutasi/create') ?>" class="btn btn-sm btn-primary float-right">Tambah Mutasi</a>
-                    </div>
-                    <!-- /.card-header -->
-                    <div class="card-body">
-                        <table id="data_mutasi" class="table table-bordered table-striped">
-                            <thead>
-                                <tr>
-                                    <th>Nomor Registrasi Lama</th>
-                                    <th>Nomor Registrasi Baru</th>
-                                    <th>Tanggal Mutasi</th>
-                                    <th>Jenis Mutasi</th>
-                                </tr>
-                            </thead>
-                        </table>
-
-                    </div>
-
-                    <!-- /.card-body -->
+    <!-- Main row -->
+    <div class="row">
+        <!-- Left col -->
+        <div class="col">
+            <!-- MAP & BOX PANE -->
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title"><b>Data Mutasi BPKB</b></h3>
+                    <a href="<?= site_url('/mutasi/create') ?>" class="btn btn-sm btn-primary float-right">Tambah Mutasi</a>
                 </div>
-                <!-- /.card -->
+                <!-- /.card-header -->
+                <div class="card-body">
+                    <table id="data_mutasi" class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Nomor Registrasi Lama</th>
+                                <th>Nomor Registrasi Baru</th>
+                                <th>Tanggal Mutasi</th>
+                                <th>Jenis Mutasi</th>
+                            </tr>
+                        </thead>
+                    </table>
+
+                </div>
+
+                <!-- /.card-body -->
             </div>
-            <!-- /.col -->
+            <!-- /.card -->
         </div>
-        <!-- /.row -->
+        <!-- /.col -->
+    </div>
+    <!-- /.row -->
     </div>
     <!--/. container-fluid -->
     </div>
