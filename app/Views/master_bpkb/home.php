@@ -66,9 +66,10 @@
           </div>
           <!-- /.card-header -->
           <div class="card-body">
-            <table id="data_peminjam_overdate" class="table table-bordered table-striped  r" >
+            <table id="data_peminjam_overdate" class="table table-striped  r">
               <thead>
                 <tr>
+                  <th>No</th>
                   <th>Nama Peminjam</th>
                   <th>NIK</th>
                   <th>Nomor Registrasi</th>

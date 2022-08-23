@@ -175,6 +175,10 @@
 
 
             table = $('#data_sertifikat').DataTable({
+                dom: 'Bfrtip',
+                buttons: [
+                    'copy', 'csv', 'excel', 'pdf', 'print'
+                ],
                 processing: true,
                 serverSide: true,
                 ajax: {

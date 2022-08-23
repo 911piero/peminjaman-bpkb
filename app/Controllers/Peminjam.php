@@ -44,16 +44,15 @@ class Peminjam extends BaseController
             return DataTable::of($builder)
                 ->add('action', function ($row) {
 
-                    if($row->status == 'Dikembalikan'){
+                    if ($row->status == 'Dikembalikan') {
                         return
-                        '<a href="/peminjam/detail/' . $row->id_peminjam . '"class="btn btn-outline-primary"><i class="fa fa-eye"></i></a> 
+                            '<a href="/peminjam/detail/' . $row->id_peminjam . '"class="btn btn-outline-primary"><i class="fa fa-eye"></i></a> 
                         <a href="/peminjam/cetak/' . $row->id_peminjam . '" class="btn btn-outline-secondary"><i class="fa fa-print"></i></a>';
                     }
                     return
                         '<a href="/peminjam/detail/' . $row->id_peminjam . '"class="btn btn-outline-primary"><i class="fa fa-eye"></i></a> 
                         <a href="/peminjam/edit/' . $row->id_peminjam . '" class="btn btn-outline-warning "><i class="fa fa-pen"></i></a>
                         <a href="/peminjam/cetak/' . $row->id_peminjam . '" class="btn btn-outline-secondary "><i class="fa fa-print"></i></a>';
-                    
                 })
                 ->toJson(true);
         }
@@ -69,8 +68,7 @@ class Peminjam extends BaseController
                 ->join('data_bpkb', 'data_bpkb.id_bpkb = data_peminjam.id_bpkb')
                 ->select('id_peminjam, nama_lengkap, nik, data_bpkb.nomor_registrasi, nama_petugas_pinjam, nip_petugas_pinjam, nama_petugas_kembali, nip_petugas_kembali, tgl_pinjam, estimasi_kembali, data_peminjam.status')
                 ->where('estimasi_kembali <=', $today)
-                ->where('data_peminjam.status = "Pinjam"')
-                ;
+                ->where('data_peminjam.status = "Pinjam"');
 
             return DataTable::of($builder)
                 ->add('action', function ($row) {
@@ -284,6 +282,7 @@ class Peminjam extends BaseController
     public function cetak($id)
     {
         $data = $this->PeminjamModel->getDetail($id);
+
 
         $data = [
             'title' => 'Cetak',

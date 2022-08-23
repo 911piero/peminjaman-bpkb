@@ -189,13 +189,14 @@
                 processing: true,
                 serverSide: true,
                 ajax: '/bpkb/listData',
-                columns: [
-                    { 
-                        data: null,"sortable": false, 
-                        render: function (data, type, row, meta) {
+                columns: [{
+                        data: null,
+                        "sortable": false,
+                        render: function(data, type, row, meta) {
                             return meta.row + meta.settings._iDisplayStart + 1;
-                        }  
-                    },{
+                        },
+                        searchable: false
+                    }, {
                         data: 'nomor_registrasi'
                     },
                     {
@@ -213,21 +214,21 @@
                     {
                         data: 'status'
                     },
+
                     {
                         data: 'action',
                         orderable: false
                     },
+
                 ],
-                "rowCallback": function( row, data, index ) {
-                    
-                    if (data.status == "Dipinjam" ) {
-                            $('td:eq(0)', row).addClass("bg-danger");
-                            $('td:eq(6)', row).addClass("bg-danger");
-                           
-                        }
-                },
+                // "rowCallback": function(row, data, index) {
+
+                //     if (data.status == "Dipinjam") {
+                //         $('td:eq(6)', row).addClass("bg-red");
+                //     }
+                // },
             });
-            
+
         });
 
         $(document).ready(function() {
@@ -238,16 +239,17 @@
                     [4, 'asc']
                 ],
                 ajax: '/peminjam/listData',
-                columns: [
-                    { 
-                        data: null,"sortable": false, 
-                        render: function (data, type, row, meta) {
+                columns: [{
+                        data: null,
+                        "sortable": false,
+                        render: function(data, type, row, meta) {
                             return meta.row + meta.settings._iDisplayStart + 1;
-                        }  
+                        },
+                        searchable: false,
                     },
                     {
                         data: 'nama_lengkap',
-                        orderable:false
+                        orderable: false
                     },
                     {
                         data: 'nik'
@@ -269,16 +271,16 @@
                         orderable: false
                     },
                 ],
-                "rowCallback": function( row, data, index ) {
+                "rowCallback": function(row, data, index) {
                     var today = new Date();
-                    var date = today.getFullYear()+'-'+'0'+(today.getMonth()+1)+'-'+today.getDate();
-                    if (date >= data.estimasi_kembali && data.status == "Pinjam" ) {
-                            $('td:eq(0)', row).addClass("bg-danger");
-                            $('td:eq(5)', row).addClass("bg-danger");
-                           
-                        }
+                    var date = today.getFullYear() + '-' + '0' + (today.getMonth() + 1) + '-' + today.getDate();
+                    if (date >= data.estimasi_kembali && data.status == "Pinjam") {
+                        $('td:eq(0)', row).addClass("bg-danger");
+                        $('td:eq(5)', row).addClass("bg-danger");
+
+                    }
                 },
-                
+
             });
 
         });
@@ -289,6 +291,13 @@
                 serverSide: true,
                 ajax: '/peminjam/listDataOverdate',
                 columns: [{
+                        data: null,
+                        "sortable": false,
+                        render: function(data, type, row, meta) {
+                            return meta.row + meta.settings._iDisplayStart + 1;
+                        },
+                        searchable: false,
+                    }, {
                         data: 'nama_lengkap'
                     },
                     {
@@ -302,7 +311,7 @@
                     },
                     {
                         data: 'estimasi_kembali',
-                        color:'red'
+                        color: 'red'
                     },
                     {
                         data: 'status',
@@ -312,7 +321,7 @@
                         data: 'action',
                         orderable: false
                     },
-                    
+
                 ]
             });
         });
@@ -326,6 +335,13 @@
                 ],
                 ajax: '/mutasi/listData',
                 columns: [{
+                        data: null,
+                        "sortable": false,
+                        render: function(data, type, row, meta) {
+                            return meta.row + meta.settings._iDisplayStart + 1;
+                        },
+                        searchable: false,
+                    }, {
                         data: 'nomor_registrasi_lama',
                         orderable: false
                     },
