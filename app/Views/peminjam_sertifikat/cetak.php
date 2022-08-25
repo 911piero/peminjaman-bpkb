@@ -89,7 +89,12 @@ use App\Controllers\PeminjamSertifikat;
         <p class="title">Nomor : <?= $peminjamsertifikat['nomor_surat'] ?></p>
     </div>
     <div class="isi">
-        <p>Hari <?= date('l') ?> tanggal <?= date('d') ?> bulan <?= date('F') ?> tahun <?= date('Y') ?> telah diterima dokumen sertifikat/surat kekancingan tanah milik/dikuasai dengan nomor ............ berlokasi di .................. dari : </p>
+        <?php
+        $tgl_pinjam = longdate_indo($peminjamsertifikat['tgl_pinjam']);
+
+
+        ?>
+        <p><?= $tgl_pinjam ?> telah diterima dokumen sertifikat/surat kekancingan tanah milik/dikuasai dengan nomor ............ berlokasi di .................. dari : </p>
         <div class="justify">
             <table class="mx-auto" style="width: 800px; font-size:21.2px">
                 <tr>

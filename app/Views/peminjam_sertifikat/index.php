@@ -24,7 +24,7 @@
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body">
-                        <table id="data_peminjam_sertifikat" class="table table-bordered table-striped">
+                        <table id="data_peminjam_sertifikat" class="table table-striped">
                             <thead>
                                 <tr>
                                     <th>No</th>
@@ -34,7 +34,7 @@
                                     <th>Keperluan Peminjaman</th>
                                     <th>Tanggal Pinjam</th>
                                     <th>Status</th>
-                                    <th>Action</th>
+                                    <th style="width: 150px;">Action</th>
                                 </tr>
                             </thead>
                         </table>
