@@ -89,16 +89,10 @@ use App\Controllers\PeminjamSertifikat;
         <p class="title">Nomor : <?= $peminjamsertifikat['nomor_surat'] ?></p>
     </div>
     <div class="isi">
-<<<<<<< HEAD
-        <p>Hari <?= date('l') ?> tanggal <?= date('d') ?> bulan <?= date('F') ?> tahun <?= date('Y') ?> telah diterima dokumen sertifikat/surat kekancingan tanah milik/dikuasai dengan nomor <b><?= $peminjamsertifikat['nama_proyek'] ?></b> berlokasi di <b><?= $peminjamsertifikat['intro'] ?>, <?= $peminjamsertifikat['kecamatan'] ?>, <?= $peminjamsertifikat['kelurahan'] ?></b> dari : </p>
-=======
         <?php
         $tgl_pinjam = longdate_indo($peminjamsertifikat['tgl_pinjam']);
-
-
         ?>
         <p><?= $tgl_pinjam ?> telah diterima dokumen sertifikat/surat kekancingan tanah milik/dikuasai dengan nomor ............ berlokasi di .................. dari : </p>
->>>>>>> 023302c89c936c5a4e864e13dc57ef1e0bd40b99
         <div class="justify">
             <table class="mx-auto" style="width: 800px; font-size:21.2px">
                 <tr>
@@ -107,7 +101,7 @@ use App\Controllers\PeminjamSertifikat;
                     <td class="label">&nbsp;&nbsp;&nbsp;<?= $peminjamsertifikat['nama_lengkap'] ?>.</td>
                 </tr>
                 <tr>
-                    <td class="label">NIK</td>
+                    <td class="label">NIP</td>
                     <td class="label">:</td>
                     <td class="label">&nbsp;&nbsp;&nbsp;<?= $peminjamsertifikat['nik'] ?>.</td>
                 </tr>
@@ -154,14 +148,6 @@ use App\Controllers\PeminjamSertifikat;
             <tr>
                 <td class="sub-label mt-5"><?= $peminjamsertifikat['nama_petugas_pinjam'] ?></td>
                 <td class="sub-label mt-5"><?= $peminjamsertifikat['nama_lengkap'] ?></td>
-            </tr>
-            <tr>
-                <td class="sub-label mt-5"></td>
-                <td class="sub-label mt-5"></td>
-            </tr>
-            <tr>
-                <td class="sub-label mt-5"><b>NIP. </b><?= $peminjamsertifikat['nip_petugas_pinjam'] ?></td>
-                <td class="sub-label mt-5"><b>NIK. </b><?= $peminjamsertifikat['nik'] ?></td>
             </tr>
         </table>
     </div>
