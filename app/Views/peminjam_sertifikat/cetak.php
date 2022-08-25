@@ -89,7 +89,7 @@ use App\Controllers\PeminjamSertifikat;
         <p class="title">Nomor : <?= $peminjamsertifikat['nomor_surat'] ?></p>
     </div>
     <div class="isi">
-        <p>Hari <?= date('l') ?> tanggal <?= date('d') ?> bulan <?= date('F') ?> tahun <?= date('Y') ?> telah diterima dokumen sertifikat/surat kekancingan tanah milik/dikuasai dengan nomor ............ berlokasi di .................. dari : </p>
+        <p>Hari <?= date('l') ?> tanggal <?= date('d') ?> bulan <?= date('F') ?> tahun <?= date('Y') ?> telah diterima dokumen sertifikat/surat kekancingan tanah milik/dikuasai dengan nomor <b><?= $peminjamsertifikat['nama_proyek'] ?></b> berlokasi di <b><?= $peminjamsertifikat['intro'] ?>, <?= $peminjamsertifikat['kecamatan'] ?>, <?= $peminjamsertifikat['kelurahan'] ?></b> dari : </p>
         <div class="justify">
             <table class="mx-auto" style="width: 800px; font-size:21.2px">
                 <tr>
@@ -98,7 +98,7 @@ use App\Controllers\PeminjamSertifikat;
                     <td class="label">&nbsp;&nbsp;&nbsp;<?= $peminjamsertifikat['nama_lengkap'] ?>.</td>
                 </tr>
                 <tr>
-                    <td class="label">NIP</td>
+                    <td class="label">NIK</td>
                     <td class="label">:</td>
                     <td class="label">&nbsp;&nbsp;&nbsp;<?= $peminjamsertifikat['nik'] ?>.</td>
                 </tr>
@@ -145,6 +145,14 @@ use App\Controllers\PeminjamSertifikat;
             <tr>
                 <td class="sub-label mt-5"><?= $peminjamsertifikat['nama_petugas_pinjam'] ?></td>
                 <td class="sub-label mt-5"><?= $peminjamsertifikat['nama_lengkap'] ?></td>
+            </tr>
+            <tr>
+                <td class="sub-label mt-5"></td>
+                <td class="sub-label mt-5"></td>
+            </tr>
+            <tr>
+                <td class="sub-label mt-5"><b>NIP. </b><?= $peminjamsertifikat['nip_petugas_pinjam'] ?></td>
+                <td class="sub-label mt-5"><b>NIK. </b><?= $peminjamsertifikat['nik'] ?></td>
             </tr>
         </table>
     </div>
