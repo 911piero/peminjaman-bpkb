@@ -111,12 +111,14 @@
 
                         </tbody>
                     </table>
+
                     <!-- MAP & BOX PANE -->
                     <div class="card" style="width: 100%;">
+
                         <div class="card-header">
                             <h3 class="card-title"><b>Daftar Objek</b></h3>
-                            <div class="float-right">
-                                <a href="" class="btn btn-success">Print Excel</a>
+                            <div id="test" class="float-right">
+
                             </div>
                         </div>
                         <!-- /.card-header -->
@@ -124,6 +126,7 @@
                             <table id="data_sertifikat" class="table table-bordered" style="width: 100%;">
                                 <thead>
                                     <tr>
+                                        <th>No.</th>
                                         <th>No Objek</th>
                                         <th>Nama Objek</th>
                                         <th>Alamat</th>

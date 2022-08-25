@@ -43,7 +43,10 @@ use app\Models\BpkbModel; ?>
         <div class="card">
           <div class="card-header">
             <h3 class="card-title"><b>Data BPKB</b></h3>
-            <a href="/bpkb/create" class="btn btn-sm btn-primary float-right">Tambah BPKB</a>
+            <div id="btnPlace" class="float-right">
+
+            </div>
+            <a href="<?= site_url('/bpkb/create') ?>" class="btn btn-sm btn-primary float-right">Tambah BPKB</a>
           </div>
           <!-- /.card-header -->
           <div class="card-body">
@@ -56,9 +59,8 @@ use app\Models\BpkbModel; ?>
                   <th>Nama Pemilik</th>
                   <th>Model</th>
                   <th>Warna</th>
-
-                  <th>Action</th>
                   <th>Status</th>
+                  <th>Action</th>
                 </tr>
               </thead>
             </table>
