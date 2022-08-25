@@ -94,7 +94,7 @@ use App\Controllers\PeminjamSertifikat;
 
 
         ?>
-        <p><?= $tgl_pinjam ?> telah diterima dokumen sertifikat/surat kekancingan tanah milik/dikuasai dengan nomor ............ berlokasi di .................. dari : </p>
+        <p><?= $tgl_pinjam ?> telah diterima dokumen sertifikat/surat kekancingan tanah milik/dikuasai dengan nomor <b><?= $peminjamsertifikat['nama_proyek'] ?> (<?= $peminjamsertifikat['intro'] ?>) </b> berlokasi di <b><?= $peminjamsertifikat['kelurahan'] ?></b> dari : </p>
         <div class="justify">
             <table class="mx-auto" style="width: 800px; font-size:21.2px">
                 <tr>
@@ -150,6 +150,14 @@ use App\Controllers\PeminjamSertifikat;
             <tr>
                 <td class="sub-label mt-5"><?= $peminjamsertifikat['nama_petugas_pinjam'] ?></td>
                 <td class="sub-label mt-5"><?= $peminjamsertifikat['nama_lengkap'] ?></td>
+            </tr>
+            <tr>
+                <td class="sub-label mt-5"></td>
+                <td class="sub-label mt-5"></td>
+            </tr>
+            <tr>
+                <td class="sub-label mt-5"><b>NIP. </b><?= $peminjamsertifikat['nip_petugas_pinjam'] ?></td>
+                <td class="sub-label mt-5"><b>NIK. </b><?= $peminjamsertifikat['nik'] ?></td>
             </tr>
         </table>
     </div>
