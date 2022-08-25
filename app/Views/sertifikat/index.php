@@ -114,15 +114,14 @@
 
                     <!-- MAP & BOX PANE -->
                     <div class="card" style="width: 100%;">
-
                         <div class="card-header">
                             <h3 class="card-title"><b>Daftar Objek</b></h3>
                             <div id="test" class="float-right">
-
                             </div>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
+                            <br>
                             <table id="data_sertifikat" class="table table-bordered" style="width: 100%;">
                                 <thead>
                                     <tr>
@@ -137,7 +136,7 @@
                                         <th>Tahun Objek</th>
                                         <th>Masa Berlaku (Kekancingan)</th>
                                         <th>Action</th>
-                                        <th style="display:none;">Status</th>
+                                        <!-- <th style="display:none;">Status</th> -->
                                     </tr>
                                 </thead>
                             </table>

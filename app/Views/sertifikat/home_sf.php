@@ -13,7 +13,6 @@
                 <div class="small-box bg-default">
                     <div class="inner">
                         <h3><?= $resultSf ?></h3>
-
                         <p>Jumlah Sertifikat</p>
                     </div>
                     <div class="icon">

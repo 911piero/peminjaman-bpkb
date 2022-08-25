@@ -98,7 +98,7 @@ use App\Controllers\PeminjamSertifikat;
                     <td class="label">&nbsp;&nbsp;&nbsp;<?= $peminjamsertifikat['nama_lengkap'] ?>.</td>
                 </tr>
                 <tr>
-                    <td class="label">NIP</td>
+                    <td class="label">NIK</td>
                     <td class="label">:</td>
                     <td class="label">&nbsp;&nbsp;&nbsp;<?= $peminjamsertifikat['nik'] ?>.</td>
                 </tr>
