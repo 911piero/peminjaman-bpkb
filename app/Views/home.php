@@ -39,19 +39,22 @@
             <!-- Main content -->
             <section class="content">
                 <div class="container">
-                    <div class="p-3 mb-5">
-                        <h2 class="d-flex align-items-center justify-content-center" style="font-size:100px;">APLIKASI DIGITALISASI</h2>
+                    <div class="foto mt-3">
+                        <center><img src="<?= base_url('adminlte/dist/img/Logo.png'); ?>" alt="" height="100" width="90" class="foto"></center>
+                    </div>
+                    <div class="p-3 mb-3">
+                        <h2 class="d-flex align-items-center justify-content-center" style="font-size:70px;">APLIKASI DIGITALISASI</h2>
                     </div>
 
                     <div class="row">
                         <div class="col">
-                            <a href="<?= base_url('/bpkb/home'); ?>" class="btn btn-app bg-primary justify-content-center align-items-center float-right" style="padding:30px; height:fit-content; width: 300px;">
+                            <a href="<?= base_url('/bpkb/home'); ?>" class="btn btn-app bg-primary justify-content-center align-items-center float-right" style="padding:30px; height:fit-content; width: 300px; border-radius: 30px;">
                                 <i class="fas fa-car " style="font-size: 70px;"></i>
                                 <p style="font-size: 30px;">Master BPKB</p>
                             </a>
                         </div>
                         <div class="col">
-                            <a href="<?= base_url('/sertifikat/home'); ?>" class="btn btn-app bg-primary justify-content-center align-items-center" style="padding:30px; height:fit-content; width: 300px;">
+                            <a href="<?= base_url('/sertifikat/home'); ?>" class="btn btn-app bg-primary justify-content-center align-items-center" style="padding:30px; height:fit-content; width: 300px; border-radius: 30px;">
                                 <i class="fas fa-book " style="font-size: 70px;"></i>
                                 <p style="font-size: 30px;">Master Sertifikat</p>
                             </a>
