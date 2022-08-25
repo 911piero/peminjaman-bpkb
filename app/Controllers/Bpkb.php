@@ -293,7 +293,7 @@ class Bpkb extends BaseController
                     'required' => 'Nama Pemilik tidak boleh kosong!'
                 ]
             ],
-            'alamat' => [ 
+            'alamat' => [
                 'rules' => 'required',
                 'errors' => [
                     'required' => 'Alamat tidak boleh kosong!'
