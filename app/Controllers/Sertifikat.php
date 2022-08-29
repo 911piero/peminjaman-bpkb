@@ -40,8 +40,6 @@ class Sertifikat extends BaseController
         $subKategori = $this->SertifikatModel->getSubKategori();
         $tahunObjek = $this->SertifikatModel->getTahunObjek();
 
-
-
         $data = [
             'title' => 'Cari Sertifikat | Aplikasi Digitalisasi',
             'page_title' => 'Cari Sertifikat',
@@ -61,10 +59,10 @@ class Sertifikat extends BaseController
         if ($this->request->isAJAX()) {
             $db = db_connect();
             $builder = $db->table('investasi')
-                ->join('kategori', 'kategori.id_kategori = investasi.id_kategori')
-                ->join('kecamatan', 'kecamatan.id = investasi.id_kecamatan')
-                ->join('kelurahan', 'kelurahan.id = investasi.id_kelurahan')
-                ->join('sub_kategori', 'sub_kategori.id_subkategori = investasi.lokasi')
+                ->join('kategori', 'kategori.id_kategori = investasi.id_kategori','left')
+                ->join('kecamatan', 'kecamatan.id = investasi.id_kecamatan','left')
+                ->join('kelurahan', 'kelurahan.id = investasi.id_kelurahan','left')
+                ->join('sub_kategori', 'sub_kategori.id_subkategori = investasi.lokasi','left')
                 ->select('investasi.id, nama_proyek, intro, aktif, intro2, kecamatan.kecamatan, kelurahan.kelurahan, kategori.nm_kategori, lokasi, sub_kategori.nm_subkategori, tahun, tgl_awal, tgl_akhir');
 
             return DataTable::of($builder)
@@ -107,7 +105,6 @@ class Sertifikat extends BaseController
                     if ($request->maxDate) {
                         $builder->where('tgl_akhir <=', $request->maxDate);
                     }
-
                     if ($request->status) {
                         $status = $request->status;
                         if ($status == "Aktif") {
@@ -122,7 +119,6 @@ class Sertifikat extends BaseController
                 ->toJson(true);
         }
     }
-
 
     public function cetak($id)
     {

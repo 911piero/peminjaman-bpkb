@@ -39,10 +39,16 @@ class PeminjamSertifikat extends BaseController
             $db = db_connect();
             $builder = $db->table('data_peminjam_sertifikat')
                 ->join('investasi', 'investasi.id = data_peminjam_sertifikat.id_sertifikat')
-                ->select('id_peminjam_sertifikat, nama_lengkap, nik, investasi.intro, nama_petugas_pinjam, keperluan, nip_petugas_pinjam, tgl_pinjam, tgl_kembali, data_peminjam_sertifikat.status');
+                ->select('id_peminjam_sertifikat, nama_lengkap, nik, investasi.intro, nama_petugas_pinjam, keperluan, nip_petugas_pinjam, tgl_pinjam, tgl_kembali, data_peminjam_sertifikat.status, data_peminjam_sertifikat.created_at')
+                ->orderBy('data_peminjam_sertifikat.status', 'DESC');
 
             return DataTable::of($builder)
                 ->add('action', function ($row) {
+                    if ($row->status == 'Dikembalikan') {
+                        return
+                        '<a href="/peminjamsertifikat/detail/' . $row->id_peminjam_sertifikat . '"class="btn btn-outline-primary btn-shadow"><i class="fa fa-eye"></i></a>
+                        <a href="/peminjamsertifikat/cetak/' . $row->id_peminjam_sertifikat . '" class="btn btn-outline-secondary btn-shadow"><i class="fa fa-print"></i></a>';
+                    }
                     return
                         '<a href="/peminjamsertifikat/detail/' . $row->id_peminjam_sertifikat . '"class="btn btn-outline-primary btn-shadow"><i class="fa fa-eye"></i></a> 
                         <a href="/peminjamsertifikat/edit/' . $row->id_peminjam_sertifikat . '" class="btn btn-outline-warning btn-shadow"><i class="fa fa-pen"></i></a>

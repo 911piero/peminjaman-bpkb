@@ -155,13 +155,10 @@
                             <div class="form-group">
                                 <label for="exampleInputFile">Foto BPKB</label>
                                 <div class="input-group">
-                                    <div class="custom-file">
-                                        <input type="file" name="foto_bpkb" class="custom-file-input <?= ($validation->hasError('foto_bpkb')) ? 'is-invalid' : ' '; ?>" id="foto_bpkb">
-                                        <label class="custom-file-label" for="foto_bpkb">Pilih Foto</label>
+                                        <input type="file" name="foto_bpkb" class="form-control <?= ($validation->hasError('foto_bpkb')) ? 'is-invalid' : ' '; ?>" id="foto_bpkb">
                                         <div class="invalid-feedback">
                                             <?= $validation->getError('foto_bpkb'); ?>
                                         </div>
-                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-12 mt-5 text-right">
