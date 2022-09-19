@@ -64,11 +64,11 @@ class Bpkb extends BaseController
                 ->join('bpkb_model_kendaraan', 'bpkb_model_kendaraan.id_model = data_bpkb.model')
                 ->select('id_bpkb, nomor_registrasi, merk, nama_pemilik, bpkb_model_kendaraan.model, warna, status, data_bpkb.created_at')
                 ->where('isActive', 1)
-                ->orderBy('data_bpkb.created_at', 'DESC');;
-
+                ->orderBy('data_bpkb.created_at', 'DESC');
             return DataTable::of($builder)
                 ->add('action', function ($row) {
-                    return '<a href="/bpkb/detail/' . $row->id_bpkb . '" class="btn btn-outline-primary"><i class="fa fa-eye"></i></a>';
+                    $url = site_url('/bpkb/detail/' . $row->id_bpkb);
+                    return '<a href="'. $url .'" class="btn btn-outline-primary"><i class="fa fa-eye"></i></a>';
                 })
                 ->toJson(true);
         }
@@ -224,13 +224,18 @@ class Bpkb extends BaseController
 
         //Ambil File Gambar
         $fotoBpkb = $this->request->getFile('foto_bpkb');
-
+             
         //nama file
-        $namaFoto = $fotoBpkb->getRandomName();
+         $namaFoto = $fotoBpkb->getRandomName();
 
-        //memindahkan file
-        $fotoBpkb->move('foto_bpkb/', $namaFoto);
-
+         $uploadOk = 0;
+         if ($fotoBpkb != '') {
+                $fotoBpkb->move('foto_bpkb/', $namaFoto);
+                $uploadOk = 1;
+            } 
+           
+   
+    
         $data_bpkb = array(
             'nomor_registrasi' => $this->request->getVar('nomor_regist'),
             'nama_pemilik' => $this->request->getVar('nama_pem'),
@@ -247,16 +252,17 @@ class Bpkb extends BaseController
             'warna_tnkb' => $this->request->getVar('warna_plat'),
             'tahun_registrasi' => $this->request->getVar('tahun_regist'),
             'nomor_bpkb' => $this->request->getVar('no_bpkb'),
+            'lokasi_kendaraan' => $this->request->getVar('keterangan'),
             'kode_lokasi' => $this->request->getVar('kode_lokasi'),
         );
 
         $data_gambar = array(
             'nomor_bpkb' => $this->request->getVar('no_bpkb'),
-            'link' => $namaFoto
+            'link' => $namaFoto,
         );
 
 
-        $this->BpkbModel->tambahData($data_bpkb, $data_gambar);
+        $this->BpkbModel->tambahData($data_bpkb, $data_gambar, $uploadOk);
 
         return redirect()->to('/bpkb');
     }
@@ -397,10 +403,11 @@ class Bpkb extends BaseController
             'warna_tnkb' => $this->request->getVar('warna_plat'),
             'tahun_registrasi' => $this->request->getVar('tahun_regist'),
             'nomor_bpkb' => $this->request->getVar('no_bpkb'),
+            'lokasi_kendaraan' => $this->request->getVar('keterangan'),
             'kode_lokasi' => $this->request->getVar('kode_lokasi'),
         ]);
 
-        return redirect()->to('/');
+        return redirect()->to('/bpkb');
     }
 
     public function delete($id)

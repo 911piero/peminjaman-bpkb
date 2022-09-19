@@ -30,7 +30,7 @@ class BpkbModel extends Model
             ->join('bpkb_model_kendaraan', 'bpkb_model_kendaraan.id_model = data_bpkb.model')
             ->join('bpkb_warna_tnkb', 'bpkb_warna_tnkb.id_warna_tnkb = data_bpkb.warna_tnkb')
             ->where('id_bpkb', $id)
-            ->select('id_bpkb, nomor_registrasi, nama_pemilik, alamat, merk, tipe, bpkb_model_kendaraan.model, tahun_pembuatan, isi_silinder, nomor_rangka, nomor_mesin, warna, bpkb_bahan_bakar.bahan_bakar, bpkb_warna_tnkb.warna_tnkb, tahun_registrasi, nomor_bpkb, kode_lokasi')
+            ->select('id_bpkb, nomor_registrasi, nama_pemilik, alamat, merk, tipe, bpkb_model_kendaraan.model, tahun_pembuatan, isi_silinder, nomor_rangka, nomor_mesin, warna, bpkb_bahan_bakar.bahan_bakar, bpkb_warna_tnkb.warna_tnkb, tahun_registrasi, nomor_bpkb, kode_lokasi, lokasi_kendaraan')
             ->get()->getRowArray();
     }
 
@@ -54,10 +54,13 @@ class BpkbModel extends Model
         return $this->db->table('bpkb_gambar')->where('nomor_bpkb', $no_bpkb)->get()->getResultArray();
     }
 
-    public function tambahData($data_bpkb, $data_gambar)
+    public function tambahData($data_bpkb, $data_gambar, $uploadOk)
     {
         $this->db->table('data_bpkb')->insert($data_bpkb);
 
-        return $this->db->table('bpkb_gambar')->insert($data_gambar);
+        if ($uploadOk == 1) {
+            return $this->db->table('bpkb_gambar')->insert($data_gambar);
+        }
+        
     }
 }

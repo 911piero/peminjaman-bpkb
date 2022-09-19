@@ -146,6 +146,13 @@
                                 </div>
                             </div>
                             <div class="form-group">
+                                <label for="exampleInputPassword1">Keterangan</label>
+                                <input type="text" name="keterangan" class="form-control <?= ($validation->hasError('keterangan')) ? 'is-invalid' : ' '; ?>" id="keterangan" placeholder="Masukan Keterangan Lokasi">
+                                <div class="invalid-feedback">
+                                    <?= $validation->getError('kode_lokasi'); ?>
+                                </div>
+                            </div>
+                            <div class="form-group">
                                 <label for="exampleInputPassword1">Kode Lokasi</label>
                                 <input type="text" name="kode_lokasi" class="form-control <?= ($validation->hasError('kode_lokasi')) ? 'is-invalid' : ' '; ?>" id="kode_lokasi" placeholder="Kode Lokasi">
                                 <div class="invalid-feedback">

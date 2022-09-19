@@ -231,7 +231,7 @@
                 }, ],
                 processing: true,
                 serverSide: true,
-                ajax: '/bpkb/listData',
+                ajax: '<?= site_url('/bpkb/listData') ?>',
                 columns: [{
                         data: null,
                         "sortable": false,
@@ -325,7 +325,7 @@
                 order: [
                     [4, 'asc']
                 ],
-                ajax: '/peminjam/listData',
+                ajax: '<?= site_url('/peminjam/listData') ?>',
                 columns: [{
                         data: null,
                         "sortable": false,
@@ -378,7 +378,7 @@
             table3 = $('#data_peminjam_overdate').DataTable({
                 processing: true,
                 serverSide: true,
-                ajax: '/peminjam/listDataOverdate',
+                ajax: '<?= site_url('/peminjam/listDataOverdate') ?>',
                 columns: [{
                         data: null,
                         "sortable": false,
@@ -472,7 +472,7 @@
                 order: [
                     [3, 'asc']
                 ],
-                ajax: '/mutasi/listData',
+                ajax: '<?= site_url('/mutasi/listData') ?>',
                 columns: [{
                         data: null,
                         "sortable": false,

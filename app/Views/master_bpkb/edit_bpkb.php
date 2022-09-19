@@ -7,7 +7,7 @@
             <?= csrf_field(); ?>
             <div class="card card-primary">
                 <div class="card-header">
-                    <h3 class="card-title">Form Tambah Data BPKB</h3>
+                    <h3 class="card-title">Form Perubahan Data BPKB</h3>
                 </div>
                 <div class="card-body">
                     <div class="row cols-3">
@@ -48,14 +48,12 @@
                                             <?php
                                             $num = $bpkb['model'];
                                             if ($num == 1) {
-                                                echo 'Sepeda Motor';
+                                                echo 'Roda Dua';
                                             } elseif ($num == 2) {
-                                                echo 'Mobil';
+                                                echo 'Roda Tiga';
                                             } elseif ($num == 3) {
-                                                echo 'Truck';
-                                            } elseif ($num == 4) {
-                                                echo 'Semi Truck';
-                                            }
+                                                echo 'Roda Empat';
+                                            } 
                                             ?>
                                         </option>
                                         <?php foreach ($model as $key) : ?>
@@ -65,6 +63,13 @@
                                     <div class="invalid-feedback">
                                         <?= $validation->getError('model'); ?>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Keterangan</label>
+                                <input type="text" name="keterangan" value="<?= $bpkb['lokasi_kendaraan']; ?>" class="form-control <?= ($validation->hasError('keterangan')) ? 'is-invalid' : ' '; ?>" id="keterangan" placeholder="Masukan Keterangan Lokasi">
+                                <div class="invalid-feedback">
+                                    <?= $validation->getError('kode_lokasi'); ?>
                                 </div>
                             </div>
 
@@ -167,6 +172,7 @@
                                     <?= $validation->getError('no_bpkb'); ?>
                                 </div>
                             </div>
+
                             <div class="form-group">
                                 <label for="inputKodeLokasi">Kode Lokasi</label>
                                 <input type="text" name="kode_lokasi" value="<?= $bpkb['kode_lokasi']; ?>" class="form-control <?= ($validation->hasError('kode_lokasi')) ? 'is-invalid' : ' '; ?>" id="kode_lokasi" placeholder="Kode Lokasi">

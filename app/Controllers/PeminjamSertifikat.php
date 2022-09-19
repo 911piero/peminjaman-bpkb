@@ -44,15 +44,19 @@ class PeminjamSertifikat extends BaseController
 
             return DataTable::of($builder)
                 ->add('action', function ($row) {
+                    $urlDetail = site_url('/peminjamsertifikat/detail/' . $row->id_peminjam_sertifikat);
+                    $urlCetak = site_url('/peminjamsertifikat/cetak/' . $row->id_peminjam_sertifikat);
+                    $urlEdit = site_url('/peminjamsertifikat/edit/' . $row->id_peminjam_sertifikat);
+
                     if ($row->status == 'Dikembalikan') {
                         return
-                        '<a href="/peminjamsertifikat/detail/' . $row->id_peminjam_sertifikat . '"class="btn btn-outline-primary btn-shadow"><i class="fa fa-eye"></i></a>
-                        <a href="/peminjamsertifikat/cetak/' . $row->id_peminjam_sertifikat . '" class="btn btn-outline-secondary btn-shadow"><i class="fa fa-print"></i></a>';
+                        '<a href="' . $urlDetail . '"class="btn btn-outline-primary btn-shadow"><i class="fa fa-eye"></i></a>
+                        <a href="' . $urlCetak . '" class="btn btn-outline-secondary btn-shadow"><i class="fa fa-print"></i></a>';
                     }
                     return
-                        '<a href="/peminjamsertifikat/detail/' . $row->id_peminjam_sertifikat . '"class="btn btn-outline-primary btn-shadow"><i class="fa fa-eye"></i></a> 
-                        <a href="/peminjamsertifikat/edit/' . $row->id_peminjam_sertifikat . '" class="btn btn-outline-warning btn-shadow"><i class="fa fa-pen"></i></a>
-                        <a href="/peminjamsertifikat/cetak/' . $row->id_peminjam_sertifikat . '" class="btn btn-outline-secondary btn-shadow"><i class="fa fa-print"></i></a>';
+                        '<a href="' . $urlDetail . '"class="btn btn-outline-primary btn-shadow"><i class="fa fa-eye"></i></a> 
+                        <a href="' . $urlEdit. '" class="btn btn-outline-warning btn-shadow"><i class="fa fa-pen"></i></a>
+                        <a href="' . $urlCetak . '" class="btn btn-outline-secondary btn-shadow"><i class="fa fa-print"></i></a>';
                 })
                 ->toJson(true);
         }

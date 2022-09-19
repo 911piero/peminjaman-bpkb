@@ -230,7 +230,7 @@
                 processing: true,
                 serverSide: true,
                 ajax: {
-                    url: '/sertifikat/listData',
+                    url: '<?= site_url('/sertifikat/listData') ?>',
                     data: function(d) {
                         d.kecamatan = $('#kecamatan').val();
                         d.tahun_objek = $('#tahun_objek').val();
@@ -362,7 +362,7 @@
                 ],
                 processing: true,
                 serverSide: true,
-                ajax: '/peminjamsertifikat/listData',
+                ajax: '<?= site_url('/peminjamsertifikat/listData') ?>',
                 columns: [{
                         data: null,
                         "sortable": false,

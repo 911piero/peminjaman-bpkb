@@ -55,7 +55,7 @@ class PeminjamModel extends Model
         return $this->db
             ->table('data_peminjam')
             ->join('data_bpkb', 'data_bpkb.id_bpkb = data_peminjam.id_bpkb')
-            ->select('nama_lengkap, nik, data_bpkb.id_bpkb, data_bpkb.nomor_registrasi, nama_petugas_pinjam, nip_petugas_pinjam, nama_petugas_kembali, nip_petugas_kembali, nomor_surat, tgl_pinjam, tgl_kembali, data_peminjam.status , ket_lokasi, lokasi_kendaraan, status_kendaraan')
+            ->select('nama_lengkap, nik, data_bpkb.id_bpkb, data_bpkb.nomor_registrasi, nama_petugas_pinjam, nip_petugas_pinjam, nama_petugas_kembali, nip_petugas_kembali, nomor_surat, tgl_pinjam, tgl_kembali, data_peminjam.status , ket_lokasi, data_peminjam.lokasi_kendaraan, status_kendaraan')
             ->where('id_peminjam', $id)
             ->get()->getRowArray();
     }

@@ -78,9 +78,11 @@ class Sertifikat extends BaseController
                     return $status;
                 })
                 ->add('action', function ($row) {
+                    $urlDetail = site_url('/sertifikat/detail/' . $row->id);
+                    $urlCetak = site_url('sertifikat/cetak/' . $row->id);
                     return
-                        '<a href="/sertifikat/detail/' . $row->id . '"class="btn btn-outline-primary btn-shadow"><i class="fa fa-eye"></i></a>
-                    <a href="/sertifikat/cetak/' . $row->id . '" class="btn btn-outline-secondary btn-shadow"><i class="fa fa-print"></i></a>';
+                        '<a href="'. $urlDetail.'" class="btn btn-outline-primary btn-shadow"><i class="fa fa-eye"></i></a>
+                        <a href="' . $urlCetak . '" class="btn btn-outline-secondary btn-shadow"><i class="fa fa-print"></i></a>';
                 })
 
                 ->filter(function ($builder, $request) {

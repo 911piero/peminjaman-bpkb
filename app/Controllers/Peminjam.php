@@ -43,16 +43,21 @@ class Peminjam extends BaseController
 
             return DataTable::of($builder)
                 ->add('action', function ($row) {
+                    $urlDetail = site_url('/peminjam/detail/' . $row->id_peminjam);
+                    $urlEdit = site_url('/peminjam/edit/' . $row->id_peminjam);
+                    $urlCetak = site_url('/peminjam/cetak/' . $row->id_peminjam);
 
                     if ($row->status == 'Dikembalikan') {
+                       
+
                         return
-                            '<a href="/peminjam/detail/' . $row->id_peminjam . '"class="btn btn-outline-primary"><i class="fa fa-eye"></i></a> 
-                        <a href="/peminjam/cetak/' . $row->id_peminjam . '" class="btn btn-outline-secondary"><i class="fa fa-print"></i></a>';
+                            '<a href="' . $urlDetail . '"class="btn btn-outline-primary"><i class="fa fa-eye"></i></a> 
+                            <a href="' . $urlCetak . '" class="btn btn-outline-secondary"><i class="fa fa-print"></i></a>';
                     }
                     return
-                        '<a href="/peminjam/detail/' . $row->id_peminjam . '"class="btn btn-outline-primary"><i class="fa fa-eye"></i></a> 
-                        <a href="/peminjam/edit/' . $row->id_peminjam . '" class="btn btn-outline-warning "><i class="fa fa-pen"></i></a>
-                        <a href="/peminjam/cetak/' . $row->id_peminjam . '" class="btn btn-outline-secondary "><i class="fa fa-print"></i></a>';
+                        '<a href="' . $urlDetail . '"class="btn btn-outline-primary"><i class="fa fa-eye"></i></a> 
+                        <a href="' . $urlEdit . '" class="btn btn-outline-warning "><i class="fa fa-pen"></i></a>
+                        <a href="' . $urlCetak . '" class="btn btn-outline-secondary "><i class="fa fa-print"></i></a>';
                 })
                 ->toJson(true);
         }
@@ -72,8 +77,9 @@ class Peminjam extends BaseController
 
             return DataTable::of($builder)
                 ->add('action', function ($row) {
+                    $url = site_url('/peminjam/detail/' . $row->id_peminjam);
                     return
-                        '<a href="/peminjam/detail/' . $row->id_peminjam . '"class="btn btn-outline-primary btn-shadow"><i class="fa fa-eye"></i></a> ';
+                        '<a href="'. $url .'" class="btn btn-outline-primary btn-shadow"><i class="fa fa-eye"></i></a> ';
                 })
                 ->toJson(true);
         }
