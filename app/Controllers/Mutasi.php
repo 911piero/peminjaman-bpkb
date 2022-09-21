@@ -59,27 +59,29 @@ class Mutasi extends BaseController
 
         $findNoReg = $this->MutasiModel->findRegistrasi($this->request->getVar('nomor_registrasi'));
 
-        if (!$this->validate([
-            'nomor_registrasi' => [
-                'rules' => 'required',
-                'errors' => [
-                    'required' => 'Nomor Registrasi tidak boleh kosong!',
-                    'in_list' => 'Nomor Registrasi tidak terdaftar',
-                ]
-            ],
-            'nomor_registrasi_baru' => [
-                'rules' => 'is_unique[data_bpkb.nomor_registrasi]',
-                'errors' => [
-                    'is_unique' => 'Nomor Registrasi sudah terdaftar',
-                ]
-            ]
-        ])) {
-            return redirect()->to('mutasi/create')->withInput();
-        }
 
         $jenis_mutasi = $this->request->getVar('jenis_mutasi');
 
         if ($jenis_mutasi == 0) {
+
+            if (!$this->validate([
+                'nomor_registrasi' => [
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => 'Nomor Registrasi tidak boleh kosong!',
+                        'in_list' => 'Nomor Registrasi tidak terdaftar',
+                    ]
+                ],
+                'nomor_registrasi_baru' => [
+                    'rules' => 'is_unique[data_bpkb.nomor_registrasi]',
+                    'errors' => [
+                        'is_unique' => 'Nomor Registrasi sudah terdaftar',
+                    ]
+                ]
+            ])) {
+                return redirect()->to('mutasi/create')->withInput();
+            }
+
             $data_mutasi = [
                 'nomor_registrasi_lama' => $this->request->getVar('nomor_registrasi'),
                 'nomor_registrasi_baru' => $this->request->getVar('nomor_registrasi_baru'),
@@ -89,6 +91,19 @@ class Mutasi extends BaseController
 
             $this->MutasiModel->perubahan_data($data_mutasi);
         } else if ($jenis_mutasi == 1) {
+
+            if (!$this->validate([
+                'nomor_registrasi' => [
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => 'Nomor Registrasi tidak boleh kosong!',
+                        'in_list' => 'Nomor Registrasi tidak terdaftar',
+                    ]
+                ],
+            ])) {
+                return redirect()->to('mutasi/create')->withInput();
+            }
+
             $data_mutasi = [
                 'nomor_registrasi_lama' => $this->request->getVar('nomor_registrasi'),
                 'nomor_registrasi_baru' => "-",

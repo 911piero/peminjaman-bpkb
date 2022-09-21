@@ -428,6 +428,71 @@
             table2.buttons().container().appendTo($('#btnPlace'));
 
         });
+
+        $(document).ready(function() {
+
+            table3 = $('#data_kekancingan_reminder').DataTable({
+                processing: true,
+                serverSide: true,
+                ajax: {
+                    url: '<?= site_url('/sertifikat/listDataReminder') ?>',
+                },
+                columns: [{
+                        data: null,
+                        "sortable": false,
+                        render: function(data, type, row, meta) {
+                            return meta.row + meta.settings._iDisplayStart + 1;
+                        },
+                        searchable: false,
+                    }, {
+                        data: 'nama_proyek'
+                    },
+                    {
+                        data: 'intro'
+                    },
+                    {
+                        data: 'intro2'
+                    },
+                    {
+                        data: 'kecamatan'
+                    },
+                    {
+                        data: 'kelurahan'
+                    },
+                    {
+                        data: 'nm_kategori'
+                    },
+                    {
+                        data: 'nm_subkategori'
+                    },
+                    {
+                        data: 'tahun'
+                    },
+                    {
+                        "data": null,
+                        "render": function(data, type, full) {
+                            if (full['tgl_awal'] == "0000-00-00") {
+                                return '-';
+                            }
+                            return full['tgl_awal'] + '&nbsp;<b>s.d</b>&nbsp;' + full['tgl_akhir'];
+                        },
+                        searchable: false
+                    },
+                    {
+                        data: 'action',
+                        orderable: false,
+                        searchable: false
+                    },
+                    {
+                        data: 'status',
+                        visible: false,
+                        searchable: false
+                    }
+                ]
+            });
+            table.buttons().container().appendTo($('#test'));
+
+        });
     </script>
 </body>
 

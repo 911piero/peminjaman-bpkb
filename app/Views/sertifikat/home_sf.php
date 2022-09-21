@@ -40,11 +40,48 @@
 
             <!-- ./col -->
         </div>
+
+        <!-- Main row -->
+        <div class="row">
+            <!-- Left col -->
+            <div class="col">
+                <!-- MAP & BOX PANE -->
+                <div class="card">
+                    <div class="card-header bg-danger">
+                        <h3 class="card-title"><b>Kekancingan Yang Harus Segera Diperpanjang</b></h3>
+
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <table id="data_kekancingan_reminder" class="table table-striped ">
+                            <thead>
+                                <tr>
+                                    <th>No.</th>
+                                    <th>No Objek</th>
+                                    <th>Nama Objek</th>
+                                    <th>Alamat</th>
+                                    <th>Kecamatan</th>
+                                    <th>Kelurahan</th>
+                                    <th>Kategori</th>
+                                    <th>Sub Kategori</th>
+                                    <th>Tahun Objek</th>
+                                    <th>Masa Berlaku (Kekancingan)</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+            </div>
+            <!-- /.col -->
+        </div>
         <!-- Main row -->
         <!-- /.row -->
     </div>
     <!--/. container-fluid -->
 </section>
-<!-- /.content -->
 
 <?= $this->endSection(); ?>
