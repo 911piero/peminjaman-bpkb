@@ -13,50 +13,43 @@ use App\Controllers\Peminjam;
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
-    .sub-page {
-        height: 300mm;
-    }
-
-    .page {
-        justify-items: center;
-        border: 1px solid;
-    }
-
-    @page {
-        size: A4;
-        margin: 0;
-    }
-    .img {
-        width: 210mm;
-        height: 297mm;
-    }
-    @media print {
-        #toolbarContainer {
-            display: none;
+        .page {
+            border: 1px solid;
         }
 
-        .card-header {
-            display: none;
+        @page {
+            size: A4;
         }
 
         .img {
-            width: 300mm;
-            height: 400mm;
+            width: 150mm;
+            height: 250mm;
         }
-    }
+
+        @media print {
+            #toolbarContainer {
+                display: none;
+            }
+
+            .card-header {
+                display: none;
+            }
+
+            .img {
+                width: 300mm;
+                height: 400mm;
+            }
+        }
     </style>
 
     <!-- Google Font: Source Sans Pro -->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="<?= base_url('adminlte/plugins/fontawesome-free/css/all.min.css'); ?>">
     <!-- Ionicons -->
-    <link rel="stylesheet"
-        href="<?= base_url('adminlte/https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'); ?>">
+    <link rel="stylesheet" href="<?= base_url('adminlte/https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'); ?>">
     <!-- Tempusdominus Bootstrap 4 -->
-    <link rel="stylesheet"
-        href="<?= base_url('adminlte/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css'); ?>">
+    <link rel="stylesheet" href="<?= base_url('adminlte/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css'); ?>">
     <!-- iCheck -->
     <link rel="stylesheet" href="<?= base_url('adminlte/plugins/icheck-bootstrap/icheck-bootstrap.min.css'); ?>">
     <!-- JQVMap -->
@@ -73,21 +66,19 @@ use App\Controllers\Peminjam;
 <body>
     <div class="card-header">
         <a href="<?php echo $_SERVER['HTTP_REFERER'] ?>" class="btn btn-outline-info btn-shadow">Kembali</a>
-        <button onclick="window.print()" class="btn btn-outline-secondary btn-shadow float-right">PRINT<i
-                class="fa fa-print"></i></button>
+        <button onclick="window.print()" class="btn btn-outline-secondary btn-shadow float-right">PRINT<iclass="fa fa-print">
+                </iclass=></button>
     </div>
     <div class="book">
         <div class="page">
-            <div class="sub-page">
-                <?php
-                $link = $sertifikat['img1'];
-                if ($sertifikat['img1'] == null) {
-                    echo '';
-                } else {
-                    echo '<center><center><img class="img" src="' . base_url('BPKAD/') . '/' .  $sertifikat['img1'] . '.jpg' . '" ></center>';
-                }
-                ?>
-            </div>
+            <?php
+            $link = $sertifikat['img1'];
+            if ($sertifikat['img1'] == null) {
+                echo '';
+            } else {
+                echo '<center><center><img class="img" src="' . base_url('BPKAD/') . '/' .  $sertifikat['img1'] . '.jpg' . '" ></center>';
+            }
+            ?>
         </div>
         <div class="page">
             <?php
@@ -149,7 +140,7 @@ use App\Controllers\Peminjam;
 <script src="<?= base_url('adminlte/plugins/jquery-ui/jquery-ui.min.js'); ?>"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <script>
-$.widget.bridge('uibutton', $.ui.button)
+    $.widget.bridge('uibutton', $.ui.button)
 </script>
 <!-- Bootstrap 4 -->
 <script src="<?= base_url('adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js'); ?>"></script>

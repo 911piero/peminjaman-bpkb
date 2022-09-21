@@ -25,6 +25,9 @@
             display: none;
         }
     }
+    .gambar{
+        align-content: center;
+    }
 
     .sub-label {
         font-weight: bold;
@@ -44,6 +47,7 @@
         <div class="row">
             <div class="col">
                 <div class="card card-body" style="height: fit-content;">
+                <b>Detail BPKB :</b>
                     <hr>
                     <div class="row">
                         <div class="col">
@@ -161,15 +165,16 @@
                                 <b class="foto">Foto : </b>
                             </table>
                             <hr>
-                            <table class="gambar">
+                            <table class="gambar" >
                                 <?php foreach ($getImg as $key => $link) : ?>
                                     <td>
-                                        <center><img style="height:250px ; width:100%" src="<?= base_url('foto_bpkb/' . $link['link']); ?>" alt="">
+                                        <center><embed style="height:250px ; width:100% justify-item:auto;" src="<?= base_url('foto_bpkb/' . $link['link']); ?>" alt="" onclick="">
                                             <br>
+                                            
                                             <br>
                                             <a href="<?= base_url('GambarController/delete/' . $link['id_gambar']);  ?>" class="btn btn-danger" onclick="return confirm('Are you sure ?')">HAPUS</a>
-                                            <center>
-                                                <br>
+                                        </center>
+                                        <br>
                                     </td>
                                 <?php endforeach; ?>
                             </table>

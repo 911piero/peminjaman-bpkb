@@ -217,10 +217,12 @@ class Bpkb extends BaseController
                     'is_image' => 'Hanya file gambar yang diperbolehkan di upload'
                 ]
             ]
+            
 
         ])) {
             return redirect()->to('bpkb/create')->withInput();
         }
+
 
         //Ambil File Gambar
         $fotoBpkb = $this->request->getFile('foto_bpkb');
