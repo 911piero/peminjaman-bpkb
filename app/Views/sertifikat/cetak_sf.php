@@ -13,21 +13,27 @@ use App\Controllers\Peminjam;
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
-    .subpage {
-        height: 256mm;
+    .sub-page {
+        height: 300mm;
+    }
+
+    .page {
+        justify-items: center;
+        border: 1px solid;
     }
 
     @page {
         size: A4;
         margin: 0;
     }
-
     .img {
-        width: 300mm;
-        height: 400mm;
+        width: 210mm;
+        height: 297mm;
     }
-
     @media print {
+        #toolbarContainer {
+            display: none;
+        }
 
         .card-header {
             display: none;
@@ -74,13 +80,13 @@ use App\Controllers\Peminjam;
         <div class="page">
             <div class="sub-page">
                 <?php
-            $link = $sertifikat['img1'];
-            if ($sertifikat['img1'] == null) {
-                echo '';
-            } else {
-                echo '<img class="img" src="' . base_url('BPKAD/') . '/' .  $sertifikat['img1'] . '.jpg' . '" >';
-            }
-            ?>
+                $link = $sertifikat['img1'];
+                if ($sertifikat['img1'] == null) {
+                    echo '';
+                } else {
+                    echo '<center><center><img class="img" src="' . base_url('BPKAD/') . '/' .  $sertifikat['img1'] . '.jpg' . '" ></center>';
+                }
+                ?>
             </div>
         </div>
         <div class="page">
@@ -89,7 +95,7 @@ use App\Controllers\Peminjam;
             if ($sertifikat['img2'] == null) {
                 echo '';
             } else {
-                echo '<img class="img" src="' . base_url('BPKAD/') . '/' .  $sertifikat['img2'] . '.jpg' . '">';
+                echo '<center><img class="img" src="' . base_url('BPKAD/') . '/' .  $sertifikat['img2'] . '.jpg' . '"></center>';
             }
             ?>
         </div>
@@ -99,7 +105,7 @@ use App\Controllers\Peminjam;
             if ($sertifikat['img3'] == null) {
                 echo '';
             } else {
-                echo '<img class="img" src="' . base_url('BPKAD/') . '/' .  $sertifikat['img3'] . '.jpg' . '" >';
+                echo '<center><img class="img" src="' . base_url('BPKAD/') . '/' .  $sertifikat['img3'] . '.jpg' . '" ></center>';
             }
             ?>
         </div>
@@ -109,7 +115,7 @@ use App\Controllers\Peminjam;
             if ($sertifikat['img4'] == null) {
                 echo '';
             } else {
-                echo '<img class="img" src="' . base_url('BPKAD/') . '/' .  $sertifikat['img4'] . '.jpg' . '" >';
+                echo '<center><img class="img" src="' . base_url('BPKAD/') . '/' .  $sertifikat['img4'] . '.jpg' . '" ></center>';
             }
             ?>
         </div>
@@ -119,7 +125,7 @@ use App\Controllers\Peminjam;
             if ($sertifikat['img5'] == null) {
                 echo '';
             } else {
-                echo '<img class="img" src="' . base_url('BPKAD/') . '/' .  $sertifikat['img5'] . '.jpg' . '" >';
+                echo '<center><img class="img" src="' . base_url('BPKAD/') . '/' .  $sertifikat['img5'] . '.jpg' . '" ></center>';
             }
             ?>
         </div>
@@ -129,7 +135,7 @@ use App\Controllers\Peminjam;
             if ($sertifikat['img6'] == null) {
                 echo '';
             } else {
-                echo '<img class="img" src="' . base_url('BPKAD/') . '/' .  $sertifikat['img6'] . '.jpg' . '" >';
+                echo '<center><img class="img" src="' . base_url('BPKAD/') . '/' .  $sertifikat['img6'] . '.jpg' . '" ></center>';
             }
             ?>
         </div>
