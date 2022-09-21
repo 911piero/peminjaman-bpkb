@@ -40,6 +40,7 @@ class MutasiModel extends Model
         return $this->db->table('data_bpkb')
             ->set('isActive', 0)
             ->where('nomor_registrasi', $data_mutasi['nomor_registrasi_lama'])
+            // ->where('nomor_registrasi', $data_mutasi['nomor_registrasi_lama'])
             ->update();
     }
 

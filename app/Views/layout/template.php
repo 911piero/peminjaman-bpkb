@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?= $title; ?></title>
 
+
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
@@ -20,9 +21,6 @@
     <link rel="stylesheet" href="<?= base_url('adminlte/plugins/datatables-responsive/css/responsive.bootstrap4.min.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('adminlte/plugins/datatables-buttons/css/buttons.bootstrap4.min.css'); ?>">
 
-    <style>
-
-    </style>
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
@@ -223,7 +221,7 @@
             //For Export Buttons available inside jquery-datatable "server side processing" - End
 
             table = $('#data_bpkb').DataTable({
-                dom: 'Bfrtip',
+                dom: 'Bfrtlip',
                 buttons: [{
                     "extend": 'excel',
                     "text": 'Print Excel',
@@ -233,7 +231,7 @@
                 }, ],
                 processing: true,
                 serverSide: true,
-                ajax: '/bpkb/listData',
+                ajax: '<?= site_url('/bpkb/listData') ?>',
                 columns: [{
                         data: null,
                         "sortable": false,
@@ -263,10 +261,9 @@
                         data: 'action',
                         orderable: false
                     },
-
                 ],
-
             });
+
             table.buttons().container().appendTo($('#btnPlace'));
         });
 
@@ -328,7 +325,7 @@
                 order: [
                     [4, 'asc']
                 ],
-                ajax: '/peminjam/listData',
+                ajax: '<?= site_url('/peminjam/listData') ?>',
                 columns: [{
                         data: null,
                         "sortable": false,
@@ -381,7 +378,7 @@
             table3 = $('#data_peminjam_overdate').DataTable({
                 processing: true,
                 serverSide: true,
-                ajax: '/peminjam/listDataOverdate',
+                ajax: '<?= site_url('/peminjam/listDataOverdate') ?>',
                 columns: [{
                         data: null,
                         "sortable": false,
@@ -475,7 +472,7 @@
                 order: [
                     [3, 'asc']
                 ],
-                ajax: '/mutasi/listData',
+                ajax: '<?= site_url('/mutasi/listData') ?>',
                 columns: [{
                         data: null,
                         "sortable": false,

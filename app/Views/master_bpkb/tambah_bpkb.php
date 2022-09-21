@@ -146,6 +146,13 @@
                                 </div>
                             </div>
                             <div class="form-group">
+                                <label for="exampleInputPassword1">Keterangan</label>
+                                <input type="text" name="keterangan" class="form-control <?= ($validation->hasError('keterangan')) ? 'is-invalid' : ' '; ?>" id="keterangan" placeholder="Masukan Keterangan Lokasi">
+                                <div class="invalid-feedback">
+                                    <?= $validation->getError('kode_lokasi'); ?>
+                                </div>
+                            </div>
+                            <div class="form-group">
                                 <label for="exampleInputPassword1">Kode Lokasi</label>
                                 <input type="text" name="kode_lokasi" class="form-control <?= ($validation->hasError('kode_lokasi')) ? 'is-invalid' : ' '; ?>" id="kode_lokasi" placeholder="Kode Lokasi">
                                 <div class="invalid-feedback">
@@ -155,13 +162,10 @@
                             <div class="form-group">
                                 <label for="exampleInputFile">Foto BPKB</label>
                                 <div class="input-group">
-                                    <div class="custom-file">
-                                        <input type="file" name="foto_bpkb" class="custom-file-input <?= ($validation->hasError('foto_bpkb')) ? 'is-invalid' : ' '; ?>" id="foto_bpkb">
-                                        <label class="custom-file-label" for="foto_bpkb">Pilih Foto</label>
+                                        <input type="file" name="foto_bpkb" class="form-control <?= ($validation->hasError('foto_bpkb')) ? 'is-invalid' : ' '; ?>" id="foto_bpkb">
                                         <div class="invalid-feedback">
                                             <?= $validation->getError('foto_bpkb'); ?>
                                         </div>
-                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-12 mt-5 text-right">

@@ -44,13 +44,12 @@ use app\Models\BpkbModel; ?>
           <div class="card-header">
             <h3 class="card-title"><b>Data BPKB</b></h3>
             <div id="btnPlace" class="float-right">
-
             </div>
             <a href="<?= site_url('/bpkb/create') ?>" class="btn btn-sm btn-primary float-right">Tambah BPKB</a>
           </div>
           <!-- /.card-header -->
           <div class="card-body">
-            <table id="data_bpkb" class="table">
+            <table id="data_bpkb" class="table table-striped">
               <thead>
                 <tr>
                   <th>No</th>

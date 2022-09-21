@@ -143,6 +143,11 @@
                                         <td class="sub-label">:</td>
                                         <td><?= $bpkb['kode_lokasi']; ?></td>
                                     </tr>
+                                    <tr>
+                                        <td class="sub-label">Keterangan</td>
+                                        <td class="sub-label">:</td>
+                                        <td><?= $bpkb['lokasi_kendaraan']; ?></td>
+                                    </tr>
                                 </table>
                             </div>
                         </div>
