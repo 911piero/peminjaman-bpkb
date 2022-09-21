@@ -43,7 +43,7 @@
                 <div class="small-box bg-primary">
 
                     <div class="inner p-4">
-                        <h4>Ke Digitalisasi <br> Sertifikat</h4>  
+                        <h4>Digitalisasi <br> Sertifikat</h4>  
                         <div class="icon">
                         <i class="fas fa-arrow-circle-right"></i>
                     </div> 
