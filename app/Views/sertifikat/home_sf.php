@@ -38,8 +38,22 @@
             </div>
             <!-- ./col -->
 
-            <!-- ./col -->
-        </div>
+            <div class="col-lg-3 col-6">
+            <a href="<?= '/digitalisasi' ?>" class="small-box-footer bg-primary p5-">
+                <div class="small-box bg-primary">
+
+                    <div class="inner p-4">
+                        <h4>Ke Digitalisasi <br> Sertifikat</h4>  
+                        <div class="icon">
+                        <i class="fas fa-arrow-circle-right"></i>
+                    </div> 
+                    </div>
+
+
+
+                </div>
+                </a>
+            </div>
 
         <!-- Main row -->
         <div class="row">

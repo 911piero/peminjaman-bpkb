@@ -175,7 +175,7 @@
                             </table>
                             <table class="table mt-3">
                                 <th>
-                                    <form class="upload" action="/GambarController/save/" method="post" enctype="multipart/form-data">
+                                    <form class="upload" action="<?= base_url('/GambarController/save/') ?>" method="post" enctype="multipart/form-data">
                                         <input type="hidden" name="nomor_bpkb" value="<?= $bpkb['nomor_bpkb']; ?>">
                                         <input type="file" name="foto_bpkb" id="foto_bpkb" required>
                                         <input type="submit" value="Upload" name="submit" class="btn btn-primary">
