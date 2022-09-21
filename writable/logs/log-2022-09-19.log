@@ -8,3 +8,224 @@ in SYSTEMPATH\Debug\Toolbar\Collectors\History.php on line 82.
  6 SYSTEMPATH\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
  7 SYSTEMPATH\CodeIgniter.php(326): CodeIgniter\Events\Events::trigger('pre_system')
  8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-19 01:12:18 --> Unknown column 'id_bpkb' in 'field list'
+CRITICAL - 2022-09-19 01:12:18 --> Call to a member function getRowArray() on bool
+in APPPATH\Models\BpkbModel.php on line 34.
+ 1 APPPATH\Controllers\Bpkb.php(80): App\Models\BpkbModel->getDetail('1884')
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('1884')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-19 01:12:25 --> Unknown column 'isActive' in 'where clause'
+CRITICAL - 2022-09-19 01:12:25 --> Attempt to read property "resultID" on bool
+in APPPATH\Controllers\Bpkb.php on line 28.
+ 1 APPPATH\Controllers\Bpkb.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "resultID" on bool', 'APPPATH\\Controllers\\Bpkb.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->home()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-19 01:13:07 --> Unknown column 'isActive' in 'where clause'
+CRITICAL - 2022-09-19 01:13:07 --> Attempt to read property "resultID" on bool
+in APPPATH\Controllers\Bpkb.php on line 28.
+ 1 APPPATH\Controllers\Bpkb.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "resultID" on bool', 'APPPATH\\Controllers\\Bpkb.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->home()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-19 01:13:21 --> Unknown column 'isActive' in 'where clause'
+CRITICAL - 2022-09-19 01:13:21 --> Attempt to read property "resultID" on bool
+in APPPATH\Controllers\Bpkb.php on line 28.
+ 1 APPPATH\Controllers\Bpkb.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "resultID" on bool', 'APPPATH\\Controllers\\Bpkb.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->home()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-19 01:13:22 --> Unknown column 'isActive' in 'where clause'
+CRITICAL - 2022-09-19 01:13:22 --> Attempt to read property "resultID" on bool
+in APPPATH\Controllers\Bpkb.php on line 28.
+ 1 APPPATH\Controllers\Bpkb.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "resultID" on bool', 'APPPATH\\Controllers\\Bpkb.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->home()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-19 01:13:25 --> Unknown column 'isActive' in 'where clause'
+ERROR - 2022-09-19 01:13:25 --> Unknown column 'isActive' in 'where clause'
+CRITICAL - 2022-09-19 01:13:25 --> Attempt to read property "resultID" on bool
+in APPPATH\Controllers\Bpkb.php on line 47.
+ 1 APPPATH\Controllers\Bpkb.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "resultID" on bool', 'APPPATH\\Controllers\\Bpkb.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-19 01:13:37 --> Unknown column 'isActive' in 'where clause'
+CRITICAL - 2022-09-19 01:13:37 --> Attempt to read property "resultID" on bool
+in APPPATH\Controllers\Bpkb.php on line 28.
+ 1 APPPATH\Controllers\Bpkb.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "resultID" on bool', 'APPPATH\\Controllers\\Bpkb.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->home()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-19 01:13:49 --> Unknown column 'isActive' in 'where clause'
+CRITICAL - 2022-09-19 01:13:49 --> Attempt to read property "resultID" on bool
+in APPPATH\Controllers\Bpkb.php on line 28.
+ 1 APPPATH\Controllers\Bpkb.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "resultID" on bool', 'APPPATH\\Controllers\\Bpkb.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->home()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-19 01:14:57 --> Unknown column 'isActive' in 'where clause'
+CRITICAL - 2022-09-19 01:14:57 --> Attempt to read property "resultID" on bool
+in APPPATH\Controllers\Bpkb.php on line 28.
+ 1 APPPATH\Controllers\Bpkb.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "resultID" on bool', 'APPPATH\\Controllers\\Bpkb.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->home()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-19 01:15:04 --> Unknown column 'isActive' in 'where clause'
+CRITICAL - 2022-09-19 01:15:04 --> Attempt to read property "resultID" on bool
+in APPPATH\Controllers\Bpkb.php on line 28.
+ 1 APPPATH\Controllers\Bpkb.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "resultID" on bool', 'APPPATH\\Controllers\\Bpkb.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->home()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-19 01:15:58 --> Unknown column 'isActive' in 'where clause'
+CRITICAL - 2022-09-19 01:15:58 --> Attempt to read property "resultID" on bool
+in APPPATH\Controllers\Bpkb.php on line 28.
+ 1 APPPATH\Controllers\Bpkb.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "resultID" on bool', 'APPPATH\\Controllers\\Bpkb.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->home()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-19 01:17:15 --> Unknown column 'isActive' in 'where clause'
+CRITICAL - 2022-09-19 01:17:15 --> Unknown column 'isActive' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `data_bpkb`
+JOIN `bpkb_bahan_bakar` ON `bpkb_bahan_bakar`.`id_bahan_bakar` = `data_bpkb`.`bahan_bakar`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+JOIN `bpkb_warna_tnkb` ON `bpkb_warna_tnkb`.`id_warna_tnkb` = `data_bpkb`.`warna_tnkb`
+WHERE `isActive` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `data_bpkb`
+JOIN `bpkb_bahan_bakar` ON `bpkb_bahan_bakar`.`id_bahan_bakar` = `data_bpkb`.`bahan_bakar`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+JOIN `bpkb_warna_tnkb` ON `bpkb_warna_tnkb`.`id_warna_tnkb` = `data_bpkb`.`warna_tnkb`
+WHERE `isActive` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `data_bpkb`
+JOIN `bpkb_bahan_bakar` ON `bpkb_bahan_bakar`.`id_bahan_bakar` = `data_bpkb`.`bahan_bakar`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+JOIN `bpkb_warna_tnkb` ON `bpkb_warna_tnkb`.`id_warna_tnkb` = `data_bpkb`.`warna_tnkb`
+WHERE `isActive` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_bpkb`
+JOIN `bpkb_bahan_bakar` ON `bpkb_bahan_bakar`.`id_bahan_bakar` = `data_bpkb`.`bahan_bakar`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+JOIN `bpkb_warna_tnkb` ON `bpkb_warna_tnkb`.`id_warna_tnkb` = `data_bpkb`.`warna_tnkb`
+WHERE `isActive` = :isActive:', [...], false)
+ 5 APPPATH\Models\BpkbModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Bpkb.php(28): App\Models\BpkbModel->getBpkb()
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->home()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-19 01:19:36 --> Unknown column 'isActive' in 'where clause'
+CRITICAL - 2022-09-19 01:19:36 --> Unknown column 'isActive' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `data_bpkb`
+JOIN `bpkb_bahan_bakar` ON `bpkb_bahan_bakar`.`id_bahan_bakar` = `data_bpkb`.`bahan_bakar`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+JOIN `bpkb_warna_tnkb` ON `bpkb_warna_tnkb`.`id_warna_tnkb` = `data_bpkb`.`warna_tnkb`
+WHERE `isActive` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `data_bpkb`
+JOIN `bpkb_bahan_bakar` ON `bpkb_bahan_bakar`.`id_bahan_bakar` = `data_bpkb`.`bahan_bakar`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+JOIN `bpkb_warna_tnkb` ON `bpkb_warna_tnkb`.`id_warna_tnkb` = `data_bpkb`.`warna_tnkb`
+WHERE `isActive` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `data_bpkb`
+JOIN `bpkb_bahan_bakar` ON `bpkb_bahan_bakar`.`id_bahan_bakar` = `data_bpkb`.`bahan_bakar`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+JOIN `bpkb_warna_tnkb` ON `bpkb_warna_tnkb`.`id_warna_tnkb` = `data_bpkb`.`warna_tnkb`
+WHERE `isActive` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_bpkb`
+JOIN `bpkb_bahan_bakar` ON `bpkb_bahan_bakar`.`id_bahan_bakar` = `data_bpkb`.`bahan_bakar`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+JOIN `bpkb_warna_tnkb` ON `bpkb_warna_tnkb`.`id_warna_tnkb` = `data_bpkb`.`warna_tnkb`
+WHERE `isActive` = :isActive:', [...], false)
+ 5 APPPATH\Models\BpkbModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Bpkb.php(28): App\Models\BpkbModel->getBpkb()
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->home()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-19 01:22:04 --> Unknown column 'isActive' in 'where clause'
+CRITICAL - 2022-09-19 01:22:04 --> Unknown column 'isActive' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `data_bpkb`
+JOIN `bpkb_bahan_bakar` ON `bpkb_bahan_bakar`.`id_bahan_bakar` = `data_bpkb`.`bahan_bakar`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+JOIN `bpkb_warna_tnkb` ON `bpkb_warna_tnkb`.`id_warna_tnkb` = `data_bpkb`.`warna_tnkb`
+WHERE `isActive` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `data_bpkb`
+JOIN `bpkb_bahan_bakar` ON `bpkb_bahan_bakar`.`id_bahan_bakar` = `data_bpkb`.`bahan_bakar`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+JOIN `bpkb_warna_tnkb` ON `bpkb_warna_tnkb`.`id_warna_tnkb` = `data_bpkb`.`warna_tnkb`
+WHERE `isActive` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `data_bpkb`
+JOIN `bpkb_bahan_bakar` ON `bpkb_bahan_bakar`.`id_bahan_bakar` = `data_bpkb`.`bahan_bakar`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+JOIN `bpkb_warna_tnkb` ON `bpkb_warna_tnkb`.`id_warna_tnkb` = `data_bpkb`.`warna_tnkb`
+WHERE `isActive` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_bpkb`
+JOIN `bpkb_bahan_bakar` ON `bpkb_bahan_bakar`.`id_bahan_bakar` = `data_bpkb`.`bahan_bakar`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+JOIN `bpkb_warna_tnkb` ON `bpkb_warna_tnkb`.`id_warna_tnkb` = `data_bpkb`.`warna_tnkb`
+WHERE `isActive` = :isActive:', [...], false)
+ 5 APPPATH\Models\BpkbModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Bpkb.php(28): App\Models\BpkbModel->getBpkb()
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->home()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-19 01:22:16 --> Unknown column 'isActive' in 'where clause'
+CRITICAL - 2022-09-19 01:22:16 --> Unknown column 'isActive' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `data_bpkb`
+JOIN `bpkb_bahan_bakar` ON `bpkb_bahan_bakar`.`id_bahan_bakar` = `data_bpkb`.`bahan_bakar`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+JOIN `bpkb_warna_tnkb` ON `bpkb_warna_tnkb`.`id_warna_tnkb` = `data_bpkb`.`warna_tnkb`
+WHERE `isActive` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `data_bpkb`
+JOIN `bpkb_bahan_bakar` ON `bpkb_bahan_bakar`.`id_bahan_bakar` = `data_bpkb`.`bahan_bakar`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+JOIN `bpkb_warna_tnkb` ON `bpkb_warna_tnkb`.`id_warna_tnkb` = `data_bpkb`.`warna_tnkb`
+WHERE `isActive` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `data_bpkb`
+JOIN `bpkb_bahan_bakar` ON `bpkb_bahan_bakar`.`id_bahan_bakar` = `data_bpkb`.`bahan_bakar`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+JOIN `bpkb_warna_tnkb` ON `bpkb_warna_tnkb`.`id_warna_tnkb` = `data_bpkb`.`warna_tnkb`
+WHERE `isActive` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_bpkb`
+JOIN `bpkb_bahan_bakar` ON `bpkb_bahan_bakar`.`id_bahan_bakar` = `data_bpkb`.`bahan_bakar`
+JOIN `bpkb_model_kendaraan` ON `bpkb_model_kendaraan`.`id_model` = `data_bpkb`.`model`
+JOIN `bpkb_warna_tnkb` ON `bpkb_warna_tnkb`.`id_warna_tnkb` = `data_bpkb`.`warna_tnkb`
+WHERE `isActive` = :isActive:', [...], false)
+ 5 APPPATH\Models\BpkbModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Bpkb.php(28): App\Models\BpkbModel->getBpkb()
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->home()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

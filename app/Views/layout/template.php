@@ -221,7 +221,7 @@
             //For Export Buttons available inside jquery-datatable "server side processing" - End
 
             table = $('#data_bpkb').DataTable({
-                dom: 'Bfrtip',
+                dom: 'Bfrtlip',
                 buttons: [{
                     "extend": 'excel',
                     "text": 'Print Excel',

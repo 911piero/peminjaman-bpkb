@@ -1,0 +1,214 @@
+CRITICAL - 2022-09-20 09:21:25 --> Undefined property: stdClass::$kecamatan
+in APPPATH\Controllers\Sertifikat.php on line 92.
+ 1 APPPATH\Controllers\Sertifikat.php(92): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$kecamatan', 'APPPATH\\Controllers\\Sertifikat.php', 92, [...])
+ 2 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(195): App\Controllers\Sertifikat->App\Controllers\{closure}(Object(CodeIgniter\Database\MySQLi\Builder), Object(stdClass))
+ 3 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(185): Hermawan\DataTables\DataTableQuery->queryFilter(Object(CodeIgniter\Database\MySQLi\Builder))
+ 4 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(61): Hermawan\DataTables\DataTableQuery->queryFilterSearch(Object(CodeIgniter\Database\MySQLi\Builder))
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 6 APPPATH\Controllers\Sertifikat.php(124): Hermawan\DataTables\DataTable->toJson(true)
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-20 09:21:33 --> Undefined property: stdClass::$kecamatan
+in APPPATH\Controllers\Sertifikat.php on line 92.
+ 1 APPPATH\Controllers\Sertifikat.php(92): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$kecamatan', 'APPPATH\\Controllers\\Sertifikat.php', 92, [...])
+ 2 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(195): App\Controllers\Sertifikat->App\Controllers\{closure}(Object(CodeIgniter\Database\MySQLi\Builder), Object(stdClass))
+ 3 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(185): Hermawan\DataTables\DataTableQuery->queryFilter(Object(CodeIgniter\Database\MySQLi\Builder))
+ 4 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(61): Hermawan\DataTables\DataTableQuery->queryFilterSearch(Object(CodeIgniter\Database\MySQLi\Builder))
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->countFiltered()
+ 6 APPPATH\Controllers\Sertifikat.php(124): Hermawan\DataTables\DataTable->toJson(true)
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listData()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-20 09:29:44 --> Unknown column '2022/09/20' in 'where clause'
+CRITICAL - 2022-09-20 09:29:44 --> Unknown column '2022/09/20' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+LEFT JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+LEFT JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+LEFT JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+LEFT JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `2022/09/20` = \'>= DATE_ADD(tgl_akhir, INTERVAL -3 MONTH)\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+LEFT JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+LEFT JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+LEFT JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+LEFT JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `2022/09/20` = \'>= DATE_ADD(tgl_akhir, INTERVAL -3 MONTH)\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+LEFT JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+LEFT JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+LEFT JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+LEFT JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `2022/09/20` = \'>= DATE_ADD(tgl_akhir, INTERVAL -3 MONTH)\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+LEFT JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+LEFT JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+LEFT JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+LEFT JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `2022/09/20` = :2022/09/20:', [...], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(174): Hermawan\DataTables\DataTableQuery->countAll()
+ 7 APPPATH\Controllers\Sertifikat.php(159): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listDataReminder()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-20 09:31:21 --> Unknown column '2022/09/20' in 'where clause'
+CRITICAL - 2022-09-20 09:31:21 --> Unknown column '2022/09/20' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+LEFT JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+LEFT JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+LEFT JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+LEFT JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `2022/09/20` = \'>= tgl_akhir\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+LEFT JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+LEFT JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+LEFT JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+LEFT JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `2022/09/20` = \'>= tgl_akhir\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+LEFT JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+LEFT JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+LEFT JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+LEFT JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `2022/09/20` = \'>= tgl_akhir\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+LEFT JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+LEFT JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+LEFT JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+LEFT JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `2022/09/20` = :2022/09/20:', [...], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(174): Hermawan\DataTables\DataTableQuery->countAll()
+ 7 APPPATH\Controllers\Sertifikat.php(159): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listDataReminder()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-20 09:32:16 --> Unknown column 'CURRENT_DATE' in 'where clause'
+CRITICAL - 2022-09-20 09:32:16 --> Unknown column 'CURRENT_DATE' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+LEFT JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+LEFT JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+LEFT JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+LEFT JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `CURRENT_DATE` >= DATE_ADD(tgl_akhir, INTERVAL -3 MONTH)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+LEFT JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+LEFT JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+LEFT JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+LEFT JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `CURRENT_DATE` >= DATE_ADD(tgl_akhir, INTERVAL -3 MONTH)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+LEFT JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+LEFT JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+LEFT JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+LEFT JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `CURRENT_DATE` >= DATE_ADD(tgl_akhir, INTERVAL -3 MONTH)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+LEFT JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+LEFT JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+LEFT JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+LEFT JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `CURRENT_DATE` >= DATE_ADD(tgl_akhir, INTERVAL -3 MONTH)', [], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(174): Hermawan\DataTables\DataTableQuery->countAll()
+ 7 APPPATH\Controllers\Sertifikat.php(159): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listDataReminder()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-20 09:34:41 --> Unknown column '2022/09/20' in 'where clause'
+CRITICAL - 2022-09-20 09:34:41 --> Unknown column '2022/09/20' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+LEFT JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+LEFT JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+LEFT JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+LEFT JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `2022/09/20` = \'>= DATE_ADD(tgl_akhir, INTERVAL -3 MONTH)\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+LEFT JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+LEFT JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+LEFT JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+LEFT JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `2022/09/20` = \'>= DATE_ADD(tgl_akhir, INTERVAL -3 MONTH)\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+LEFT JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+LEFT JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+LEFT JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+LEFT JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `2022/09/20` = \'>= DATE_ADD(tgl_akhir, INTERVAL -3 MONTH)\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+LEFT JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+LEFT JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+LEFT JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+LEFT JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `2022/09/20` = :2022/09/20:', [...], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(174): Hermawan\DataTables\DataTableQuery->countAll()
+ 7 APPPATH\Controllers\Sertifikat.php(159): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listDataReminder()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-20 09:44:36 --> Unknown column 'CURRENT_DATE' in 'where clause'
+CRITICAL - 2022-09-20 09:44:36 --> Unknown column 'CURRENT_DATE' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+LEFT JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+LEFT JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+LEFT JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+LEFT JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `CURRENT_DATE` >= DATE_ADD(tgl_akhir, INTERVAL -3 MONTH)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+LEFT JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+LEFT JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+LEFT JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+LEFT JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `CURRENT_DATE` >= DATE_ADD(tgl_akhir, INTERVAL -3 MONTH)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+LEFT JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+LEFT JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+LEFT JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+LEFT JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `CURRENT_DATE` >= DATE_ADD(tgl_akhir, INTERVAL -3 MONTH)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `investasi`
+LEFT JOIN `kategori` ON `kategori`.`id_kategori` = `investasi`.`id_kategori`
+LEFT JOIN `kecamatan` ON `kecamatan`.`id` = `investasi`.`id_kecamatan`
+LEFT JOIN `kelurahan` ON `kelurahan`.`id` = `investasi`.`id_kelurahan`
+LEFT JOIN `sub_kategori` ON `sub_kategori`.`id_subkategori` = `investasi`.`lokasi`
+WHERE `CURRENT_DATE` >= DATE_ADD(tgl_akhir, INTERVAL -3 MONTH)', [], false)
+ 5 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\ThirdParty\codeigniter4-datatables\src\DataTable.php(174): Hermawan\DataTables\DataTableQuery->countAll()
+ 7 APPPATH\Controllers\Sertifikat.php(161): Hermawan\DataTables\DataTable->toJson(true)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Sertifikat->listDataReminder()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sertifikat))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

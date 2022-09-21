@@ -122,7 +122,7 @@
                         <!-- /.card-header -->
                         <div class="card-body">
                             <br>
-                            <table id="data_sertifikat" class="table table-striped" style="width: 100%;">
+                            <table id="data_sertifikat" class="table table-striped">
                                 <thead>
                                     <tr>
                                         <th>No.</th>
