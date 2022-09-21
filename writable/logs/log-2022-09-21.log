@@ -101,3 +101,209 @@ in APPPATH\Views\master_bpkb\detail_bpkb.php on line 175.
  7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
  8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-21 15:04:21 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Bpkb.php on line 82.
+ 1 APPPATH\Controllers\Bpkb.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Bpkb.php', 82)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('2463')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-21 15:04:23 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Bpkb.php on line 82.
+ 1 APPPATH\Controllers\Bpkb.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Bpkb.php', 82)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('2463')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-21 15:04:25 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Bpkb.php on line 82.
+ 1 APPPATH\Controllers\Bpkb.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Bpkb.php', 82)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('2463')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-21 15:04:27 --> Too few arguments to function App\Controllers\Bpkb::detail(), 0 passed in C:\xampp\htdocs\peminjaman-bpkb\vendor\codeigniter4\framework\system\CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH\Controllers\Bpkb.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-21 15:04:47 --> Too few arguments to function App\Controllers\Bpkb::detail(), 0 passed in C:\xampp\htdocs\peminjaman-bpkb\vendor\codeigniter4\framework\system\CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH\Controllers\Bpkb.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-21 15:04:48 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Bpkb.php on line 82.
+ 1 APPPATH\Controllers\Bpkb.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Bpkb.php', 82)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('2463')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-21 15:06:14 --> Call to a member function getRandomName() on null
+in APPPATH\Controllers\GambarController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\GambarController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GambarController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-21 15:06:41 --> Call to a member function getRandomName() on null
+in APPPATH\Controllers\GambarController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\GambarController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GambarController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-21 15:06:46 --> Call to a member function getRandomName() on null
+in APPPATH\Controllers\GambarController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\GambarController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GambarController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-21 15:08:49 --> Object of class App\Models\BpkbModel could not be converted to string
+in APPPATH\Controllers\GambarController.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\GambarController->download('58')
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GambarController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-21 15:10:50 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Bpkb.php on line 82.
+ 1 APPPATH\Controllers\Bpkb.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Bpkb.php', 82)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('info.txt')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-21 15:10:57 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Bpkb.php on line 82.
+ 1 APPPATH\Controllers\Bpkb.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Bpkb.php', 82)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('info.txt')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-21 15:10:58 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Bpkb.php on line 82.
+ 1 APPPATH\Controllers\Bpkb.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Bpkb.php', 82)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Bpkb->detail('info.txt')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-21 15:20:22 --> Object of class App\Models\BpkbModel could not be converted to string
+in APPPATH\Controllers\GambarController.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\GambarController->download('58')
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GambarController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-21 15:20:38 --> Object of class App\Models\BpkbModel could not be converted to string
+in APPPATH\Controllers\GambarController.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\GambarController->download('58')
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GambarController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-21 15:20:39 --> Object of class App\Models\BpkbModel could not be converted to string
+in APPPATH\Controllers\GambarController.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\GambarController->download('58')
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GambarController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-21 15:35:55 --> syntax error, unexpected identifier "force_download"
+in APPPATH\Controllers\GambarController.php on line 45.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('GambarController/download/58')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('GambarController/download/58')
+ 3 SYSTEMPATH\CodeIgniter.php(771): CodeIgniter\Router\Router->handle('GambarController/download/58')
+ 4 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-21 15:40:59 --> Undefined property: App\Controllers\GambarController::$db
+in APPPATH\Controllers\GambarController.php on line 44.
+ 1 APPPATH\Controllers\GambarController.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\GambarController::$db', 'APPPATH\\Controllers\\GambarController.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\GambarController->download('58')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GambarController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-21 15:41:11 --> Undefined property: App\Controllers\GambarController::$db
+in APPPATH\Controllers\GambarController.php on line 44.
+ 1 APPPATH\Controllers\GambarController.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\GambarController::$db', 'APPPATH\\Controllers\\GambarController.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\GambarController->download('1663790925_60aa6095ea159769b9c8.pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GambarController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-21 15:43:46 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH\Controllers\GambarController.php on line 44.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('GambarController/download/1663790925_60aa6095ea159769b9c8.pdf')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('GambarController/download/1663790925_60aa6095ea159769b9c8.pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(771): CodeIgniter\Router\Router->handle('GambarController/download/1663790925_60aa6095ea159769b9c8.pdf')
+ 4 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-21 17:02:49 --> Call to a member function getFilename() on null
+in APPPATH\Controllers\GambarController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\GambarController->download('1663791358_ef68dad6a245a33118c0.png')
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GambarController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-21 17:03:07 --> Call to a member function getVar() on null
+in APPPATH\Controllers\GambarController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\GambarController->download('1663791358_ef68dad6a245a33118c0.png')
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GambarController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-21 17:03:07 --> Call to a member function getVar() on null
+in APPPATH\Controllers\GambarController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\GambarController->download('1663791358_ef68dad6a245a33118c0.png')
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GambarController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-21 17:03:08 --> Call to a member function getVar() on null
+in APPPATH\Controllers\GambarController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\GambarController->download('1663791358_ef68dad6a245a33118c0.png')
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GambarController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-21 17:03:08 --> Call to a member function getVar() on null
+in APPPATH\Controllers\GambarController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\GambarController->download('1663791358_ef68dad6a245a33118c0.png')
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GambarController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-21 17:03:08 --> Call to a member function getVar() on null
+in APPPATH\Controllers\GambarController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\GambarController->download('1663791358_ef68dad6a245a33118c0.png')
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GambarController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-21 17:03:14 --> Call to a member function get() on null
+in APPPATH\Controllers\GambarController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\GambarController->download('1663791358_ef68dad6a245a33118c0.png')
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GambarController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-21 17:03:15 --> Call to a member function getPost() on null
+in APPPATH\Controllers\GambarController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\GambarController->download('1663791358_ef68dad6a245a33118c0.png')
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GambarController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-21 17:03:15 --> Call to a member function getPost() on null
+in APPPATH\Controllers\GambarController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\GambarController->download('1663791358_ef68dad6a245a33118c0.png')
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GambarController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-21 17:03:16 --> Call to a member function getPost() on null
+in APPPATH\Controllers\GambarController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\GambarController->download('1663791358_ef68dad6a245a33118c0.png')
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GambarController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-21 17:03:16 --> Call to a member function getPost() on null
+in APPPATH\Controllers\GambarController.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\GambarController->download('1663791358_ef68dad6a245a33118c0.png')
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GambarController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-21 17:10:20 --> Undefined property: App\Controllers\GambarController::$load
+in APPPATH\Controllers\GambarController.php on line 43.
+ 1 APPPATH\Controllers\GambarController.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\GambarController::$load', 'APPPATH\\Controllers\\GambarController.php', 43)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\GambarController->download('1663791358_ef68dad6a245a33118c0.png')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GambarController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

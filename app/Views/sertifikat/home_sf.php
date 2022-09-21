@@ -18,7 +18,7 @@
                     <div class="icon">
                         <i class="fas fa-book"></i>
                     </div>
-                    <a href="<?= site_url('/sertifikat') ?>" class="small-box-footer bg-primary">More info <i class="fas fa-arrow-circle-right"></i></a>
+                    <a href="<?= site_url('/sertifikat') ?>" title="Data Sertifikat"  class="small-box-footer bg-primary">More info <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
             </div>
             <!-- ./col -->
@@ -33,14 +33,14 @@
                     <div class="icon">
                         <i class="fas fa-users"></i>
                     </div>
-                    <a href="<?= site_url('/peminjamsertifikat') ?>" class="small-box-footer bg-primary">More info <i class="fas fa-arrow-circle-right"></i></a>
+                    <a href="<?= site_url('/peminjamsertifikat') ?>"title="Jumlah Peminjam"  class="small-box-footer bg-primary">More info <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
             </div>
             <!-- ./col -->
 
             <div class="col-lg-3 col-6">
             <a href="<?= '/digitalisasi' ?>" class="small-box-footer bg-primary p5-">
-                <div class="small-box bg-primary">
+                <div class="small-box bg-primary" title="Digitalisasi Sertifikat" >
 
                     <div class="inner p-4">
                         <h4>Digitalisasi <br> Sertifikat</h4>  

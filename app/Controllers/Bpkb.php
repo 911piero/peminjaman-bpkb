@@ -68,7 +68,7 @@ class Bpkb extends BaseController
             return DataTable::of($builder)
                 ->add('action', function ($row) {
                     $url = site_url('/bpkb/detail/' . $row->id_bpkb);
-                    return '<a href="' . $url . '" class="btn btn-outline-primary"><i class="fa fa-eye"></i></a>';
+                    return '<a href="' . $url . '"title="Detail" class="btn btn-outline-primary"><i class="fa fa-eye"></i></a>';
                 })
                 ->toJson(true);
         }
@@ -211,7 +211,7 @@ class Bpkb extends BaseController
                 ]
             ],
             'foto_bpkb' => [
-                'rules' => 'mime_in[foto_bpkb,image/jpg,image/jpeg,image/png]|is_image[foto_bpkb]',
+                'rules' => 'mime_in[foto_bpkb,image/jpg,image/jpeg,image/png,application/pdf]|is_image[foto_bpkb]',
                 'errors' => [
                     'mime_in' => 'Hanya file gambar yang diperbolehkan di upload',
                     'is_image' => 'Hanya file gambar yang diperbolehkan di upload'

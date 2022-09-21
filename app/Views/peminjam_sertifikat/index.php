@@ -20,7 +20,7 @@
                         <div id="btnPlace" class="float-right">
 
                         </div>
-                        <a href="<?= site_url('/peminjamsertifikat/create') ?>" class="btn btn-sm btn-primary float-right">Tambah Peminjam Sertifikat</a>
+                        <a href="<?= site_url('/peminjamsertifikat/create') ?>" class="btn btn-sm btn-primary float-right"title="Tambah Peminjam Sertifikat" >Tambah Peminjam Sertifikat</a>
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body">

@@ -76,8 +76,8 @@ use App\Controllers\PeminjamSertifikat;
     <!-- summernote -->
 </head>
 <div class="card-header">
-    <a href="<?php echo $_SERVER['HTTP_REFERER'] ?>" class="btn btn-outline-info btn-shadow">Kembali</a>
-    <button onclick="window.print()" class="btn btn-outline-secondary btn-shadow float-right">PRINT<i class="fa fa-print"></i></button>
+    <a href="<?php echo $_SERVER['HTTP_REFERER'] ?>" class="btn btn-outline-info btn-shadow" title="Kembali"><i class="fa fa-arrow-left"></i>&nbsp;Kembali</a>
+    <button onclick="window.print()"class="btn btn-outline-secondary btn-shadow float-right" title="PRINT">PRINT&nbsp;<i class="fa fa-print"></i></button>
 </div>
 <div class="container">
     <div class="foto mt-5">
@@ -92,11 +92,10 @@ use App\Controllers\PeminjamSertifikat;
         <?php
         $tgl_pinjam = longdate_indo($peminjamsertifikat['tgl_pinjam']);
         ?>
-<<<<<<< HEAD
-        <p><?= $tgl_pinjam ?> telah diterima dokumen sertifikat/surat kekancingan tanah milik/dikuasai dengan nomor ............ berlokasi di .................. dari : </p>
-=======
+
+
         <p><?= $tgl_pinjam ?> telah diterima dokumen sertifikat/surat kekancingan tanah milik/dikuasai dengan nomor <b><?= $peminjamsertifikat['nama_proyek'] ?> (<?= $peminjamsertifikat['intro'] ?>) </b> berlokasi di <b><?= $peminjamsertifikat['kelurahan'] ?></b> dari : </p>
->>>>>>> 773ae4fee66843b3f920346bd7af50d424056936
+
         <div class="justify">
             <table class="mx-auto" style="width: 800px; font-size:21.2px">
                 <tr>

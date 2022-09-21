@@ -19,7 +19,7 @@
           <div class="icon">
             <i class="fas fa-car"></i>
           </div>
-          <a href="<?= site_url('bpkb/') ?>" class="small-box-footer bg-primary">More info <i class="fas fa-arrow-circle-right"></i></a>
+          <a href="<?= site_url('bpkb/') ?>" class="small-box-footer bg-primary" title="Jumlah BPKB" >More info <i class="fas fa-arrow-circle-right"></i></a>
         </div>
       </div>
       <!-- ./col -->
@@ -34,7 +34,7 @@
           <div class="icon">
             <i class="fas fa-users"></i>
           </div>
-          <a href="<?= site_url('/peminjam') ?>" class="small-box-footer bg-primary">More info <i class="fas fa-arrow-circle-right"></i></a>
+          <a href="<?= site_url('/peminjam') ?>" class="small-box-footer bg-primary" title="Jumlah Peminjam BPKB">More info <i class="fas fa-arrow-circle-right"></i></a>
         </div>
       </div>
       <!-- ./col -->
@@ -49,7 +49,7 @@
           <div class="icon">
             <i class="fas fa-edit"></i>
           </div>
-          <a href="<?= site_url('/mutasi') ?>" class="small-box-footer bg-primary">More info <i class="fas fa-arrow-circle-right"></i></a>
+          <a href="<?= site_url('/mutasi') ?>" class="small-box-footer bg-primary"title="Mutasi">More info <i class="fas fa-arrow-circle-right"></i></a>
         </div>
       </div>
       <!-- ./col -->

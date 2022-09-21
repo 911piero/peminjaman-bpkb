@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\GambarModel;
+use PhpOffice\PhpSpreadsheet\Reader\Xml\Style;
 
 class GambarController extends BaseController
 {
@@ -32,9 +33,14 @@ class GambarController extends BaseController
         $fotoBpkb = $this->GambarModel->find($id);
 
         unlink('foto_bpkb/' . $fotoBpkb['link']);
-        
-        $this->GambarModel->delete($id);    
+
+        $this->GambarModel->delete($id);
         session()->setFlashdata('pesan', 'Foto Telah Terhapus');
         return redirect()->to($_SERVER['HTTP_REFERER']);
+    }
+
+    public function download($id)
+    {
+        echo '<center style="font-size:100px;"> ALT + F4 </center>' ;
     }
 }

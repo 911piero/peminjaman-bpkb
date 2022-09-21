@@ -71,8 +71,8 @@
     <!-- summernote -->
 </head>
 <div class="card-header">
-    <a href="<?php echo $_SERVER['HTTP_REFERER'] ?>" class="btn btn-primary">Kembali</a>
-    <button onclick="window.print()" class="btn btn-secondary  float-right">PRINT&nbsp;<i class="fa fa-print"></i></button>
+    <a href="<?php echo $_SERVER['HTTP_REFERER'] ?>" class="btn btn-outline-info btn-shadow" title="Kembali"><i class="fa fa-arrow-left"></i>&nbsp;Kembali</a>
+    <button onclick="window.print()" class="btn btn-outline-secondary btn-shadow float-right"title="PRINT">PRINT&nbsp;<i class="fa fa-print"></i></button>
 </div>
 <div class="container">
     <div class="foto mt-5">

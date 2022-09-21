@@ -25,7 +25,8 @@
             display: none;
         }
     }
-    .gambar{
+
+    .gambar {
         align-content: center;
     }
 
@@ -41,13 +42,13 @@
     <div class="container-fluid">
         <?= csrf_field(); ?>
         <div class="card-header">
-            <button onclick="window.print()" class="btn btn-outline-secondary btn-shadow float-right">PRINT<i class="fa fa-print"></i></button>
-            <a href="<?= site_url('/bpkb/edit/') . $bpkb['id_bpkb'] ?>" class="btn btn-sm btn-warning">Perubahan Data</a>
+            <button onclick="window.print()" class="btn btn-outline-secondary btn-shadow float-right"  title="PRINT">PRINT<i class="fa fa-print"></i></button>
+            <a href="<?= site_url('/bpkb/edit/') . $bpkb['id_bpkb'] ?>" class="btn btn-sm btn-warning"  title="PERUBAHAN DATA" >Perubahan Data</a>
         </div>
         <div class="row">
             <div class="col">
                 <div class="card card-body" style="height: fit-content;">
-                <b>Detail BPKB :</b>
+                    <b>Detail BPKB :</b>
                     <hr>
                     <div class="row">
                         <div class="col">
@@ -165,14 +166,16 @@
                                 <b class="foto">Foto : </b>
                             </table>
                             <hr>
-                            <table class="gambar" >
+                            <table class="gambar">
                                 <?php foreach ($getImg as $key => $link) : ?>
                                     <td>
-                                        <center><embed style="height:250px ; width:100% justify-item:auto;" src="<?= base_url('foto_bpkb/' . $link['link']); ?>" alt="" onclick="">
+                                        <center><embed class="content" style="height:250px ; width:100% justify-item:auto;" src="<?= base_url('foto_bpkb/' . $link['link']); ?>"></embed>
                                             <br>
-                                            
                                             <br>
-                                            <a href="<?= base_url('GambarController/delete/' . $link['id_gambar']);  ?>" class="btn btn-danger" onclick="return confirm('Are you sure ?')">HAPUS</a>
+                                            <a href="<?= base_url('GambarController/delete/' . $link['id_gambar']);  ?>" title="Hapus" class="btn btn-danger" onclick="return confirm('Are you sure ?')">HAPUS</a>
+                                            <br>
+                                            <br>
+                                            <a href="<?= base_url('GambarController/download/' . $link['link']);  ?>" title="Download" class="btn btn-success">DOWNLOAD<i class="fa fa-download"> </i> </a>
                                         </center>
                                         <br>
                                     </td>
@@ -180,10 +183,10 @@
                             </table>
                             <table class="table mt-3">
                                 <th>
-                                    <form class="upload" action="<?= base_url('/GambarController/save/') ?>" method="post" enctype="multipart/form-data">
+                                    <form class="upload"  title="PILIH FILE" action="<?= base_url('/GambarController/save/') ?>" method="post" enctype="multipart/form-data">
                                         <input type="hidden" name="nomor_bpkb" value="<?= $bpkb['nomor_bpkb']; ?>">
                                         <input type="file" name="foto_bpkb" id="foto_bpkb" required>
-                                        <input type="submit" value="Upload" name="submit" class="btn btn-primary">
+                                        <input type="submit"  title="UPLOAD" value="Upload" name="submit" class="btn btn-primary">
                                     </form>
                                 </th>
                             </table>

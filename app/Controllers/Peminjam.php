@@ -48,16 +48,16 @@ class Peminjam extends BaseController
                     $urlCetak = site_url('/peminjam/cetak/' . $row->id_peminjam);
 
                     if ($row->status == 'Dikembalikan') {
-                       
+
 
                         return
-                            '<a href="' . $urlDetail . '"class="btn btn-outline-primary"><i class="fa fa-eye"></i></a> 
-                            <a href="' . $urlCetak . '" class="btn btn-outline-secondary"><i class="fa fa-print"></i></a>';
+                            '<a href="' . $urlDetail . '"  title="Detail" class="btn btn-outline-primary"><i class="fa fa-eye"></i></a> 
+                            <a href="' . $urlCetak . '"  title="Cetak Surat Tanda Terima" class="btn btn-outline-secondary"><i class="fa fa-print"></i></a>';
                     }
                     return
-                        '<a href="' . $urlDetail . '"class="btn btn-outline-primary"><i class="fa fa-eye"></i></a> 
-                        <a href="' . $urlEdit . '" class="btn btn-outline-warning "><i class="fa fa-pen"></i></a>
-                        <a href="' . $urlCetak . '" class="btn btn-outline-secondary "><i class="fa fa-print"></i></a>';
+                        '<a href="' . $urlDetail . '"  title="Detail" class="btn btn-outline-primary"><i class="fa fa-eye"></i></a> 
+                        <a href="' . $urlEdit . '"  title="Pengembalian" class="btn btn-outline-warning "><i class="fa fa-pen"></i></a>
+                        <a href="' . $urlCetak . '"  title="Cetak Surat Tanda Terima" class="btn btn-outline-secondary "><i class="fa fa-print"></i></a>';
                 })
                 ->toJson(true);
         }
@@ -79,7 +79,7 @@ class Peminjam extends BaseController
                 ->add('action', function ($row) {
                     $url = site_url('/peminjam/detail/' . $row->id_peminjam);
                     return
-                        '<a href="'. $url .'" class="btn btn-outline-primary btn-shadow"><i class="fa fa-eye"></i></a> ';
+                        '<a href="' . $url . '" title="Detail" class="btn btn-outline-primary btn-shadow"><i class="fa fa-eye"></i></a> ';
                 })
                 ->toJson(true);
         }

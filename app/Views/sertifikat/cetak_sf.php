@@ -13,9 +13,7 @@ use App\Controllers\Peminjam;
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
-        .page {
-            border: 1px solid;
-        }
+
 
         @page {
             size: A4;
@@ -37,7 +35,7 @@ use App\Controllers\Peminjam;
 
             .img {
                 width: 300mm;
-                height: 400mm;
+                height: 430mm;
             }
         }
     </style>
@@ -65,9 +63,9 @@ use App\Controllers\Peminjam;
 
 <body>
     <div class="card-header">
-        <a href="<?php echo $_SERVER['HTTP_REFERER'] ?>" class="btn btn-outline-info btn-shadow">Kembali</a>
-        <button onclick="window.print()" class="btn btn-outline-secondary btn-shadow float-right">PRINT<iclass="fa fa-print">
-                </iclass=></button>
+        <a href="<?php echo $_SERVER['HTTP_REFERER'] ?>" class="btn btn-outline-info btn-shadow" title="Kembali"><i class="fa fa-arrow-left"></i>&nbsp;Kembali</a>
+        <button onclick="window.print()" class="btn btn-outline-secondary btn-shadow float-right" title="PRINT">PRINT&nbsp;<i class="fa fa-print">
+                </i></button>
     </div>
     <div class="book">
         <div class="page">
