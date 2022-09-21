@@ -68,7 +68,7 @@ class Bpkb extends BaseController
             return DataTable::of($builder)
                 ->add('action', function ($row) {
                     $url = site_url('/bpkb/detail/' . $row->id_bpkb);
-                    return '<a href="'. $url .'" class="btn btn-outline-primary"><i class="fa fa-eye"></i></a>';
+                    return '<a href="' . $url . '" class="btn btn-outline-primary"><i class="fa fa-eye"></i></a>';
                 })
                 ->toJson(true);
         }
@@ -224,18 +224,18 @@ class Bpkb extends BaseController
 
         //Ambil File Gambar
         $fotoBpkb = $this->request->getFile('foto_bpkb');
-             
-        //nama file
-         $namaFoto = $fotoBpkb->getRandomName();
 
-         $uploadOk = 0;
-         if ($fotoBpkb != '') {
-                $fotoBpkb->move('foto_bpkb/', $namaFoto);
-                $uploadOk = 1;
-            } 
-           
-   
-    
+        //nama file
+        $namaFoto = $fotoBpkb->getRandomName();
+
+        $uploadOk = 0;
+        if ($fotoBpkb != '') {
+            $fotoBpkb->move('foto_bpkb/', $namaFoto);
+            $uploadOk = 1;
+        }
+
+
+
         $data_bpkb = array(
             'nomor_registrasi' => $this->request->getVar('nomor_regist'),
             'nama_pemilik' => $this->request->getVar('nama_pem'),
