@@ -13,39 +13,44 @@ use App\Controllers\Peminjam;
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
-        @media print {
-            .img {
-                width: 210mm;
-                height: 297mm;
-                margin-top: 200px;
-                margin-bottom: 170px;
-            }
+    .subpage {
+        height: 256mm;
+    }
 
-            .card-header {
-                display: none;
-            }
+    @page {
+        size: A4;
+        margin: 0;
+    }
 
-            #toolbarContainer {
-                display: none;
-            }
+    .img {
+        width: 300mm;
+        height: 400mm;
+    }
+
+    @media print {
+
+        .card-header {
+            display: none;
         }
 
         .img {
-            height: 297mm;
-            width: 210mm;
-            margin-left: auto;
-            margin-right: auto;
+            width: 300mm;
+            height: 400mm;
         }
+    }
     </style>
 
     <!-- Google Font: Source Sans Pro -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="<?= base_url('adminlte/plugins/fontawesome-free/css/all.min.css'); ?>">
     <!-- Ionicons -->
-    <link rel="stylesheet" href="<?= base_url('adminlte/https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'); ?>">
+    <link rel="stylesheet"
+        href="<?= base_url('adminlte/https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'); ?>">
     <!-- Tempusdominus Bootstrap 4 -->
-    <link rel="stylesheet" href="<?= base_url('adminlte/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css'); ?>">
+    <link rel="stylesheet"
+        href="<?= base_url('adminlte/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css'); ?>">
     <!-- iCheck -->
     <link rel="stylesheet" href="<?= base_url('adminlte/plugins/icheck-bootstrap/icheck-bootstrap.min.css'); ?>">
     <!-- JQVMap -->
@@ -62,63 +67,72 @@ use App\Controllers\Peminjam;
 <body>
     <div class="card-header">
         <a href="<?php echo $_SERVER['HTTP_REFERER'] ?>" class="btn btn-outline-info btn-shadow">Kembali</a>
-        <button onclick="window.print()" class="btn btn-outline-secondary btn-shadow float-right">PRINT<i class="fa fa-print"></i></button>
+        <button onclick="window.print()" class="btn btn-outline-secondary btn-shadow float-right">PRINT<i
+                class="fa fa-print"></i></button>
     </div>
-    <div class="card">
-        <table class="table">
-            <?php
+    <div class="book">
+        <div class="page">
+            <div class="sub-page">
+                <?php
             $link = $sertifikat['img1'];
             if ($sertifikat['img1'] == null) {
                 echo '';
             } else {
-                echo '<center><img class="img" src="' . base_url('BPKAD/') . '/' .  $sertifikat['img1'] . '.jpg' . '" ></center>';
+                echo '<img class="img" src="' . base_url('BPKAD/') . '/' .  $sertifikat['img1'] . '.jpg' . '" >';
             }
             ?>
+            </div>
+        </div>
+        <div class="page">
             <?php
             $link = $sertifikat['img2'];
             if ($sertifikat['img2'] == null) {
                 echo '';
             } else {
-                echo '<center><img class="img" src="' . base_url('BPKAD/') . '/' .  $sertifikat['img2'] . '.jpg' . '"></center>';
+                echo '<img class="img" src="' . base_url('BPKAD/') . '/' .  $sertifikat['img2'] . '.jpg' . '">';
             }
             ?>
-
+        </div>
+        <div class="page">
             <?php
             $link = $sertifikat['img3'];
             if ($sertifikat['img3'] == null) {
                 echo '';
             } else {
-                echo '<center><img class="img" src="' . base_url('BPKAD/') . '/' .  $sertifikat['img3'] . '.jpg' . '" ></center>';
+                echo '<img class="img" src="' . base_url('BPKAD/') . '/' .  $sertifikat['img3'] . '.jpg' . '" >';
             }
             ?>
-
+        </div>
+        <div class="page">
             <?php
             $link = $sertifikat['img4'];
             if ($sertifikat['img4'] == null) {
                 echo '';
             } else {
-                echo '<center><img class="img" src="' . base_url('BPKAD/') . '/' .  $sertifikat['img4'] . '.jpg' . '" ></center>';
+                echo '<img class="img" src="' . base_url('BPKAD/') . '/' .  $sertifikat['img4'] . '.jpg' . '" >';
             }
             ?>
-
+        </div>
+        <div class="page">
             <?php
             $link = $sertifikat['img5'];
             if ($sertifikat['img5'] == null) {
                 echo '';
             } else {
-                echo '<center><img class="img" src="' . base_url('BPKAD/') . '/' .  $sertifikat['img5'] . '.jpg' . '" ></center>';
+                echo '<img class="img" src="' . base_url('BPKAD/') . '/' .  $sertifikat['img5'] . '.jpg' . '" >';
             }
             ?>
-
+        </div>
+        <div class="page">
             <?php
             $link = $sertifikat['img6'];
             if ($sertifikat['img6'] == null) {
                 echo '';
             } else {
-                echo '<center><img class="img" src="' . base_url('BPKAD/') . '/' .  $sertifikat['img6'] . '.jpg' . '" ></center>';
+                echo '<img class="img" src="' . base_url('BPKAD/') . '/' .  $sertifikat['img6'] . '.jpg' . '" >';
             }
             ?>
-        </table>
+        </div>
     </div>
 </body>
 
@@ -129,7 +143,7 @@ use App\Controllers\Peminjam;
 <script src="<?= base_url('adminlte/plugins/jquery-ui/jquery-ui.min.js'); ?>"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <script>
-    $.widget.bridge('uibutton', $.ui.button)
+$.widget.bridge('uibutton', $.ui.button)
 </script>
 <!-- Bootstrap 4 -->
 <script src="<?= base_url('adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js'); ?>"></script>
@@ -146,7 +160,8 @@ use App\Controllers\Peminjam;
 <script src="<?= base_url('adminlte/plugins/moment/moment.min.js'); ?>"></script>
 <script src="<?= base_url('adminlte/plugins/daterangepicker/daterangepicker.js'); ?>"></script>
 <!-- Tempusdominus Bootstrap 4 -->
-<script src="<?= base_url('adminlte/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js'); ?>"></script>
+<script src="<?= base_url('adminlte/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js'); ?>">
+</script>
 <!-- Summernote -->
 <script src="<?= base_url('adminlte/plugins/summernote/summernote-bs4.min.js'); ?>"></script>
 <!-- overlayScrollbars -->

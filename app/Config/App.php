@@ -24,7 +24,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $baseURL = 'http://localhost/aplikasi-digitalisasi/';
+    public $baseURL = 'http://localhost/peminjaman-bpkb/';
 
     /**
      * --------------------------------------------------------------------------
