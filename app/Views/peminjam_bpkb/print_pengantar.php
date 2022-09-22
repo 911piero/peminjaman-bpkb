@@ -27,7 +27,7 @@
 
 <body>
     <div class="card-header">
-        <button onclick="window.print()" class="btn btn-outline-secondary btn-shadow float-right" title="PRINT">PRINT&nbsp;<i class="fa fa-print"></i></button>
+        <button onclick="window.print()" class="btn btn-outline-secondary btn-shadow" title="PRINT">PRINT&nbsp;<i class="fa fa-print"></i></button>
     </div>
     <div class="container" style="max-width:fit-content; border: 1px solid;">
         <div class="kop mt-5">
@@ -56,17 +56,17 @@
                 <tr>
                     <td class="label">Nama</td>
                     <td class="label" style="padding-left: 100px;">:</td>
-                    <td class="label" style="padding-left: 30px;">Ridha Hasan, S.E., M.M.</td>
+                    <td class="label" style="padding-left: 30px;"><?= $pejabat['nama_pejabat']; ?></td>
                 </tr>
                 <tr>
                     <td class="label">NIP</td>
                     <td class="label" style="padding-left: 100px;">:</td>
-                    <td class="label" style="padding-left: 30px;">198212052006041007</td>
+                    <td class="label" style="padding-left: 30px;"><?= $pejabat['nip_pejabat']; ?></td>
                 </tr>
                 <tr>
                     <td class="label">Jabatan</td>
                     <td class="label" style="padding-left: 100px;">:</td>
-                    <td class="label" style="padding-left: 30px;">Kepala Sub Bid Pemanfaatan Aset Daerah BPKAD Kota Yogyakarta.</td>
+                    <td class="label" style="padding-left: 30px;"><?= $pejabat['jabatan']; ?></td>
                 </tr>
                 <tr>
                     <td class="label">Instansi</td>
@@ -80,7 +80,7 @@
                 </tr>
             </table>
             <br>
-            <p>Mohon perpanjangan ganti plat Nomor Kendaraan AB 2040 IA milik Pemerintah
+            <p>Mohon perpanjangan ganti plat Nomor Kendaraan <b><?= $peminjam['nomor_registrasi']; ?></b> milik Pemerintah
                 <br>
                 Kota Yogyakarta
                 <br>
@@ -88,13 +88,11 @@
             </p>
         </div>
         <br><br><br>
-        <div class="table">
-            <p style="text-align: center; width: 30%; float: right;">a.n Kepala
-                <br>Ka. Sub Bidang Pemanfaatan Aset Daerah
-            <div class="table table-bordered mt-4" style="height: 150px;">
-            </div>
-            <span style="text-align: center; float: right;"> <u> Ridha Hasan, S.E., M.M</u>
-                <br>NIP. 198212052006041007</span>
+        <div class="table text-right">
+            <p style="text-align: center; ">a.n <?= $pejabat['jabatan']; ?>
+                <br><br><br>
+                <span style="text-align: center;"> <u> <?= $pejabat['nama_pejabat']; ?></u>
+                    <br>NIP. <?= $pejabat['nip_pejabat']; ?></span>
             </p>
         </div>
     </div>

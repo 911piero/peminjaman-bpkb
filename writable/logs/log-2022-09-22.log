@@ -311,3 +311,147 @@ in APPPATH\Views\peminjam_bpkb\print_pengantar.php on line 27.
  7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
  8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 05:37:53 --> Too few arguments to function App\Controllers\Peminjam::print_pengantar(), 0 passed in C:\xampp\htdocs\peminjaman-bpkb\vendor\codeigniter4\framework\system\CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH\Controllers\Peminjam.php on line 319.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->print_pengantar()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 06:15:59 --> Too few arguments to function App\Controllers\Peminjam::print_pengantar(), 0 passed in C:\xampp\htdocs\peminjaman-bpkb\vendor\codeigniter4\framework\system\CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH\Controllers\Peminjam.php on line 319.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->print_pengantar()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 06:17:47 --> Too few arguments to function App\Controllers\Peminjam::print_pengantar(), 0 passed in C:\xampp\htdocs\peminjaman-bpkb\vendor\codeigniter4\framework\system\CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH\Controllers\Peminjam.php on line 319.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->print_pengantar()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 06:44:27 --> Undefined variable: row
+in APPPATH\Views\peminjam_bpkb\cetak_pengantar.php on line 7.
+ 1 APPPATH\Views\peminjam_bpkb\cetak_pengantar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: row', 'APPPATH\\Views\\peminjam_bpkb\\cetak_pengantar.php', 7, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\cetak_pengantar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/peminjam_bpkb/cetak_pengantar', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(316): view('/peminjam_bpkb/cetak_pengantar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak_pengantar('48')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 06:44:41 --> Undefined variable: id_peminjam
+in APPPATH\Views\peminjam_bpkb\cetak_pengantar.php on line 7.
+ 1 APPPATH\Views\peminjam_bpkb\cetak_pengantar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_peminjam', 'APPPATH\\Views\\peminjam_bpkb\\cetak_pengantar.php', 7, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\cetak_pengantar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/peminjam_bpkb/cetak_pengantar', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(316): view('/peminjam_bpkb/cetak_pengantar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak_pengantar('48')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 06:45:26 --> Undefined variable: id_peminjam
+in APPPATH\Views\peminjam_bpkb\cetak_pengantar.php on line 7.
+ 1 APPPATH\Views\peminjam_bpkb\cetak_pengantar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_peminjam', 'APPPATH\\Views\\peminjam_bpkb\\cetak_pengantar.php', 7, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\cetak_pengantar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/peminjam_bpkb/cetak_pengantar', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(318): view('/peminjam_bpkb/cetak_pengantar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak_pengantar('48')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 06:45:30 --> Undefined variable: id_peminjam
+in APPPATH\Views\peminjam_bpkb\cetak_pengantar.php on line 7.
+ 1 APPPATH\Views\peminjam_bpkb\cetak_pengantar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_peminjam', 'APPPATH\\Views\\peminjam_bpkb\\cetak_pengantar.php', 7, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\cetak_pengantar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/peminjam_bpkb/cetak_pengantar', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(318): view('/peminjam_bpkb/cetak_pengantar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak_pengantar('48')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 06:45:53 --> Undefined variable: id_peminjam
+in APPPATH\Views\peminjam_bpkb\cetak_pengantar.php on line 7.
+ 1 APPPATH\Views\peminjam_bpkb\cetak_pengantar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_peminjam', 'APPPATH\\Views\\peminjam_bpkb\\cetak_pengantar.php', 7, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\cetak_pengantar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/peminjam_bpkb/cetak_pengantar', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(318): view('/peminjam_bpkb/cetak_pengantar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak_pengantar('48')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 06:45:54 --> Undefined variable: id_peminjam
+in APPPATH\Views\peminjam_bpkb\cetak_pengantar.php on line 7.
+ 1 APPPATH\Views\peminjam_bpkb\cetak_pengantar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_peminjam', 'APPPATH\\Views\\peminjam_bpkb\\cetak_pengantar.php', 7, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\cetak_pengantar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/peminjam_bpkb/cetak_pengantar', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(318): view('/peminjam_bpkb/cetak_pengantar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak_pengantar('48')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 06:46:04 --> Undefined variable: id_peminjam
+in APPPATH\Views\peminjam_bpkb\cetak_pengantar.php on line 7.
+ 1 APPPATH\Views\peminjam_bpkb\cetak_pengantar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_peminjam', 'APPPATH\\Views\\peminjam_bpkb\\cetak_pengantar.php', 7, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\cetak_pengantar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/peminjam_bpkb/cetak_pengantar', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(318): view('/peminjam_bpkb/cetak_pengantar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak_pengantar('48')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 07:04:00 --> Too few arguments to function App\Controllers\Peminjam::cetak_pengantar(), 0 passed in C:\xampp\htdocs\peminjaman-bpkb\vendor\codeigniter4\framework\system\CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH\Controllers\Peminjam.php on line 307.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak_pengantar()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 07:04:11 --> Too few arguments to function App\Controllers\Peminjam::cetak_pengantar(), 0 passed in C:\xampp\htdocs\peminjaman-bpkb\vendor\codeigniter4\framework\system\CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH\Controllers\Peminjam.php on line 307.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak_pengantar()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 07:04:33 --> Too few arguments to function App\Controllers\Peminjam::cetak_pengantar(), 0 passed in C:\xampp\htdocs\peminjaman-bpkb\vendor\codeigniter4\framework\system\CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH\Controllers\Peminjam.php on line 307.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak_pengantar()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 07:04:55 --> Too few arguments to function App\Controllers\Peminjam::cetak_pengantar(), 0 passed in C:\xampp\htdocs\peminjaman-bpkb\vendor\codeigniter4\framework\system\CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH\Controllers\Peminjam.php on line 307.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak_pengantar()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 07:04:57 --> Too few arguments to function App\Controllers\Peminjam::cetak_pengantar(), 0 passed in C:\xampp\htdocs\peminjaman-bpkb\vendor\codeigniter4\framework\system\CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH\Controllers\Peminjam.php on line 307.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak_pengantar()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 07:05:26 --> Too few arguments to function App\Controllers\Peminjam::cetak_pengantar(), 0 passed in C:\xampp\htdocs\peminjaman-bpkb\vendor\codeigniter4\framework\system\CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH\Controllers\Peminjam.php on line 307.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak_pengantar()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 07:05:27 --> Too few arguments to function App\Controllers\Peminjam::cetak_pengantar(), 0 passed in C:\xampp\htdocs\peminjaman-bpkb\vendor\codeigniter4\framework\system\CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH\Controllers\Peminjam.php on line 307.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak_pengantar()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 07:50:56 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResultArray()
+in APPPATH\Models\CetakPengantarModel.php on line 26.
+ 1 APPPATH\Controllers\Peminjam.php(353): App\Models\CetakPengantarModel->findPejabat('1')
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->print_pengantar('48')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

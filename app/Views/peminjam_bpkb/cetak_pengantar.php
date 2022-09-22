@@ -4,7 +4,7 @@
 
 <section class="content">
     <div class="container-fluid">
-        <form action="<?= site_url('/peminjam/print_pengantar') ?>" method="post" enctype="multipart/form-data">
+        <form action="<?= site_url('/peminjam/print_pengantar/' . $id_peminjam) ?>" method="post">
             <?= csrf_field(); ?>
             <div class="card card-primary">
                 <div class="card-header">
@@ -17,28 +17,28 @@
                                 <input type="hidden" name="id_bpkb" value="">
                                 <label for="exampleInputEmail1">Pilih Pejabat Penandatangan </label>
                                 <div class="input-group mb-3">
-                                    <select class="form-control select2" name="id_pengantar" <?= ($validation->hasError('id_pengantar')) ? 'is-invalid' : ' '; ?> required autocomplete="on">
-                                        <option selected value="Cari ">Pilih Nama</option>
+                                    <select class="form-control <?= ($validation->hasError('pejabat')) ? 'is-invalid' : ' '; ?>" name="pejabat">
+                                        <option selected value="">Pilih Nama</option>
                                         <?php foreach ($getPengantar as $b) : ?>
                                             <option value="<?= $b['id_pengantar']; ?>"><?= $b['nama_pejabat']; ?> </option>
                                         <?php endforeach; ?>
                                     </select>
                                     <div class="invalid-feedback">
-                                        <?= $validation->getError('model'); ?>
+                                        <?= $validation->getError('pejabat'); ?>
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-grup">
+                            <div class="form-group">
                                 <label for="exampleInputEmail1">Pilih Surat Pengantar </label>
                                 <div class="input-group mb-3">
                                     <div class="form-check-inline">
                                         <label class="form-check-label">
-                                            <input type="radio" class="form-check-input" name="suratpengantar" value="1">Pengantar 1 Tahunan
+                                            <input type="radio" class="form-check-input" name="radioPengantar" value="1" required>Pengantar 1 Tahunan
                                         </label>
                                     </div>
                                     <div class="form-check-inline">
                                         <label class="form-check-label">
-                                            <input type="radio" class="form-check-input" name="suratpengantar" value="5">Pengantar 5 Tahunan
+                                            <input type="radio" class="form-check-input" name="radioPengantar" value="5" required>Pengantar 5 Tahunan
                                         </label>
                                     </div>
                                 </div>

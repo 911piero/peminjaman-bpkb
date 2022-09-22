@@ -291,10 +291,12 @@ class Peminjam extends BaseController
 
     public function cetak($id)
     {
+
         $data = $this->PeminjamModel->getDetail($id);
 
 
         $data = [
+
             'title' => 'Cetak',
             'page_title' => 'Cetak',
             'peminjam' => $data,
@@ -304,9 +306,12 @@ class Peminjam extends BaseController
     }
     public function cetak_pengantar($id)
     {
+
         $data = $this->PeminjamModel->getDetail($id);
         $getPengantar = $this->CetakPengantarModel->findAll();
+
         $data = [
+            'id_peminjam' => $id,
             'title' => 'Cetak Surat BPKB',
             'page_title' => 'Cetak Surat BPKB',
             'getPengantar' => $getPengantar,
@@ -318,7 +323,33 @@ class Peminjam extends BaseController
 
     public function print_pengantar($id)
     {
-        $data = [];
+        if (!$this->validate([
+            'pejabat' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Pejabat tidak boleh kosong!'
+                ]
+            ],
+            'radioPengantar' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Tahun Surat tidak boleh kosong!'
+                ]
+            ],
+        ])) {
+            return redirect()->to('/peminjam/cetak_pengantar/' . $id)->withInput();
+        }
+
+        $data_pejabat = [
+            'id_pengantar' => $this->request->getVar('pejabat'),
+        ];
+
+        $data = $this->PeminjamModel->getDetail($id);
+
+        $data = [
+            'peminjam' => $data,
+            'pejabat' =>  $this->CetakPengantarModel->findPejabat($data_pejabat['id_pengantar'])
+        ];
         return view('peminjam_bpkb/print_pengantar', $data);
     }
 }

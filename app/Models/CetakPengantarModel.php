@@ -18,4 +18,11 @@ class CetakPengantarModel extends Model
             ->table('data_pejabat')
             ->get()->getResultArray();
     }
+
+    public function findPejabat($data_pejabat)
+    {
+        return $this->db->table('data_pejabat')
+            ->where('id_pengantar', $data_pejabat)
+            ->get()->getRowArray();
+    }
 }
