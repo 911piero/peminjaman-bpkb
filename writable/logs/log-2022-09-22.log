@@ -464,3 +464,10 @@ in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
  5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
  6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 08:36:02 --> Illegal string offset 'link'
+in APPPATH\Controllers\GambarController.php on line 44.
+ 1 APPPATH\Controllers\GambarController.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'link\'', 'APPPATH\\Controllers\\GambarController.php', 44, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\GambarController->download('1663853505_6a91fdcf78497674ef8e.png')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GambarController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

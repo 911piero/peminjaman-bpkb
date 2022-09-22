@@ -38,9 +38,4 @@ class GambarController extends BaseController
         session()->setFlashdata('pesan', 'Foto Telah Terhapus');
         return redirect()->to($_SERVER['HTTP_REFERER']);
     }
-
-    public function download($id)
-    {
-        echo '<center style="font-size:100px;"> ALT + F4 </center>' ;
-    }
 }
