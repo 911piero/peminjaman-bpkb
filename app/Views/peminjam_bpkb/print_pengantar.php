@@ -19,14 +19,21 @@
     <div class="container">
         <div class="kop">
             <div class="logo">
-                <img src="<?= base_url('adminlte/dist/img/Logo.png'); ?>" height="150" width="100">
+                <img src="<?= base_url('adminlte/dist/img/Logo.png'); ?>" height="120" width="100">
             </div>
-            <div class="logo-text text-center" style="border: 1px solid black ;">
-                <h3>Pemerintah Kota</h3>
-                <h2><b>BADAN PENGELOLAAN KEUANGAN <br>DAN ASET DAERAH</b></h2>
-                <img src="<?= base_url('adminlte/dist/img/hanacaraka.png'); ?>">
+            <div class="logo-text text-center" style="">
+                <p style="font-size: 14pt;">PEMERINTAH KOTA YOGYAKARTA
+                    <br> <span style="font-size: 18pt;"><b>BADAN PENGELOLAAN KEUANGAN <br>DAN ASET DAERAH</b></span>
+                    <br>
+                    <img src="<?= base_url('adminlte/dist/img/hanacaraka.png'); ?>" height="50">
+                    <br><span style="font-size: 10pt;">Jl. Kenari No. 56 Yogyakarta Kode Pos : 55165 Telp. (0274) 548519, 562835, 515865, 562682<br>Fax (0274) 548519
+                        <br>EMAIL : <a href="">bpkad@jogjakota.go.id</a>
+                        <br>HOTLINE SMS : 0812 278 0001 HOTLINE E-MAIL : upik@jogjakota.go.id
+                        <br>WEBSITE : www.jogjakota.go.id</span>
+                </p>
             </div>
         </div>
+        <hr style="border: 2px solid black;">
     </div>
 </body>
 
