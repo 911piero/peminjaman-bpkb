@@ -342,14 +342,20 @@ class Peminjam extends BaseController
 
         $data_pejabat = [
             'id_pengantar' => $this->request->getVar('pejabat'),
+            'tahun_pengantar' => $this->request->getVar('radioPengantar')
         ];
-
-        $data = $this->PeminjamModel->getDetail($id);
 
         $data = [
-            'peminjam' => $data,
+            'peminjam' => $this->PeminjamModel->getDetail($id),
             'pejabat' =>  $this->CetakPengantarModel->findPejabat($data_pejabat['id_pengantar'])
         ];
-        return view('peminjam_bpkb/print_pengantar', $data);
+
+        if ($data_pejabat['tahun_pengantar'] == 1) {
+            // view pengantar 1 tahun
+            return view('peminjam_bpkb/print_pengantar_1', $data);
+        } else if ($data_pejabat['tahun_pengantar'] == 5) {
+            // view pengantar 5 tahun
+            return view('peminjam_bpkb/print_pengantar_5', $data);
+        }
     }
 }
