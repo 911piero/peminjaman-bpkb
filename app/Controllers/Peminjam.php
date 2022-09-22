@@ -302,8 +302,9 @@ class Peminjam extends BaseController
 
         return view('peminjam_bpkb/cetak', $data);
     }
-    public function cetak_pengantar()
+    public function cetak_pengantar($id)
     {
+        $data = $this->PeminjamModel->getDetail($id);
         $getPengantar = $this->CetakPengantarModel->findAll();
         $data = [
             'title' => 'Cetak Surat BPKB',

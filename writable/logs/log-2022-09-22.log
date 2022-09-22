@@ -1,0 +1,28 @@
+CRITICAL - 2022-09-22 01:00:36 --> Undefined array key "HTTP_REFERER"
+in APPPATH\Views\peminjam_bpkb\cetak.php on line 74.
+ 1 APPPATH\Views\peminjam_bpkb\cetak.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "HTTP_REFERER"', 'APPPATH\\Views\\peminjam_bpkb\\cetak.php', 74)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\cetak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/cetak', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(303): view('peminjam_bpkb/cetak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('12')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 01:00:45 --> Too few arguments to function App\Controllers\Peminjam::cetak(), 0 passed in C:\xampp\htdocs\peminjaman-bpkb\vendor\codeigniter4\framework\system\CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH\Controllers\Peminjam.php on line 292.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 01:01:06 --> Undefined array key "HTTP_REFERER"
+in APPPATH\Views\peminjam_bpkb\cetak.php on line 74.
+ 1 APPPATH\Views\peminjam_bpkb\cetak.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "HTTP_REFERER"', 'APPPATH\\Views\\peminjam_bpkb\\cetak.php', 74)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\cetak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/cetak', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(303): view('peminjam_bpkb/cetak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('12')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
