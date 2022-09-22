@@ -46,14 +46,14 @@
                         <h2 class="d-flex align-items-center justify-content-center" style="font-size:70px;">APLIKASI DIGITALISASI</h2>
                     </div>
 
-                    <div class="row">
-                        <div class="col">
+                    <div class="row" >
+                        <div class="col" title="MASTER BPKB" >
                             <a href="<?= base_url('/bpkb/home'); ?>" class="btn btn-app bg-primary justify-content-center align-items-center float-right" style="padding:30px; height:fit-content; width: 300px; border-radius: 30px;">
                                 <i class="fas fa-car " style="font-size: 70px;"></i>
                                 <p style="font-size: 30px;">Master BPKB</p>
                             </a>
                         </div>
-                        <div class="col">
+                        <div class="col" title="MASTER SERTIFIKAT" >
                             <a href="<?= base_url('/sertifikat/home'); ?>" class="btn btn-app bg-primary justify-content-center align-items-center" style="padding:30px; height:fit-content; width: 300px; border-radius: 30px;">
                                 <i class="fas fa-book " style="font-size: 70px;"></i>
                                 <p style="font-size: 30px;">Master Sertifikat</p>

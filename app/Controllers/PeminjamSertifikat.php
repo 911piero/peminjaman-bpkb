@@ -50,13 +50,13 @@ class PeminjamSertifikat extends BaseController
 
                     if ($row->status == 'Dikembalikan') {
                         return
-                        '<a href="' . $urlDetail . '"class="btn btn-outline-primary btn-shadow"><i class="fa fa-eye"></i></a>
-                        <a href="' . $urlCetak . '" class="btn btn-outline-secondary btn-shadow"><i class="fa fa-print"></i></a>';
+                        '<a href="' . $urlDetail . '" title="Detail" class="btn btn-outline-primary btn-shadow"><i class="fa fa-eye"></i></a>
+                        <a href="' . $urlCetak . '"title="Cetak Surat Tanda Terima"  class="btn btn-outline-secondary btn-shadow"><i class="fa fa-print"></i></a>';
                     }
                     return
-                        '<a href="' . $urlDetail . '"class="btn btn-outline-primary btn-shadow"><i class="fa fa-eye"></i></a> 
-                        <a href="' . $urlEdit. '" class="btn btn-outline-warning btn-shadow"><i class="fa fa-pen"></i></a>
-                        <a href="' . $urlCetak . '" class="btn btn-outline-secondary btn-shadow"><i class="fa fa-print"></i></a>';
+                        '<a href="' . $urlDetail . '"title="Detail" class="btn btn-outline-primary btn-shadow"><i class="fa fa-eye"></i></a> 
+                        <a href="' . $urlEdit. '"title="Pengembalian"  class="btn btn-outline-warning btn-shadow"><i class="fa fa-pen"></i></a>
+                        <a href="' . $urlCetak . '"title="Cetak Surat Tanda Terima"  class="btn btn-outline-secondary btn-shadow"><i class="fa fa-print"></i></a>';
                 })
                 ->toJson(true);
         }

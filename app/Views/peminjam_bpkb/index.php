@@ -40,7 +40,7 @@
                     <div class="card-header">
                         <h3 class="card-title"><b>Peminjam BPKB</b></h3>
                         <div id="btnPlace" class="float-right"></div>
-                        <a href="<?= site_url('/peminjam/create') ?>" class="btn btn-sm btn-primary float-right">Tambah Peminjam BPKB</a>
+                        <a href="<?= site_url('/peminjam/create') ?>" class="btn btn-sm btn-primary float-right"  title="Tambah Peminjaman BPKB">Tambah Peminjam BPKB</a>
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body">

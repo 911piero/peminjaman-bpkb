@@ -18,9 +18,9 @@
 
                         </span>
                     </div>
-                     /.info-box-content 
+                    /.info-box-content 
                 </div>
-                 /.info-box
+                /.info-box
             </div> -->
 
         <!-- fix for small devices only -->
@@ -38,7 +38,7 @@
                 <div class="card-header">
                     <h3 class="card-title"><b>Data Mutasi BPKB</b></h3>
                     <div id="btnPlace" class="float-right"></div>
-                    <a href="<?= site_url('/mutasi/create') ?>" class="btn btn-sm btn-primary float-right">Tambah Mutasi</a>
+                    <a href="<?= site_url('/mutasi/create') ?>" class="btn btn-sm btn-primary float-right" title="Tambah Mutasi">Tambah Mutasi</a>
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">

@@ -45,7 +45,7 @@ use app\Models\BpkbModel; ?>
             <h3 class="card-title"><b>Data BPKB</b></h3>
             <div id="btnPlace" class="float-right">
             </div>
-            <a href="<?= site_url('/bpkb/create') ?>" class="btn btn-sm btn-primary float-right">Tambah BPKB</a>
+            <a href="<?= site_url('/bpkb/create') ?>" class="btn btn-sm btn-primary float-right" title="Tambah BPKB">Tambah BPKB</a>
           </div>
           <!-- /.card-header -->
           <div class="card-body">

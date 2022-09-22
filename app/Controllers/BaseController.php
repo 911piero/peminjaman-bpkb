@@ -35,7 +35,7 @@ abstract class BaseController extends Controller
      *
      * @var array
      */
-    protected $helpers = ['tgl_indo'];
+    protected $helpers = ['tgl_indo', 'url', 'download'];
 
     /**
      * Constructor.
