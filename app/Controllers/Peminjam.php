@@ -346,6 +346,7 @@ class Peminjam extends BaseController
         ];
 
         $data = [
+
             'peminjam' => $this->PeminjamModel->getDetail($id),
             'pejabat' =>  $this->CetakPengantarModel->findPejabat($data_pejabat['id_pengantar'])
         ];

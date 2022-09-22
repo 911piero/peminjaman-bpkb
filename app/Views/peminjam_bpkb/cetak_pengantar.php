@@ -15,7 +15,7 @@
                         <div class="col">
                             <div class="form-group">
                                 <input type="hidden" name="id_bpkb" value="">
-                                <label for="exampleInputEmail1">Pilih Pejabat Penandatangan </label>
+                                <label for=" exampleInputEmail1">Pilih Pejabat Penandatangan </label>
                                 <div class="input-group mb-3">
                                     <select class="form-control <?= ($validation->hasError('pejabat')) ? 'is-invalid' : ' '; ?>" name="pejabat">
                                         <option selected value="">Pilih Nama</option>
