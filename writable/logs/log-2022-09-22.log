@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CRITICAL - 2022-09-22 10:48:19 --> Call to undefined function CodeIgniter\locale_set_default()
 in SYSTEMPATH\CodeIgniter.php on line 193.
  1 FCPATH\index.php(43): CodeIgniter\CodeIgniter->initialize()
@@ -24,3 +25,289 @@ WHERE `isActive` = :isActive:', [...], false)
  6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bpkb))
  7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+=======
+<<<<<<< HEAD
+CRITICAL - 2022-09-22 01:03:11 --> Too few arguments to function App\Controllers\Peminjam::cetak_pengantar(), 0 passed in C:\xampp\htdocs\peminjaman-bpkb\vendor\codeigniter4\framework\system\CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH\Controllers\Peminjam.php on line 305.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak_pengantar()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 01:19:52 --> Too few arguments to function App\Controllers\Peminjam::print_pengantar(), 0 passed in C:\xampp\htdocs\peminjaman-bpkb\vendor\codeigniter4\framework\system\CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH\Controllers\Peminjam.php on line 321.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->print_pengantar()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+=======
+CRITICAL - 2022-09-22 01:00:36 --> Undefined array key "HTTP_REFERER"
+in APPPATH\Views\peminjam_bpkb\cetak.php on line 74.
+ 1 APPPATH\Views\peminjam_bpkb\cetak.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "HTTP_REFERER"', 'APPPATH\\Views\\peminjam_bpkb\\cetak.php', 74)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\cetak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/cetak', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(303): view('peminjam_bpkb/cetak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('12')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 01:00:45 --> Too few arguments to function App\Controllers\Peminjam::cetak(), 0 passed in C:\xampp\htdocs\peminjaman-bpkb\vendor\codeigniter4\framework\system\CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH\Controllers\Peminjam.php on line 292.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 01:01:06 --> Undefined array key "HTTP_REFERER"
+in APPPATH\Views\peminjam_bpkb\cetak.php on line 74.
+ 1 APPPATH\Views\peminjam_bpkb\cetak.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "HTTP_REFERER"', 'APPPATH\\Views\\peminjam_bpkb\\cetak.php', 74)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\cetak.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/cetak', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(303): view('peminjam_bpkb/cetak', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak('12')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+>>>>>>> b5f5d5fdb72892fab6dda78eb87027eee1a8ef7e
+CRITICAL - 2022-09-22 02:51:43 --> syntax error, unexpected '<<' (T_SL)
+in APPPATH\Controllers\Peminjam.php on line 307.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('peminjam')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('peminjam')
+ 3 SYSTEMPATH\CodeIgniter.php(771): CodeIgniter\Router\Router->handle('peminjam')
+ 4 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 02:51:45 --> syntax error, unexpected '<<' (T_SL)
+in APPPATH\Controllers\Peminjam.php on line 307.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('peminjam')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('peminjam')
+ 3 SYSTEMPATH\CodeIgniter.php(771): CodeIgniter\Router\Router->handle('peminjam')
+ 4 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 02:52:02 --> Too few arguments to function App\Controllers\Peminjam::print_pengantar(), 0 passed in C:\xampp\htdocs\peminjaman-bpkb\vendor\codeigniter4\framework\system\CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH\Controllers\Peminjam.php on line 319.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->print_pengantar()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 02:52:07 --> Too few arguments to function App\Controllers\Peminjam::print_pengantar(), 0 passed in C:\xampp\htdocs\peminjaman-bpkb\vendor\codeigniter4\framework\system\CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH\Controllers\Peminjam.php on line 319.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->print_pengantar()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 03:06:51 --> Too few arguments to function App\Controllers\Peminjam::print_pengantar(), 0 passed in C:\xampp\htdocs\peminjaman-bpkb\vendor\codeigniter4\framework\system\CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH\Controllers\Peminjam.php on line 319.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->print_pengantar()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 03:07:05 --> Too few arguments to function App\Controllers\Peminjam::print_pengantar(), 0 passed in C:\xampp\htdocs\peminjaman-bpkb\vendor\codeigniter4\framework\system\CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH\Controllers\Peminjam.php on line 319.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->print_pengantar()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 03:07:48 --> Too few arguments to function App\Controllers\Peminjam::print_pengantar(), 0 passed in C:\xampp\htdocs\peminjaman-bpkb\vendor\codeigniter4\framework\system\CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH\Controllers\Peminjam.php on line 319.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->print_pengantar()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+>>>>>>> db543936180a26b3c4a2fae35b9f3c356dec47de
+CRITICAL - 2022-09-22 03:59:28 --> Too few arguments to function App\Controllers\Peminjam::print_pengantar(), 0 passed in C:\xampp\htdocs\peminjaman-bpkb\vendor\codeigniter4\framework\system\CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH\Controllers\Peminjam.php on line 319.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->print_pengantar()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 03:59:40 --> Too few arguments to function App\Controllers\Peminjam::print_pengantar(), 0 passed in C:\xampp\htdocs\peminjaman-bpkb\vendor\codeigniter4\framework\system\CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH\Controllers\Peminjam.php on line 319.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->print_pengantar()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 04:31:36 --> Undefined variable $peminjam
+in APPPATH\Views\peminjam_bpkb\print_pengantar.php on line 46.
+ 1 APPPATH\Views\peminjam_bpkb\print_pengantar.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $peminjam', 'APPPATH\\Views\\peminjam_bpkb\\print_pengantar.php', 46)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\print_pengantar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/print_pengantar', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(322): view('peminjam_bpkb/print_pengantar', [])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->print_pengantar('48')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 04:32:45 --> Undefined variable $data_pejabat
+in APPPATH\Views\peminjam_bpkb\print_pengantar.php on line 47.
+ 1 APPPATH\Views\peminjam_bpkb\print_pengantar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_pejabat', 'APPPATH\\Views\\peminjam_bpkb\\print_pengantar.php', 47)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\print_pengantar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/print_pengantar', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(322): view('peminjam_bpkb/print_pengantar', [])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->print_pengantar('48')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 04:32:45 --> Undefined variable $data_pejabat
+in APPPATH\Views\peminjam_bpkb\print_pengantar.php on line 47.
+ 1 APPPATH\Views\peminjam_bpkb\print_pengantar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_pejabat', 'APPPATH\\Views\\peminjam_bpkb\\print_pengantar.php', 47)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\print_pengantar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/print_pengantar', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(322): view('peminjam_bpkb/print_pengantar', [])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->print_pengantar('48')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 04:32:46 --> Undefined variable $data_pejabat
+in APPPATH\Views\peminjam_bpkb\print_pengantar.php on line 47.
+ 1 APPPATH\Views\peminjam_bpkb\print_pengantar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_pejabat', 'APPPATH\\Views\\peminjam_bpkb\\print_pengantar.php', 47)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\print_pengantar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/print_pengantar', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(322): view('peminjam_bpkb/print_pengantar', [])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->print_pengantar('48')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 04:35:45 --> Undefined variable $data
+in APPPATH\Views\peminjam_bpkb\print_pengantar.php on line 47.
+ 1 APPPATH\Views\peminjam_bpkb\print_pengantar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\peminjam_bpkb\\print_pengantar.php', 47)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\print_pengantar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/print_pengantar', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(322): view('peminjam_bpkb/print_pengantar', [])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->print_pengantar('48')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 04:35:45 --> Undefined variable $data
+in APPPATH\Views\peminjam_bpkb\print_pengantar.php on line 47.
+ 1 APPPATH\Views\peminjam_bpkb\print_pengantar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\peminjam_bpkb\\print_pengantar.php', 47)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\print_pengantar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/print_pengantar', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(322): view('peminjam_bpkb/print_pengantar', [])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->print_pengantar('48')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 04:35:46 --> Undefined variable $data
+in APPPATH\Views\peminjam_bpkb\print_pengantar.php on line 47.
+ 1 APPPATH\Views\peminjam_bpkb\print_pengantar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\peminjam_bpkb\\print_pengantar.php', 47)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\print_pengantar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/print_pengantar', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(322): view('peminjam_bpkb/print_pengantar', [])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->print_pengantar('48')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 04:35:46 --> Undefined variable $data
+in APPPATH\Views\peminjam_bpkb\print_pengantar.php on line 47.
+ 1 APPPATH\Views\peminjam_bpkb\print_pengantar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\peminjam_bpkb\\print_pengantar.php', 47)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\print_pengantar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/print_pengantar', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(322): view('peminjam_bpkb/print_pengantar', [])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->print_pengantar('48')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 04:35:46 --> Undefined variable $data
+in APPPATH\Views\peminjam_bpkb\print_pengantar.php on line 47.
+ 1 APPPATH\Views\peminjam_bpkb\print_pengantar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\peminjam_bpkb\\print_pengantar.php', 47)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\print_pengantar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/print_pengantar', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(322): view('peminjam_bpkb/print_pengantar', [])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->print_pengantar('48')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 05:00:47 --> Too few arguments to function App\Controllers\Peminjam::print_pengantar(), 0 passed in C:\xampp\htdocs\peminjaman-bpkb\vendor\codeigniter4\framework\system\CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH\Controllers\Peminjam.php on line 319.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->print_pengantar()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 05:01:00 --> Too few arguments to function App\Controllers\Peminjam::print_pengantar(), 0 passed in C:\xampp\htdocs\peminjaman-bpkb\vendor\codeigniter4\framework\system\CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH\Controllers\Peminjam.php on line 319.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->print_pengantar()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 05:01:42 --> Too few arguments to function App\Controllers\Peminjam::print_pengantar(), 0 passed in C:\xampp\htdocs\peminjaman-bpkb\vendor\codeigniter4\framework\system\CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH\Controllers\Peminjam.php on line 319.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->print_pengantar()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 05:01:46 --> Undefined array key "HTTP_REFERER"
+in APPPATH\Views\peminjam_bpkb\print_pengantar.php on line 27.
+ 1 APPPATH\Views\peminjam_bpkb\print_pengantar.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "HTTP_REFERER"', 'APPPATH\\Views\\peminjam_bpkb\\print_pengantar.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\print_pengantar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/print_pengantar', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(322): view('peminjam_bpkb/print_pengantar', [])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->print_pengantar('48')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 05:02:00 --> Undefined array key "HTTP_REFERER"
+in APPPATH\Views\peminjam_bpkb\print_pengantar.php on line 27.
+ 1 APPPATH\Views\peminjam_bpkb\print_pengantar.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "HTTP_REFERER"', 'APPPATH\\Views\\peminjam_bpkb\\print_pengantar.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\print_pengantar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/print_pengantar', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(322): view('peminjam_bpkb/print_pengantar', [])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->print_pengantar('48')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 05:02:17 --> Undefined array key "HTTP_REFERER"
+in APPPATH\Views\peminjam_bpkb\print_pengantar.php on line 27.
+ 1 APPPATH\Views\peminjam_bpkb\print_pengantar.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "HTTP_REFERER"', 'APPPATH\\Views\\peminjam_bpkb\\print_pengantar.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\print_pengantar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/print_pengantar', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(322): view('peminjam_bpkb/print_pengantar', [])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->print_pengantar('48')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 05:02:18 --> Undefined array key "HTTP_REFERER"
+in APPPATH\Views\peminjam_bpkb\print_pengantar.php on line 27.
+ 1 APPPATH\Views\peminjam_bpkb\print_pengantar.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "HTTP_REFERER"', 'APPPATH\\Views\\peminjam_bpkb\\print_pengantar.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\print_pengantar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/print_pengantar', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(322): view('peminjam_bpkb/print_pengantar', [])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->print_pengantar('48')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 05:02:18 --> Undefined array key "HTTP_REFERER"
+in APPPATH\Views\peminjam_bpkb\print_pengantar.php on line 27.
+ 1 APPPATH\Views\peminjam_bpkb\print_pengantar.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "HTTP_REFERER"', 'APPPATH\\Views\\peminjam_bpkb\\print_pengantar.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\print_pengantar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/print_pengantar', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(322): view('peminjam_bpkb/print_pengantar', [])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->print_pengantar('48')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 05:02:19 --> Undefined array key "HTTP_REFERER"
+in APPPATH\Views\peminjam_bpkb\print_pengantar.php on line 27.
+ 1 APPPATH\Views\peminjam_bpkb\print_pengantar.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "HTTP_REFERER"', 'APPPATH\\Views\\peminjam_bpkb\\print_pengantar.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\print_pengantar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/print_pengantar', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(322): view('peminjam_bpkb/print_pengantar', [])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->print_pengantar('48')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

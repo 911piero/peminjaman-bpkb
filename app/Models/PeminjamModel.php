@@ -30,6 +30,7 @@ class PeminjamModel extends Model
             ->insert($data_gambar);
     }
 
+
     public function updateData($id, $data_peminjam)
     {
         $this->db

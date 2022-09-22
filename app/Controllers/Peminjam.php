@@ -6,12 +6,14 @@ use App\Models\PeminjamModel;
 use App\Models\BpkbModel;
 use \Hermawan\DataTables\DataTable;
 use CodeIgniter\I18n\Time;
+use App\Models\CetakPengantarModel;
 
 class Peminjam extends BaseController
 {
     protected $PeminjamModel;
     public function __construct()
     {
+        $this->CetakPengantarModel = new CetakPengantarModel();
         $this->PeminjamModel = new PeminjamModel();
         $this->BpkbModel = new BpkbModel();
     }
@@ -46,6 +48,7 @@ class Peminjam extends BaseController
                     $urlDetail = site_url('/peminjam/detail/' . $row->id_peminjam);
                     $urlEdit = site_url('/peminjam/edit/' . $row->id_peminjam);
                     $urlCetak = site_url('/peminjam/cetak/' . $row->id_peminjam);
+                    $urlCetakPengantar = site_url('/peminjam/cetak_pengantar/' . $row->id_peminjam);
 
                     if ($row->status == 'Dikembalikan') {
 
@@ -55,9 +58,10 @@ class Peminjam extends BaseController
                             <a href="' . $urlCetak . '"  title="Cetak Surat Tanda Terima" class="btn btn-outline-secondary"><i class="fa fa-print"></i></a>';
                     }
                     return
-                        '<a href="' . $urlDetail . '"  title="Detail" class="btn btn-outline-primary"><i class="fa fa-eye"></i></a> 
-                        <a href="' . $urlEdit . '"  title="Pengembalian" class="btn btn-outline-warning "><i class="fa fa-pen"></i></a>
-                        <a href="' . $urlCetak . '"  title="Cetak Surat Tanda Terima" class="btn btn-outline-secondary "><i class="fa fa-print"></i></a>';
+                        '<a href="' . $urlDetail . '" title="Detail" class="btn btn-outline-primary"><i class="fa fa-eye"></i></a> 
+                        <a href="' . $urlEdit . '" title="Pengembalian" class="btn btn-outline-warning "><i class="fa fa-pen"></i></a>
+                        <a href="' . $urlCetak . '" title="Cetak Surat Tanda Terima" class="btn btn-outline-secondary "><i class="fa fa-print"></i></a>
+                        <a href="' . $urlCetakPengantar . '"title="Cetak Surat Pengantar" class="btn btn-outline-secondary "><i class="fa fa-print"></i></a>';
                 })
                 ->toJson(true);
         }
@@ -79,7 +83,7 @@ class Peminjam extends BaseController
                 ->add('action', function ($row) {
                     $url = site_url('/peminjam/detail/' . $row->id_peminjam);
                     return
-                        '<a href="' . $url . '" title="Detail" class="btn btn-outline-primary btn-shadow"><i class="fa fa-eye"></i></a> ';
+                        '<a href="' . $url . '"  class="btn btn-outline-primary btn-shadow"><i class="fa fa-eye"></i></a> ';
                 })
                 ->toJson(true);
         }
@@ -297,5 +301,24 @@ class Peminjam extends BaseController
         ];
 
         return view('peminjam_bpkb/cetak', $data);
+    }
+    public function cetak_pengantar($id)
+    {
+        $data = $this->PeminjamModel->getDetail($id);
+        $getPengantar = $this->CetakPengantarModel->findAll();
+        $data = [
+            'title' => 'Cetak Surat BPKB',
+            'page_title' => 'Cetak Surat BPKB',
+            'getPengantar' => $getPengantar,
+            'validation' => \Config\Services::validation()
+        ];
+
+        return view('/peminjam_bpkb/cetak_pengantar', $data);
+    }
+
+    public function print_pengantar($id)
+    {
+        $data = [];
+        return view('peminjam_bpkb/print_pengantar', $data);
     }
 }
