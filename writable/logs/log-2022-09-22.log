@@ -471,9 +471,26 @@ in APPPATH\Controllers\GambarController.php on line 44.
  3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GambarController))
  4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+<<<<<<< HEAD
+CRITICAL - 2022-09-22 11:16:19 --> Trying to access array offset on value of type null
+in APPPATH\Views\peminjam_bpkb\print_pengantar_1.php on line 83.
+ 1 APPPATH\Views\peminjam_bpkb\print_pengantar_1.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\peminjam_bpkb\\print_pengantar_1.php', 83)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\print_pengantar_1.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/print_pengantar_1', [], true)
+ 5 APPPATH\Controllers\Peminjam.php(355): view('peminjam_bpkb/print_pengantar_1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->print_pengantar('47')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-22 11:19:42 --> Trying to access array offset on value of type null
+in APPPATH\Views\peminjam_bpkb\print_pengantar_5.php on line 83.
+ 1 APPPATH\Views\peminjam_bpkb\print_pengantar_5.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\peminjam_bpkb\\print_pengantar_5.php', 83)
+=======
 CRITICAL - 2022-09-22 11:41:56 --> Trying to access array offset on value of type null
 in APPPATH\Views\peminjam_bpkb\print_pengantar_5.php on line 83.
  1 APPPATH\Views\peminjam_bpkb\print_pengantar_5.php(83): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\peminjam_bpkb\\print_pengantar_5.php', 83, [...])
+>>>>>>> d9e8048c5863395b50f5b4a5a446ee420dee2fa3
  2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\print_pengantar_5.php')
  3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/print_pengantar_5', [], true)
@@ -482,6 +499,11 @@ in APPPATH\Views\peminjam_bpkb\print_pengantar_5.php on line 83.
  7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
  8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+<<<<<<< HEAD
+CRITICAL - 2022-09-22 11:50:04 --> Trying to access array offset on value of type null
+in APPPATH\Views\peminjam_bpkb\print_pengantar_1.php on line 83.
+ 1 APPPATH\Views\peminjam_bpkb\print_pengantar_1.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\peminjam_bpkb\\print_pengantar_1.php', 83)
+=======
 CRITICAL - 2022-09-22 11:43:13 --> Trying to access array offset on value of type null
 in APPPATH\Views\peminjam_bpkb\print_pengantar_5.php on line 83.
  1 APPPATH\Views\peminjam_bpkb\print_pengantar_5.php(83): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\peminjam_bpkb\\print_pengantar_5.php', 83, [...])
@@ -507,6 +529,7 @@ in APPPATH\Views\peminjam_bpkb\print_pengantar_5.php on line 83.
 CRITICAL - 2022-09-22 11:43:44 --> Trying to access array offset on value of type null
 in APPPATH\Views\peminjam_bpkb\print_pengantar_1.php on line 83.
  1 APPPATH\Views\peminjam_bpkb\print_pengantar_1.php(83): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\peminjam_bpkb\\print_pengantar_1.php', 83, [...])
+>>>>>>> d9e8048c5863395b50f5b4a5a446ee420dee2fa3
  2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\print_pengantar_1.php')
  3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/print_pengantar_1', [], true)
@@ -515,9 +538,15 @@ in APPPATH\Views\peminjam_bpkb\print_pengantar_1.php on line 83.
  7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
  8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+<<<<<<< HEAD
+CRITICAL - 2022-09-22 12:04:13 --> Trying to access array offset on value of type null
+in APPPATH\Views\peminjam_bpkb\print_pengantar_1.php on line 83.
+ 1 APPPATH\Views\peminjam_bpkb\print_pengantar_1.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\peminjam_bpkb\\print_pengantar_1.php', 83)
+=======
 CRITICAL - 2022-09-22 11:43:57 --> Trying to access array offset on value of type null
 in APPPATH\Views\peminjam_bpkb\print_pengantar_1.php on line 83.
  1 APPPATH\Views\peminjam_bpkb\print_pengantar_1.php(83): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\peminjam_bpkb\\print_pengantar_1.php', 83, [...])
+>>>>>>> d9e8048c5863395b50f5b4a5a446ee420dee2fa3
  2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\print_pengantar_1.php')
  3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/print_pengantar_1', [], true)
@@ -526,13 +555,22 @@ in APPPATH\Views\peminjam_bpkb\print_pengantar_1.php on line 83.
  7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
  8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+<<<<<<< HEAD
+CRITICAL - 2022-09-22 12:04:43 --> Trying to access array offset on value of type null
+in APPPATH\Views\peminjam_bpkb\print_pengantar_1.php on line 83.
+ 1 APPPATH\Views\peminjam_bpkb\print_pengantar_1.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\peminjam_bpkb\\print_pengantar_1.php', 83)
+=======
 CRITICAL - 2022-09-22 11:44:03 --> Trying to access array offset on value of type null
 in APPPATH\Views\peminjam_bpkb\print_pengantar_1.php on line 83.
  1 APPPATH\Views\peminjam_bpkb\print_pengantar_1.php(83): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\peminjam_bpkb\\print_pengantar_1.php', 83, [...])
+>>>>>>> d9e8048c5863395b50f5b4a5a446ee420dee2fa3
  2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\peminjam_bpkb\\print_pengantar_1.php')
  3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('peminjam_bpkb/print_pengantar_1', [], true)
  5 APPPATH\Controllers\Peminjam.php(355): view('peminjam_bpkb/print_pengantar_1', [...])
+<<<<<<< HEAD
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->print_pengantar('48')
+=======
  6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->print_pengantar('47')
  7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
  8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
@@ -715,6 +753,7 @@ in APPPATH\Views\peminjam_bpkb\cetak_pengantar.php on line 17.
  4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/peminjam_bpkb/cetak_pengantar', [], true)
  5 APPPATH\Controllers\Peminjam.php(321): view('/peminjam_bpkb/cetak_pengantar', [...])
  6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Peminjam->cetak_pengantar('48')
+>>>>>>> d9e8048c5863395b50f5b4a5a446ee420dee2fa3
  7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjam))
  8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

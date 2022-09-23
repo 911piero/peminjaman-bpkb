@@ -48,9 +48,42 @@
                 </p>
             </div>
         </div>
-        <hr style="border-top: 5px solid red;">
+        <hr style="border-top: 5px solid black;">
         <div class="justify" style="font: 12pt;">
-            <p style="text-align:right;">Yogyakarta, 14 September 2022</p>
+            <div class="row">
+                <div class="col-md-4" style="">
+                    <table class="mx-auto" style="width: 400px;">
+                        <tr>
+                            <td class="label">Nomor</td>
+                            <td class="label" style="padding-left: 20px;">:</td>
+                            <td class="label" style="padding-left: 10px;">024/</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Sifat</td>
+                            <td class="label" style="padding-left: 20px;">:</td>
+                            <td class="label" style="padding-left: 10px;">-</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Lamp</td>
+                            <td class="label" style="padding-left: 20px;">:</td>
+                            <td class="label" style="padding-left: 10px;">1 Eksemplar</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Hal</td>
+                            <td class="label" style="padding-left: 20px;">:</td>
+                            <td class="label" style="padding-left: 10px;">Permohonan untuk memproses Penggantian/Perpanjangan STNK</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-4 offset-md-4">
+                    <p style="">Yogyakarta, 14 September 2022</p>
+                    <p style="">Kepada
+                        <br>Yth. Direktur Lalu Lintas POLDA
+                        <br><span style="text-align:center;">Daerah Istimewa Yogyakarta</span>
+                    </p>
+                </div>
+            </div>
+            <br>
             <p>Yang bertanda tangan di bawah ini :</p>
             <table class="mx-auto" style="width: 800px;">
                 <tr>
@@ -87,27 +120,48 @@
                 Demikian kami sampaikan, atas bantuannya kami sampaikan terima kasih.
             </p>
         </div>
-        <br><br><br>
-        <div class="table text-right">
-            <p style="text-align: center; ">a.n <?= $pejabat['jabatan']; ?>
-                <br><br><br>
-                <span style="text-align: center;"> <u> <?= $pejabat['nama_pejabat']; ?></u>
-                    <br>NIP. <?= $pejabat['nip_pejabat']; ?></span>
-            </p>
+        <br>
+        <div class="bot" style="font: size 12pt ;">
+            <div class="row">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4 offset-md-6">
+                    <table class="mx-auto" style="width: 300px;">
+                        <tr>
+                            <td class="label" style="text-align: center ;">a.n</td>
+                        </tr>
+                        <tr>
+                            <td class="label" style="text-align: center ;"><?= $pejabat['jabatan']; ?></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <br>
+                    <br>
+                    <table class="mx-auto" style="width: 300px;">
+                        <tr>
+                            <td class="label" style="text-align: center ;"><u> <?= $pejabat['nama_pejabat']; ?></u></td>
+                        </tr>
+                        <tr>
+                            <td class="label" style="text-align: center ;">NIP. <?= $pejabat['nip_pejabat']; ?></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-md-0 offset-md-3">
+                    <img src="<?= base_url('adminlte/dist/img/segoro.jpg'); ?>" height="60">
+                </div>
+                <div class="col-md-6 offset-md-0" style="text-align: center; font-size: 9pt; ">S E G O R O A M A R T O<br>
+                    SEMANGAT GOTONG ROYONG AGAWE MAJUNE NGAYOGYAKARTA
+                    <br>
+                    KEMANDIRIAN - KEDISIPLINAN - KEPEDULIAN - KEBERSAMAAN
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="footer mt-5" style="border: 1px solid; text-align: center;">
-        <div class="foto-footer">
-            <img src="<?= base_url('adminlte/dist/img/segoro.jpg'); ?>" height="50">
-        </div>
-        <div class="isi">
-            <p> S E G O R O A M A R T O
-                <br>
-                SEMANGAT GOTONG ROYONG AGAWE MAJUNE NGAYOGYAKARTA
-                <br>
-                KEMANDIRIAN - KEDISIPLINAN - KEPEDULIAN - KEBERSAMAAN
-            </p>
-        </div>
+
+
     </div>
 
 </html>
