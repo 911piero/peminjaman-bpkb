@@ -14,7 +14,7 @@
                     <div class="row">
                         <div class="col">
                             <div class="form-group">
-                                <input type="hidden" name="id_bpkb" value="">
+                                <input type="hidden" name="id_cetak" value="<?= $id_peminjam ?>">
                                 <label for=" exampleInputEmail1">Pilih Pejabat Penandatangan </label>
                                 <div class="input-group mb-3">
                                     <select class="form-control <?= ($validation->hasError('pejabat')) ? 'is-invalid' : ' '; ?>" name="pejabat">

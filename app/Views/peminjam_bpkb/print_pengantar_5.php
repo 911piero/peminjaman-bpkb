@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Surat Pengantar 5 Tahunan - <?= $peminjam['nomor_registrasi']; ?></title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <style>
         @media print {
@@ -18,65 +18,160 @@
             }
         }
 
+        .container {
+            height: auto;
+        }
+
         .kop {
             display: flex;
             justify-content: center;
+            height: fit-content;
+            width: 100%;
+            margin: 0px;
+            padding: 10px;
+        }
+
+        .logo {
+            height: fit-content;
+            margin-right: 10px;
+        }
+
+        .logo img {
+            max-width: 70px;
+        }
+
+        .logo-text {
+            width: 450px;
+            position: relative;
+            transform: translateY(10%);
+            height: fit-content;
+            margin-left: 10px;
+
+            /* or try 50% */
+        }
+
+        .logo-text h3 {
+            padding: 0px;
+            margin: 0px;
+            font-size: 14pt;
+            font-weight: light;
+        }
+
+        .logo-text h2 {
+            padding: 0px;
+            margin: 0px;
+            font-size: 18pt;
+            font-weight: bold;
+        }
+
+        .hanacaraka {
+            margin-bottom: 20px;
+        }
+
+        .text-contact p {
+            padding: 0px;
+            margin: -5px;
+            font-size: 12pt;
+        }
+
+
+        .footer {
+            display: flex;
+            justify-content: center;
+            height: fit-content;
+            width: 100%;
+            margin: 0px;
+            bottom: 0px;
+        }
+
+        .footer img {
+            margin: 10px;
+            max-width: 30px;
+        }
+
+        .footer .isi {
+            margin: 10px;
+
+        }
+
+        .footer p {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .text-sign {
+            width: fit-content;
+            float: right;
+            margin-bottom: 200px;
+        }
+
+        .text-sign p {
+            font-size: 12pt;
+            padding: 0px;
+            margin: 0px;
         }
     </style>
 </head>
 
 <body>
-    <div class="card-header">
-        <button onclick="window.print()" class="btn btn-outline-secondary btn-shadow" title="PRINT">PRINT&nbsp;<i class="fa fa-print"></i></button>
+    <div class="card-header clearfix">
+        <a href="<?php echo $_SERVER['HTTP_REFERER'] ?>" class="btn btn-primary btn-shadow" title="Kembali"><i class="fa fa-arrow-left"></i>&nbsp;Kembali</a>
+        <button onclick="window.print()" class="btn btn-warning float-right" title="PRINT">PRINT&nbsp;<i class="fa fa-print"></i></button>
     </div>
-    <div class="container" style="max-width:fit-content; border: 1px solid;">
-        <div class="kop mt-5">
+    <div class="clearfix"></div>
+    <div class="container" style="padding-left: 100px; padding-right: 100px;">
+        <div class="kop">
             <div class="logo">
-                <img src="<?= base_url('adminlte/dist/img/Logo.png'); ?>" height="120" width="100">
+                <img src="<?= base_url('adminlte/dist/img/Logo.png'); ?>">
             </div>
             <div class="logo-text text-center">
-                <p style="font-size: 14pt;">PEMERINTAH KOTA YOGYAKARTA
-                    <br>
-                    <span style="font-size: 18pt;"><b>BADAN PENGELOLAAN KEUANGAN <br>DAN ASET DAERAH</b></span>
-                    <br>
-                    <img src="<?= base_url('adminlte/dist/img/hanacaraka.png'); ?>" height="50">
-                    <br>
-                    <span style="font-size: 10pt;">Jl. Kenari No. 56 Yogyakarta Kode Pos : 55165 Telp. (0274) 548519, 562835, 515865, 562682<br>Fax (0274) 548519
-                        <br>EMAIL : <a href="">bpkad@jogjakota.go.id</a>
-                        <br>HOTLINE SMS : 0812 278 0001 HOTLINE E-MAIL : upik@jogjakota.go.id
-                        <br>WEBSITE : www.jogjakota.go.id</span>
-                </p>
+                <h3>PEMERINTAH KOTA YOGYAKARTA</h3>
+                <h2>BADAN PENGELOLAAN KEUANGAN DAN ASET DAERAH</h3>
             </div>
         </div>
-        <hr style="border-top: 5px solid cadetblue;">
-        <div class="justify" style="font: 12pt;">
-            <p style="text-align:right;">Yogyakarta, 14 September 2022</p>
+        <div class="hanacaraka text-center">
+            <img src="<?= base_url('adminlte/dist/img/hanacaraka.png'); ?>">
+        </div>
+        <div class="text-contact text-center">
+            <p>Jl. Kenari No. 56 Yogyakarta Kode Pos : 55165
+            <p> Telp. (0274) 548519, 562835, 515865, 562682 Fax (0274) 548519</p>
+            <p>EMAIL : bpkad@jogjakota.go.id </p>
+            <p> HOTLINE SMS : 0812 278 0001 HOTLINE E-MAIL : upik@jogjakota.go.id </p>
+            <p> WEBSITE : www.jogjakota.go.id</p>
+        </div>
+        <hr style="border-bottom: 2px solid black; margin-bottom: 2px;">
+        <hr style="border-top: 2px solid black; margin-top: 1px;margin-bottom: 20px;">
+        <div class="">
+            <?php
+            $tgl = date_indo($tanggal);
+            ?>
+            <p style="text-align:right;">Yogyakarta, <?= $tgl; ?></p>
             <p>Yang bertanda tangan di bawah ini :</p>
             <table class="mx-auto" style="width: 800px;">
                 <tr>
-                    <td class="label">Nama</td>
-                    <td class="label" style="padding-left: 100px;">:</td>
-                    <td class="label" style="padding-left: 30px;"><?= $pejabat['nama_pejabat']; ?></td>
+                    <td class="label" style="padding-left: 50px;">Nama</td>
+                    <td class="label" style="padding-left: 50px;">:</td>
+                    <td class="label"><?= $pejabat['nama_pejabat']; ?></td>
                 </tr>
                 <tr>
-                    <td class="label">NIP</td>
-                    <td class="label" style="padding-left: 100px;">:</td>
-                    <td class="label" style="padding-left: 30px;"><?= $pejabat['nip_pejabat']; ?></td>
+                    <td class="label" style="padding-left: 50px;">NIP</td>
+                    <td class="label" style="padding-left: 50px;">:</td>
+                    <td class="label"><?= $pejabat['nip_pejabat']; ?></td>
                 </tr>
                 <tr>
-                    <td class="label">Jabatan</td>
-                    <td class="label" style="padding-left: 100px;">:</td>
-                    <td class="label" style="padding-left: 30px;"><?= $pejabat['jabatan']; ?></td>
+                    <td class="label" style="padding-left: 50px;">Jabatan</td>
+                    <td class="label" style="padding-left: 50px;">:</td>
+                    <td class="label"><?= $pejabat['jabatan']; ?></td>
                 </tr>
                 <tr>
-                    <td class="label">Instansi</td>
-                    <td class="label" style="padding-left: 100px;">:</td>
-                    <td class="label" style="padding-left: 30px;">Badan Pengelolaan Keuangan dan Aset Daerah Kota Yogyakarta</td>
+                    <td class="label" style="padding-left: 50px;">Instansi</td>
+                    <td class="label" style="padding-left: 50px;">:</td>
+                    <td class="label">Badan Pengelolaan Keuangan dan Aset Daerah Kota Yogyakarta</td>
                 </tr>
                 <tr>
-                    <td class="label">Alamat Kantor</td>
-                    <td class="label" style="padding-left: 100px;">:</td>
-                    <td class="label" style="padding-left: 30px;">Kompleks Balaikota, Jalan Kenari No. 56 Yogyakarta</td>
+                    <td class="label" style="padding-left: 50px;">Alamat Kantor</td>
+                    <td class="label" style="padding-left: 50px;">:</td>
+                    <td class="label">Kompleks Balaikota, Jalan Kenari No. 56 Yogyakarta</td>
                 </tr>
             </table>
             <br>
@@ -88,27 +183,26 @@
             </p>
         </div>
         <br><br><br>
-        <div class="table text-right">
-            <p style="text-align: center; ">a.n <?= $pejabat['jabatan']; ?>
-                <br><br><br>
-                <span style="text-align: center;"> <u> <?= $pejabat['nama_pejabat']; ?></u>
-                    <br>NIP. <?= $pejabat['nip_pejabat']; ?></span>
-            </p>
+        <div class="text-sign text-center clearfix">
+            <p style="margin-bottom: 60px;">a.n <br> <?= $pejabat['jabatan']; ?></p>
+            <div class="nama-nip" style="border-bottom: 1px solid; ">
+                <p><?= $pejabat['nama_pejabat']; ?></p>
+
+            </div>
+            <p>NIP. <?= $pejabat['nip_pejabat']; ?> </p>
+        </div>
+        <div class="footer ">
+            <div class="foto-footer">
+                <img src="<?= base_url('adminlte/dist/img/segoro.jpg'); ?>">
+            </div>
+            <div class="isi text-center">
+                <p style="font-size: 10pt;"> S E G O R O A M A R T O </p>
+                <p style="font-size: 9pt;">SEMANGAT GOTONG ROYONG AGAWE MAJUNE NGAYOGYAKARTA </p>
+                <p style="font-size: 9pt;"> KEMANDIRIAN - KEDISIPLINAN - KEPEDULIAN - KEBERSAMAAN</p>
+            </div>
         </div>
     </div>
-    <div class="footer mt-5" style="border: 1px solid; text-align: center;">
-        <div class="foto-footer">
-            <img src="<?= base_url('adminlte/dist/img/segoro.jpg'); ?>" height="50">
-        </div>
-        <div class="isi">
-            <p> S E G O R O A M A R T O
-                <br>
-                SEMANGAT GOTONG ROYONG AGAWE MAJUNE NGAYOGYAKARTA
-                <br>
-                KEMANDIRIAN - KEDISIPLINAN - KEPEDULIAN - KEBERSAMAAN
-            </p>
-        </div>
-    </div>
+
 
 </html>
 
