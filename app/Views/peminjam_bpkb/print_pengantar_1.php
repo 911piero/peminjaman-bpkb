@@ -51,7 +51,7 @@
         <hr style="border-top: 5px solid black;">
         <div class="justify" style="font: 12pt;">
             <div class="row">
-                <div class="col-md-4" style="">
+                <div class="col-md-4">
                     <table class="mx-auto" style="width: 400px;">
                         <tr>
                             <td class="label">Nomor</td>

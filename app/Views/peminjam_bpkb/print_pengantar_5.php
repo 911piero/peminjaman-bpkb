@@ -183,13 +183,12 @@
             </p>
         </div>
         <br><br><br>
-        <div class="text-sign text-center clearfix">
-            <p style="margin-bottom: 60px;">a.n <br> <?= $pejabat['jabatan']; ?></p>
-            <div class="nama-nip" style="border-bottom: 1px solid; ">
-                <p><?= $pejabat['nama_pejabat']; ?></p>
-
-            </div>
-            <p>NIP. <?= $pejabat['nip_pejabat']; ?> </p>
+        <div class="text-sign text-center clearfix" style="width: 50%; float: right;">
+            <p style="margin-bottom: 100px; ">a.n <br> <?= $pejabat['jabatan']; ?></p>
+            <!-- <div class="nama-nip" style="width: 50%; float: right; "> -->
+                <p> <u><?= $pejabat['nama_pejabat']; ?></u></p>
+                <p>NIP. <?= $pejabat['nip_pejabat']; ?> </p>
+            <!-- </div> -->
         </div>
         <div class="footer ">
             <div class="foto-footer">
