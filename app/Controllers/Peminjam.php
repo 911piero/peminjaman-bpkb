@@ -55,7 +55,8 @@ class Peminjam extends BaseController
 
                         return
                             '<a href="' . $urlDetail . '"  title="Detail" class="btn btn-outline-primary"><i class="fa fa-eye"></i></a> 
-                            <a href="' . $urlCetak . '"  title="Cetak Surat Tanda Terima" class="btn btn-outline-secondary"><i class="fa fa-print"></i></a>';
+                            <a href="' . $urlCetak . '"  title="Cetak Surat Tanda Terima" class="btn btn-outline-secondary"><i class="fa fa-print"></i></a>
+                            <a href="' . $urlCetakPengantar . '"title="Cetak Surat Pengantar" class="btn btn-outline-secondary "><i class="fa fa-print"></i></a>';
                     }
                     return
                         '<a href="' . $urlDetail . '" title="Detail" class="btn btn-outline-primary"><i class="fa fa-eye"></i></a> 
