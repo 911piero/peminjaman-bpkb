@@ -54,15 +54,15 @@ class Peminjam extends BaseController
 
 
                         return
-                            '<a href="' . $urlDetail . '"  title="Detail" class="btn btn-outline-primary"><i class="fa fa-eye"></i></a> 
-                            <a href="' . $urlCetak . '"  title="Cetak Surat Tanda Terima" class="btn btn-outline-secondary"><i class="fa fa-print"></i></a>
-                            <a href="' . $urlCetakPengantar . '"title="Cetak Surat Pengantar" class="btn btn-outline-secondary "><i class="fa fa-print"></i></a>';
+                            '<a href="' . $urlDetail . '"  title="Detail" class="btn btn-primary btn-sm"><i class="fa fa-eye"></i></a> 
+                            <a href="' . $urlCetak . '"  title="Cetak Surat Tanda Terima" class="btn btn-secondary btn-sm "><i class="fa fa-print"> </i> </a>
+                            <a href="' . $urlCetakPengantar . '"title="Cetak Surat Pengantar" class="btn btn-link btn-sm "><i class="fa fa-print"> </i> Pengantar</a>';
                     }
                     return
-                        '<a href="' . $urlDetail . '" title="Detail" class="btn btn-outline-primary"><i class="fa fa-eye"></i></a> 
-                        <a href="' . $urlEdit . '" title="Pengembalian" class="btn btn-outline-warning "><i class="fa fa-pen"></i></a>
-                        <a href="' . $urlCetak . '" title="Cetak Surat Tanda Terima" class="btn btn-outline-secondary "><i class="fa fa-print"></i></a>
-                        <a href="' . $urlCetakPengantar . '"title="Cetak Surat Pengantar" class="btn btn-outline-secondary "><i class="fa fa-print"></i></a>';
+                        '<a href="' . $urlDetail . '" title="Detail" class="btn btn-primary btn-sm"><i class="fa fa-eye"></i></a>
+                        <a href="' . $urlEdit . '" title="Pengembalian" class="btn btn-warning btn-sm "><i class="fa fa-pen"></i></a>
+                        <a href="' . $urlCetak . '" title="Cetak Surat Tanda Terima" class="btn btn-secondary btn-sm "><i class="fa fa-print" aria-hidden="true"></i></a>
+                        <a href="' . $urlCetakPengantar . '"title="Cetak Surat Pengantar" class="btn btn-link btn-sm "><i class="fa fa-print"></i> Pengantar</i></a>';
                 })
                 ->toJson(true);
         }
@@ -313,8 +313,8 @@ class Peminjam extends BaseController
 
         $data = [
             'id_peminjam' => $id,
-            'title' => 'Cetak Surat BPKB',
-            'page_title' => 'Cetak Surat BPKB',
+            'title' => 'Cetak Pengantar BPKB',
+            'page_title' => 'Cetak Pengantar BPKB',
             'getPengantar' => $getPengantar,
             'validation' => \Config\Services::validation()
         ];

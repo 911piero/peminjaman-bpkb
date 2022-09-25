@@ -13,8 +13,6 @@ use App\Controllers\Peminjam;
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
-
-
         @page {
             size: A4;
         }
@@ -64,8 +62,8 @@ use App\Controllers\Peminjam;
 <body>
     <div class="card-header">
         <a href="<?php echo $_SERVER['HTTP_REFERER'] ?>" class="btn btn-outline-info btn-shadow" title="Kembali"><i class="fa fa-arrow-left"></i>&nbsp;Kembali</a>
-        <button onclick="window.print()" class="btn btn-outline-secondary btn-shadow float-right" title="PRINT">PRINT&nbsp;<i class="fa fa-print">
-                </i></button>
+        <button onclick="printIframe()" class="btn btn-outline-secondary btn-shadow float-right" title="PRINT">PRINT&nbsp;<i class="fa fa-print">
+            </i></button>
     </div>
     <div class="book">
         <div class="page">
@@ -166,5 +164,72 @@ use App\Controllers\Peminjam;
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 
 </body>
+<script>
+    function closePrint() {
+        document.body.removeChild(this._container_);
+    }
+
+    function setPrint() {
+        this.contentWindow._container_ = this;
+        this.contentWindow.onbeforeunload = closePrint;
+        this.contentWindow.onafterprint = closePrint;
+        this.contentWindow.focus(); // Required for IE
+        this.contentWindow.print();
+    }
+
+    function printIframe() {
+
+        var pages = '<html><head><title>DoubleA4</title></head><body>';
+        pages += '<div style="position: absolute;  left: 0;  top: 0;  bottom: 0;  right: 0; margin: 0; padding: 0; display: block;">';
+        pages += '<img style="width: 100%; height: 100%; margin: 0; padding: 0; display: block;" src="<?php $link = $sertifikat['img1'];
+                                                                                                        if ($sertifikat['img1'] == null) {
+                                                                                                            echo '';
+                                                                                                        } else {
+                                                                                                            echo base_url('BPKAD/') . '/' .  $sertifikat['img1'] . '.jpg';
+                                                                                                        } ?>">';
+        pages += '<img style="width: 100%; height: 100%; margin: 0; padding: 0; display: block;" src="<?php $link = $sertifikat['img2'];
+                                                                                                        if ($sertifikat['img2'] == null) {
+                                                                                                            echo '';
+                                                                                                        } else {
+                                                                                                            echo base_url('BPKAD/') . '/' .  $sertifikat['img2'] . '.jpg';
+                                                                                                        } ?>">';
+        pages += '<img style="width: 100%; height: 100%; margin: 0; padding: 0; display: block;" src="<?php $link = $sertifikat['img3'];
+                                                                                                        if ($sertifikat['img3'] == null) {
+                                                                                                            echo '';
+                                                                                                        } else {
+                                                                                                            echo base_url('BPKAD/') . '/' .  $sertifikat['img3'] . '.jpg';
+                                                                                                        } ?>">';
+        pages += '<img style="width: 100%; height: 100%; margin: 0; padding: 0; display: block;" src="<?php $link = $sertifikat['img4'];
+                                                                                                        if ($sertifikat['img4'] == null) {
+                                                                                                            echo '';
+                                                                                                        } else {
+                                                                                                            echo base_url('BPKAD/') . '/' .  $sertifikat['img4'] . '.jpg';
+                                                                                                        } ?>">';
+        pages += '<img style="width: 100%; height: 100%; margin: 0; padding: 0; display: block;" src="<?php $link = $sertifikat['img5'];
+                                                                                                        if ($sertifikat['img5'] == null) {
+                                                                                                            echo '';
+                                                                                                        } else {
+                                                                                                            echo base_url('BPKAD/') . '/' .  $sertifikat['img5'] . '.jpg';
+                                                                                                        } ?>">';
+        pages += '<img style="width: 100%; height: 100%; margin: 0; padding: 0; display: block;" src="<?php $link = $sertifikat['img6'];
+                                                                                                        if ($sertifikat['img6'] == null) {
+                                                                                                            echo '';
+                                                                                                        } else {
+                                                                                                            echo base_url('BPKAD/') . '/' .  $sertifikat['img6'] . '.jpg';
+                                                                                                        } ?>">';
+        pages += '</div></body></html>';
+
+        var oHiddFrame = document.createElement("iframe");
+        oHiddFrame.onload = setPrint;
+        oHiddFrame.style.visibility = "hidden";
+        oHiddFrame.style.position = "absolute";
+        oHiddFrame.style.right = "0";
+        oHiddFrame.style.bottom = "0";
+        oHiddFrame.style.width = "100%";
+        oHiddFrame.style.height = "100%";
+        oHiddFrame.srcdoc = pages;
+        document.body.appendChild(oHiddFrame);
+    }
+</script>
 
 </html>

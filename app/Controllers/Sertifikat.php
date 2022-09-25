@@ -85,8 +85,8 @@ class Sertifikat extends BaseController
                     $urlDetail = site_url('/sertifikat/detail/' . $row->id);
                     $urlCetak = site_url('sertifikat/cetak/' . $row->id);
                     return
-                        '<a href="' . $urlDetail . '"title="Detail"  class="btn btn-outline-primary btn-shadow"><i class="fa fa-eye"></i></a>
-                        <a href="' . $urlCetak . '" title="Cetak Sertifikat"  class="btn btn-outline-secondary btn-shadow"><i class="fa fa-print"></i></a>';
+                        '<a href="' . $urlDetail . '"title="Detail" class="btn btn-primary btn-sm mb-1"><i class="fa fa-eye"></i></a>
+                        <a href="' . $urlCetak . '" title="Cetak Sertifikat"  class="btn btn-info btn-sm"><i class="fa fa-print"></i></a>';
                 })
 
                 ->filter(function ($builder, $request) {
@@ -156,7 +156,7 @@ class Sertifikat extends BaseController
                 ->add('action', function ($row) {
                     $urlDetail = site_url('/sertifikat/detail/' . $row->id);
                     return
-                        '<a href="' . $urlDetail . '" title="Detail" class="btn btn-outline-primary btn-shadow"><i class="fa fa-eye"></i></a> ';
+                        '<a href="' . $urlDetail . '" title="Detail" class="btn btn-primary btn-sm"><i class="fa fa-eye"></i></a> ';
                 })
                 ->toJson(true);
         }
