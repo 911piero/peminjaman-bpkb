@@ -55,7 +55,8 @@ class Peminjam extends BaseController
 
                         return
                             '<a href="' . $urlDetail . '"  title="Detail" class="btn btn-outline-primary"><i class="fa fa-eye"></i></a> 
-                            <a href="' . $urlCetak . '"  title="Cetak Surat Tanda Terima" class="btn btn-outline-secondary"><i class="fa fa-print"></i></a>';
+                            <a href="' . $urlCetak . '"  title="Cetak Surat Tanda Terima" class="btn btn-outline-secondary"><i class="fa fa-print"></i></a>
+                            <a href="' . $urlCetakPengantar . '"title="Cetak Surat Pengantar" class="btn btn-outline-secondary "><i class="fa fa-print"></i></a>';
                     }
                     return
                         '<a href="' . $urlDetail . '" title="Detail" class="btn btn-outline-primary"><i class="fa fa-eye"></i></a> 
@@ -340,15 +341,22 @@ class Peminjam extends BaseController
             return redirect()->to('/peminjam/cetak_pengantar/' . $id)->withInput();
         }
 
+        // check condition jika kosong return ke peminjam
+        if ($this->request->getVar('id_cetak') == null) {
+            return redirect()->to('/peminjam');
+        }
+
         $data_pejabat = [
             'id_pengantar' => $this->request->getVar('pejabat'),
-            'tahun_pengantar' => $this->request->getVar('radioPengantar')
+            'tahun_pengantar' => $this->request->getVar('radioPengantar'),
+            'id_cetak' => $this->request->getVar('id_cetak')
+
         ];
 
         $data = [
-
-            'peminjam' => $this->PeminjamModel->getDetail($id),
-            'pejabat' =>  $this->CetakPengantarModel->findPejabat($data_pejabat['id_pengantar'])
+            'peminjam' => $this->PeminjamModel->getDetail($data_pejabat['id_cetak']),
+            'pejabat' =>  $this->CetakPengantarModel->findPejabat($data_pejabat['id_pengantar']),
+            'tanggal' => date('Y-m-d')
         ];
 
         if ($data_pejabat['tahun_pengantar'] == 1) {
