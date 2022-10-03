@@ -126,6 +126,7 @@
                                 <thead>
                                     <tr>
                                         <th>No.</th>
+                                        <th>No Arsip</th>
                                         <th>No Objek</th>
                                         <th>Nama Objek</th>
                                         <th>Alamat</th>

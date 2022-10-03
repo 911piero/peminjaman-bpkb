@@ -67,7 +67,7 @@ class Sertifikat extends BaseController
                 ->join('kecamatan', 'kecamatan.id = investasi.id_kecamatan', 'left')
                 ->join('kelurahan', 'kelurahan.id = investasi.id_kelurahan', 'left')
                 ->join('sub_kategori', 'sub_kategori.id_subkategori = investasi.lokasi', 'left')
-                ->select('investasi.id, nama_proyek, intro, aktif, intro2, kecamatan.kecamatan, kelurahan.kelurahan, kategori.nm_kategori, lokasi, sub_kategori.nm_subkategori, tahun, tgl_awal, tgl_akhir');
+                ->select('investasi.id, no_arsip, nama_proyek, intro, aktif, intro2, kecamatan.kecamatan, kelurahan.kelurahan, kategori.nm_kategori, lokasi, sub_kategori.nm_subkategori, tahun, tgl_awal, tgl_akhir');
 
             return DataTable::of($builder)
                 ->add('status', function ($row) {

@@ -53,6 +53,7 @@ use app\Models\BpkbModel; ?>
               <thead>
                 <tr>
                   <th>No</th>
+                  <th>No Arsip</th>
                   <th>Nomor Registrasi</th>
                   <th>Merk</th>
                   <th>Nama Pemilik</th>

@@ -250,6 +250,8 @@
                         },
                         searchable: false,
                     }, {
+                        data: 'no_arsip'
+                    }, {
                         data: 'nama_proyek'
                     },
                     {

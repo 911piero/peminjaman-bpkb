@@ -62,7 +62,7 @@ class Bpkb extends BaseController
             $db = db_connect();
             $builder = $db->table('data_bpkb')
                 ->join('bpkb_model_kendaraan', 'bpkb_model_kendaraan.id_model = data_bpkb.model')
-                ->select('id_bpkb, nomor_registrasi, merk, nama_pemilik, bpkb_model_kendaraan.model, warna, status, data_bpkb.created_at')
+                ->select('id_bpkb, no_arsip, nomor_registrasi, merk, nama_pemilik, bpkb_model_kendaraan.model, warna, status, data_bpkb.created_at')
                 ->where('isActive', 1)
                 ->orderBy('data_bpkb.created_at', 'DESC');
             return DataTable::of($builder)
